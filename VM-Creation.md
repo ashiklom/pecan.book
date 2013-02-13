@@ -246,32 +246,6 @@ git clone https://github.com/PecanProject/pecan.git
 cd pecan
 R --vanilla < scripts/install.dependencies.R
 
-# configure for web app
-cat > web/system.php << EOF
-<?php
-
-# Information to connect to the database
-\$db_hostname="localhost";
-\$db_username="bety";
-\$db_password="bety";
-\$db_database="bety";
-
-# Folder where PEcAn is installed
-\$pecan_install="${R_LIBS_USER}";
-
-# Location where PEcAn is installed, not really needed anymore
-\$pecan_home="${HOME}/pecan/";
-
-# Folder where the runs are stored
-\$output_folder="${HOME}/output/";
-
-# ED specific inputs, should come from database
-\$ed_veg="${HOME}/oge2OLD/OGE2_";
-\$ed_soil="${HOME}/faoOLD/FAO_";
-\$ed_inputs="${HOME}/ed_inputs/";
-?>
-EOF
-
 # compile pecan
 ./scripts/build.sh
 ```
@@ -416,6 +390,32 @@ EOF
 
 # done as root
 exit
+
+# configure for web app
+cat > ${HOME}/pecan/web/system.php << EOF
+<?php
+
+# Information to connect to the database
+\$db_hostname="localhost";
+\$db_username="bety";
+\$db_password="bety";
+\$db_database="bety";
+
+# Folder where PEcAn is installed
+\$pecan_install="${R_LIBS_USER}";
+
+# Location where PEcAn is installed, not really needed anymore
+\$pecan_home="${HOME}/pecan/";
+
+# Folder where the runs are stored
+\$output_folder="${HOME}/output/";
+
+# ED specific inputs, should come from database
+\$ed_veg="${HOME}/oge2OLD/OGE2_";
+\$ed_soil="${HOME}/faoOLD/FAO_";
+\$ed_inputs="${HOME}/ed_inputs/";
+?>
+EOF
 ```
 
 all done you can now visit the server http://hostname/pecan
