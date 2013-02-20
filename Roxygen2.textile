@@ -100,16 +100,16 @@ In emacs, with the cursor inside the function, the keybinding C-x O will generat
 h2. Updating documentation
 
 * After adding documentation run the following command (replacing common with the name of the folder you want to update):
-** In R:
+** In R using devtools to call roxygenize:
 <pre>
 R --vanilla
 require(devtools)
 document("common")
-
-### alternative way calling roxygenize:
+</pre>
+** the document function is a shortcut to using roxygenize:
+<pre>
 require(roxygen2)
 roxygenize("common")
-
 </pre>
 ** As a command line shortcut:
 <pre>
