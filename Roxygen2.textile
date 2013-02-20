@@ -103,18 +103,26 @@ h2. Updating documentation
 ** In R:
 <pre>
 R --vanilla
+require(devtools)
+document("common")
+
+### alternative way calling roxygenize:
 require(roxygen2)
 roxygenize("common")
+
 </pre>
 ** As a command line shortcut:
 <pre>
 echo -e 'require(roxygen2)\nroxygenize("common")' | R --vanilla
 </pre>
-
-
-h2. Add new .Rd files to bzr repository
-
+* Commit changes
+** changes to documentation will often be associated with other fixes and additional tests,  
+** if present, add new .Rd files to bzr repository
 <pre>
 bzr add man/
 bzr commit -m "added documentation to package foo" man/*
+</pre>
+** otherwise 
+<pre>
+bzr commit -m "updated documentation to package foo" man/*
 </pre>
