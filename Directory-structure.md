@@ -1,17 +1,5 @@
 # Directory structure
 
-## Generic R package structure:
-
-```
- +- DESCRIPTION    # short description of the PEcAn library
- +- R/             # location of R source code
- +- man/           # Documentation
- +- tests/         # runall.R script to call all R test scripts
- +- inst/          # location of install scripts and misc.
-    +- tests/      # location of PEcAn testing scripts
- +- data/          # data used in testing and examples
-```
-
 ## Overview of PEcAn repository as of PEcAn 1.2
 
 ```
