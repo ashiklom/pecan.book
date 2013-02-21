@@ -10,6 +10,9 @@ The quickest way to get started is to download the virtual machine. To get start
 
 ## Development
 
+### Source Code
+* **[[Directory Structure]]**
+
 ### R Development
 * **[[Coding Style]]**
 * **[[Documentation|Roxygen2]]**
