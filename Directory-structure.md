@@ -35,6 +35,8 @@ trunk/             # Overall repository
 
 ## Generic R package structure:
 
+see the R development wiki for more information on writing code and adding data.
+
 ```
  +- DESCRIPTION    # short description of the PEcAn library
  +- R/             # location of R source code
@@ -42,5 +44,6 @@ trunk/             # Overall repository
  +- tests/         # runall.R script to call all R test scripts
  +- inst/          # location of install scripts and misc.
     +- tests/      # location of PEcAn testing scripts
- +- data/          # data used in testing and examples
+    +- extdata/    # misc. data files (in misc. formats)
+ +- data/          # data used in testing and examples (saved as *.RData or *.rda files)
 ```
