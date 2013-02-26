@@ -27,6 +27,7 @@ The quickest way to get started is to download the virtual machine. To get start
 
 ### Source Code
 * **[[Directory Structure]]**
+* **[[Using Git and GitHub]]**
 
 ### R Development
 * **[[Coding Style]]**
