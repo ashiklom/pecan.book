@@ -1,6 +1,7 @@
 # PEcAn Use and development
 
 ## Use
+
 ### Getting Started
 
 The quickest way to get started is to download the virtual machine. To get started on your own machine (laptop, desktop, or server, see instructions below) 
@@ -8,12 +9,15 @@ The quickest way to get started is to download the virtual machine. To get start
 * **[[PEcAn Configuration]]**
 * **[[VM Creation]]**
 
+### Using GitHub and Redmine
+
+* **[[Reporting Bugs | GitHub Issues]]**
+* **[[Requesting Features | GitHub Issues ]]**
+
 ### Create Accounts
 
-* Redmine: https://ebi-forecast.igb.illinois.edu/redmine/account/register
-* github (this site)
- * Fork Github Repo on GitHub (except core dev team, who write directly to master)
- * clone fork to local machine
+* [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
+* [GitHub](https://github.com/signup/free)
 * if at UIUC
  * [Authenticate computer](http://help.igb.uiuc.edu/Computer_Network_Activation)
  * Register your netid with IGB-IT group
