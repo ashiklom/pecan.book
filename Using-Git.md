@@ -13,13 +13,13 @@ There a few URL’s you can use to clone a project, using https, ssh and
 git. You can use either https or git to clone a repository and write to
 it. The git protocol is read-only.
 
-* PEcAnProject GitHub location: https://github.com/organizations/PecanProject
- * PEcAn source code: 
-  * https://github.com/PecanProject/pecan.git
-  * git@github.com:PecanProject/pecan.git
- * BETYdb source code:
-  * https://github.com/PecanProject/bety.git
-  * git@github.com:PecanProject/bety.git
+#### PEcAnProject GitHub location: https://github.com/organizations/PecanProject
+* PEcAn source code: 
+ * https://github.com/PecanProject/pecan.git
+ * git@github.com:PecanProject/pecan.git
+* BETYdb source code:
+ * https://github.com/PecanProject/bety.git
+ * git@github.com:PecanProject/bety.git
 
 Useful References
 -----------------
