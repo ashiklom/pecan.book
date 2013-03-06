@@ -24,41 +24,39 @@ h2. Quick Start:
 * decide what you want to do today
 * identify the issue in redmine or github (if none exists, create one)
 * to work on issue 99, create a new branch called "redmine99", "github99" or some descriptive name... Today we will add enable an existing function, @make.cheas@ to make @goat.cheddar@. We will know that we are done by the color and taste.
-  <pre>
-  git branch goat-cheddar
-  git checkout goat-cheddar
-  </pre>
+<pre></code>git branch goat-cheddar
+git checkout goat-cheddar</code></pre>
 * open existing (or create new) file in `inst/tests/`. If working on code in "myfunction" or a set of functions in "R/myfile.R", the file should be named accordingly, e.g. "inst/tests/test.myfile.R"
 * if you are lucky, the function has already been tested and has some examples.
 * if not, you may need to create a minimal example, often requiring a settings file. The default settings file can be obtained in this way:
-  <pre>
+  <pre><code>
   settings <- read.settings(system.file("extdata/test.settings.xml", package = "PEcAn.utils"))
-  </pre> 
+  </code></pre> 
 * write what you want to do
-  <pre>
+  <pre><code>
   test_that("make.cheas can make cheese",{
     goat.cheddar <- make.cheas(source = 'goat', style = 'cheddar')
     expect_equal(color(goat.cheddar), "orange")
     expect_is(object = goat.cheddar, class = "cheese")
     expect_true(all(c("sharp", "creamy") %in% taste(goat.cheddar)))
   } 
-  </pre>
+  </code></pre>
 * now edit the goat.cheddar function until it makes savory, creamy, orange cheese.
 * commit often
 * update documentation and test
-  <pre>
+  <pre><code>
   library(devtools)
   document("mypkg")
   test("mypkg")  
-  </pre>
+  </code></pre>
 * commit again
 * when complete, merge, and push
-  <pre>
+  <pre><code>
   git commit -m "make.cheas makes goat.cheddar now"
   git checkout master
   git merge goat-cheddar
   git push
-  </pre>
+  </code></pre>
 
 h2. Test files
 
@@ -69,21 +67,36 @@ Some useful conventions:
 h3. Settings
 
 # A generic settings can be found in the PEcAn.all package
-  <pre>
+  <pre><code>
   settings.xml <- system.file("pecan.biocro.xml", package = "PEcAn.BIOCRO")
   settings <- read.settings(settings.xml)
-  </pre>
-# database settings can be specified, e.g.:
-  <pre>
-  </pre>
+  </code></pre>
+# database settings can be specified, and tests run only if a connection is available
+
+We currently use the following database to run tests against; tests that require access to a database should be enclosed by `if(db.exists())` to avoid failed tests on systems that do not have the database installed.
+
+
+  <pre><code>
+  settings$database <- list(userid = "bety", 
+                            passwd = "bety", 
+                            name = "bety",     # database name 
+                            host = "localhost" # server name)
+  if(db.exists()){
+    test_that(... ## write tests here
+  }
+  </code></pre>
+
+* instructions for installing this are available on the "VM creation wiki":https://github.com/PecanProject/pecan/wiki/VM-Creation)
+* examples can be found in the PEcAn.DB package (`db/inst/tests/`).
+
 # Model specific settings can go in the model-specific module, for example:
-  <pre>
+  <pre><code>
   settings.xml <- system.file("pecan.biocro.xml", package = "PEcAn.BIOCRO")
   settings <- read.settings(settings.xml)
-  </pre>
+  </code></pre>
 # test-specific settings:
 ** settings text can be specified inline:
-  <pre>
+ <pre><code>
   settings.text <- "
 <pecan>
   <nocheck>nope</nocheck> ## allows bypass of checks in the read.settings functions 
@@ -102,12 +115,12 @@ h3. Settings
   </database>
 </pecan>"
 settings <- read.settings(settings.text)
-  </pre>
+</code></pre>
 ** values in settings can be updated:
-  <pre>
+  <pre><code>
   settings <- read.settings(settings.text)
   settings$outdir <- "/tmp" ## or any other settings
-  </pre>
+  </code></pre>
 
 h3. Helper functions created to make testing easier
 
@@ -175,25 +188,21 @@ h4. Expectations
 
 h4. How to run tests
 
-<pre>
-test_dir("inst/tests/")
-</pre>
 
 add the following to "pecan/tests/run.all.R"
 
-<pre>
+<pre><code>
 library(testthat)
 library(mypackage)
 
 test_package("mypackage")
-</pre>
+</code></pre>
 
 h3. basic use of the testthat package
 
-Here is an example:
+Here is an example of tests (these should be placed in `<packagename>/inst/tests/test_<sourcefilename>.R`:
 
-<pre>
-
+<pre><code>
 test_that("mathematical operators plus and minus work as expected",{
   expect_equal(sum(1,1), 2)
   expect_equal(sum(-1,-1), -2)
@@ -212,15 +221,14 @@ test_that("different testing functions work, giving excuse to demonstrate",{
   expect_warning(mean('1'), "argument is not numeric or logical: returning NA")
   expect_message(message("a"), "a")
 })
-
-</pre>
+</code></pre>
 
 
 h4. Script testing
 
 It is useful to add tests to a script during development. This allows you to test that the code is doing what you expect it to do.
 
-<pre>
+<pre><code>
 # here is a fake script using the iris data set
 
 test_that("the iris data set has the same basic features as before",{
@@ -243,14 +251,14 @@ test_that("changes to Iris code occurred as expected",{
   expect_equivalent(iris.model$coefficients["(Intercept)"],
                     4.26)
 })
-</pre>
+</code></pre>
 
 h4. Function testing
 
 Testing of a new function, @as.sequence@. The function and documentation are in source:R/utils.R and the tests are in source:tests/test.utils.R.
 
 Recently, I made the function @as.sequence@ to turn any vector into a sequence, with custom handling of NA's:
-<pre>
+<pre><code>
 function(x, na.rm = TRUE){
   x2 <- as.integer(factor(x, unique(x)))
   if(all(is.na(x2))){
@@ -261,13 +269,13 @@ function(x, na.rm = TRUE){
   }
   return(x2)
 }
-</pre>
+</code></pre>
 
 The next step was to add documentation and test. Many people find it more efficient to write tests before writing the function. This is true, but it also requires more discipline. I wrote these tests to handle the variety of cases that I had observed. 
 
 As currently used, the function is exposed to a fairly restricted set of options - results of downloads from the database and transformations.
 
-<pre>
+<pre><code>
 test_that("as.sequence works";{
   expect_identical(as.sequence(c("a", "b")),
                    1:2)
@@ -277,4 +285,4 @@ test_that("as.sequence works";{
                c(1,NA))
   expect_equal(as.sequence(c(NA,NA)), c(1,1))
 })
-</pre> 
+<code></pre> 
