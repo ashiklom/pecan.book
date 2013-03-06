@@ -1,6 +1,6 @@
-{{toc}}
+PEcAn uses the testthat package developed by Hadley Wickham. Hadley has written instructions for using this pakcage in his "Testing":https://github.com/hadley/devtools/wiki/Testing wiki.
 
-h1. Testing
+h2. Rationale
 
 * makes development easier
 * provides working documentation of expected functionality
@@ -277,4 +277,3 @@ test_that("as.sequence works";{
   expect_equal(as.sequence(c(NA,NA)), c(1,1))
 })
 </pre> 
-
