@@ -39,18 +39,18 @@ Quick Start:
 existing function, `make.cheas` to make `goat.cheddar`. We will know
 that we are done by the color and taste.
 
-    ```Bash
+    ```bash
     git branch goat-cheddar
     git checkout goat-cheddar
     ```
     * open existing (or create new) file in `inst/tests/`. If working on code in "myfunction" or a set of functions in "R/myfile.R", the file should be named accordingly, e.g. "inst/tests/test.myfile.R"
     * if you are lucky, the function has already been tested and has some examples.
     * if not, you may need to create a minimal example, often requiring a settings file. The default settings file can be obtained in this way:
-      ```R
+      ```r
       settings <- read.settings(system.file("extdata/test.settings.xml", package = "PEcAn.utils"))
       ```
     * write what you want to do
-      ```R
+      ```r
       test_that("make.cheas can make cheese",{
         goat.cheddar <- make.cheas(source = 'goat', style = 'cheddar')
         expect_equal(color(goat.cheddar), "orange")
@@ -61,14 +61,14 @@ that we are done by the color and taste.
     * now edit the goat.cheddar function until it makes savory, creamy, orange cheese.
     * commit often
     * update documentation and test
-      ```R
+      ```r
       library(devtools)
       document("mypkg")
       test("mypkg")  
       ```
     * commit again
     * when complete, merge, and push
-      ```Bash
+      ```bash
       git commit -m "make.cheas makes goat.cheddar now"
       git checkout master
       git merge goat-cheddar
@@ -88,7 +88,7 @@ Some useful conventions:
 ### Settings
 
 * A generic settings can be found in the PEcAn.all package
-```R
+```r
 settings.xml <- system.file("pecan.biocro.xml", package = "PEcAn.BIOCRO")
 settings <- read.settings(settings.xml)
 ```
@@ -97,7 +97,7 @@ settings <- read.settings(settings.xml)
 We currently use the following database to run tests against; tests that require access to a database should be enclosed by `if(db.exists())` to avoid failed tests on systems that do not have the database installed.
 
 
-```R
+```r
 settings$database <- list(userid = "bety", 
                           passwd = "bety", 
                           name = "bety",     # database name 
@@ -113,15 +113,16 @@ if(db.exists()){
 * Model specific settings can go in the model-specific module, for
 example:
 
-```R
+```r
 settings.xml <- system.file("pecan.biocro.xml", package = "PEcAn.BIOCRO")
 settings <- read.settings(settings.xml)
 ```
 * test-specific settings:
  * settings text can be specified inline:
-```R
+ 
+  ```r
   settings.text <- "
-<pecan>
+  <pecan>
   <nocheck>nope</nocheck> ## allows bypass of checks in the read.settings functions 
   <pfts>
     <pft>
@@ -138,9 +139,9 @@ settings <- read.settings(settings.xml)
   </database>
 </pecan>"
 settings <- read.settings(settings.text)
-```
+ ```
  * values in settings can be updated:
-```R
+```r
 settings <- read.settings(settings.text)
 settings$outdir <- "/tmp" ## or any other settings
 ```
@@ -222,7 +223,7 @@ for details on how to use the testthat package.
 
 add the following to “pecan/tests/run.all.R”
 
-```R
+```r
 library(testthat)
 library(mypackage)
 
@@ -234,7 +235,7 @@ test_package("mypackage")
 Here is an example of tests (these should be placed in
 `<packagename>/inst/tests/test_<sourcefilename>.R`:
 
-```R
+```r
 test_that("mathematical operators plus and minus work as expected",{
   expect_equal(sum(1,1), 2)
   expect_equal(sum(-1,-1), -2)
@@ -261,7 +262,7 @@ test_that("different testing functions work, giving excuse to demonstrate",{
 It is useful to add tests to a script during development. This allows
 you to test that the code is doing what you expect it to do.
 
-```R
+```r
 * here is a fake script using the iris data set
 
 test_that("the iris data set has the same basic features as before",{
@@ -295,7 +296,7 @@ Recently, I made the function `as.sequence` to turn any vector into a
 sequence, with custom handling of NA’s:
 
 
-```R
+```r
 function(x, na.rm = TRUE){
   x2 <- as.integer(factor(x, unique(x)))
   if(all(is.na(x2))){
@@ -318,7 +319,7 @@ variety of cases that I had observed.
 As currently used, the function is exposed to a fairly restricted set of
 options - results of downloads from the database and transformations.
 
-```R
+```r
 test_that(“as.sequence works”;{
  expect_identical(as.sequence(c(“a”, “b”)), 1:2)
  expect_identical(as.sequence(c(“a”, NA)), 1:2)
