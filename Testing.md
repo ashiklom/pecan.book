@@ -87,12 +87,12 @@ Some useful conventions:
 
 ### Settings
 
-# A generic settings can be found in the PEcAn.all package
+* A generic settings can be found in the PEcAn.all package
 ```R
 settings.xml <- system.file("pecan.biocro.xml", package = "PEcAn.BIOCRO")
 settings <- read.settings(settings.xml)
 ```
-# database settings can be specified, and tests run only if a connection is available
+*  database settings can be specified, and tests run only if a connection is available
 
 We currently use the following database to run tests against; tests that require access to a database should be enclosed by `if(db.exists())` to avoid failed tests on systems that do not have the database installed.
 
@@ -110,14 +110,14 @@ if(db.exists()){
     wiki](https://github.com/PecanProject/pecan/wiki/VM-Creation))
 *  examples can be found in the PEcAn.DB package (`db/inst/tests/`).
 
-# Model specific settings can go in the model-specific module, for
+* Model specific settings can go in the model-specific module, for
 example:
 
 ```R
 settings.xml <- system.file("pecan.biocro.xml", package = "PEcAn.BIOCRO")
 settings <- read.settings(settings.xml)
 ```
-# test-specific settings:
+* test-specific settings:
  * settings text can be specified inline:
 ```R
   settings.text <- "
@@ -262,7 +262,7 @@ It is useful to add tests to a script during development. This allows
 you to test that the code is doing what you expect it to do.
 
 ```R
-# here is a fake script using the iris data set
+* here is a fake script using the iris data set
 
 test_that("the iris data set has the same basic features as before",{
   expect_equal(dim(iris), c(150,5))
