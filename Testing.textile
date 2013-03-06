@@ -6,8 +6,9 @@ h2. Rationale
 * provides working documentation of expected functionality
 * saves time by allowing computer to take over error checking once a test has been made  
 * improves code quality
+* Further reading: "Aruliah et al 2012 Best Practices for Scientific Computing":arxiv.org/pdf/1210.0530v1.pdf
 
-h2. "how writing tests makes development easier less error prone"
+h2. Tests makes development easier and less error prone
 
 Testing makes it easier to develop by organizing everything you are already doing anyway - but integrating it into the testing and documentation. With a codebase like PEcAn, it is often difficult to get started. You have to figure out 
 
