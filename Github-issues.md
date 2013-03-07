@@ -1,6 +1,10 @@
 Overview
 =========
 
+We use Both GitHub and Redmine to track development. 
+
+To learn about GitHub, it is worth taking some time to read through the [FAQ](https://help.github.com/). When in doubt, the first step is to click the "Help" button at the top of the page.
+
 ### ALL non-trivial code changes require:
 
 1. associated issue and commit, so that it is easy to cross-reference feature or bug with changes in code 
