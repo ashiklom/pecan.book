@@ -4,23 +4,20 @@
 
 ### Getting Started
 
-The quickest way to get started is to download the virtual machine. To get started on your own machine (laptop, desktop, or server, see instructions below) 
+1. The quickest way to get started is to download the virtual machine. The demo provides instructions to get started on your own machine. 
+ * **[Work through Demo](https://ebi-forecast.igb.illinois.edu/redmine/documents/27)**
+2. Create Accounts
+ * [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
+ * [GitHub](https://github.com/signup/free)
+3. Read documentation
+ * These are in the process of being migrated from [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki) to github (here, below).
+ * As you are reading, make some edits and/or ask questions where documentation is unclear or incomplete
 
-* **[[PEcAn Configuration]]**
-* **[[VM Creation]]**
+##### University of Illinois - Energy Biosciences Institute
 
-### Create Accounts
+* [Authenticate computer](http://help.igb.uiuc.edu/Computer_Network_Activation)
+* Register your netid with IGB-IT group
 
-* [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
-* [GitHub](https://github.com/signup/free)
-* if at UIUC
- * [Authenticate computer](http://help.igb.uiuc.edu/Computer_Network_Activation)
- * Register your netid with IGB-IT group
-
-### Read Wiki Pages
-
-* These are in the process of being migrated from [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki) to github (here, below).
-* As you are reading, make some edits and/or ask questions where documentation is unclear or incomplete
 
 ### Reporting Bugs and Requesting Features
 
@@ -30,7 +27,10 @@ The quickest way to get started is to download the virtual machine. To get start
 
 ## Development
 
-### Source Code
+### Setup
+
+ * **[[PEcAn Configuration]]**
+ * **[[VM Creation]]**
 
 ### Using Git and GitHub
 
@@ -38,9 +38,11 @@ The quickest way to get started is to download the virtual machine. To get start
 * **[[Using GitHub and Git | Using Git]]**
 
 ### R Development
+
 * **[[Coding Style]]**
 * **[[Documentation|Roxygen2]]**
 * **[[Testing]]**
 * **[[Package Data]]**
+
 
 ## References
