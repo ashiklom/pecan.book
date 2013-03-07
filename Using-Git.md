@@ -1,5 +1,7 @@
-GIT Overview
+GIT and GitHub Overview
 ============
+
+Git is a version control software; GitHub is a project-hosting website that is similar to [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/) but easier to use for open and collaborative development.
 
 Git is a free & open source, distributed version control system designed
 to handle everything from small to very large projects with speed and
@@ -24,40 +26,62 @@ it. The git protocol is read-only.
 Useful References
 -----------------
 
-* [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) by
-Scott Chacon (Git evangelist and Ruby developer working on GitHub.com)
+#### Git Documentation
+
 * [Stackoverflow highest voted questions tagged "git"](http://stackoverflow.com/questions/tagged/git?sort=votes&pagesize=50)
 * [Visual Git Tutorial](http://pcottle.github.com/learnGitBranching/)
+
+#### GitHub Documentation
+
+When in doubt, the first step is to click the "Help" button at the top of the page.
+
+* [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) by
+Scott Chacon (Git evangelist and Ruby developer working on GitHub.com)
+* [GitHub FAQ]((https://help.github.com/)
+* [Using Pull Requests](https://help.github.com/articles/using-pull-requests)
+* [SSH Keys](https://help.github.com/articles/generating-ssh-keys)
+
+
+
+
 
 Quick Start:
 ------------
 
-Introduce yourself to GIT
+### Workflow
+
+1. Create a Fork 
+2. Clone a Repo
+3. Make Changes
+4. Commit
+5. Submitting a Pull Request
+
+* Introduce yourself to GIT
 
     git config --global user.name "FULLNAME"
     git config --global user.email you@yourdomain.example.com
 
-Get the remote repository locally:
+* Get the remote repository locally:
 
     git clone URL
 
-To update local repository to latest:
+* To update local repository to latest:
 
     git pull
 
-To add new files to to local repository:
+* To add new files to to local repository:
 
     git add <file>
 
-To commit changes
+* To commit changes
 
     git commit <file|folder>
 
-To update remote repository:
+* To update remote repository:
 
     git push
 
-Show graph of commits:
+* Show graph of commits:
 
     git log --graph --oneline --all
 
