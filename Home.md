@@ -1,3 +1,7 @@
+# What is PEcAn?
+
+See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.md) file 
+
 # PEcAn Use and development
 
 ## Use
@@ -5,7 +9,8 @@
 ### Getting Started
 
 1. The quickest way to get started is to download the virtual machine. The demo provides instructions to get started on your own machine. 
- * **[Work through Demo](https://ebi-forecast.igb.illinois.edu/redmine/documents/27)**
+ * Download Virtual Machine
+ * Work through Demo [](https://ebi-forecast.igb.illinois.edu/redmine/documents/27)**
 2. Create Accounts
  * [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
  * [GitHub](https://github.com/signup/free)
