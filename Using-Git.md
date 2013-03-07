@@ -58,35 +58,35 @@ Quick Start:
 
 * Introduce yourself to GIT
 
-    git config --global user.name "FULLNAME"
-    git config --global user.email you@yourdomain.example.com
+        git config --global user.name "FULLNAME"
+        git config --global user.email you@yourdomain.example.com
 
 * Get the remote repository locally:
 
-    git clone URL
+        git clone URL
 
 * To update local repository to latest:
 
-    git pull
+        git pull
 
 * To add new files to to local repository:
 
-    git add <file>
+        git add <file>
 
 * To commit changes
 
-    git commit <file|folder>
+        git commit <file|folder>
 
 * To update remote repository:
 
-    git push
+        git push
 
 * Show graph of commits:
 
-    git log --graph --oneline --all
+        git log --graph --oneline --all
 
-GitHub and fork
----------------
+Forking a Project on GitHub
+----------------------------
 
 You can fork a project on github. This allows you to create your own
 copy of the code. When you do the fork a copy of the code is created and
@@ -99,6 +99,19 @@ result in the code being merged into the main copy of the codebase.
 
 See https://help.github.com/articles/fork-a-repo for more information, 
 especially on how to keep your fork up to date with respect to the original.
+
+Committing Changes
+------------------
+
+GitHub provides a useful overview of how to submit changes to a project, [Using Pull Requests](https://help.github.com/articles/using-pull-requests).
+
+Once you have added a feature on your local fork of the project that you would like to contribute, these are the steps:
+
+* Submit a Pull Request
+* Pull request is reviewed by a member of the PEcAn core group
+* Any comments should be addressed
+* Additional commits are added to the pull request
+* When ready, changes are merged
 
 GIT Workflow
 ------------
