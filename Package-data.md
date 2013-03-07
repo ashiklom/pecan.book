@@ -1,4 +1,3 @@
-
 ### Data in a package 
 
 #### Summary:
@@ -90,23 +89,17 @@ build("pkg")
 ```
 other tips for devtools (from the documentation):
 
-Adding the following to your `~/.Rprofile` will load devtools when
+* Adding the following to your `~/.Rprofile` will load devtools when
 running R in interactive mode:
-
-  
 ```r
-## load devtools by default
+# load devtools by default
 if (interactive()) {
   suppressMessages(require(devtools))
 }
 ``` 
-
-Adding the following to your .Rpackages will allow devtools to recognize package by folder name, rather than directory path
-
-
+* Adding the following to your .Rpackages will allow devtools to recognize package by folder name, rather than directory path
 ```r
 # in this example, devhome is the pecan trunk directory 
-
 devhome <- "/home/dlebauer/R-dev/pecandev/"
 list(
     default = function(x) {
