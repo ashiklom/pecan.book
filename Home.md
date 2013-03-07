@@ -37,5 +37,6 @@ The quickest way to get started is to download the virtual machine. To get start
 * **[[Coding Style]]**
 * **[[Documentation|Roxygen2]]**
 * **[[Testing]]**
+* **[[Package Data]]**
 
 ## References
