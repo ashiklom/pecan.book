@@ -9,13 +9,6 @@ The quickest way to get started is to download the virtual machine. To get start
 * **[[PEcAn Configuration]]**
 * **[[VM Creation]]**
 
-### Using GitHub and Redmine
-
-* **GitHub**
- * **[[Overview | GitHub Issues]]**
- * **[[Reporting Bugs | GitHub Issues]]**
- * **[[Requesting Features | GitHub Issues ]]**
-
 ### Create Accounts
 
 * [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
@@ -32,7 +25,13 @@ The quickest way to get started is to download the virtual machine. To get start
 ## Development
 
 ### Source Code
-* **[[Directory Structure]]**
+
+### Using Git and GitHub
+* **GitHub**
+ * **[[Overview | GitHub Issues]]**
+ * **[[Reporting Bugs | GitHub Issues]]**
+ * **[[Requesting Features | GitHub Issues ]]**
+* **[[PEcAn Directory Structure | Directory Structure]]**
 * **[[Using Git Version Control | Using Git]]**
 
 ### R Development
