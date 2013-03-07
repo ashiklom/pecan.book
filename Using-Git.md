@@ -100,8 +100,37 @@ result in the code being merged into the main copy of the codebase.
 See https://help.github.com/articles/fork-a-repo for more information, 
 especially on how to keep your fork up to date with respect to the original.
 
-Committing Changes
-------------------
+GIT Workflow
+------------
+
+* GIT encourages to branch "early and often"
+ * Branch before working on feature
+ * One branch per feature
+ * You can switch easy between branches
+ * Merge feature into main line when branch done
+
+            git branch <name of branch>
+            git checkout <name of branch>
+            repeat 
+              write some code
+              commit
+            until done
+
+            git checkout master
+            git merge <name of brach>
+            git push
+
+If during above process you want to work on something else, commit all
+your code, create a new branch, and work on new branch. As said before,
+each feature should be in it’s own branch (for example each redmine
+issue is a branch, names of branches are often the issue in a bug
+tracking system).
+
+Once you are all done with a branch you can delete it using `git branch
+-d <name of branch>`
+
+Committing Changes Using Pull Requests
+--------------------------------------
 
 GitHub provides a useful overview of how to submit changes to a project, [Using Pull Requests](https://help.github.com/articles/using-pull-requests).
 
@@ -112,35 +141,6 @@ Once you have added a feature on your local fork of the project that you would l
 * Any comments should be addressed
 * Additional commits are added to the pull request
 * When ready, changes are merged
-
-GIT Workflow
-------------
-
-* GIT encourages to branch "early and often"
- * Branch before working on feature
- * One branch per feature
- * You can switch easy between branches
- * Merge feature into main line when branch done
-
-        git branch <name of branch>
-        git checkout <name of branch>
-        repeat 
-          write some code
-          commit
-        until done
-
-        git checkout master
-        git merge <name of brach>
-        git push
-
-If during above process you want to work on something else, commit all
-your code, create a new branch, and work on new branch. As said before,
-each feature should be in it’s own branch (for example each redmine
-issue is a branch, names of branches are often the issue in a bug
-tracking system).
-
-Once you are all done with a branch you can delete it using `git branch
--d <name of branch>`
 
 GitHub notes:
 -------------
