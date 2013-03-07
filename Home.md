@@ -22,15 +22,19 @@ The quickest way to get started is to download the virtual machine. To get start
 * These are in the process of being migrated from [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki) to github (here, below).
 * As you are reading, make some edits and/or ask questions where documentation is unclear or incomplete
 
+### Reporting Bugs and Requesting Features
+
+* **GitHub**
+ * **[[Reporting Bugs | GitHub Issues]]**
+ * **[[Requesting Features | GitHub Issues ]]**
+
 ## Development
 
 ### Source Code
 
 ### Using Git and GitHub
-* **GitHub**
- * **[[Overview | GitHub Issues]]**
- * **[[Reporting Bugs | GitHub Issues]]**
- * **[[Requesting Features | GitHub Issues ]]**
+
+* **[[GitHub for Developers]]**
 * **[[PEcAn Directory Structure | Directory Structure]]**
 * **[[Using Git Version Control | Using Git]]**
 
