@@ -1,8 +1,9 @@
-# What is PEcAn?
+# PEcAn Use and development
+
+## Overview: What is PEcAn?
 
 See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.md) file 
 
-# PEcAn Use and development
 
 ## Use
 
