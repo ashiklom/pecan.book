@@ -34,9 +34,8 @@ The quickest way to get started is to download the virtual machine. To get start
 
 ### Using Git and GitHub
 
-* **[[GitHub for Developers]]**
 * **[[PEcAn Directory Structure | Directory Structure]]**
-* **[[Using Git Version Control | Using Git]]**
+* **[[Using GitHub and Git | Using Git]]**
 
 ### R Development
 * **[[Coding Style]]**
