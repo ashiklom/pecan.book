@@ -11,7 +11,7 @@ The quickest way to get started is to download the virtual machine. To get start
 
 ### Using GitHub and Redmine
 
-* **[[GitHub: Overview | GitHub Issues]]
+* **[[GitHub: Overview | GitHub Issues]]**
 * **[[GitHub: Reporting Bugs | GitHub Issues]]**
 * **[[GitHub: Requesting Features | GitHub Issues ]]**
 
