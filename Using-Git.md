@@ -142,6 +142,7 @@ Once you have added a feature on your local fork of the project that you would l
 * Additional commits are added to the pull request
 * When ready, changes are merged
 
+
 Tags
 ----
 
@@ -164,6 +165,7 @@ To use a tagged version, just checkout:
 To tag an earlier commit, just append the commit SHA to the command, e.g. 
 
     git tag -a v0.99 -m "last version before 1.0" 9fceb02
+
 
 
 
