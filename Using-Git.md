@@ -142,6 +142,31 @@ Once you have added a feature on your local fork of the project that you would l
 * Additional commits are added to the pull request
 * When ready, changes are merged
 
+Tags
+----
+
+Git supports two types of tags: lightweight and annotated. For more information see the [Tagging Chapter in the Git documentation](http://git-scm.com/book/ch2-6.html).
+
+Lightweight are useful, but here we discuss the annotated tags that are used for marking stable versions, major releases, and versions associated with published results. 
+
+The basic command is `git tag`. The `-a` flag means 'annotated' and `-m` is used before a message.  Here is an example:
+
+    git tag -a v0.6 -m "stable version with foo and bar features, used in the foobar publication by Bob"
+
+Adding a tag to the master branch must be done explicitly with a push, e.g.
+
+    git push v0.6
+    
+To use a tagged version, just checkout: 
+
+    git checkout v0.6
+    
+To tag an earlier commit, just append the commit SHA to the command, e.g. 
+
+    git tag -a v0.99 -m "last version before 1.0" 9fceb02
+
+
+
 GitHub notes:
 -------------
 
