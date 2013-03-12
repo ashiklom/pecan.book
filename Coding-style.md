@@ -4,6 +4,7 @@ R Development
 A lot of the code for PEcAn is written in R, for more information about
 R see the primary references (sources) of content herein:
 
+* [Writing R Extensions](http://cran.r-project.org/doc/manuals/R-exts.html)
 * [Hadley Wickham's Wiki (Book)](https://github.com/hadley/devtools/wiki/Introduction) 
 * [questions tagged "r" at Stack Overflow](http://stackoverflow.com/questions/tagged/r?sort=votes&pagesize=50)
 * [Google`s R Style
