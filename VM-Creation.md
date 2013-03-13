@@ -265,6 +265,8 @@ mysql -u root -p -e "grant all on bety.* to bety@localhost identified by 'bety';
 
 # download and update/install database
 wget http://isda.ncsa.illinois.edu/~kooper/EBI/betydump.sql
+## or 
+## curl wget http://isda.ncsa.illinois.edu/~kooper/EBI/betydump.sql > betydump.sql
 mysql -u bety -p"bety" -e 'drop database if exists bety; create database bety;'
 mysql -u bety -p"bety" bety < betydump.sql
 rm betydump.sql
