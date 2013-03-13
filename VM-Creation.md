@@ -264,10 +264,10 @@ R --vanilla < scripts/install.dependencies.R
 mysql -u root -p -e "grant all on bety.* to bety@localhost identified by 'bety';" 
 
 # download and update/install database
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/bety.sql
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/betydump.sql
 mysql -u bety -p"bety" -e 'drop database if exists bety; create database bety;'
-mysql -u bety -p"bety" bety < bety.sql
-rm bety.sql
+mysql -u bety -p"bety" bety < betydump.sql
+rm betydump.sql
 ```
 
 #### midweight option: install the database with Ruby web interface
