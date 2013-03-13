@@ -103,6 +103,8 @@ especially on how to keep your fork up to date with respect to the original.
 GIT Workflow
 ------------
 
+### Basic Workflow
+
 * GIT encourages to branch "early and often"
  * Branch before working on feature
  * One branch per feature
@@ -126,8 +128,15 @@ each feature should be in it’s own branch (for example each redmine
 issue is a branch, names of branches are often the issue in a bug
 tracking system).
 
-Once you are all done with a branch you can delete it using `git branch
--d <name of branch>`
+* Delete a branch: `git branch -d <name of branch>`
+* To push a branch git: `push -u origin `<name of branch>`
+* To checkout a branch: 
+  ```
+  git fetch origin
+  git checkout --track origin/<name of branch
+  ```
+
+
 
 Committing Changes Using Pull Requests
 --------------------------------------
