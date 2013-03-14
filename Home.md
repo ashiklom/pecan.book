@@ -49,6 +49,6 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 * **[[Documentation|Roxygen2]]**
 * **[[Testing]]**
 * **[[Package Data]]**
-* **[[Logging, Warnings, and Error Messages | Logging]]
+* **[[Logging, Warnings, and Error Messages | Logging]]**
 
 ## References
