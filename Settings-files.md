@@ -1,13 +1,13 @@
 # Example Settings Files
 
 * ED2
-** ED2IN template (Fortran Namelist): [models/ed/inst/ED2IN.r82](https://github.com/PecanProject/pecan/blob/master/models/ed/inst/ED2IN.r82), [models/ed/inst/ED2IN.r46](https://github.com/PecanProject/pecan/blob/master/models/ed/inst/ED2IN.r46)
-** example settings file (see below)
+ * ED2IN template (Fortran Namelist): [models/ed/inst/ED2IN.r82](https://github.com/PecanProject/pecan/blob/master/models/ed/inst/ED2IN.r82), [models/ed/inst/ED2IN.r46](https://github.com/PecanProject/pecan/blob/master/models/ed/inst/ED2IN.r46)
+ * example settings file (see below)
 * SIPNET: 
-** [sipnet.in](https://github.com/PecanProject/pecan/blob/master/models/sipnet/inst/sipnet.in)
-** pecan settings: [utils/inst/extdata/test.settings.xml](https://github.com/PecanProject/pecan/blob/master/utils/inst/extdata/test.settings.xml] (this is the 'standard' used for testing)
+ * [sipnet.in](https://github.com/PecanProject/pecan/blob/master/models/sipnet/inst/sipnet.in)
+ * pecan settings: [utils/inst/extdata/test.settings.xml](https://github.com/PecanProject/pecan/blob/master/utils/inst/extdata/test.settings.xml] (this is the 'standard' used for testing)
 * BIOCRO: 
-** pecan settings: [models/biocro/inst/extdata/pecan.biocro.xml](https://github.com/PecanProject/pecan/blob/master/models/biocro/inst/extdata/pecan.biocro.xml)
+ * pecan settings: [models/biocro/inst/extdata/pecan.biocro.xml](https://github.com/PecanProject/pecan/blob/master/models/biocro/inst/extdata/pecan.biocro.xml)
 
 ## Node definitions
 
