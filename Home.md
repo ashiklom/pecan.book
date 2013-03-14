@@ -36,7 +36,7 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 ### Setup
 
  * **[[PEcAn Configuration]]**
- * **[[VM Creation]]**
+ * **[[Dependencies - setting up a new machine | VM Creation]]**
 
 ### Using Git and GitHub
 
@@ -49,6 +49,6 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 * **[[Documentation|Roxygen2]]**
 * **[[Testing]]**
 * **[[Package Data]]**
-
+* **[[Logging, Warnings, and Error Messages | Logging]]
 
 ## References
