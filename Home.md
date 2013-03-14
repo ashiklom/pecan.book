@@ -7,7 +7,7 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 
 ## Use
 
-### Getting Started
+### Getting Started I: Background
 
 1. The quickest way to get started is to download the virtual machine. The demo provides instructions to get started on your own machine. 
  * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category)
@@ -18,6 +18,10 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 3. Read documentation
  * These are in the process of being migrated from [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki) to github (here, below).
  * As you are reading, make some edits and/or ask questions where documentation is unclear or incomplete
+
+### Getting started II: Using PEcAn
+
+* **[[Settings Files]]**
 
 ##### University of Illinois - Energy Biosciences Institute
 
