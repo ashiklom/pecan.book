@@ -1,13 +1,13 @@
-{{toc}}
+h1. Example Settings Files
 
-h1. Settings Files
-
-* Example settings files:
-** ED2
-*** [[ED2IN]]
-*** "example settings file":https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki/Settings_Files#Example-file  
-** SIPNET: source:all/inst/test.settings.xml
-** c4photo: source:models/c4photo/inst/c4photo.xml
+* ED2
+** ED2IN template (Fortran Namelist): [models/ed/inst/ED2IN.r86], [models/ed/inst/ED2IN.r46]
+** example settings file (see below)
+* SIPNET: 
+** sipnet.in: [models/sipnet/inst/sipnet.in]
+** pecan settings: [utils/inst/extdata/test.settings.xml] (this is the 'standard' used for testing)
+* BIOCRO: 
+** pecan settings: [models/biocro/inst/extdata/pecan.biocro.xml]
 
 h2. Node definitions
 
