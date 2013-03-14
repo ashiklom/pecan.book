@@ -5,7 +5,7 @@
  * example settings file (see below)
 * SIPNET: 
  * [sipnet.in](https://github.com/PecanProject/pecan/blob/master/models/sipnet/inst/sipnet.in)
- * pecan settings: (https://github.com/PecanProject/pecan/blob/master/utils/inst/extdata/test.settings.xml] (this is the 'standard' used for testing)
+ * pecan settings: (https://github.com/PecanProject/pecan/blob/master/utils/inst/extdata/test.settings.xml) (this is the 'standard' used for testing)
 * BIOCRO: 
  * pecan settings: [models/biocro/inst/extdata/pecan.biocro.xml](https://github.com/PecanProject/pecan/blob/master/models/biocro/inst/extdata/pecan.biocro.xml)
 
