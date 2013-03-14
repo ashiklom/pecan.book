@@ -60,6 +60,4 @@ h2. Related Issues
 
 * #1071 How to handle errors?
 * #1222 Ignore warnings
-  <pre>
-  You can use logger.setLevel("ERROR") to only show error messages. All the code that does not use logger will not be filtered.
-  </pre>
+  You can use @logger.setLevel("ERROR")@ to only show error messages. All the code that does not use logger will not be filtered.
