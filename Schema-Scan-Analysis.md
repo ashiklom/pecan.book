@@ -2,7 +2,7 @@ Schema Scan is a tool commonly used to examine databases and view their structur
 
 <strong>How to use Schema Scan?</strong><br>
 <p>
-Step 1: Download the required software. 
+Step 1: Download the required software. <br>
 * Download schema spy from [http://sourceforge.net/projects/schemaspy/files/](http://sourceforge.net/projects/schemaspy/files/) be sure to remember the location you store the file. <br>
 * Download a connector between mysql to java. [http://dev.mysql.com/downloads/connector/j/5.0.html](http://dev.mysql.com/downloads/connector/j/5.0.html) Once again remember the location.<br>
 * Download graphviz. [http://www.graphviz.org/](http://www.graphviz.org/)<br>
