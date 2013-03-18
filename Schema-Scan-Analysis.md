@@ -8,7 +8,7 @@ Step 1: Download the required software. <br>
 * Download graphviz. <a href="http://www.graphviz.org"> http://www.graphviz.org </a><br>
 * You may also have to download and configure mysql to connect to your bety or the other database you are analysing.</p>
 <p>Step 2: Open a command line and run the following sequence of code.<br>
-java -jar [path to schema spy jar] -t -mysql -o [output folder] -host [name of host] -db [name of database] -u [username] -p [password] -dp [path to connector jar].<br>
+java -jar [path to schema spy jar] -t mysql -o [output folder] -host [name of host] -db [name of database] -u [username] -p [password] -dp [path to connector jar].<br>
 Ex: 
 java -jar /Users//Downloads/schemaSpy_5.0.0.jar  -t mysql -o bety -host localhost -db bety -u bety -p bety -dp /Users//Downloads/mysql-connector-java-5.0.8\ 2/mysql-connector-java-5.0.8-bin.jar <br></p>
 Step 3: Your analysis you should now be properly created. To view the analysis open the index.html page with a browser. 
