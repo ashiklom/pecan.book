@@ -1,1 +1,1 @@
-<div style='float: left'><a href='http://pecanproject.org'>PEcAn Project</a></div> <div style='float: right'><a href='http://betydb.org'>BETY Project</a></div>
+The [PEcAn project](http://pecanproject.org) is supported by the National Science Foundation (ABI #1062547, ARC #1023477) and the [Energy Biosciences Institute](http://www.energybiosciencesinstitute.org/)
