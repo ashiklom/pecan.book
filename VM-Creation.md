@@ -125,7 +125,9 @@ cd ..
  
 ## Install models
 
-### ED Testrun data
+### Model Testrun data
+
+These are large-ish files that contain data used with ED2 and SIPNET
 
 ```bash
 rm -rf sites
