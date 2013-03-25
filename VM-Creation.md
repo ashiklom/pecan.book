@@ -72,12 +72,15 @@ echo "deb http://cran.rstudio.com/bin/linux/ubuntu `lsb_release -s -c`/" > /etc/
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get -y update
 
+# install all packages needed
+apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core default-jre libdbd-mysql libmysqlclient-dev mysql-server mysql-client jags r-cran-rjags r-cran-xml r-cran-hdf5 r-cran-mass r-cran-rmysql liblapack-dev libnetcdf-dev netcdf-bin texlive-latex-base texlive-latex-extra texlive-fonts-recommended bc libcurl4-openssl-dev texinfo curl apache2 libapache2-mod-php5 php5 php5-mysql
+
 # passenger 3 repository
 apt-add-repository ppa:brightbox/passenger
 apt-get update
 
-# install all packages needed
-apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core default-jre libdbd-mysql libmysqlclient-dev mysql-server mysql-client jags r-cran-rjags r-cran-xml r-cran-hdf5 r-cran-mass r-cran-rmysql liblapack-dev libnetcdf-dev netcdf-bin texlive-latex-base texlive-latex-extra texlive-fonts-recommended bc libcurl4-openssl-dev texinfo curl ruby1.8 ruby1.8-dev rubygems1.8 librmagick-ruby1.8 libmysql-ruby1.8 libapache2-mod-passenger imagemagick libmagickwand-dev libmagic-dev libxslt1-dev libmysqlclient-dev libnetcdf-dev apache2 libapache2-mod-php5 php5 php5-mysql
+# install all ruby related packages
+apt-get -y install ruby1.8 ruby1.8-dev rubygems1.8 librmagick-ruby1.8 libmysql-ruby1.8 libapache2-mod-passenger imagemagick libmagickwand-dev libmagic-dev libxslt1-dev libmysqlclient-dev libnetcdf-dev
 
 # install devtools
 echo 'install.packages("devtools", repos="http://cran.rstudio.com/")' | R --vanilla
