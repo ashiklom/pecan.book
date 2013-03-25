@@ -1,13 +1,13 @@
 The PEcAn system is configured using a xml file, often called settings.xml. The configuration file can be split in X seperate pieces:
 
-1. [PEcAn folders](PEcAn-Configuration#PEcAn-folders)
-1. [Database Access](PEcAn-Configuration#Database-Access)
-1. bety configuration
-1. Model setup
-1. Run setup
-1. PFTs
+1. PEcAn Folders
+1. Database Access
+1. BETY Configuration
+1. PFT Selection
 1. Meta Analysis
 1. Ensemble/Sensitivity runs
+1. Model Setup
+1. Run Setup
 
 ## PEcAn folders
 
@@ -38,7 +38,7 @@ For other database drivers these parameters will change. See the driver document
 
 ## Bety Configuration
 
-
+## PFT Selection
 
 ## Model Setup
 
