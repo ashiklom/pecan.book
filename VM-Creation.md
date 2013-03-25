@@ -301,9 +301,6 @@ chmod 0666 log/production.log
 # fix configuration for vm
 cp config/additional_environment_vm.rb config/additional_environment.rb
 
-# always be logged on as user 1 (i.e. admin)
-sed -i -e 's#self.current_user = User.find_by_id(.*#self.current_user = User.find_by_id(1)#' lib/authenticated_system.rb
-
 # setup bety database configuration
 cat > config/database.yml << EOF
 production:
