@@ -32,7 +32,7 @@ For example for MySQL you can specify the following parameters:
 *dbname* : the name of the database (was name), default value is the username of the current user logged in.  
 *username* : the username to connect to the database (was userid), default value is the username of the current user logged in.  
 *password* : the password to connect to the database (was passwd), if not specified no password is used.  
-*location* : the name of the host to connect to, default value is localhost.  
+*host* : the name of the host to connect to, default value is localhost.  
 
 For other database drivers these parameters will change. See the driver documentation in R for the right parameters.
 
