@@ -39,7 +39,7 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 
 ### Setup
 
- * **[[PEcAn settings file (pecan.xml) | PEcAn Configuration]]**
+ * **[[Configuration Files | Configuration Files]]**
  * **[[Dependencies - setting up a new machine | VM Creation]]**
 
 ### Using Git and GitHub
