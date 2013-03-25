@@ -232,32 +232,11 @@ echo 'devtools::install_github("biocro", username = "dlebauer")' | R --vanilla
 ```
 
 
-## PEcAn Installation
-
-PEcAn consists of the PEcAn modeling software as well as BETY.
-
-### Installing PEcAn
-
-Download, compile and install PEcAn
-
-```bash
-# download pecan
-cd
-git clone https://github.com/PecanProject/pecan.git
-
-# install PEcAn packages in R
-cd pecan
-R --vanilla < scripts/install.dependencies.R
-
-# compile pecan
-./scripts/build.sh
-```
-
-### Installing BETY
+## Installing BETY
 
 There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minimal interaction with the database while the RUBY version allows for full interaction with the database. Both however require the database to be created and installed
 
-#### Database creation
+### Database creation
 
 The following creates the user, database and populates the database with the latest version from Illinois.
 
@@ -271,11 +250,11 @@ chmod 755 ${HOME}/updatedb.sh
 ${HOME}/updatedb.sh
 ```
 
-#### PHP version
+### PHP version
 
 The php version comes with PEcAn and should be accessible from http://<host>:<port>/pecan/db/.
 
-#### RUBY version
+### RUBY version
 
 The RUBY version requires a few extra packages to be installed first.
 
@@ -285,7 +264,7 @@ apt-add-repository ppa:brightbox/passenger
 apt-get update
 
 # install all ruby related packages
-apt-get -y install ruby1.8 ruby1.8-dev rubygems1.8 librmagick-ruby1.8 libmysql-ruby1.8 libapache2-mod-passenger imagemagick libmagickwand-dev libmagic-dev libxslt1-dev libmysqlclient-dev libnetcdf-dev
+apt-get -y install ruby1.8 ruby1.8-dev rubygems1.8 librmagick-ruby1.8 libmysql-ruby1.8 libapache2-mod-passenger imagemagick libmagickwand-dev libmagic-dev libxslt1-dev libmysqlclient-dev libnetcdf-dev libsqlite3-dev
 ```
 
 Next we install the web app.
@@ -356,45 +335,28 @@ EOF
 exit
 ```
 
+## PEcAn Installation
 
-### Add note on installing FIA database
+PEcAn is the software package that ties all the pieces together.
 
-FIA database is not installed by default, this would add an extra 10GB to the VM. Add a text file describing how to install the FIA database.
+## Installing PEcAn
+
+Download, compile and install PEcAn
 
 ```bash
-cat > FIA.txt << EOF
-The following command will downaload and install the FIA database
-for use with PEcAn. This database will require a 10GB download.
-
-# needs to be done only once
-mysql -u root -p -e "grant all on fia5data.* to bety@localhost identified by 'bety';" 
-
-# download and update/install database
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/fiadb.sql
-mysql -u bety -p"bety" -e 'drop database if exists fia5data; create database fia5data;'
-mysql -u bety -p"bety" fia5data < fiadb.sql
-rm fiadb.sql
-EOF
-```
-
-### PEcAn Testrun
-
-Do the run
-```bash
-# create folder
+# download pecan
 cd
-mkdir testrun.pecan
-cd testrun.pecan
+git clone https://github.com/PecanProject/pecan.git
 
-# download example of pecan workflow and configuration file
-wget -O pecan.xml http://isda.ncsa.uiuc.edu/~kooper/EBI/pecan.xml
-wget -O workflow.R http://isda.ncsa.uiuc.edu/~kooper/EBI/workflow.R
+# install PEcAn packages in R
+cd pecan
+R --vanilla < scripts/install.dependencies.R
 
-# exectute workflow
-R --vanilla < workflow.R
+# compile pecan
+./scripts/build.sh
 ```
 
-## PEcAn Web interface
+### Configuring PEcAn
 
 First install web server and setup pecan and the web server
 ```bash
@@ -445,7 +407,46 @@ cat > ${HOME}/pecan/web/system.php << EOF
 EOF
 ```
 
-all done you can now visit the server http://hostname/pecan
+all done you can now visit the server http://<hostname>:<port>/pecan and you can interact with the database using http://<hostname>:<port>/pecan/db/
+
+
+### PEcAn Testrun
+
+Do the run
+```bash
+# create folder
+cd
+mkdir testrun.pecan
+cd testrun.pecan
+
+# download example of pecan workflow and configuration file
+wget -O pecan.xml http://isda.ncsa.uiuc.edu/~kooper/EBI/pecan.xml
+wget -O workflow.R http://isda.ncsa.uiuc.edu/~kooper/EBI/workflow.R
+
+# exectute workflow
+R --vanilla < workflow.R
+```
+
+
+## FIA database
+
+FIA database is not installed by default, this would add an extra 10GB to the VM. Add a text file describing how to install the FIA database.
+
+```bash
+cat > FIA.txt << EOF
+The following command will downaload and install the FIA database
+for use with PEcAn. This database will require a 10GB download.
+
+# needs to be done only once
+mysql -u root -p -e "grant all on fia5data.* to bety@localhost identified by 'bety';" 
+
+# download and update/install database
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/fiadb.sql
+mysql -u bety -p"bety" -e 'drop database if exists fia5data; create database fia5data;'
+mysql -u bety -p"bety" fia5data < fiadb.sql
+rm fiadb.sql
+EOF
+```
 
 ## Installing additional software
 
