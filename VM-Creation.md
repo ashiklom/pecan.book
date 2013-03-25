@@ -183,7 +183,7 @@ rm ED.r82.tgz
 
 cd ED.r82
 wget http://isda.ncsa.illinois.edu/~kooper/EBI/ED.r82.patch
-patch -p1 < r82.patch
+patch -p1 < ED.r82.patch
 cd ED/build/bin
 curl -o include.mk.opt http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`.r82
 ./install.sh
