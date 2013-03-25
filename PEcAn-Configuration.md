@@ -17,7 +17,7 @@ The following are the tags that can be used to configure the folders used by PEc
 
 *outdir* specifies where PEcAn will write all outputs and create folders. If this is not specified the folder pecan in the current folder will be used.
 
-## Database Access
+## <a name="Database Access">Database Access</a>
 
 The connection to the BETY database is configured using this section. In this section you will specify what driver to use to connect to the database (MySQL by default) and the connection parameters to connect to the database.
 
