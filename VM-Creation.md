@@ -596,7 +596,7 @@ exit
 
 ### Helper Scripts
 
-Script to clean the VM and remove as much as possible history ("cleanvm.sh":http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh)
+Script to clean the VM and remove as much as possible history [cleanvm.sh](http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh)
 
 ```bash
 wget -O ~/cleanvm.sh http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh
