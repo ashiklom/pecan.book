@@ -1,7 +1,7 @@
 The PEcAn system is configured using a xml file, often called settings.xml. The configuration file can be split in X seperate pieces:
 
-1. [PEcAn folders](#PEcAn-folders)
-1. [Database Access](#Database-Access)
+1. [PEcAn folders](PEcAn-Configuration#PEcAn-folders)
+1. [Database Access](PEcAn-Configuration#Database-Access)
 1. bety configuration
 1. Model setup
 1. Run setup
