@@ -40,8 +40,8 @@ Make sure machine is up to date.
 
 ```bash
 sudo apt-get update
-sudo apt-get dist-upgrade
-reboot
+sudo apt-get -y dist-upgrade
+sudo reboot
 ```
 
 Install compiler and other packages needed and install the tools.
