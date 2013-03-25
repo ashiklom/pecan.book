@@ -75,13 +75,6 @@ apt-get -y update
 # install all packages needed
 apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core default-jre libdbd-mysql libmysqlclient-dev mysql-server mysql-client jags r-cran-rjags r-cran-xml r-cran-hdf5 r-cran-mass r-cran-rmysql liblapack-dev libnetcdf-dev netcdf-bin texlive-latex-base texlive-latex-extra texlive-fonts-recommended bc libcurl4-openssl-dev texinfo curl apache2 libapache2-mod-php5 php5 php5-mysql
 
-# passenger 3 repository
-apt-add-repository ppa:brightbox/passenger
-apt-get update
-
-# install all ruby related packages
-apt-get -y install ruby1.8 ruby1.8-dev rubygems1.8 librmagick-ruby1.8 libmysql-ruby1.8 libapache2-mod-passenger imagemagick libmagickwand-dev libmagic-dev libxslt1-dev libmysqlclient-dev libnetcdf-dev
-
 # install devtools
 echo 'install.packages("devtools", repos="http://cran.rstudio.com/")' | R --vanilla
 
@@ -262,22 +255,40 @@ R --vanilla < scripts/install.dependencies.R
 
 ### Installing BETY
 
-#### lightweight option: install the database
+There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minimal interaction with the database while the RUBY version allows for full interaction with the database. Both however require the database to be created and installed
+
+#### Database creation
+
+The following creates the user, database and populates the database with the latest version from Illinois.
 
 ```bash
 # needs to be done only once
-mysql -u root -p -e "grant all on bety.* to bety@localhost identified by 'bety';" 
+mysql -u root -p -e "grant all on bety.* to bety@localhost identified by 'bety';"
+wget -O ${HOME}/updatedb.sh http://isda.ncsa.illinois.edu/~kooper/EBI/updatedb.sh
+chmod 755 ${HOME}/updatedb.sh
 
 # download and update/install database
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/betydump.sql
-## or 
-## curl wget http://isda.ncsa.illinois.edu/~kooper/EBI/betydump.sql > betydump.sql
-mysql -u bety -p"bety" -e 'drop database if exists bety; create database bety;'
-mysql -u bety -p"bety" bety < betydump.sql
-rm betydump.sql
+${HOME}/updatedb.sh
 ```
 
-#### midweight option: install the database with Ruby web interface
+#### PHP version
+
+The php version comes with PEcAn and should be accessible from http://<host>:<port>/pecan/db/.
+
+#### RUBY version
+
+The RUBY version requires a few extra packages to be installed first.
+
+```bash
+# passenger 3 repository
+apt-add-repository ppa:brightbox/passenger
+apt-get update
+
+# install all ruby related packages
+apt-get -y install ruby1.8 ruby1.8-dev rubygems1.8 librmagick-ruby1.8 libmysql-ruby1.8 libapache2-mod-passenger imagemagick libmagickwand-dev libmagic-dev libxslt1-dev libmysqlclient-dev libnetcdf-dev
+```
+
+Next we install the web app.
 
 ```bash
 sudo -s
@@ -293,7 +304,7 @@ bundle install
 exit
 ```
 
-Configure BETY
+and configure BETY
 
 ```bash
 sudo -s
@@ -345,17 +356,6 @@ EOF
 exit
 ```
 
-### Create BETY database
-
-```bash
-# needs to be done only once
-mysql -u root -p -e "grant all on bety.* to bety@localhost identified by 'bety';"
-wget -O ${HOME}/updatedb.sh http://isda.ncsa.illinois.edu/~kooper/EBI/updatedb.sh
-chmod 755 ${HOME}/updatedb.sh
-
-# download and update/install database
-${HOME}/updatedb.sh
-```
 
 ### Add note on installing FIA database
 
