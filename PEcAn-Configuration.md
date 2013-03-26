@@ -31,7 +31,7 @@ The connection to the BETY database is configured using this section. In this se
 For example for MySQL you can specify the following parameters:  
 **dbname** : [optional] the name of the database (was name), default value is the username of the current user logged in.  
 **username** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in.  
-**passwor*d* : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
+**password** : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
 **host** : [optional] the name of the host to connect to, default value is localhost.  
 
 For other database drivers these parameters will change. See the driver documentation in R for the right parameters.
