@@ -15,7 +15,7 @@ The following are the tags that can be used to configure the folders used by PEc
 
 	<outdir>/home/pecan/runs/PEcAn_4/</outdir>
 
-*outdir* : [optional] specifies where PEcAn will write all outputs and create folders. If this is not specified the folder pecan in the current folder will be used.
+**outdir** : [optional] specifies where PEcAn will write all outputs and create folders. If this is not specified the folder pecan in the current folder will be used.
 
 ## Database Access
 
@@ -29,10 +29,10 @@ The connection to the BETY database is configured using this section. In this se
 	</database>
 
 For example for MySQL you can specify the following parameters:  
-*dbname* : [optional] the name of the database (was name), default value is the username of the current user logged in.  
-*username* : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in.  
-*password* : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
-*host* : [optional] the name of the host to connect to, default value is localhost.  
+**dbname** : [optional] the name of the database (was name), default value is the username of the current user logged in.  
+**username** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in.  
+**passwor*d* : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
+**host** : [optional] the name of the host to connect to, default value is localhost.  
 
 For other database drivers these parameters will change. See the driver documentation in R for the right parameters.
 
@@ -46,7 +46,7 @@ This section describes how to connect to the BETY Database.
 		<write>TRUE</write>
 	</bety>
 
-*write* : [optional] this can be TRUE/FALSE (the default is TRUE). If set to TRUE, runs, ensembles and workflows are written to the database.
+**write** : [optional] this can be TRUE/FALSE (the default is TRUE). If set to TRUE, runs, ensembles and workflows are written to the database.
 
 ## PFT Selection
 
