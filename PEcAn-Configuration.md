@@ -36,7 +36,7 @@ For example for MySQL you can specify the following parameters:
 
 For other database drivers these parameters will change. See the driver documentation in R for the right parameters.
 
-** This section might become a subsection of BETY Database Configuration in the future **
+**This section might become a subsection of BETY Database Configuration in the future**
 
 ## BETY Database Configuration
 
