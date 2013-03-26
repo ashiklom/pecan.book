@@ -260,6 +260,7 @@ The RUBY version requires a few extra packages to be installed first.
 
 ```bash
 # passenger 3 repository
+apt-get install python-software-properties
 apt-add-repository ppa:brightbox/passenger
 apt-get update
 
@@ -311,6 +312,12 @@ production:
   pool: 5
   username: bety
   password: bety
+EOF
+
+# setup login tokens
+cat > config/initializers/site_keys.rb << EOF
+REST_AUTH_SITE_KEY         = 'thisisnotasecret'
+REST_AUTH_DIGEST_STRETCHES = 10
 EOF
 
 # configure apache
@@ -402,6 +409,8 @@ cat > ${HOME}/pecan/web/system.php << EOF
 \$ed_inputs="${HOME}/ed_inputs/";
 ?>
 EOF
+
+cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 ```
 
 all done you can now visit the server http://<hostname>:<port>/pecan and you can interact with the database using http://<hostname>:<port>/pecan/db/
