@@ -33,7 +33,7 @@ ED2 is configured using 2 files which are placed in the run folder.
 
 
 **@OUTDIR@** :  settings$run$host$outdir  
-**@CONFIGFILE@ : "config.xml"  
+**@CONFIGFILE@** : "config.xml"  
 **@SCRATCH@** : /scratch/\<username\>/run$scratch  
 
 **@FFILOUT@** : file.path(settings$run$host$outdir, run.id, "analysis")  
