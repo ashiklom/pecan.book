@@ -151,9 +151,9 @@ This section is required and tells PEcAn what model to run. This section should 
 		<phenol.scheme>0</phenol.scheme>
 	</model>
 
-**id** : [optional] id in the models database table, see above.  
-**name** : [optional] name of the model.  
-**binary** : [optional] path to the model executable, see above.  
+**id** : [optional/required] id in the models database table, see above.  
+**name** : [optional/required] name of the model, see above.  
+**binary** : [optional/required] path to the model executable, see above.  
 
 Following variables are ED specific and are used in the [ED2 Configuration](ED2-Configuration).
 
@@ -167,6 +167,8 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 ## Run Setup
 
 	<run>
+		<start.date>2002-01-01 00:00:00</start.date>
+		<end.date>2005-12-31 00:00:00</end.date>
 		<site>
 			<id>772</id>
 			<name>Niwot Ridge Forest/LTER NWT1 (US-NR1)</name>
@@ -174,8 +176,6 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 			<lon>-105.546000</lon>
 			<met>/home/carya/sites/niwot/niwot.clim</met>
 		</site>
-		<start.date>2002-01-01 00:00:00</start.date>
-		<end.date>2005-12-31 00:00:00</end.date>
 		<host>
 			<name>localhost</name>
 			<rundir>/home/carya/testrun.pecan/run/</rundir>
@@ -183,15 +183,20 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 		</host>
 	</run>
 
-Site specific information is specified in the \<site\> subsection. Either \<id\> or 
-**id** : [optional] id of the site in the BETY database.
-**name** : [optional] site name.
-<run><site><lat>	 site latitude
-<run><site><lon>	 site longitude
-<run><site><met>	 location of met data header file
-<run><start.date>	
-<run><end.date>	
-<run><host>	
-<run><host><name>	 name of host server where model is located
-<run><host><rundir>	 directory including model executable
-<run><host><outdir>	 location of model output files.
+**start.date** : [required] the first day of the simulation  
+**end.date** : [required] the last day of the simulation  
+
+Site specific information is specified in the \<site\> subsection. Either \<id\> or \<name\>, \<lat\> and \<lon\> should be specified. If id and any of the others are specified the values will be compared with those from the bETY database.
+ 
+**id** : [optional/required] id of the site in the BETY database, see above.  
+**name** : [optional/required] site name, see above.  
+**lat** : [optional/required] site latitude, see above.  
+**lon** : [optional/required] site longitude, see above.  
+**met** : [required] location of met data header file used by the model (not required by BIOCRO).
+
+Host on which the simulation will run is specified in the \<host\> subsection. If this section is not specified it is assumed the simulation will run on localhost.
+
+**host**	
+**name** : [optional] name of host server where model is located and executed, if not specified localhost is assumed.  
+**rundir** : [optional/required] location where all the configuration files are written. For localhost this is optional (\<outdir\>/run is the default), for any other host this is required.  
+**outdir** : [optional/required] location where all the outputs of the model are written. For localhost this is optional (\<outdir\>/out is the default), for any other host this is required.
