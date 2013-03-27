@@ -1,15 +1,16 @@
 The PEcAn system is configured using a xml file, often called settings.xml. The configuration file can be split in X seperate pieces:
 
-1. PEcAn Folders
-1. Database Access
-1. BETY Configuration
-1. PFT Selection
-1. Meta Analysis
-1. Ensemble Runs
-1. Sensitivity Runs
-1. Model Setup
-1. Run Setup
+1. [PEcAn Folders](#pecan_folders)
+1. [Database Access](#database_access)
+1. [BETY Configuration](#bety_database)
+1. [PFT Selection](#pft_selection)
+1. [Meta Analysis](#meta_analysis)
+1. [Ensemble Runs](#ensemble_runs)
+1. [Sensitivity Runs](#sensitivity_runs)
+1. [Model Setup](#model_setup)
+1. [Run Setup](#run_setup)
 
+<a name="pecan_folders" />
 ## PEcAn folders
 
 The following are the tags that can be used to configure the folders used by PEcAn. All of these are optional.
@@ -18,6 +19,7 @@ The following are the tags that can be used to configure the folders used by PEc
 
 **outdir** : [optional] specifies where PEcAn will write all outputs and create folders. If this is not specified the folder pecan in the current folder will be used.
 
+<a name="database_access" />
 ## Database Access
 
 The connection to the BETY database is configured using this section. In this section you will specify what driver to use to connect to the database (MySQL by default) and the connection parameters to connect to the database.
@@ -41,6 +43,7 @@ For other database drivers these parameters will change. See the driver document
 
 **This section might become a subsection of BETY Database Configuration in the future**
 
+<a name="bety_database" />
 ## BETY Database Configuration
 
 This section describes how to connect to the BETY Database.
@@ -53,6 +56,7 @@ This section describes how to connect to the BETY Database.
 
 **write** : [optional] this can be TRUE/FALSE (the default is TRUE). If set to TRUE, runs, ensembles and workflows are written to the database.
 
+<a name="pft_selection" />
 ## PFT Selection
 
 The PEcAn system requires at least 1 PFT (Plant Functional Type) to be specified inside the <pfts> section. 
@@ -73,6 +77,7 @@ The PEcAn system requires at least 1 PFT (Plant Functional Type) to be specified
 **outdir**: [optional] path in which pft-specific output will be placed during meta-analysis and sensitivity analysis. If not specified it will be written into \<outdir\>/pfts/\<pftname\>.  
 **contants**: [optional] this section contains information that will be written directly into the model specific configuration files. PEcAn does not look at the information in this section.  
 
+<a name="meta_analysis" />
 ## Meta Analysis
 
 *functions* : run.meta.analysis()
@@ -85,6 +90,7 @@ The PEcAn system requires at least 1 PFT (Plant Functional Type) to be specified
 **iter** : [optional] [MCMC](http:/en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) (Markov Chain Monte Carlo) chain length, i.e. the total number of posterior samples in the meta-analysis, default is 3000. Smaller numbers will run faster but produce larger errors.  
 **random.effects** : [optional] Whether to include random effects (site, treatment) in meta-analysis model. Can be set to FALSE to work around convergence problems caused by an over parameterized model (e.g. too many sites, not enough data). The default value is TRUE.
 
+<a name="ensemble_runs" />
 ## Ensemble Runs
 
 Only if this section is defined an ensemble analysis is done.
@@ -97,6 +103,7 @@ Only if this section is defined an ensemble analysis is done.
 
 **size** : [required] the number of runs in the ensemble.
 
+<a name="sensitivity_runs" />
 ## Sensitivity Runs
 
 Only if this section is defined a sensitivity analysis is done. This section will have \<quantile\> or \<sigma\> nodes. If neither are given, the default is to use the median +/- [1 2 3] x sigma (e.g. the 0.00135 0.0228 0.159 0.5 0.841 0.977 0.999 quantiles); If the 0.5 (median) quantile is omitted, it will be added in the code.
@@ -124,7 +131,7 @@ Only if this section is defined a sensitivity analysis is done. This section wil
 **end.date** : [required?] end date of the sensitivity analysis (in YYYY/MM/DD format)  
 **variable** : [optional] name of the variable the analysis should be run for, if not specified GPP will be used.
 
-
+<a name="model_setup" />
 ## Model Setup
 
 This section is required and tells PEcAn what model to run. This section should either specify \<id\> or both \<name\> and \<binary\>  of the model. If both id and name and/or binary are specified the id is used to check the specified name and/or binary.
@@ -164,6 +171,7 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 **psscss** : [required] location of site inforation  
 **inputs** : [required] location of additional input files (e.g. data assimilation data)
 
+<a name="run_setup" />
 ## Run Setup
 
 	<run>
