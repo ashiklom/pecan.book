@@ -32,9 +32,9 @@ ED2 is configured using 2 files which are placed in the run folder.
 **@ED_INPUTS@** : input directory with dataset to initialise chilling degrees and growing degree days, which is used to drive the cold-deciduous phenology, from \<model\>\<inputs\>, used in template for NL%THSUMS_DATABASE  
 
 
-**@OUTDIR@** :  settings$run$host$outdir
-**@CONFIGFILE@ : "config.xml"
-**@SCRATCH@** : /scratch/\<username\>/run$scratch
+**@OUTDIR@** :  settings$run$host$outdir  
+**@CONFIGFILE@ : "config.xml"  
+**@SCRATCH@** : /scratch/\<username\>/run$scratch  
 
-**@FFILOUT@** : file.path(settings$run$host$outdir, run.id, "analysis")
-**@SFILOUT@** : file.path(settings$run$host$outdir, run.id, "history")
+**@FFILOUT@** : file.path(settings$run$host$outdir, run.id, "analysis")  
+**@SFILOUT@** : file.path(settings$run$host$outdir, run.id, "history")  
