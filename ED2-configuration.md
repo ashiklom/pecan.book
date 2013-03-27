@@ -5,65 +5,36 @@ ED2 is configured using 2 files which are placed in the run folder.
 
 ## ED2IN configuration variables
 
-**@SITE_LAT@** : site latitude location, from \<run\>\<site\>\<lat\>, used in template for NL%POI_LAT    
+**@ENSNAME@** : run id of the simulation, used in template for NL%EXPNME
+
+**@START_MONTH@** : start of simulation UTC time, from \<run\>\<start.date\>, used in template for NL%IMONTHA  
+**@START_DAY@** : start of simulation UTC time, from \<run\>\<start.date\>, used in template for NL%IDATEA  
+**@START_YEAR@** : start of simulation UTC time, from \<run\>\<start.date\>, used in template for NL%IYEARA  
+**@END_MONTH@** : end of simulation UTC time, from \<run\>\<end.date\>, used in template for NL%IMONTHZ  
+**@END_DAY@** : end of simulation UTC time, from \<run\>\<end.date\>, used in template for NL%IDATEZ  
+**@END_YEAR@** : end of simulation UTC time, from \<run\>\<end.date\>, used in template for NL%IYEARZ  
+
+**@SITE_LAT@** : site latitude location, from \<run\>\<site\>\<lat\>, used in template for NL%POI_LAT  
 **@SITE_LON@** : site longitude location, from \<run\>\<site\>\<lon\>, used in template for NL%POI_LON  
 
-**@SITE_MET@** : met header location, from \<run\>\<site\>\<met\>  
-**@MET_START@** : met header location, from \<run\>\<site\>\<met.start\>  
-**@MET_END@** : met header location, from \<run\>\<site\>\<met.end\>  
+**@SITE_MET@** : met header location, from \<run\>\<site\>\<met\>, used in template for NL%ED_MET_DRIVER_DB  
+**@MET_START@** : first year of met data, from \<run\>\<site\>\<met.start\>, used in template for NL%METCYC1  
+**@MET_END@** : last year of met data, from \<run\>\<site\>\<met.end\>, used in template for NL%METCYCF  
 
-        if(is.null(settings$model$phenol.scheme)){
-          print(paste("no phenology scheme set; \n",
-                      "need to add <phenol.scheme> tag under <model> tag in settings file"))
-        } else if(settings$model$phenol.scheme==1) {
-          ## Set prescribed phenology switch in ED2IN
-          ed2in.text <- gsub('@PHENOL_SCHEME@', settings$model$phenol.scheme, ed2in.text)
-          ## Phenology filename
-          ed2in.text <- gsub('@PHENOL@', settings$model$phenol, ed2in.text)
-          ## Set start year of phenology
-          ed2in.text <- gsub('@PHENOL_START@', settings$model$phenol.start, ed2in.text)
-          ## Set end year of phenology
-          ed2in.text <- gsub('@PHENOL_END@', settings$model$phenol.end, ed2in.text)
+**@PHENOL_SCHEME@** : phenology scheme, if this variabe is 1 the following 3 fields will be used, otherwise they will be set to empty strings, from \<model\>\<phenol.scheme\>, used in template for NL%IPHEN_SCHEME  
+**@PHENOL_START@** : first year for phenology, from \<model\>\<phenol.start\>, used in template for NL%IPHENYS1 and NL%IPHENYF1  
+**@PHENOL_END@** : last year for phenology, from \<model\>\<phenol.end\>, used in template for NL%IPHENYSF and NL%IPHENYFF  
+**@PHENOL@** : path and prefix of the prescribed phenology data, from \<model\>\<phenol\>, used in template for NL%PHENPATH  
 
-          ## If not prescribed set alternative phenology scheme.
-        } else {
-          ed2in.text <- gsub(' @PHENOL_SCHEME@', settings$model$phenol.scheme, ed2in.text)
-          # Insert blanks into ED2IN file so ED2 runs without error
-          ed2in.text <- gsub('@PHENOL@', "", ed2in.text)
-          ed2in.text <- gsub('@PHENOL_START@', "", ed2in.text)
-          ed2in.text <- gsub('@PHENOL_END@', "", ed2in.text)
-        }
+**@SITE_PSSCSS@** :  path and prefix of the previous ecosystem state, from \<model\>\<psscss\>, used in template for NL%SFILIN  
+**@ED_VEG@** : path and prefix of the vegetation database, used only to determine the land/water mask, from \<model\>\<veg\>, used in template for NL%VEG_DATABASE  
+**@ED_SOIL@** : path and prefix of the soil database, used to determine the soil type, from \<model\>\<soil\>, used in template for NL%SOIL_DATABASE  
+**@ED_INPUTS@** : input directory with dataset to initialise chilling degrees and growing degree days, which is used to drive the cold-deciduous phenology, from \<model\>\<inputs\>, used in template for NL%THSUMS_DATABASE  
 
-        ##----------------------------------------------------------------------
-        ed2in.text <- gsub('@SITE_PSSCSS@', settings$model$psscss, ed2in.text)
-        ed2in.text <- gsub('@ED_VEG@', settings$model$veg, ed2in.text)
-        ed2in.text <- gsub('@ED_SOIL@', settings$model$soil, ed2in.text)
-        ed2in.text <- gsub('@ED_INPUTS@', settings$model$inputs, ed2in.text)
 
-        ##----------------------------------------------------------------------
-        ed2in.text <- gsub('@START_MONTH@', format(startdate, "%m"), ed2in.text)
-        ed2in.text <- gsub('@START_DAY@', format(startdate, "%d"), ed2in.text)
-        ed2in.text <- gsub('@START_YEAR@', format(startdate, "%Y"), ed2in.text)
-        ed2in.text <- gsub('@END_MONTH@', format(enddate, "%m"), ed2in.text)
-        ed2in.text <- gsub('@END_DAY@', format(enddate, "%d"), ed2in.text)
-        ed2in.text <- gsub('@END_YEAR@', format(enddate, "%Y"), ed2in.text)
+**@OUTDIR@** :  settings$run$host$outdir
+**@CONFIGFILE@ : "config.xml"
+**@SCRATCH@** : /scratch/\<username\>/run$scratch
 
-        ##----------------------------------------------------------------------
-        ed2in.text <- gsub('@OUTDIR@', settings$run$host$outdir, ed2in.text)
-        ed2in.text <- gsub('@ENSNAME@', run.id, ed2in.text)
-        ed2in.text <- gsub('@CONFIGFILE@', "config.xml", ed2in.text)
-
-        ## Generate a numbered suffix for scratch output folder.  Useful for cleanup.  TEMP CODE. NEED TO UPDATE.
-        ## cnt = counter(cnt) # generate sequential scratch output directory names
-        ## print(cnt)
-        ## scratch = paste(Sys.getenv("USER"),".",cnt,"/",sep="")
-        scratch = paste(Sys.getenv("USER"),"/",settings$run$scratch, sep='')
-        ## ed2in.text <- gsub('@SCRATCH@', paste('/scratch/', settings$run$scratch, sep=''), ed2in.text)
-        ed2in.text <- gsub('@SCRATCH@', paste('/scratch/', scratch, sep=''), ed2in.text)
-        ##
-
-        #  ed2in.text <- gsub('@OUTFILE@', file.path(settings$run$host$outdir, run.id, "analysis"), ed2in.text)
-        #  ed2in.text <- gsub('@OUTFILE@', file.path(settings$run$host$outdir, run.id, "analysis"), ed2in.text)
-
-        ed2in.text <- gsub('@FFILOUT@', file.path(settings$run$host$outdir, run.id, "analysis"), ed2in.text)
-        ed2in.text <- gsub('@SFILOUT@', file.path(settings$run$host$outdir, run.id, "history"), ed2in.text)
+**@FFILOUT@** : file.path(settings$run$host$outdir, run.id, "analysis")
+**@SFILOUT@** : file.path(settings$run$host$outdir, run.id, "history")
