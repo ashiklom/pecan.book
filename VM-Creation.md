@@ -486,6 +486,7 @@ wget http://download2.rstudio.org/rstudio-server-0.97.336-i386.deb
 dpkg -i rstudio-server-*
 rm rstudio-server-*
 echo "www-address=127.0.0.1" >> /etc/rstudio/rserver.conf
+echo "r-libs-user=~/R/library" >> /etc/rstudio/rsession.conf
 rstudio-server restart
 
 # all done, exit root
@@ -498,6 +499,7 @@ wget http://download2.rstudio.org/rstudio-server-0.97.336-amd64.deb
 dpkg -i rstudio-server-*
 rm rstudio-server-*
 echo "www-address=127.0.0.1" >> /etc/rstudio/rserver.conf
+echo "r-libs-user=~/R/library" >> /etc/rstudio/rsession.conf
 rstudio-server restart
 
 # all done, exit root
