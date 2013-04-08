@@ -37,7 +37,7 @@ The following is a list of commonly used tags within xml settings files.
     <td> The file path to which pft-specific output will be placed during meta-analysis and sensitivity analysis </td>
   </tr>
   <tr>
-    <td> <strong><code>&lt;pfts&gt;&lt;pft&gt;&lt;contants&gt;</code></strong> </td>
+    <td> <strong><code>&lt;pfts&gt;&lt;pft&gt;&lt;constants&gt;</code></strong> </td>
     <td> ED specific. Xml that will appear within generated config files for that specific pft file. Parameters given a constant will be excluded from analyses.</td>
   </tr>
   <tr>
