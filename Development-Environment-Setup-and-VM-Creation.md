@@ -1,4 +1,3 @@
-
 * We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=version) instead of creating from one from scratch. 
 * These instructions are provided to document 
  * steps used to create the PEcAn Virtual Machines
@@ -107,8 +106,8 @@ tar zxf szip-2.1-MacOSX-intel.tar.gz
 sudo mv szip-2.1-MacOSX-intel /usr/local/szip
 
 # install HDF5
-curl -o hdf5-1.8.10-patc#tar.gz http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.10-patc#tar.gz
-tar zxf hdf5-1.8.10-patc#tar.gz
+curl -o hdf5-1.8.10-patch1tar.gz http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.10-patch1tar.gz
+tar zxf hdf5-1.8.10-patch1tar.gz
 cd hdf5-1.8.10-patch1
 sed -i -e 's/-O3/-O0/g' config/gnu-flags 
 ./configure --prefix=/usr/local/hdf5 --enable-fortran --enable-cxx --with-szlib=/usr/local/szip
