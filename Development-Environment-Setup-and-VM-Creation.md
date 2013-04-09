@@ -1,10 +1,10 @@
-# VM Creation
 
-_*Note: This document provided for informational purposes*_
+* We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=version) instead of creating from one from scratch. 
+* These instructions are provided to document 
+ * steps used to create the PEcAn Virtual Machines
+ * how a developer can setup a development environment (skip to [[Install Build Environment|VM-Creation#install-build-environment]])
 
-We recommend that users download the PEcAn ["pecan.ova"](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=version) instead of creating from one from scratch. 
-
-## Create Virtual Machine
+## Creating a Virtual Machine
 
 First create  virtual machine
 
