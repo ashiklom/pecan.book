@@ -14,4 +14,4 @@ The system expects a standard ED2IN file (Fortran Namelist). This file should ha
 sipnet.in
 
 [BIOCRO Configuration File](BIOCRO-Configuration)  
-pecan settings: models/biocro/inst/extdata/pecan.biocro.xml
+pecan settings: [models/biocro/inst/extdata/pecan.biocro.xml](https://github.com/PecanProject/pecan/blob/master/models/biocro/inst/extdata/pecan.biocro.xml)
