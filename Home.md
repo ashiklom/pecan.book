@@ -40,7 +40,7 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 ### Setup
 
  * **[[Configuration Files | Configuration Files]]**
- * **[[Dependencies - setting up a new machine | VM Creation]]**
+ * **[[Dependencies - setting up a new machine | Development-Environment-Setup-and-VM-Creation]]**
 
 ### Using Git and GitHub
 
