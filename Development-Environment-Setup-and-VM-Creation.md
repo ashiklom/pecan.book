@@ -376,6 +376,8 @@ Alias /pecan ${HOME}/pecan/web
 <Directory ${HOME}/pecan/web>
   DirectoryIndex index.php
   Options +All
+  Order allow,deny
+  Allow from all
 </Directory>
 EOF
 /etc/init.d/apache2 restart
@@ -413,6 +415,8 @@ cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 ```
 
 all done you can now visit the server http://<hostname>:<port>/pecan and you can interact with the database using http://<hostname>:<port>/pecan/db/
+
+
 
 
 ### PEcAn Testrun
