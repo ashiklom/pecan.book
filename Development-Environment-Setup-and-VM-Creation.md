@@ -413,8 +413,9 @@ EOF
 
 cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 ```
+NB: On OSX, you will need to edit /etc/apache2/httpd.conf and change the 'DocumentRoot' to '/var/www'.
 
-all done you can now visit the server http://<hostname>:<port>/pecan and you can interact with the database using http://<hostname>:<port>/pecan/db/
+All done you can now visit the server http://\<hostname>:\<port>/pecan' and you can interact with the database using 'http://\<hostname>:\<port>/pecan/db/'
 
 
 
@@ -573,10 +574,10 @@ This system allows you to experiment and create simulations using
 PEcAn, ED and BETY.
 
 You can access this system using a webbrowser at 
- http://<hosting machine>:6480/
+ http://\<hosting machine>:6480/
 or using SSH at 
- ssh -l pecan -p 6422 <hosting machine>
-where <hosting machine> is the machine where the VM runs on.
+ ssh -l pecan -p 6422 \<hosting machine>
+where \<hosting machine> is the machine where the VM runs on.
 
 For more information about:
 Pecan - http://pecanproject.org
@@ -597,8 +598,8 @@ PEcAn, ED and BETY.
 You can access this system using a webbrowser at 
  http://<hosting machine>:3280/
 or using SSH at 
- ssh -l pecan -p 3222 <hosting machine>
-where <hosting machine> is the machine where the VM runs on.
+ ssh -l pecan -p 3222 \<hosting machine>
+where \<hosting machine> is the machine where the VM runs on.
 
 For more information about:
 Pecan - http://pecanproject.org
