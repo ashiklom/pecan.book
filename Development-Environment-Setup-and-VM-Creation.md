@@ -437,7 +437,7 @@ wget -O workflow.R http://isda.ncsa.uiuc.edu/~kooper/EBI/workflow.R
 rm -rf pecan
 R --vanilla < workflow.R
 ```
-
+NB: pecan.xml is configured for the virtual machine, you will need to change the <met> field from '/home/carya/' to wherever you installed your 'sites', usually $HOME
 
 ## FIA database
 
