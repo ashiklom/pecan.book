@@ -72,8 +72,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get -y update
 
 # install all packages needed
-apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core default-jre libdbd-mysql libmysqlclient-dev mysql-server mysql-client jags r-cran-rjags r-cran-xml r-cran-hdf5 r-cran-mass r-cran-rmysql liblapack-dev libnetcdf-dev netcdf-bin texlive-latex-base texlive-latex-extra texlive-fonts-recommended bc libcurl4-openssl-dev texinfo curl apache2 libapache2-mod-php5 php5 php5-mysql
-
+apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core default-jre libdbd-mysql libmysqlclient-dev mysql-server mysql-client jags r-cran-rjags r-cran-xml r-cran-hdf5 r-cran-mass r-cran-rmysql liblapack-dev libnetcdf-dev netcdf-bin texlive-latex-base texlive-latex-extra texlive-fonts-recommended bc libcurl4-openssl-dev texinfo curl apache2 libapache2-mod-php5 php5 php5-mysql libgdal1-dev libproj-dev
 # install devtools
 echo 'install.packages("devtools", repos="http://cran.rstudio.com/")' | R --vanilla
 
@@ -571,18 +570,19 @@ In case of 64 bit machine
 sudo -s
 cat > /etc/motd.tail << EOF
 This system allows you to experiment and create simulations using
-PEcAn, ED and BETY.
+PEcAn, ED, SIPNET and BETY.
 
-You can access this system using a webbrowser at 
- http://\<hosting machine>:6480/
-or using SSH at 
- ssh -l pecan -p 6422 \<hosting machine>
-where \<hosting machine> is the machine where the VM runs on.
+You can access this system using a webbrowser at
+ http://<hosting machine>:6480/
+or using SSH at
+ ssh -l carya -p 6422 <hosting machine>
+where <hosting machine> is the machine where the VM runs on.
 
 For more information about:
-Pecan - http://pecanproject.org
-BETY  - http://www.betydb.org
-ED    - http://www.esm.harvard.edu
+Pecan  - http://pecanproject.org
+SIPNET - http://thesipnetmodel.blogspot.com
+BETY   - http://www.betydb.org
+ED     - http://www.esm.harvard.edu
 EOF
 exit
 ```
@@ -593,18 +593,19 @@ or in case of 32 bit machine
 sudo -s
 cat > /etc/motd.tail << EOF
 This system allows you to experiment and create simulations using
-PEcAn, ED and BETY.
+PEcAn, ED, SIPNET and BETY.
 
-You can access this system using a webbrowser at 
+You can access this system using a webbrowser at
  http://<hosting machine>:3280/
-or using SSH at 
- ssh -l pecan -p 3222 \<hosting machine>
-where \<hosting machine> is the machine where the VM runs on.
+or using SSH at
+ ssh -l carya -p 3222 <hosting machine>
+where <hosting machine> is the machine where the VM runs on.
 
 For more information about:
-Pecan - http://pecanproject.org
-BETY  - http://www.betydb.org
-ED    - http://www.esm.harvard.edu
+Pecan  - http://pecanproject.org
+SIPNET - http://thesipnetmodel.blogspot.com
+BETY   - http://www.betydb.org
+ED     - http://www.esm.harvard.edu
 EOF
 exit
 ```
