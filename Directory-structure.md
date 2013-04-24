@@ -17,9 +17,9 @@ trunk/             # Overall repository
     +- data.atmosphere
     +- data.hydrology
     +- data.land
-    +- ensemble
     +- meta.analysis
-    +- prospect
+    +- priors
+    +- rtm
     +- uncertainty
  +- qaqc           # Database and model QAQC scripts
  +- scripts        # R and Shell scripts for use with PEcAn
