@@ -412,7 +412,7 @@ EOF
 
 cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 ```
-NB: On OSX, you will need to edit /etc/apache2/httpd.conf and change the 'DocumentRoot' to '/var/www'.
+NB: On OSX, you will need to edit /etc/apache2/httpd.conf and change the 'DocumentRoot' to '/var/www'. In addition, you will need to 'Include' the files you write above, as the default httpd.conf does not include everything in conf.d/ by default. Try 'Include /etc/apache2/conf.d/*'.
 
 All done you can now visit the server http://\<hostname>:\<port>/pecan' and you can interact with the database using 'http://\<hostname>:\<port>/pecan/db/'
 
