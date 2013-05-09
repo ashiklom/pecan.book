@@ -80,6 +80,11 @@ echo 'install.packages("devtools", repos="http://cran.rstudio.com/")' | R --vani
 exit
 ```
 
+### CentOS / RHEL
+
+```bash
+yum -y install git R 
+```
 ### Mac OSX
 
 ```bash
