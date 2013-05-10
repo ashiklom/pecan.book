@@ -23,25 +23,6 @@ it. The git protocol is read-only.
  * https://github.com/PecanProject/bety.git
  * git@github.com:PecanProject/bety.git
 
-Useful References
------------------
-
-#### Git Documentation
-
-* [Stackoverflow highest voted questions tagged "git"](http://stackoverflow.com/questions/tagged/git?sort=votes&pagesize=50)
-* [Visual Git Tutorial](http://pcottle.github.com/learnGitBranching/)
-
-#### GitHub Documentation
-
-When in doubt, the first step is to click the "Help" button at the top of the page.
-
-* [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) by
-Scott Chacon (Git evangelist and Ruby developer working on GitHub.com)
-* [GitHub FAQ]((https://help.github.com/)
-* [Using Pull Requests](https://help.github.com/articles/using-pull-requests)
-* [SSH Keys](https://help.github.com/articles/generating-ssh-keys)
-
-
 Quick Start:
 ------------
 
@@ -277,6 +258,9 @@ Once you have git installed on your computer (see the [Rstudio version control](
 References:
 -----------
 
+
+#### Git Documentation
+
 * Scott Chacon, ‘Pro Git book’,
 [http://git-scm.com/book](http://git-scm.com/book)
 * GitHub help pages,
@@ -287,3 +271,16 @@ References:
 [http://nvie.com/posts/a-successful-git-branching-model](http://nvie.com/posts/a-successful-git-branching-model)/
 * Another set of pages about branching,
 [http://sandofsky.com/blog/git-workflow.html](http://sandofsky.com/blog/git-workflow.html)
+* [Stackoverflow highest voted questions tagged "git"](http://stackoverflow.com/questions/tagged/git?sort=votes&pagesize=50)
+* [Visual Git Tutorial](http://pcottle.github.com/learnGitBranching/)
+
+#### GitHub Documentation
+
+When in doubt, the first step is to click the "Help" button at the top of the page.
+
+* [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) by
+Scott Chacon (Git evangelist and Ruby developer working on GitHub.com)
+* [GitHub FAQ]((https://help.github.com/)
+* [Using Pull Requests](https://help.github.com/articles/using-pull-requests)
+* [SSH Keys](https://help.github.com/articles/generating-ssh-keys)
+
