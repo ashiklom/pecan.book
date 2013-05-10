@@ -42,9 +42,6 @@ Scott Chacon (Git evangelist and Ruby developer working on GitHub.com)
 * [SSH Keys](https://help.github.com/articles/generating-ssh-keys)
 
 
-
-
-
 Quick Start:
 ------------
 
@@ -102,8 +99,9 @@ especially on how to keep your fork up to date with respect to the original.
 
 GIT Workflow
 ------------
+### Basic Workflow 
 
-### Basic Workflow
+The Basic Workflow is a starting point. The standard method used for PEcAn is found below under [Recommended Workflow](https://github.com/PecanProject/pecan/wiki/_preview#recommended-workflow-for-pecan-and-bety-developers)
 
 * GIT encourages to branch "early and often"
  * Branch before working on feature
@@ -128,18 +126,71 @@ each feature should be in it’s own branch (for example each redmine
 issue is a branch, names of branches are often the issue in a bug
 tracking system).
 
+### Recommended Workflow for PEcAn and BETY developers
+
+#### Before any work is done:
+
+1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo))
+2. Clone to your local machine 
+```bash 
+git clone git@github.com:<username>/pecan.git
+```
+3. Define upstream 
+```bash 
+git remote add upstream git@github.com:PecanProject/pecan.git)
+```
+
+#### During development:
+1. Make sure you start in master 
+```bash
+git checkout master
+```
+2. Make sure master is up to date 
+```bash 
+git pull upstream master
+```
+3. Create a branch 
+```bash
+git checkout -b <branchname>
+```
+4. work/commit/etc 
+```bash
+git commit
+```
+5. Push this branch to your github space 
+```bash
+git push origin <branchname>
+```
+6. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
+
+#### After pull request is merged
+1. Make sure you start in master 
+```bash
+git checkout master
+```
+2. delete branch remotely 
+```bash
+git push origin --delete <branchname>
+```
+3. delete branch locally 
+```bash
+git branch -D <branchname>
+```
+
+### Other Useful Git Commands:
+
 * Delete a branch: `git branch -d <name of branch>`
 * To push a branch git: `push -u origin `<name of branch>`
 * To checkout a branch: 
   ```
   git fetch origin
-  git checkout --track origin/<name of branch
+  git checkout --track origin/<name of branch>
   ```
 
 
 
-Committing Changes Using Pull Requests
---------------------------------------
+### Committing Changes Using Pull Requests
+
 
 GitHub provides a useful overview of how to submit changes to a project, [Using Pull Requests](https://help.github.com/articles/using-pull-requests).
 
@@ -152,8 +203,7 @@ Once you have added a feature on your local fork of the project that you would l
 * When ready, changes are merged
 
 
-Tags
-----
+### Tags
 
 Git supports two types of tags: lightweight and annotated. For more information see the [Tagging Chapter in the Git documentation](http://git-scm.com/book/ch2-6.html).
 
@@ -178,8 +228,8 @@ To tag an earlier commit, just append the commit SHA to the command, e.g.
 
 
 
-GitHub notes:
--------------
+### GitHub notes:
+
 
 Easiest way to get working with GitHub is by installing the GitHub
 client. More instructions for your specific OS and download of the
@@ -188,8 +238,8 @@ This will help you setup an SSH key to push code back to GitHub. To
 checkout a project you do not need to have an ssh key and you can use
 the https or git url to check out the code.
 
-Working with Rstudio
---------------------
+### Using Git with Rstudio
+
 
 Rstudio is nicely integrated with many development tools, including git and GitHub. 
 It is quite easy to checkout source code from within the Rstudio program or browser.
@@ -197,7 +247,7 @@ The Rstudio documentation includes useful overviews of [version control](http://
 
 Once you have git installed on your computer (see the [Rstudio version control](http://www.rstudio.com/ide/docs/version_control/overview) documentation for instructions), you can use the following steps to install the PEcAn source code in Rstudio.
 
-### For "read-only" version:
+#### For "read-only" version:
 
 1.  install Rstudio (www.rstudio.com)
 2.  click (upper right) project
@@ -207,7 +257,7 @@ Once you have git installed on your computer (see the [Rstudio version control](
  *   paste https://www.github.com/PecanProject/pecan
  *   choose working dir. for repo
 
-### For development:
+#### For development:
 
 1.  create account on github
 2.  create a fork of the PEcAn repository to your own account https://www.github.com/pecanproject/pecan
