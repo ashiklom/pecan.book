@@ -82,8 +82,27 @@ exit
 
 ### CentOS / RHEL
 
+#### Install and configure MySQL
+
+[Reference: centoshelp.org](http://centoshelp.org/servers/database/installing-configuring-mysql-server/)
+
 ```bash
-yum -y install git R 
+yum -y install git R mysql mysql-server
+chkconfig --level 2345 mysqld on 
+service mysqld start
+```
+
+#### Install and start Apache
+
+```bash
+yum -y install httpd
+sudo service httpd start
+```
+
+#### Install PHP
+
+```bash
+sudo yum install php php-mysql
 ```
 ### Mac OSX
 
