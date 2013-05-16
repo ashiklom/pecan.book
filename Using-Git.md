@@ -23,8 +23,83 @@ it. The git protocol is read-only.
  * https://github.com/PecanProject/bety.git
  * git@github.com:PecanProject/bety.git
 
-Quick Start:
-------------
+Recommended Workflow for PEcAn and BETY developers
+--------------------------------------------------
+
+### Before any work is done:
+
+1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)) This allows you to create your own
+copy of the code. When you do the fork a copy of the code is created and
+placed in your personal space. This is your personal copy, you can
+clone, branch and push things back here. If you have a branch or some
+code you want to merge back in the main branch you do a pull request.
+This is the way for external people to commit code back to PEcAn and
+BETY. The pull request will start a review process that will eventually
+result in the code being merged into the main copy of the codebase. See https://help.github.com/articles/fork-a-repo for more information, 
+especially on how to keep your fork up to date with respect to the original.
+1. Introduce yourself to GIT
+
+        git config --global user.name "FULLNAME"
+        git config --global user.email you@yourdomain.example.com
+
+3. Clone to your local machine 
+```bash 
+git clone git@github.com:<username>/pecan.git
+```
+3. Define upstream 
+```bash 
+git remote add upstream git@github.com:PecanProject/pecan.git
+```
+
+### During development:
+1. Make sure you start in master 
+```bash
+git checkout master
+```
+2. Make sure master is up to date 
+```bash 
+git pull upstream master
+```
+3. Create a branch 
+```bash
+git checkout -b <branchname>
+```
+4. work/commit/etc 
+```bash
+git commit
+```
+5. Push this branch to your github space 
+```bash
+git push origin <branchname>
+```
+6. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
+
+### After pull request is merged
+1. Make sure you start in master 
+```bash
+git checkout master
+```
+2. delete branch remotely 
+```bash
+git push origin --delete <branchname>
+```
+3. delete branch locally 
+```bash
+git branch -D <branchname>
+```
+
+Quick Git Overview:
+-------------------
+
+### GitHub notes:
+
+
+Easiest way to get working with GitHub is by installing the GitHub
+client. More instructions for your specific OS and download of the
+GitHub client, see https://help.github.com/articles/set-up-git.
+This will help you setup an SSH key to push code back to GitHub. To
+checkout a project you do not need to have an ssh key and you can use
+the https or git url to check out the code.
 
 ### Workflow
 
@@ -34,10 +109,7 @@ Quick Start:
 4. Commit
 5. Submitting a Pull Request
 
-* Introduce yourself to GIT
 
-        git config --global user.name "FULLNAME"
-        git config --global user.email you@yourdomain.example.com
 
 * Get the remote repository locally:
 
@@ -63,20 +135,7 @@ Quick Start:
 
         git log --graph --oneline --all
 
-Forking a Project on GitHub
-----------------------------
 
-You can fork a project on github. This allows you to create your own
-copy of the code. When you do the fork a copy of the code is created and
-placed in your personal space. This is your personal copy, you can
-clone, branch and push things back here. If you have a branch or some
-code you want to merge back in the main branch you do a pull request.
-This is the way for external people to commit code back to PEcAn and
-BETY. The pull request will start a review process that will eventually
-result in the code being merged into the main copy of the codebase.
-
-See https://help.github.com/articles/fork-a-repo for more information, 
-especially on how to keep your fork up to date with respect to the original.
 
 GIT Workflow
 ------------
@@ -85,9 +144,10 @@ GIT Workflow
 The Basic Workflow is a starting point. The standard method used for PEcAn is found below under [Recommended Workflow](https://github.com/PecanProject/pecan/wiki/_preview#recommended-workflow-for-pecan-and-bety-developers)
 
 * GIT encourages to branch "early and often"
+ * First pull from master 
  * Branch before working on feature
  * One branch per feature
- * You can switch easy between branches
+ * You can switch easily between branches
  * Merge feature into main line when branch done
 
             git branch <name of branch>
@@ -102,61 +162,11 @@ The Basic Workflow is a starting point. The standard method used for PEcAn is fo
             git push
 
 If during above process you want to work on something else, commit all
-your code, create a new branch, and work on new branch. As said before,
-each feature should be in it’s own branch (for example each redmine
+your code, create a new branch, and work on new branch. 
+**Each feature should be in it’s own branch** (for example each redmine
 issue is a branch, names of branches are often the issue in a bug
 tracking system).
 
-### Recommended Workflow for PEcAn and BETY developers
-
-#### Before any work is done:
-
-1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo))
-2. Clone to your local machine 
-```bash 
-git clone git@github.com:<username>/pecan.git
-```
-3. Define upstream 
-```bash 
-git remote add upstream git@github.com:PecanProject/pecan.git)
-```
-
-#### During development:
-1. Make sure you start in master 
-```bash
-git checkout master
-```
-2. Make sure master is up to date 
-```bash 
-git pull upstream master
-```
-3. Create a branch 
-```bash
-git checkout -b <branchname>
-```
-4. work/commit/etc 
-```bash
-git commit
-```
-5. Push this branch to your github space 
-```bash
-git push origin <branchname>
-```
-6. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
-
-#### After pull request is merged
-1. Make sure you start in master 
-```bash
-git checkout master
-```
-2. delete branch remotely 
-```bash
-git push origin --delete <branchname>
-```
-3. delete branch locally 
-```bash
-git branch -D <branchname>
-```
 
 ### Other Useful Git Commands:
 
@@ -209,17 +219,9 @@ To tag an earlier commit, just append the commit SHA to the command, e.g.
 
 
 
-### GitHub notes:
 
 
-Easiest way to get working with GitHub is by installing the GitHub
-client. More instructions for your specific OS and download of the
-GitHub client, see https://help.github.com/articles/set-up-git.
-This will help you setup an SSH key to push code back to GitHub. To
-checkout a project you do not need to have an ssh key and you can use
-the https or git url to check out the code.
-
-### Using Git with Rstudio
+## Git + Rstudio
 
 
 Rstudio is nicely integrated with many development tools, including git and GitHub. 

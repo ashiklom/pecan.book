@@ -633,6 +633,20 @@ ED     - http://www.esm.harvard.edu
 EOF
 exit
 ```
+### Adding a minimal desktop environment (can be added to PEcAn VM)
+
+```bash
+sudo apt-get update
+sudo apt-get install xfce4 xorg
+```
+
+For a more refined desktop environment, try 
+
+```bash
+sudo apt-get install --no-install-recommends xubuntu-desktop 
+```
+* replace `xubuntu-` with `ubuntu-`, `lubuntu-`, or other preferred desktop enviornment
+* the `--no-install-recommends` eliminates additional applications, removing it will add a word processor, a browser, and lots of other applications included in the default operating system.
 
 ### OSX specific notes and miscellaneous troubleshooting
 
