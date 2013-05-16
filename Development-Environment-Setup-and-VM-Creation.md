@@ -648,6 +648,26 @@ sudo apt-get install --no-install-recommends xubuntu-desktop
 * replace `xubuntu-` with `ubuntu-`, `lubuntu-`, or other preferred desktop enviornment
 * the `--no-install-recommends` eliminates additional applications, removing it will add a word processor, a browser, and lots of other applications included in the default operating system.
 
+### Adding guest-additions
+
+```bash
+sudo su
+apt-get install virtualbox-ose-guest-utils virtualbox-ose-guest-x11 virtualbox-ose-guest-dkms
+cd /media/V*
+./VBoxLinuxAdditions.sh
+reboot
+## I had to do the above twice (??)
+```
+
+### Install RStudio Desktop
+
+```bash
+wget http://download1.rstudio.org/rstudio-0.97.551-amd64.deb
+apt-get install libjpeg621
+dpkg -i rstudio-*
+rm rstudio-*
+```
+
 ### OSX specific notes and miscellaneous troubleshooting
 
 You may need to disable cookies specifically for the pecan webserver in your browser. This shouldn't be a problem running from the virtual machine, but your installation of php can include a 'PHPSESSID' that is quite long, and this can overflow the params field of the workflows table, depending on how long your hostname, model name, site name, etc are. 
