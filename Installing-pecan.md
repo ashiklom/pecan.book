@@ -94,9 +94,21 @@ cd ..
 
 I use the package that comes from mysql (http://dev.mysql.com/downloads/mysql/) and install the package. And add the mysql/bin folder to your path
 
-```
+```bash
 sudo bash -c 'echo "/usr/local/mysql/bin" > /etc/paths.d/mysql'
 ```
+
+#### Install JAGS
+
+For more instructions see http://martynplummer.wordpress.com/2011/11/04/rjags-3-for-mac-os-x/
+
+#### Install tgp
+
+**This is not needed anymore but kept for reference**
+
+This package is source only and needs to be installed first.
+
+echo 'install.packages("tgp", type="both", repos="http://cran.rstudio.com/")' | R --vanilla
 
 
 ## Install models
@@ -236,7 +248,7 @@ The php version comes with PEcAn and should be accessible from http://<host>:<po
 
 ### RUBY version
 
-** THESE INSTRUCTIONS ARE OUT OF DATE! BETY NOW REQUIRES RUBY 1.9 **
+**THESE INSTRUCTIONS ARE OUT OF DATE! BETY NOW REQUIRES RUBY 1.9**
 
 The RUBY version requires a few extra packages to be installed first.
 
@@ -392,7 +404,7 @@ exit
 
 #### Apache Configuration for Mac OSX
 
-```
+```bash
 sudo sed -i '' 's/^#LoadModule php5_module/LoadModule php5_module/' /etc/apache2/httpd.conf
 
 sudo mkdir /var/mysql
@@ -411,7 +423,7 @@ EOF
 
 #### Instructions for all OS
 
-```
+```bash
 # configure for web app
 cat > ${HOME}/pecan/web/system.php << EOF
 <?php
