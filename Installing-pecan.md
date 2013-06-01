@@ -108,8 +108,9 @@ For more instructions see http://martynplummer.wordpress.com/2011/11/04/rjags-3-
 
 This package is source only and needs to be installed first.
 
+```bash
 echo 'install.packages("tgp", type="both", repos="http://cran.rstudio.com/")' | R --vanilla
-
+```
 
 ## Install models
 
