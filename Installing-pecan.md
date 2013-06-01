@@ -457,7 +457,7 @@ cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 All done you can now visit the server http://\<hostname>:\<port>/pecan' and you can interact with the database using 'http://\<hostname>:\<port>/pecan/db/'
 
 
-## Addiotional datasets
+## Additional datasets
 
 ### FIA database
 
