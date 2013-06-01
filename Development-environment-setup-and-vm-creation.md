@@ -229,7 +229,7 @@ wget -O ~/cleanvm.sh http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh
 chmod 755 ~/cleanvm.sh
 ```
 
-Make sure machine has SSH keys ("rc.local":http://isda.ncsa.illinois.edu/~kooper/EBI/rc.local)
+Make sure machine has SSH keys [rc.local](http://isda.ncsa.illinois.edu/~kooper/EBI/rc.local)
 
 ```bash
 sudo wget -O /etc/rc.local http://isda.ncsa.illinois.edu/~kooper/EBI/rc.local
