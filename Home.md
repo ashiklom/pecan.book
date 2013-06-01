@@ -21,12 +21,12 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 
 ### Getting started II: Installing PEcAn
 
-* **[[Installing PEcAn]]**
-* **[[Troubleshooting PEcAn]]**
+* [[Installing PEcAn]]
+* [[Troubleshooting PEcAn]]
 
 ### Getting started III: Using PEcAn
 
-* **[[Settings Files]]**
+* [[Settings Files]]
 
 ##### University of Illinois - Energy Biosciences Institute
 
@@ -36,28 +36,28 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 
 ### Reporting Bugs and Requesting Features
 
-* **GitHub**
- * **[[Reporting Bugs | GitHub Issues]]**
- * **[[Requesting Features | GitHub Issues ]]**
+* GitHub
+ * [[Reporting Bugs | GitHub Issues]]
+ * [[Requesting Features | GitHub Issues ]]
 
 ## Development
 
 ### Setup
 
- * **[[Creating A Development Environment | Development-Environment-Setup-and-VM-Creation]]**
- * **[[PEcAn Configuration and Settings Files | Configuration Files]]**
+ * [[Installing PEcAn]]
+ * [[PEcAn Configuration and Settings Files | Configuration Files]]
 
 ### Using Git and GitHub
 
-* **[[PEcAn Directory Structure | Directory Structure]]**
-* **[[Using GitHub and Git | Using Git]]**
+* [[PEcAn Directory Structure | Directory Structure]]
+* [[Using GitHub and Git | Using Git]]
 
 ### R Development
 
-* **[[Coding Style]]**
-* **[[Documentation|Roxygen2]]**
-* **[[Testing]]**
-* **[[Package Data]]**
-* **[[Logging, Warnings, and Error Messages | Logging]]**
+* [[Coding Style]]
+* [[Documentation|Roxygen2]]
+* [[Testing]]
+* [[Package Data]]
+* [[Logging, Warnings, and Error Messages | Logging]]
 
 ## References
