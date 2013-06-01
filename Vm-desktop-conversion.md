@@ -1,5 +1,3 @@
-## Convert VM to Desktop machine
-
 ```bash
 sudo apt-get update
 sudo apt-get install xfce4 xorg
