@@ -138,21 +138,9 @@ HDF5 Tools, netcdf, GDB and emacs
 sudo apt-get -y install hdf5-tools cdo nco netcdf-bin ncview gdb emacs ess nedit
 ```
 
-## Addiotional datasets
+## Additional datasets from Harvard
 
-### Flux Camp
-
-Following will install the data for flux camp
-```bash
-cd
-wget -O plot.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/plot.tgz
-tar zxf plot.tgz
-rm plot.tgz
-```
-
-### Harvard additions
-
-Add additional datasets and runs
+Add datasets and runs
 
 ```bash
 wget http://isda.ncsa.illinois.edu/~kooper/EBI/Santarem_Km83.zip
