@@ -9,7 +9,7 @@ These `logger` family of functions are more sophisticated, and can be used in pl
 ### Examples
 
 * The file [test.logger.R](../blob/master/utils/inst/tests/test.logger.R) provides descriptive examples
-* This query provides an current lioverview of [functions that use logging](https://github.com/PecanProject/pecan/search?q=logger&ref=cmdform)
+* This query provides an current overview of [functions that use logging](https://github.com/PecanProject/pecan/search?q=logger&ref=cmdform)
 * logger functions (in order of increasing level):
  * `logger.debug`
  * `logger.info`
