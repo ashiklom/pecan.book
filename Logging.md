@@ -1,13 +1,37 @@
-h1. Logging
+# Logging
 
-During development we often add many print statements to check to see how the code is doing, what is happening, what intermediate results there are etc. When done with the development it would be nice to turn this additional code off, but have the ability to quickly turn it back on if we discover a problem. This is where logging comes into play. Logging allows us to use "rules" to say what information should be shown. For example when I am working on the code to create graphs, I do not have to see any debugging information about the SQL command being send, however trying to figure out what goes wrong during a SQL statement it would be nice to show the SQL statements without adding any additional code.
+During development we often add many print statements to check to see how the code is doing, what is happening, what intermediate results there are etc. When done with the development it would be nice to turn this additional code off, but have the ability to quickly turn it back on if we discover a problem. This is where logging comes into play. Logging allows us to use "rules" to say what information should be shown. For example when I am working on the code to create graphs, I do not have to see any debugging information about the SQL command being sent, however trying to figure out what goes wrong during a SQL statement it would be nice to show the SQL statements without adding any additional code.
 
-h2. Logging Package
+## PEcAn logging functions
+
+The file [test.logger.R](../blob/master/utils/inst/tests/test.logger.R) provides descriptive examples
+
+* logger functions (in order of increasing level):
+ * `logger.debug`
+ * `loger.info`
+ * `logger.warn`
+ * `logger.error`
+* the `logger.setLevel` function sets the level at which a message will be printed
+ * `logger.setLevel("DEBUG")` will show all logger messages
+ * `logger.setLevel("ERROR")` will show only error messages
+ * `"INFO"` shows all messages except those from `logger.debug`
+ * `"WARN"` shows messages from `logger.warn` and `logger.error` 
+* To print all messages to console, use `logger.setUseConsole(TRUE)`
+* To turn all loggers off, use `logger.setLevel("OFF")`
+
+### Related Issues (requires Redmine developer account)
+
+* [#1071 How to handle errors?](https://ebi-forecast.igb.illinois.edu/redmine/issues/1071)
+* [#1222 Ignore warnings](https://ebi-forecast.igb.illinois.edu/redmine/issues/1222)
+  You can use @logger.setLevel("ERROR")@ to only show error messages. All the code that does not use logger will not be filtered.
+
+## Other R logging packages (for reference)
 
 R does provide a basic logging capability using stop, warning and message. These allow to print message (and stop execution in case of stop). However there is not an easy method to redirect the logging information to a file, or turn the logging information on and off. This is where one of the following packages comes into play. The packages themselves are very similar since they try to emulate log4j.
 
 Both of the following packages use a hierarchic loggers, meaning that if you change the level of displayed level of logging at one level all levels below it will update their logging.
-h3. logging
+
+### logging
 
 The logging development is done at http://logging.r-forge.r-project.org/ and more information is located at http://cran.r-project.org/web/packages/logging/index.html . To install use the following command:
 <pre>
@@ -15,15 +39,15 @@ install.packages("logging", repos="http://R-Forge.R-project.org")
 </pre>
 This has my preference pure based on documentation.
 
-h3. futile
+### futile
 
 The second logging package is http://cran.r-project.org/web/packages/futile.logger/ and is eerily similar to logging (as a matter of fact logging is based on futile).
 
-h3. Example Usage
+## Example Usage
 
 To be able to use the loggers there needs to be some initialization done. Neither package allows to read it from a configuration file, so we might want to use the pecan.xml file to set it up. The setup will always be somewhat the same:
 
-<pre>
+```r
 # load library
 library(logging)
 logReset()
@@ -40,24 +64,19 @@ setLevel('DEBUG', getLogger('PEcAn'))
 
 # only print info and above for the SQL part of PEcAn
 setLevel('INFO', getLogger('PEcAn.SQL'))
-</pre>
+```
 
 To now use logging in the code you can use the following code:
-<pre>
+```r
 pl <- getLogger('PEcAn.MetaAnalysis.function1')
 pl$info("This is an INFO message.")
 pl$debug("The value for x=%d', x)
 pl$error("Something bad happened and I am scared now.")
-</pre>
+```
 or
-<pre>
+```r
 loginfo("This is an INFO message.", logger='PEcAn.MetaAnalysis.function1')
 logdebug("The value for x=%d', x, logger='PEcAn.MetaAnalysis.function1')
 logerror("Something bad happened and I am scared now.", logger='PEcAn.MetaAnalysis.function1')
-</pre>
+```
 
-h2. Related Issues
-
-* #1071 How to handle errors?
-* #1222 Ignore warnings
-  You can use @logger.setLevel("ERROR")@ to only show error messages. All the code that does not use logger will not be filtered.
