@@ -6,8 +6,10 @@ During development we often add many print statements to check to see how the co
 
 These `logger` family of functions are more sophisticated, and can be used in place of `stop`, `warn`, `print`, and similar functions. The `logger` functions make it easier to print to a system log file. 
 
-The file [test.logger.R](../blob/master/utils/inst/tests/test.logger.R) provides descriptive examples
+### Examples
 
+* The file [test.logger.R](../blob/master/utils/inst/tests/test.logger.R) provides descriptive examples
+* This query provides an current lioverview of [functions that use logging](https://github.com/PecanProject/pecan/search?q=logger&ref=cmdform)
 * logger functions (in order of increasing level):
  * `logger.debug`
  * `logger.info`
