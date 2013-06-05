@@ -4,20 +4,21 @@ During development we often add many print statements to check to see how the co
 
 ## PEcAn logging functions
 
+These `logger` family of functions are more sophisticated, and can be used in place of `stop`, `warn`, `print`, and similar functions. The `logger` functions make it easier to print to a system log file. 
+
 The file [test.logger.R](../blob/master/utils/inst/tests/test.logger.R) provides descriptive examples
 
 * logger functions (in order of increasing level):
  * `logger.debug`
- * `loger.info`
+ * `logger.info`
  * `logger.warn`
  * `logger.error`
 * the `logger.setLevel` function sets the level at which a message will be printed
- * `logger.setLevel("DEBUG")` will show all logger messages
- * `logger.setLevel("ERROR")` will show only error messages
- * `"INFO"` shows all messages except those from `logger.debug`
- * `"WARN"` shows messages from `logger.warn` and `logger.error` 
+ * `logger.setLevel("DEBUG")` will print messages from all logger functions
+ * `logger.setLevel("ERROR")` will only print messages from `logger.error`
+ * `logger.setLevel("INFO")` and `logger.setLevel("WARN") shows messages from `logger.<level>` and higher functions, e.g. `logger.setLevel("WARN")` shows messages from `logger.warn` and `logger.error` 
+ * `logger.setLevel("OFF")` suppresses all logger messages
 * To print all messages to console, use `logger.setUseConsole(TRUE)`
-* To turn all loggers off, use `logger.setLevel("OFF")`
 
 ### Related Issues (requires Redmine developer account)
 
@@ -25,7 +26,9 @@ The file [test.logger.R](../blob/master/utils/inst/tests/test.logger.R) provides
 * [#1222 Ignore warnings](https://ebi-forecast.igb.illinois.edu/redmine/issues/1222)
   You can use @logger.setLevel("ERROR")@ to only show error messages. All the code that does not use logger will not be filtered.
 
-## Other R logging packages (for reference)
+## Other R logging packages 
+
+* **This section is for reference - these functions should not be used in PEcAn, as they are redundant with the `logger.*` functions described above**
 
 R does provide a basic logging capability using stop, warning and message. These allow to print message (and stop execution in case of stop). However there is not an easy method to redirect the logging information to a file, or turn the logging information on and off. This is where one of the following packages comes into play. The packages themselves are very similar since they try to emulate log4j.
 
@@ -79,4 +82,3 @@ loginfo("This is an INFO message.", logger='PEcAn.MetaAnalysis.function1')
 logdebug("The value for x=%d', x, logger='PEcAn.MetaAnalysis.function1')
 logerror("Something bad happened and I am scared now.", logger='PEcAn.MetaAnalysis.function1')
 ```
-
