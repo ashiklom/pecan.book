@@ -26,6 +26,10 @@ it. The git protocol is read-only.
 Recommended Workflow for PEcAn and BETY developers
 --------------------------------------------------
 
+**Each feature should be in it’s own branch** (for example each redmine
+issue is a branch, names of branches are often the issue in a bug
+tracking system).
+
 ### Before any work is done:
 
 1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)) This allows you to create your own
@@ -88,6 +92,54 @@ git push origin --delete <branchname>
 git branch -D <branchname>
 ```
 
+* ensure that all tests are passing before anything is pushed into master.
+```
+## For PEcAn 
+./scripts/build.sh -c
+```
+
+
+### For BETY developers (integrating [test with cucumber](https://gist.github.com/chrislerum/566697)):
+
+```
+git pull #(or, if this is your first time ever getting the code, do git clone    
+rake db:migrate
+rake db:test:prepare
+spec spec
+cucumber
+## if either are not green, stop here and investigate. do not continue to develop until all green.
+git checkout -b my_work (create and switch to a local branch where you'll do your work)
+## do a little coding
+## make sure the tests are passing
+git commit
+## repeat steps 7, 8 and 9 as many times as you wish
+git checkout master
+git pull ## you do this at this step in case someone else pushed while you were working)
+## if that git pull says 'Already up-to-date', proceed to next step, otherwise run tests again
+git checkout my_work
+git rebase master
+git checkout master
+git merge my_work
+git push
+```
+ 
+
+
+### Committing Changes Using Pull Requests
+
+
+GitHub provides a useful overview of how to submit changes to a project, [Using Pull Requests](https://help.github.com/articles/using-pull-requests).
+
+Once you have added a feature on your local fork of the project that you would like to contribute, these are the steps:
+
+* Submit a Pull Request
+* Pull request is reviewed by a member of the PEcAn core group
+* Any comments should be addressed
+* Additional commits are added to the pull request
+* When ready, changes are merged
+
+
+
 Quick Git Overview:
 -------------------
 
@@ -109,6 +161,41 @@ the https or git url to check out the code.
 4. Commit
 5. Submitting a Pull Request
 
+
+The Basic Workflow is a starting point. The standard method used for PEcAn is found above under [Recommended Workflow](https://github.com/PecanProject/pecan/wiki/_preview#recommended-workflow-for-pecan-and-bety-developers)
+
+* GIT encourages to branch "early and often"
+ * First pull from master 
+ * Branch before working on feature
+ * One branch per feature
+ * You can switch easily between branches
+ * Merge feature into main line when branch done
+
+            git branch <name of branch>
+            git checkout <name of branch>
+            repeat 
+              write some code
+              commit
+            until done
+
+            git checkout master
+            git merge <name of brach>
+            git push
+
+If during above process you want to work on something else, commit all
+your code, create a new branch, and work on new branch. 
+
+
+
+### Other Useful Git Commands:
+
+* Delete a branch: `git branch -d <name of branch>`
+* To push a branch git: `push -u origin `<name of branch>`
+* To checkout a branch: 
+  ```
+  git fetch origin
+  git checkout --track origin/<name of branch>
+  ```
 
 
 * Get the remote repository locally:
@@ -134,65 +221,6 @@ the https or git url to check out the code.
 * Show graph of commits:
 
         git log --graph --oneline --all
-
-
-
-GIT Workflow
-------------
-### Basic Workflow 
-
-The Basic Workflow is a starting point. The standard method used for PEcAn is found below under [Recommended Workflow](https://github.com/PecanProject/pecan/wiki/_preview#recommended-workflow-for-pecan-and-bety-developers)
-
-* GIT encourages to branch "early and often"
- * First pull from master 
- * Branch before working on feature
- * One branch per feature
- * You can switch easily between branches
- * Merge feature into main line when branch done
-
-            git branch <name of branch>
-            git checkout <name of branch>
-            repeat 
-              write some code
-              commit
-            until done
-
-            git checkout master
-            git merge <name of brach>
-            git push
-
-If during above process you want to work on something else, commit all
-your code, create a new branch, and work on new branch. 
-**Each feature should be in it’s own branch** (for example each redmine
-issue is a branch, names of branches are often the issue in a bug
-tracking system).
-
-
-### Other Useful Git Commands:
-
-* Delete a branch: `git branch -d <name of branch>`
-* To push a branch git: `push -u origin `<name of branch>`
-* To checkout a branch: 
-  ```
-  git fetch origin
-  git checkout --track origin/<name of branch>
-  ```
-
-
-
-### Committing Changes Using Pull Requests
-
-
-GitHub provides a useful overview of how to submit changes to a project, [Using Pull Requests](https://help.github.com/articles/using-pull-requests).
-
-Once you have added a feature on your local fork of the project that you would like to contribute, these are the steps:
-
-* Submit a Pull Request
-* Pull request is reviewed by a member of the PEcAn core group
-* Any comments should be addressed
-* Additional commits are added to the pull request
-* When ready, changes are merged
-
 
 ### Tags
 
@@ -285,4 +313,3 @@ Scott Chacon (Git evangelist and Ruby developer working on GitHub.com)
 * [GitHub FAQ]((https://help.github.com/)
 * [Using Pull Requests](https://help.github.com/articles/using-pull-requests)
 * [SSH Keys](https://help.github.com/articles/generating-ssh-keys)
-
