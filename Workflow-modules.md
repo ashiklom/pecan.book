@@ -1,9 +1,8 @@
 
-
 Module Definitions as of PEcAn 1.2.6
 ------------------------------------
 
-h2. Load Settings: `read.settings("/home/pecan/pecan.xml")`
+### Load Settings: `read.settings("/home/pecan/pecan.xml")`
 
 * loads settings
 * create directories
