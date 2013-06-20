@@ -27,6 +27,7 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 ### Getting started III: Using PEcAn
 
 * [[Settings Files]]
+* [[Workflow Modules]]
 
 ##### University of Illinois - Energy Biosciences Institute
 
