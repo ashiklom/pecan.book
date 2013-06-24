@@ -33,7 +33,7 @@ exit
 [Reference: centoshelp.org](http://centoshelp.org/servers/database/installing-configuring-mysql-server/)
 
 ```bash
-yum -y install git R mysql mysql-server
+yum -y install git R mysql mysql-server udunits2
 chkconfig --level 2345 mysqld on 
 service mysqld start
 ```
