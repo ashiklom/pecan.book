@@ -4,15 +4,11 @@ To upgrade to the latest version of PEcAn/VM you will need to do each of the int
 
 ### Changes
 
-PEcAn
-* support for postgresql
-* better checks of pecan.xml file
-* separate variables can be supplied for ensembles and sensitivity analysis
-* fixes to mstmip output
-
-BETY
-* complete redesign of interface
-* support for postgresql
+* [PEcAn/BETY] support for postgresql
+* [PEcAn] better checks of pecan.xml file
+* [PEcAn] separate variables can be supplied for ensembles and sensitivity analysis
+* [PEcAn] fixes to mstmip output
+* [BETY] complete redesign of interface
 
 ### Updating PEcAn
 
