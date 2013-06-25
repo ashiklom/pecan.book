@@ -5,6 +5,7 @@ To upgrade to the latest version of PEcAn/VM you will need to do each of the int
 ### Changes
 
 * [PEcAn/BETY] support for postgresql
+* [PEcAn] ED/biocro templates have moved to models/inst folders from web folder
 * [PEcAn] better checks of pecan.xml file
 * [PEcAn] separate variables can be supplied for ensembles and sensitivity analysis
 * [PEcAn] fixes to mstmip output
