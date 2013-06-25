@@ -27,7 +27,7 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 
 ### Getting started III: Using PEcAn
 
-* [[Settings Files]]
+* [[Settings Files| PEcAn-Configuration]]: what goes in the PEcAn settings files (e.g. `pecan.xml`)
 * [[Workflow Modules]]
 
 ##### University of Illinois - Energy Biosciences Institute
