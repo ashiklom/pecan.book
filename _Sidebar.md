@@ -1,7 +1,7 @@
 ### Contents
 
 ### PEcAn Use
-* [[PEcAn Read Me File | (https://github.com/PecanProject/pecan/blob/master/README.md)]]
+* [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
 
 #### Background
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
