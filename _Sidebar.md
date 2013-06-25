@@ -64,4 +64,3 @@
   * [[Packages used in Development | Package-data#packages-used-in-development]]
 * [[Logging, Warnings, and Error Messages | Logging]]
 
-#### References
