@@ -12,11 +12,12 @@
 
 #### Installing PEcAn
 * [[Installing PEcAn | Installing-PEcAn]]
-  ** [[Install Build Environment | Installing-PEcAn#install-build-environment]]
-  ** [[Install Models | Installing-PEcAn#install-models]]
-  ** [[Installing BETY | Installing-PEcAn#installing-bety]]
-  ** [[Installing PEcAn | Installing-PEcAn#installing-pecan]]
-  ** [[Configuring PEcAn Web Interface | Installing-PEcAn#configuring-pecan-web-interface]]
+  * [[Install Build Environment | Installing-PEcAn#install-build-environment]]
+  * [[Install Models | Installing-PEcAn#install-models]]
+  * [[Installing BETY | Installing-PEcAn#installing-bety]]
+  * [[Installing PEcAn | Installing-PEcAn#installing-pecan]]
+  * [[Configuring PEcAn Web Interface | Installing-PEcAn#configuring-pecan-web-interface]]
+* [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
 #### Using PEcAn 
