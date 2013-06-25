@@ -24,8 +24,6 @@
 * [[Settings files |  PEcAn-Configuration]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
-#### University of Illinois-Energy Biosciences Institute 
-* [[Authenticate Computer | http://help.igb.uiuc.edu/Computer_Network_Activation]]
 
 #### Reporting Bugs and Requesting Features
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
