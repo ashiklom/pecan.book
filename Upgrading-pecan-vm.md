@@ -1,10 +1,10 @@
 To upgrade to the latest version of PEcAn/VM you will need to do each of the intermediate steps, you can not skip to the latest version.
 
-# Version 1.3.0 to Version 1.3.1
+## Version 1.3.0 to Version 1.3.1
 
-## Changes
+### Changes
 
-## Updating PEcAn
+### Updating PEcAn
 
 First install some new packages
 ```bash
@@ -19,7 +19,7 @@ R --vanilla < scripts/install.dependencies.R
 ./scripts/build.sh
 ```
 
-## Updating BETY
+### Updating BETY
 
 BETY now requires RUBY 1.9 following are the instructions to get RUBY on an Ubuntu server
 ```bash
