@@ -20,7 +20,7 @@
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
 #### Using PEcAn 
-* [[Setting files | ? ]]
+* Setting files
 * [[Workflow Modules | Workflow-modules]]
 
 #### University of Illinois-Energy Biosciences Institute 
