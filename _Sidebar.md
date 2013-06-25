@@ -21,10 +21,6 @@
 #### University of Illinois-Energy Biosciences Institute 
 * [[Authenticate Computer | http://help.igb.uiuc.edu/Computer_Network_Activation]]
 
-
-Register your computer with IB-IT group?
-
-
 #### Reporting Bugs and Requesting Features
 * [[Reporting Bugs | wiki/Github-issues#reporting-a-bug]]
 * [[Requesting Features | wiki/Github-issues#requesting-a-feature]]
