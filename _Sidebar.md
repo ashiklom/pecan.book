@@ -1,7 +1,7 @@
 ### Contents
 
 ### PEcAn Use
-* [[PEcAn Read Me File | blob/master/README.md]]
+* [[PEcAn Read Me File | README.md#facilitating-feedbacks-between-field-measurements-and-ecosystem-models]]
 
 #### Background
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
