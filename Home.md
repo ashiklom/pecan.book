@@ -22,7 +22,7 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
 ### Getting started II: Installing PEcAn
 
 * [[Installing PEcAn]]
-** [[Upgrading PEcAn/VM]]
+* [[Upgrading PEcAn/VM]]
 * [[Troubleshooting PEcAn]]
 
 ### Getting started III: Using PEcAn
