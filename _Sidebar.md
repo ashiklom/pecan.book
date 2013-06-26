@@ -22,6 +22,9 @@
 
 #### [[Using PEcAn | wiki#getting-started-iii-using-pecan]]
 * [[Settings files |  PEcAn-Configuration]]
+
+#### Using PEcAn 
+* [[Settings files | Configuration Files]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
 
