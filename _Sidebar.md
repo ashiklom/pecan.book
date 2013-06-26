@@ -1,7 +1,4 @@
-## User's Guide
-
-## [[PEcAn Use | wiki#use]]
-* [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
+## [[PEcAn User's Guide | wiki#use]]
 
 #### [[Background | wiki#getting-started-i-background]]
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
