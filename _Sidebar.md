@@ -4,7 +4,6 @@
 * [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
 
 #### [[Background | wiki#getting-started-i-background]]
-
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
 * [[VM to Desktop Converter | Vm-desktop-conversion]]
 * [[Work through Demo | https://ebi-forecast.igb.illinois.edu/redmine/documents/27]]
@@ -12,7 +11,6 @@
 * [[Create Redmine Account (for EBI and CHEAS researchers) | http://www.redmine.org/account/register]]
 
 #### [[Installing PEcAn | wiki#getting-started-ii-installing-pecan]]
-
 * [[Installing PEcAn | Installing-PEcAn]]
   * [[Install Build Environment | Installing-PEcAn#install-build-environment]]
   * [[Install Models | Installing-PEcAn#install-models]]
@@ -23,13 +21,11 @@
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
 #### [[Using PEcAn | wiki#getting-started-iii-using-pecan]]
-
 * [[Settings files |  PEcAn-Configuration]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
 
 #### [[Reporting Bugs and Requesting Features | wiki#reporting-bugs-and-requesting-features]]
-
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
 * [[Requesting Features | Github-issues#requesting-a-feature]]
 
@@ -52,7 +48,6 @@
   * [[Git + RStudio | Using-Git#git--rstudio]]
 
 #### [[R Development | wiki#r-development]]
-
 * [[Coding Style | Coding-style]]
 * [[Documentation | Roxygen2]]
 * [[Testing | Testing]]
