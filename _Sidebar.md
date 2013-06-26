@@ -1,11 +1,14 @@
-### Contents
+#### Users Guide
 
+<<<<<<< HEAD
 ### PEcAn Use
 * [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
 
 ### Getting Started
 
 #### Background
+=======
+>>>>>>> 3b1997d3e39f2c61867afc428e3956a4ac41dddf
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
 * [[VM to Desktop Converter | Vm-desktop-conversion]]
 * [[Work through Demo | https://ebi-forecast.igb.illinois.edu/redmine/documents/27]]
@@ -13,6 +16,7 @@
 * [[Create Redmine Account (for EBI and CHEAS researchers) | http://www.redmine.org/account/register]]
 
 #### Installing PEcAn
+
 * [[Installing PEcAn | Installing-PEcAn]]
   * [[Install Build Environment | Installing-PEcAn#install-build-environment]]
   * [[Install Models | Installing-PEcAn#install-models]]
@@ -23,13 +27,13 @@
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
 #### Using PEcAn 
-* Setting files
-* [[Workflow Modules | Workflow-modules]]
 
-#### University of Illinois-Energy Biosciences Institute 
-* [[Authenticate Computer | http://help.igb.uiuc.edu/Computer_Network_Activation]]
+* [[Settings files |  PEcAn-Configuration]]
+* [[PEcAn Workflow Modules | Workflow-modules]]
+
 
 #### Reporting Bugs and Requesting Features
+
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
 * [[Requesting Features | Github-issues#requesting-a-feature]]
 
