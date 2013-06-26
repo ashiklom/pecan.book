@@ -1,14 +1,12 @@
 #### Users Guide
 
-<<<<<<< HEAD
 ### PEcAn Use
 * [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
 
 ### Getting Started
 
 #### Background
-=======
->>>>>>> 3b1997d3e39f2c61867afc428e3956a4ac41dddf
+
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
 * [[VM to Desktop Converter | Vm-desktop-conversion]]
 * [[Work through Demo | https://ebi-forecast.igb.illinois.edu/redmine/documents/27]]
