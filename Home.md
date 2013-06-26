@@ -1,7 +1,7 @@
 # PEcAn Use and development
 
-* **[[Getting Started]]**
-* **[[Development]]**
+* [[**Users** Getting Started| Getting Started]]
+* [[**Developers** | Development]]**
 
 # About PEcAn: 
 
@@ -42,4 +42,3 @@ BETY-db is a product of the Energy Biosciences Institute at the University of Il
 *    LeBauer, D., D. Wang, M. Dietze, 2010. "Biofuel Ecophysiological Traits and Yields Database Version 1.0.", Energy Biosciences Institute, Urbana, IL
 *    Miguez, F. E., Maughan, M., Bollero, G. A., & Long, S. P. (2012). Modeling spatial and dynamic variation in growth, yield, and yield stability of the bioenergy crops Miscanthus x giganteus and Panicum virgatum across the conterminous United States. GCB Bioenergy.
 *    Sacks, W. J., Schimel, D. S., Monson, R. K., & Braswell, B. H. (2005). Modelâ€data synthesis of diurnal and seasonal CO2 fluxes at Niwot Ridge, Colorado. Global Change Biology, 12(2), 240-259.
-
