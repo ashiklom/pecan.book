@@ -1,4 +1,4 @@
-#### Users Guide
+## User's Guide
 
 ## [[PEcAn Use | wiki#use]]
 * [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
