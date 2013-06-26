@@ -1,7 +1,7 @@
-# PEcAn Use and development
+# Documentation
 
-* [[**Users** Getting Started| Getting Started]]
-* [[**Developers** | Development]]**
+* **[[Users (Getting Started)| Getting Started]]**
+* **[[Developers | Development]]**
 
 # About PEcAn: 
 
