@@ -1,4 +1,3 @@
-# Documentation
 
 * **[[Users (Getting Started)| Getting Started]]**
 * **[[Developers | Development]]**
