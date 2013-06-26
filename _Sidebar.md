@@ -3,7 +3,7 @@
 ### PEcAn Use
 * [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
 
-### Getting Started
+## Getting Started
 
 #### Background
 
@@ -35,7 +35,7 @@
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
 * [[Requesting Features | Github-issues#requesting-a-feature]]
 
-### Development
+## Development
 
 #### Setup
 * [[Installing PEcAn | Installing-PEcAn]]
