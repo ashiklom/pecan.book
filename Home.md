@@ -1,10 +1,9 @@
-
 * **[[Users (Getting Started)| Getting Started]]**
 * **[[Developers | Development]]**
 
-# About PEcAn: 
 
-## Facilitating feedbacks between field measurements and ecosystem models
+
+## PEcAn: Facilitating feedbacks between field measurements and ecosystem models
 
 ### Project Overview
 
