@@ -20,10 +20,7 @@
 * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
-#### [[Using PEcAn | wiki#getting-started-iii-using-pecan]]
-* [[Settings files |  PEcAn-Configuration]]
-
-#### Using PEcAn 
+#### [[Using PEcAn | Getting-started#getting-started-iii-using-pecan]] 
 * [[Settings files | Configuration Files]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
