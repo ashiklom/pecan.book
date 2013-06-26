@@ -24,7 +24,7 @@
 
 #### Using PEcAn 
 
-* [[Settings files |  PConfiguration-Files]]
+* [[Settings files | Configuration Files]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
 
