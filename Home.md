@@ -1,5 +1,5 @@
-* **[[Users (Getting Started)| Getting Started]]**
-* **[[Developers | Development]]**
+* **[[User's Guide (Getting Started)| Getting Started]]**
+* **[[Developer's Guide | Development]]**
 
 
 
