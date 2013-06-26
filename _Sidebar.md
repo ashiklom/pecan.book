@@ -1,9 +1,7 @@
 #### Users Guide
 
-### PEcAn Use
+## PEcAn Use
 * [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
-
-## Getting Started
 
 #### Background
 
