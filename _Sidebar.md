@@ -1,9 +1,9 @@
 #### Users Guide
 
-## PEcAn Use
+## [[PEcAn Use | wiki#use]]
 * [[PEcAn Read Me File | https://github.com/PecanProject/pecan/blob/master/README.md]]
 
-#### Background
+#### [[Background | wiki#getting-started-i-background]]
 
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
 * [[VM to Desktop Converter | Vm-desktop-conversion]]
@@ -11,7 +11,7 @@
 * [[Create Github Account | https://github.com/signup/free]]
 * [[Create Redmine Account (for EBI and CHEAS researchers) | http://www.redmine.org/account/register]]
 
-#### Installing PEcAn
+#### [[Installing PEcAn | wiki#getting-started-ii-installing-pecan]]
 
 * [[Installing PEcAn | Installing-PEcAn]]
   * [[Install Build Environment | Installing-PEcAn#install-build-environment]]
@@ -22,20 +22,20 @@
 * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
-#### Using PEcAn 
+#### [[Using PEcAn | wiki#getting-started-iii-using-pecan]]
 
 * [[Settings files |  PEcAn-Configuration]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
 
-#### Reporting Bugs and Requesting Features
+#### [[Reporting Bugs and Requesting Features | wiki#reporting-bugs-and-requesting-features]]
 
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
 * [[Requesting Features | Github-issues#requesting-a-feature]]
 
-## Development
+## [[Development | wiki#development]]
 
-#### Setup
+#### [[Setup | wiki#setup]]
 * [[Installing PEcAn | Installing-PEcAn]]
   * [[Install Build Environment | Installing-PEcAn#install-build-environment]]
   * [[Install Models | Installing-PEcAn#install-models]]
@@ -44,14 +44,14 @@
   * [[Configuring PEcAn Web Interface | Installing-PEcAn#configuring-pecan-web-interface]]
 * [[PEcAn Configuration and Settings Files | Configuration-Files]]
 
-#### Using Git and GitHub
+#### [[Using Git and GitHub | wiki#using-git-and-github]]
 * [[PEcAn Directory Structure | Directory-structure]]
 * [[Using Github and Git | Using-Git]]
   * [[Recommended Workflow for PEcAn and BETY Developers | Using-Git#recommended-workflow-for-pecan-and-bety-developers]]
   * [[Git Overview | Using-Git#quick-git-overview]]
   * [[Git + RStudio | Using-Git#git--rstudio]]
 
-#### R Development
+#### [[R Development | wiki#r-development]]
 
 * [[Coding Style | Coding-style]]
 * [[Documentation | Roxygen2]]
