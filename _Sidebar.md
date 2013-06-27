@@ -10,16 +10,6 @@
 * [[Create Github Account | https://github.com/signup/free]]
 * [[Create Redmine Account (for EBI and CHEAS researchers) | http://www.redmine.org/account/register]]
 
-#### [[Installing PEcAn | wiki#getting-started-ii-installing-pecan]]
-* [[Installing PEcAn | Installing-PEcAn]]
-  * [[Install Build Environment | Installing-PEcAn#install-build-environment]]
-  * [[Install Models | Installing-PEcAn#install-models]]
-  * [[Installing BETY | Installing-PEcAn#installing-bety]]
-  * [[Installing PEcAn | Installing-PEcAn#installing-pecan]]
-  * [[Configuring PEcAn Web Interface | Installing-PEcAn#configuring-pecan-web-interface]]
-* [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
-* [[Troubleshooting PEcAn | Troubleshooting-pecan]]
-
 #### [[Using PEcAn | Getting-started#getting-started-iii-using-pecan]] 
 * [[Settings files | Configuration Files]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
@@ -39,6 +29,8 @@
   * [[Installing PEcAn | Installing-PEcAn#installing-pecan]]
   * [[Configuring PEcAn Web Interface | Installing-PEcAn#configuring-pecan-web-interface]]
 * [[PEcAn Configuration and Settings Files | Configuration-Files]]
+* [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
+* [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
 #### [[Using Git and GitHub | wiki#using-git-and-github]]
 * [[PEcAn Directory Structure | Directory-structure]]
