@@ -1,6 +1,6 @@
-## [[User's Guide | wiki#use]]
+## [[User's Guide | Getting-started]]
 
-#### [[Background | wiki#getting-started-i-background]]
+#### [[Background | Getting-started#getting-started-i-background]]
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
 * [[VM to Desktop Converter | Vm-desktop-conversion]]
 * [[Work through Demo | https://ebi-forecast.igb.illinois.edu/redmine/documents/27]]
@@ -8,17 +8,16 @@
 * [[Create Redmine Account (for EBI and CHEAS researchers) | http://www.redmine.org/account/register]]
 
 #### [[Using PEcAn | Getting-started#getting-started-iii-using-pecan]] 
-* [[Settings files | Configuration Files]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
-#### [[Reporting Bugs and Requesting Features | wiki#reporting-bugs-and-requesting-features]]
+#### [[Reporting Bugs and Requesting Features | Getting-started#reporting-bugs-and-requesting-features]]
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
 * [[Requesting Features | Github-issues#requesting-a-feature]]
 
-## [[Developer's Guide | wiki#development]]
+## [[Developer's Guide | Development]]
 
 
-#### [[Setup | wiki#setup]]
+#### [[Setup | Development#setup]]
 * [[Installing PEcAn | Installing-PEcAn]]
   * [[Install Build Environment | Installing-PEcAn#install-build-environment]]
   * [[Install Models | Installing-PEcAn#install-models]]
@@ -29,14 +28,14 @@
 * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 
-#### [[Using Git and GitHub | wiki#using-git-and-github]]
+#### [[Using Git and GitHub | Development#using-git-and-github]]
 * [[PEcAn Directory Structure | Directory-structure]]
 * [[Using Github and Git | Using-Git]]
   * [[Recommended Workflow for PEcAn and BETY Developers | Using-Git#recommended-workflow-for-pecan-and-bety-developers]]
   * [[Git Overview | Using-Git#quick-git-overview]]
   * [[Git + RStudio | Using-Git#git--rstudio]]
 
-#### [[R Development | wiki#r-development]]
+#### [[R Development | Development#r-development]]
 * [[Coding Style | Coding-style]]
 * [[Documentation | Roxygen2]]
 * [[Testing | Testing]]
