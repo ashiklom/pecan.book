@@ -14,7 +14,6 @@
 * [[Settings files | Configuration Files]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
 
-
 #### [[Reporting Bugs and Requesting Features | wiki#reporting-bugs-and-requesting-features]]
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
 * [[Requesting Features | Github-issues#requesting-a-feature]]
