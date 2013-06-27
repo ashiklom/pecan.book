@@ -10,14 +10,10 @@
  * These are in the process of being migrated from [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki) to github (here, below).
  * As you are reading, make some edits and/or ask questions where documentation is unclear or incomplete
 
-### Getting started II: Installing PEcAn
+### Getting started II: Using PEcAn
 
-* [[Installing PEcAn]]
 * [[Upgrading PEcAn/VM]]
 * [[Troubleshooting PEcAn]]
-
-### Getting started III: Using PEcAn
-
 * [[Settings Files| PEcAn-Configuration]]: what goes in the PEcAn settings files (e.g. `pecan.xml`)
 * [[Workflow Modules]]
 
