@@ -19,14 +19,12 @@ See the [PEcAn README](https://github.com/PecanProject/pecan/blob/master/README.
  * These are in the process of being migrated from [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki) to github (here, below).
  * As you are reading, make some edits and/or ask questions where documentation is unclear or incomplete
 
-### Getting started II: Installing PEcAn
 
-* [[Installing PEcAn]]
+### Getting started II: Using PEcAn
+* [[Upgrading PEcAn]]
 * [[Troubleshooting PEcAn]]
-
-### Getting started III: Using PEcAn
-
 * [[Settings Files]]
+* [[Workflow Modules]]
 
 ##### University of Illinois - Energy Biosciences Institute
 
