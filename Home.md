@@ -20,6 +20,10 @@ PEcAn is not itself an ecosystem model, and it can be used to with a variety of 
 
 This system allows you to experiment and create simulations using PEcAn, ED, SIPNET, BioCro and BETYdb. The first page will allow for selection of a site where the simulation will run at. The BETY database contains data for both the local system as well as data on the illinois ebi servers (ebi-cluster and ebi-forecast). Only those sites with data on the local system can be run. After selecting a site and entering the date range for the simulation, PEcAn will take over and set up and execute the selected model. Once the model is finished it will allow you to create graphs with the results of the simulation as well as download the results. It is also possible to see all past experiments and simulations.
 
+* [[Settings Files | Configuration Files]]
+* [[Workflow Modules]]
+
+
 This machine uses the BETY database (LeBauer et al, 2010) for the trait data and the PEcAn analyzer.
 
 For any questions about the research behind this demonstration or about the system itself, please contact Michael Dietze at dietze(at)bu.edu or David LeBauer at dlebauer@illinois.edu
