@@ -1,6 +1,4 @@
 
-## Development
-
 
 ### Setup
 
