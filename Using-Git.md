@@ -11,7 +11,7 @@ network access or a central server. Branching and merging are fast and
 easy to do.
 
 There are two fun tutorials for learnign git: [LearnGitBranching](http://pcottle.github.com/learnGitBranching/) and
-[TryGit](http://try.github.com) place to start is with these two quick Git tutorials. More information is available in the [[References | Using-Git#references]]
+[TryGit](http://try.github.com). More information is available in the [[References | Using-Git#references]]
 
 
 In the rest of the document I will talk about URL’s to clone the code.
