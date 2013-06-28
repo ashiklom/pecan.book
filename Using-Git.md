@@ -10,6 +10,10 @@ history and full revision tracking capabilities, not dependent on
 network access or a central server. Branching and merging are fast and
 easy to do.
 
+There are two fun tutorials for learnign git: [LearnGitBranching](http://pcottle.github.com/learnGitBranching/) and
+[TryGit](http://try.github.com) place to start is with these two quick Git tutorials. More information is available in the [[References | Using-Git#references]]
+
+
 In the rest of the document I will talk about URL’s to clone the code.
 There a few URL’s you can use to clone a project, using https, ssh and
 git. You can use either https or git to clone a repository and write to
@@ -302,7 +306,7 @@ References:
 * Another set of pages about branching,
 [http://sandofsky.com/blog/git-workflow.html](http://sandofsky.com/blog/git-workflow.html)
 * [Stackoverflow highest voted questions tagged "git"](http://stackoverflow.com/questions/tagged/git?sort=votes&pagesize=50)
-* [Visual Git Tutorial](http://pcottle.github.com/learnGitBranching/)
+
 
 #### GitHub Documentation
 
