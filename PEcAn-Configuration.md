@@ -239,6 +239,7 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 <run>
 	<start.date>2002-01-01 00:00:00</start.date>
 	<end.date>2005-12-31 00:00:00</end.date>
+	</dbfiles>/home/carya/.pecan/dbfiles</dbfiles>
 	<site>
 		<id>772</id>
 		<name>Niwot Ridge Forest/LTER NWT1 (US-NR1)</name>
@@ -255,7 +256,8 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 ```
 
 * **start.date** : [required] the first day of the simulation  
-* **end.date** : [required] the last day of the simulation  
+* **end.date** : [required] the last day of the simulation
+* **dbfiles** : [optional] location where pecan should write files that will be stored in the database. The default is store them in ${HOME}/.pecan/dbfiles
 
 Site specific information is specified in the `<site>`subsection. Either `<id>` or `<name>`, `<lat>` and `<lon>` should be specified. If id and any of the others are specified the values will be compared with those from the bETY database.
  
