@@ -25,7 +25,7 @@ The following are the tags that can be used to configure the folders used by PEc
 <a name="database_access" />
 ## Database Access
 
-The connection to the BETY database is configured using this section. In this section you will specify what driver to use to connect to the database (MySQL by default) and the connection parameters to connect to the database.
+The connection to the BETY database is configured using this section. In this section you will specify what driver to use to connect to the database (MySQL by default) and the connection parameters to connect to the database. This section is very picky and will only accept parameters that are passed into the connection function for each database driver, any other entries will result in an error by the database driver.
 
 ### functions: 
 
@@ -42,10 +42,9 @@ The connection to the BETY database is configured using this section. In this se
 
 * **driver** : [optional] the driver to use to connect to the database. Default value is MySQL  
 * **dbname** : [optional] the name of the database (was name), default value is the username of the current user logged in.  
-* **username** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in.  
+* **username** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in (PostgreSQL uses user for this field).
 * **password** : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
 * **host** : [optional] the name of the host to connect to, default value is localhost.  
-* **dbfiles**: [optional] default is `$HOME/.pecan/dbfiles`. Where new files tracked by the database table `dbfiles` will be stored.
 
 For other database drivers these parameters will change. See the driver documentation in R for the right parameters.
 
@@ -239,6 +238,7 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 <run>
 	<start.date>2002-01-01 00:00:00</start.date>
 	<end.date>2005-12-31 00:00:00</end.date>
+	</dbfiles>/home/carya/.pecan/dbfiles</dbfiles>
 	<site>
 		<id>772</id>
 		<name>Niwot Ridge Forest/LTER NWT1 (US-NR1)</name>
@@ -255,7 +255,8 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 ```
 
 * **start.date** : [required] the first day of the simulation  
-* **end.date** : [required] the last day of the simulation  
+* **end.date** : [required] the last day of the simulation
+* **dbfiles** : [optional] location where pecan should write files that will be stored in the database. The default is store them in ${HOME}/.pecan/dbfiles
 
 Site specific information is specified in the `<site>`subsection. Either `<id>` or `<name>`, `<lat>` and `<lon>` should be specified. If id and any of the others are specified the values will be compared with those from the bETY database.
  
