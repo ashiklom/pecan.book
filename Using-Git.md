@@ -73,7 +73,6 @@ git pull upstream master
 ```bash
 ./scripts/build.sh
 ```
-
 3. Create a branch 
 ```bash
 git checkout -b <branchname>
