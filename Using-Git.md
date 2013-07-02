@@ -68,6 +68,12 @@ git checkout master
 ```bash 
 git pull upstream master
 ```
+2. Build most recent versions of R packages
+
+```bash
+./scripts/build.sh
+```
+
 3. Create a branch 
 ```bash
 git checkout -b <branchname>
@@ -75,6 +81,11 @@ git checkout -b <branchname>
 4. work/commit/etc 
 ```bash
 git commit
+```
+5. make sure that code compiles
+
+```bash
+./scripts/build.sh -c
 ```
 5. Push this branch to your github space 
 ```bash

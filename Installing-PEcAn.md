@@ -457,6 +457,23 @@ cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 All done you can now visit the server http://\<hostname>:\<port>/pecan' and you can interact with the database using 'http://\<hostname>:\<port>/pecan/db/'
 
 
+## Updating, Building, and Checking PEcAn
+
+The [[`build.sh`| pecan/blob/master/scripts/build.sh]] script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions.
+
+Here are the options (see `./scripts/build.sh -h`)
+
+```
+./scripts/build.sh <options>
+ -h, --help      : this help text
+ -f, --force     : force a build
+ -g, --git       : do a git pull
+ -i, --install   : install all R packages (default=yes)
+ -n, --noinstall : do not install all R packages
+ -c, --check     : check the R packages before install
+ -e, --email     : send email to following people on success
+```
+
 ## Additional datasets
 
 ### FIA database

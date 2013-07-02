@@ -2,8 +2,8 @@
 
 ### Setup
 
- * [[Installing PEcAn]]
- * [[PEcAn Configuration and Settings Files | Configuration Files]]
+* [[Installing PEcAn]]
+* [[PEcAn Configuration and Settings Files | Configuration Files]]
 
 ### Using Git and GitHub
 
