@@ -6,7 +6,7 @@ We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.il
 ### Set `R_LIBS_USER` 
 
 
-(All platforms)
+(All platforms) [CRAN Reference](http://cran.r-project.org/doc/manuals/r-devel/R-admin.html#Managing-libraries)
 
 ```bash
 # point R to personal lib folder
