@@ -457,7 +457,7 @@ cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 All done you can now visit the server http://\<hostname>:\<port>/pecan' and you can interact with the database using 'http://\<hostname>:\<port>/pecan/db/'
 
 
-## Updating, Building, and Checking PEcAn
+## Update Build and Check PEcAn
 
 The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions.
 
