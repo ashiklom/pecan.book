@@ -2,13 +2,22 @@ We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.il
 
 ## Install build environment
 
-### Linux Ubuntu
+
+### Set `R_LIBS_USER` 
+
+
+(All platforms)
 
 ```bash
 # point R to personal lib folder
 echo 'export R_LIBS_USER=${HOME}/R/library' >> ~/.bashrc
 source ~/.bashrc
 mkdir -p ${R_LIBS_USER}
+```
+
+### Linux Ubuntu
+
+```bash
 
 sudo -s
 
@@ -473,6 +482,8 @@ Here are the options (see `./scripts/build.sh -h`)
  -c, --check     : check the R packages before install
  -e, --email     : send email to following people on success
 ```
+
+
 
 ## Additional datasets
 
