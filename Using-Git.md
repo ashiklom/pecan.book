@@ -68,7 +68,7 @@ git checkout master
 ```bash 
 git pull upstream master
 ```
-2. Build most recent versions of R packages
+2. Build most recent versions of R packages ([`./scripts/build.sh -h` for help)](Installing-PEcAn#update-build-and-check-pecan))
 
 ```bash
 ./scripts/build.sh

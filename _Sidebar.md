@@ -13,6 +13,7 @@
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 * [[Settings Files | PEcAn-Configuration]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
+* [[Updating, Building, and Chekcing | Installing-PEcAn#update-build-and-check-pecan ]]
 
 #### [[Reporting Bugs and Requesting Features | Getting-started#reporting-bugs-and-requesting-features]]
 * [[Reporting Bugs | Github-issues#reporting-a-bug]]
