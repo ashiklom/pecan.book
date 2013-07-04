@@ -468,7 +468,7 @@ All done you can now visit the server http://\<hostname>:\<port>/pecan' and you 
 
 ## Update Build and Check PEcAn
 
-The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions. To use the email option, bash mail must be installed (`sudo apt-get install cups-client mailutils`).
+The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions. To use the email option, bsd mail must be installed (on Ubuntu / CentOS: `apt-get install bsd-mailx` / `yum install bsd-mailx`).
 
 Here are the options (see `./scripts/build.sh -h`)
 
