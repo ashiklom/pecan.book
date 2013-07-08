@@ -244,7 +244,7 @@ There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minima
 
 ### Database creation
 
-The following creates the user, database and populates the database with the latest version from Illinois.
+The following creates the user, database and populates the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database. Installing the database is not necessarily if you will install PEcAn as well, at that point you can simply call pecan/scripts/updatedb.sh.
 
 ```bash
 # needs to be done only once
@@ -267,13 +267,12 @@ The php version comes with PEcAn and should be accessible from http://<host>:<po
 The RUBY version requires a few extra packages to be installed first.
 
 ```bash
-# passenger 3 repository
-apt-get install python-software-properties
-apt-add-repository ppa:brightbox/passenger
-apt-get update
+sudo apt-get -y install python-software-properties
+sudo apt-add-repository -y ppa:brightbox/ruby-ng
+sudo apt-get update
 
 # install all ruby related packages
-apt-get -y install ruby1.8 ruby1.8-dev rubygems1.8 librmagick-ruby1.8 libmysql-ruby1.8 libapache2-mod-passenger imagemagick libmagickwand-dev libmagic-dev libxslt1-dev libmysqlclient-dev libnetcdf-dev libsqlite3-dev
+sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1
 ```
 
 Next we install the web app.
