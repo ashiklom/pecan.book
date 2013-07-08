@@ -107,7 +107,7 @@ Based on version of ubuntu 32/64 use either of the following
 
 *32bit only*
 ```bash
-wget http://download2.rstudio.org/rstudio-server-0.97.336-i386.deb
+wget http://download2.rstudio.org/rstudio-server-0.97.551-i386.deb
 dpkg -i rstudio-server-*
 rm rstudio-server-*
 echo "www-address=127.0.0.1" >> /etc/rstudio/rserver.conf
@@ -120,7 +120,7 @@ exit
 
 *64bit only*
 ```bash
-wget http://download2.rstudio.org/rstudio-server-0.97.336-amd64.deb
+wget http://download2.rstudio.org/rstudio-server-0.97.551-amd64.deb
 dpkg -i rstudio-server-*
 rm rstudio-server-*
 echo "www-address=127.0.0.1" >> /etc/rstudio/rserver.conf
