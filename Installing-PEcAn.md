@@ -331,8 +331,8 @@ EOF
 ln -s /usr/local/bety/public /var/www/bety
 
 cat > /etc/apache2/conf.d/bety << EOF
-RailsEnv production
-RailsBaseURI /bety
+RackEnv production
+RackBaseURI /bety
 <Directory /var/www/bety>
    Options FollowSymLinks
    AllowOverride None
