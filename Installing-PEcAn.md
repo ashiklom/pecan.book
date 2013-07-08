@@ -361,10 +361,13 @@ git clone https://github.com/PecanProject/pecan.git
 
 # install PEcAn packages in R
 cd pecan
-R --vanilla < scripts/install.dependencies.R
+./scripts/install.dependencies.R
 
 # compile pecan
 ./scripts/build.sh
+
+# update/install database
+./scripts/updatedb.sh
 ```
 
 ### PEcAn Testrun
