@@ -272,7 +272,7 @@ sudo apt-add-repository -y ppa:brightbox/ruby-ng
 sudo apt-get update
 
 # install all ruby related packages
-sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1
+sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1 libapache2-mod-passenger 
 ```
 
 Next we install the web app.
