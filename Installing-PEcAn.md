@@ -244,11 +244,17 @@ There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minima
 
 ### Database creation
 
-The following creates the user, database and populates the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database. Installing the database is not necessarily if you will install PEcAn as well, at that point you can simply call pecan/scripts/updatedb.sh.
-
+The following creates the user and database.
 ```bash
 # needs to be done only once
 mysql -u root -p -e "grant all on bety.* to bety@localhost identified by 'bety';"
+mysql -u bety -pbety -e "create database bety;"
+```
+
+If you plan on installing PEcAn you can skip the following section. Next we populate the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database.
+
+```bash
+# needs to be done only once
 curl -o ${HOME}/updatedb.sh http://isda.ncsa.illinois.edu/~kooper/EBI/updatedb.sh
 chmod 755 ${HOME}/updatedb.sh
 
@@ -261,8 +267,6 @@ ${HOME}/updatedb.sh
 The php version comes with PEcAn and should be accessible from http://<host>:<port>/pecan/db/ once PEcAn is installed.
 
 ### RUBY version
-
-**THESE INSTRUCTIONS ARE OUT OF DATE! BETY NOW REQUIRES RUBY 1.9**
 
 The RUBY version requires a few extra packages to be installed first.
 
