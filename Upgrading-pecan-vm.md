@@ -1,10 +1,11 @@
 To upgrade to the latest version of PEcAn/VM you will need to do each of the intermediate steps, you can not skip to the latest version.
 
-## Version 1.3.0 to Version 1.3.1
+## Version 1.3.1 to Version 1.3.2
 
 ### Changes
 
 * [PEcAn/BETY] support for postgresql
+* [PEcAn] store results from get.traits and run.meta.analysis for reuse
 * [PEcAn] ED/biocro templates have moved to models/inst folders from web folder
 * [PEcAn] better checks of pecan.xml file
 * [PEcAn] separate variables can be supplied for ensembles and sensitivity analysis
