@@ -254,6 +254,9 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 		<name>localhost</name>
 		<rundir>/home/carya/testrun.pecan/run/</rundir>
 		<outdir>/home/carya/testrun.pecan/out/</outdir>
+		<qsub>qsub -N @NAME@ -o @STDOUT@ -e @STDERR@</qsub>
+		<qsub.jobid>lionxo_test ([0-9]+) .*</qsub.jobid>
+		<qstat>qstat -j @JOBID@ 2>1 >/dev/null || echo DONE</qstat>
 	</host>
 </run>
 ```
@@ -272,7 +275,9 @@ Site specific information is specified in the `<site>`subsection. Either `<id>` 
 
 Host on which the simulation will run is specified in the `<host>` subsection. If this section is not specified it is assumed the simulation will run on localhost.
 
-* **host**	
 * **name** : [optional] name of host server where model is located and executed, if not specified localhost is assumed.  
 * **rundir** : [optional/required] location where all the configuration files are written. For localhost this is optional (`<outdir>/run` is the default), for any other host this is required.  
 * **outdir** : [optional/required] location where all the outputs of the model are written. For localhost this is optional (`<outdir>/out` is the default), for any other host this is required.
+* **qsub** : [optional] the command to submit a job to the queuing system. There are 3 parameters you can use when specifying the qsub command, you can add additional values for your specific setup (for example -l walltime to specify the walltime, etc). You can specify @NAME@ the pretty name, @STDOUT@ where to write stdout and @STDERR@, where to write stderr. The default value is "qsub -N @NAME@ -o @STDOUT@ -e @STDERR@".
+* **qsub.jobid** : [optional] the regular expression used to find the jobid returned from qsub. The default value is "Your job ([0-9]+) .*"
+* **qstat** : [optional] the command to execute to check if a job is finished, this should return DONE if the job is finished. There is one parameter this command should take @JOBID@ which is the id of the job as returned by qsub.jobid. The default value is "qstat -j @JOBID@ 2>1 >/dev/null || echo DONE"
