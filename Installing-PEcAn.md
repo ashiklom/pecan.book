@@ -234,9 +234,9 @@ sipnet.runk
 ### Installing BioCro
 
 ```bash
-echo 'devtools::install_github("biocro", username = "dlebauer")' | R --vanilla
+wget http://file-server.igb.illinois.edu/~dlebauer/BioCro_0.91_R_x86_64-pc-linux-gnu.tar.gz
+R CMD INSTALL BioCro_0.91_R_x86_64-pc-linux-gnu.tar.gz
 ```
-
 
 ## Installing BETY
 
