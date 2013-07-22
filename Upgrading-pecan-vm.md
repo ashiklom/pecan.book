@@ -36,7 +36,7 @@ apt-get install python-software-properties
 apt-add-repository ppa:brightbox/ruby-ng
 apt-get update
 
-apt-get install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1
+apt-get install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1 bundler
 apt-get dist-upgrade
 ruby-switch --set ruby1.9.1
 ```
