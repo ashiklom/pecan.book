@@ -41,7 +41,7 @@ exit
 
 ### CentOS / RHEL
 
-#### Install and configure MySQL
+#### Install and configure MySQL, udunits2, NetCDF
 
 [Reference: centoshelp.org](http://centoshelp.org/servers/database/installing-configuring-mysql-server/)
 
@@ -49,6 +49,23 @@ exit
 yum -y install git R mysql mysql-server udunits2 netcdf
 chkconfig --level 2345 mysqld on 
 service mysqld start
+```
+
+### OSX
+
+#### udunits
+
+Installing udunits-2 on MacOSX is done from source.
+* download most recent version here: http://www.unidata.ucar.edu/downloads/udunits/index.jsp
+instructions for compiling from source here: http://www.unidata.ucar.edu/software/udunits/udunits-2/udunits2.html#Obtain
+
+
+```bash
+wget ftp://ftp.unidata.ucar.edu/pub/udunits/udunits-2.1.24.tar.gz
+tar -xvf udunits-2.1.24.tar.gz
+cd udunits-2.1.24
+./configure; make; make check; make clean
+
 ```
 
 #### Install and start Apache
