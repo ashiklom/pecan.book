@@ -51,24 +51,6 @@ chkconfig --level 2345 mysqld on
 service mysqld start
 ```
 
-### OSX
-
-#### udunits
-
-Installing udunits-2 on MacOSX is done from source.
-
-* download most recent [version of Udunits here](http://www.unidata.ucar.edu/downloads/udunits/index.jsp)
-* instructions for [compiling from source](http://www.unidata.ucar.edu/software/udunits/udunits-2/udunits2.html#Obtain)
-
-
-```bash
-wget ftp://ftp.unidata.ucar.edu/pub/udunits/udunits-2.1.24.tar.gz
-tar -xvf udunits-2.1.24.tar.gz
-cd udunits-2.1.24
-./configure; make; make check; make clean
-
-```
-
 #### Install and start Apache
 
 ```bash
@@ -133,14 +115,22 @@ sudo bash -c 'echo "/usr/local/mysql/bin" > /etc/paths.d/mysql'
 
 For more instructions see http://martynplummer.wordpress.com/2011/11/04/rjags-3-for-mac-os-x/
 
-#### Install tgp
 
-**This is not needed anymore but kept for reference**
 
-This package is source only and needs to be installed first.
+#### Install udunits
+
+Installing udunits-2 on MacOSX is done from source.
+
+* download most recent [version of Udunits here](http://www.unidata.ucar.edu/downloads/udunits/index.jsp)
+* instructions for [compiling from source](http://www.unidata.ucar.edu/software/udunits/udunits-2/udunits2.html#Obtain)
+
 
 ```bash
-echo 'install.packages("tgp", type="both", repos="http://cran.rstudio.com/")' | R --vanilla
+wget ftp://ftp.unidata.ucar.edu/pub/udunits/udunits-2.1.24.tar.gz
+tar -xvf udunits-2.1.24.tar.gz
+cd udunits-2.1.24
+./configure; make; make check; make clean
+
 ```
 
 ## Install models
