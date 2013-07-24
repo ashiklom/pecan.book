@@ -56,8 +56,9 @@ service mysqld start
 #### udunits
 
 Installing udunits-2 on MacOSX is done from source.
-* download most recent version here: http://www.unidata.ucar.edu/downloads/udunits/index.jsp
-instructions for compiling from source here: http://www.unidata.ucar.edu/software/udunits/udunits-2/udunits2.html#Obtain
+
+* download most recent [version of Udunits here](http://www.unidata.ucar.edu/downloads/udunits/index.jsp)
+* instructions for [compiling from source](http://www.unidata.ucar.edu/software/udunits/udunits-2/udunits2.html#Obtain)
 
 
 ```bash
