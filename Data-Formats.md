@@ -5,7 +5,7 @@
 ## Outputs
 
 * created by `model2netcdf` functions
-* these use the MsTMIP Standard
+* based on format used by [MsTMIP](http://nacp.ornl.gov/MsTMIP_variables.shtml)
 
 ## Defining new inputs
 
