@@ -52,3 +52,7 @@
   * [[Packages used in Development | Package-data#packages-used-in-development]]
 * [[Logging, Warnings, and Error Messages | Logging]]
 
+#### [[Data Formats]]
+* [[Inputs | Data-Formats#Inputs]]
+* [[Outputs | Data-Formats#Inputs]]
+* [[Defining | Data-Formats#Definition]] 
