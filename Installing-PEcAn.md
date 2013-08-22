@@ -241,6 +241,15 @@ sipnet.runk
 
 ### Installing BioCro
 
+**Developers: Install BioCro from Source** 
+
+```bash
+git clone ebi-forecast.igb.illinois.edu:/home/share/source/biocro.git
+R CMD INSTALL biocro
+```
+
+**Public: Install BioCro Binary**
+
 ```bash
 wget http://file-server.igb.illinois.edu/~dlebauer/BioCro_0.91.tar.gz
 R CMD INSTALL BioCro_0.91.tar.gz
