@@ -91,9 +91,10 @@ tar zxf szip-2.1-MacOSX-intel.tar.gz
 sudo mv szip-2.1-MacOSX-intel /usr/local/szip
 
 # install HDF5
-curl -o hdf5-1.8.10-patch1tar.gz http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.10-patch1tar.gz
-tar zxf hdf5-1.8.10-patch1tar.gz
-cd hdf5-1.8.10-patch1
+
+curl -o hdf5-1.8.11.tar.gz http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.11.tar.gz
+tar zxf hdf5-1.8.11.tar.gz
+cd hdf5-1.8.11
 sed -i -e 's/-O3/-O0/g' config/gnu-flags 
 ./configure --prefix=/usr/local/hdf5 --enable-fortran --enable-cxx --with-szlib=/usr/local/szip
 make
