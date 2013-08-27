@@ -79,8 +79,12 @@ git checkout -b <branchname>
 ```
 4. work/commit/etc 
 ```bash
-git commit
+git commit -m "<some descriptive information about what was done>"
 ```
+* commit often; each commit should address a single issue
+* to close with a commit, reference the issue number:
+** e.g. "closes/references github #10" or "closes/references redmine #10"
+
 5. make sure that code compiles
 
 ```bash
