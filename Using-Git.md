@@ -81,9 +81,15 @@ git checkout -b <branchname>
 ```bash
 git commit -m "<some descriptive information about what was done>"
 ```
-* commit often; each commit should address a single issue
-* to close with a commit, reference the issue number:
-** e.g. "closes/references github #10" or "closes/references redmine #10"
+* commit often; 
+* each commit can address 0 or 1 issue, many commits can reference an issue
+* to close an issue from a commit message, include the following text:
+** [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
+*** to close: "closes #xxx" (or syn. close, closed, fixes, fix, fixed)  
+*** to reference: just the issue number (e.g. "#xxx")
+** **Redmine**: 
+*** to close: "fixes redmine #xxx" (or closes etc.) 
+*** to reference: "redmine #xxx"
 
 5. make sure that code compiles
 
