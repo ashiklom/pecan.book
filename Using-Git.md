@@ -84,12 +84,12 @@ git commit -m "<some descriptive information about what was done>"
 * commit often; 
 * each commit can address 0 or 1 issue, many commits can reference an issue
 * to close an issue from a commit message, include the following text:
-** [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
-*** to close: "closes #xxx" (or syn. close, closed, fixes, fix, fixed)  
-*** to reference: just the issue number (e.g. "#xxx")
-** **Redmine**: 
-*** to close: "fixes redmine #xxx" (or closes etc.) 
-*** to reference: "redmine #xxx"
+    * [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
+        * to close: "closes #xxx" (or syn. close, closed, fixes, fix, fixed)  
+        * to reference: just the issue number (e.g. "#xxx")
+    * **Redmine**: 
+        * to close: "fixes redmine #xxx" (or closes etc.) 
+        * to reference: "redmine #xxx"
 
 5. make sure that code compiles
 
