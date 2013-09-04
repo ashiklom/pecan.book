@@ -41,3 +41,28 @@ An example of the template can be found in [ED2IN.r82](https://github.com/PecanP
 **@OUTDIR@** :  location where output files are written (**without the runid**), from \<run\>\<host\>\<outdir\>, should not be used.  
 **@SCRATCH@** : local scratch space for outputs, generated /scratch/\<username\>/run$scratch, should not be used right now since it only works on ebi-cluster  
 
+# ED Computation HPC
+
+## TACC lonestar
+
+```bash
+module load hdf5
+curl -o ED.r82.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/ED.r82.tgz
+tar zxf ED.r82.tgz
+rm ED.r82.tgz
+cd ED.r82/ED/build/bin
+curl -o include.mk.lonestar http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.lonestar
+make OPT=lonestar
+```
+
+## TACC stampede
+
+```bash
+module load hdf5
+curl -o ED.r82.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/ED.r82.tgz
+tar zxf ED.r82.tgz
+rm ED.r82.tgz
+cd ED.r82/ED/build/bin
+curl -o include.mk.stampede http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.stampede
+make OPT=stampede
+```
