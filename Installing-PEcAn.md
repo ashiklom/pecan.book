@@ -36,7 +36,7 @@ apt-get -y install libgdal1-dev libproj-dev
 apt-get -y install libdbd-mysql libmysqlclient-dev mysql-server mysql-client apache2 libapache2-mod-php5 php5 php5-mysql 
 
 # install packages to compile docs
-apt-get install texinfo texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+apt-get -y install texinfo texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
 # install devtools
 echo 'install.packages("devtools", repos="http://cran.rstudio.com/")' | R --vanilla
