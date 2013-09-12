@@ -27,10 +27,16 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get -y update
 
 # install all packages needed
-apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core default-jre libdbd-mysql libmysqlclient-dev mysql-server mysql-client jags liblapack-dev libnetcdf-dev netcdf-bin texlive-latex-base texlive-latex-extra texlive-fonts-recommended bc libcurl4-openssl-dev texinfo curl apache2 libapache2-mod-php5 php5 php5-mysql udunits-bin libudunits2-dev
+apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev
 
 # this needs to be done separately from previous command
 apt-get -y install libgdal1-dev libproj-dev
+
+# install packages for mysql and webserver
+apt-get -y install libdbd-mysql libmysqlclient-dev mysql-server mysql-client apache2 libapache2-mod-php5 php5 php5-mysql 
+
+# install packages to compile docs
+apt-get install texinfo texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
 # install devtools
 echo 'install.packages("devtools", repos="http://cran.rstudio.com/")' | R --vanilla
