@@ -5,16 +5,19 @@ We use Both GitHub and Redmine to track development.
 
 To learn about GitHub, it is worth taking some time to read through the [FAQ](https://help.github.com/). When in doubt, the first step is to click the "Help" button at the top of the page.
 
-### ALL non-trivial code changes require:
+### Ideally, non-trivial code changes will be linked to an issue and a commit.
 
-1. associated issue and commit, so that it is easy to cross-reference feature or bug with changes in code 
-2. issue linked to code revision, e.g. "fixes redmine issue \# 200" or "fixes github issue #5"
+This requires creating issues for each task, making small commits, and referencing the issue within your commit message. Issues can be created [on GitHub](https://github.com/PecanProject/pecan/issues/new) or [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/issues/new). These issues can be linked to commits by adding text such as `fixes redmine # 200` or `fixes gh-5` (see [[Using Git During Development|Using-Git#during-development]]).
+
+Rationale: This workflow is a small upfront investment that reduces error and time spent re-creating and debugging errors. Associating issues and commits, makes it easier to identify why a change was made, and potential bugs that could arise when the code is changed. In addition, knowing which issue you are working on clarifies the scope and objectives of your current task. 
 
 Bugs, Issues, Features, etc.
 ============================
 
 Reporting a bug
 ---------------
+
+The first step is to work through debugging the issue yourself (see [[debugging]]). Once you have identified a problem, but do not know the solution, you can submit a request for support or bug report 
 
 ### Required content
 
@@ -74,7 +77,7 @@ through UI libraries, hardcopy on David’s bookshelf)\
 Closing an issue
 ----------------
 
-1. Definition of “Done” (TBD by Andrew)
+1. Definition of “Done”
  * test
  * documentation
 2.  when issue is resolved:
