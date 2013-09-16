@@ -1,5 +1,16 @@
 To upgrade to the latest version of PEcAn/VM you will need to do each of the intermediate steps, you can not skip to the latest version.
 
+
+## Version 1.3.2 to 1.3.3 
+
+```bash
+sudo apt-get install libgdal1-dev libgdal-dev libgeos-c1=3.3.3-1.1 libspatialite3=3.1.0~rc2-1ubuntu1
+```
+
+```r
+install.packages("rgdal")
+```
+
 ## Version 1.3.1 to Version 1.3.2
 
 ### Changes
