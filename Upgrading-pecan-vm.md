@@ -1,5 +1,16 @@
 To upgrade to the latest version of PEcAn/VM you will need to do each of the intermediate steps, you can not skip to the latest version.
 
+## Version 1.3.3 to 1.3.4 (Not released yet)
+
+- To use HPC clusters you need to have a <qsub/> under run/host in pecan.xml
+- The web needs to have the following added to system.php
+```php
+# List of allowed hosts
+$hostlist=array(gethostname())
+```
+### Changes
+
+* Support for HPC
 
 ## Version 1.3.2 to 1.3.3 
 
