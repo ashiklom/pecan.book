@@ -72,8 +72,17 @@ sudo yum install php php-mysql
 
 #### Install and configure Rstudio-server
 
+based on [Rstudio Server documentation](http://www.rstudio.com/ide/docs/server/getting_started)
+
 1. add `PATH=$PATH:/usr/sbin:/sbin` to `/etc/profile`
+   ```bash
+   cat "PATH=$PATH:/usr/sbin:/sbin; export PATH" >> /etc/profile
+   ```
 2. add [rstudio.conf](https://gist.github.com/dlebauer/6921889) to /etc/httpd/conf.d/ 
+   ```bash
+   wget https://gist.github.com/dlebauer/6921889/raw/d1e0f945228e5519afa6223d6f49d6e0617262bd/rstudio.conf
+   sudo mv rstudio.conf /httpd/conf.d
+   ```
 3. download and install server:
    ```bash
    wget http://download2.rstudio.org/rstudio-server-0.97.551-i686.rpm
