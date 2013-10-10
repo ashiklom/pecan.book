@@ -70,6 +70,18 @@ sudo service httpd start
 sudo yum install php php-mysql
 ```
 
+#### Install and configure Rstudio-server
+
+1. add `PATH=$PATH:/usr/sbin:/sbin` to `/etc/profile`
+2. add [rstudio.conf](https://gist.github.com/dlebauer/6921889) to /etc/httpd/conf.d/ 
+3. download and install server:
+   ```bash
+   wget http://download2.rstudio.org/rstudio-server-0.97.551-i686.rpm
+   sudo yum install --nogpgcheck rstudio-server-0.97.551-i686.rpm
+   ```
+4. restart server `sudo httpd restart`
+5. now you should be able to access `http://<server>/rstudio`
+
 ### Mac OSX
 
 #### Install R, Fortran, OpenMPI and HDF5
