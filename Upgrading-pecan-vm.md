@@ -6,7 +6,7 @@ To upgrade to the latest version of PEcAn/VM you will need to do each of the int
 - The web needs to have the following added to system.php
 ```php
 # List of allowed hosts
-$hostlist=array(gethostname())
+$hostlist=array(gethostname());
 ```
 ### Changes
 
