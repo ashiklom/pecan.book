@@ -11,6 +11,16 @@ This requires creating issues for each task, making small commits, and referenci
 
 Rationale: This workflow is a small upfront investment that reduces error and time spent re-creating and debugging errors. Associating issues and commits, makes it easier to identify why a change was made, and potential bugs that could arise when the code is changed. In addition, knowing which issue you are working on clarifies the scope and objectives of your current task. 
 
+### Should I use Redmine or Github?
+
+#### Use GitHub if:
+* you find a bug in a stable release of PEcAn
+* you want to request a feature that is 
+ * not integral to basic research
+ * is unlikely to lead to extended discussions
+#### Use Redmine if:
+* your bug or feature request does not belong on GitHub
+
 Bugs, Issues, Features, etc.
 ============================
 
@@ -33,21 +43,6 @@ The first step is to work through debugging the issue yourself (see [[debugging]
     relevant for development and use on ebi-forecast and ebi-cluster.
     Once we start distributing PEcAn, this will be required.
 
-### Additional information required for bugs in the BETYdb Web Interface
-
-Use the following format ([Redmine issue 1386](https://ebi-forecast.igb.illinois.edu/redmine/issues/1386)):
-
-* what I expect:
- * menu item -> sub-menu item -> link -> target page
-*  What I get
- * menu item -> sub-menu item -> link -> Error
-
-* Example:
-
-    I expect:
-    new site > new treatment > new trait >> launches traits/new
-    I get:
-    new site > new treatment > new trait >> undefined method `date_year' for #<Trait:0x7ffc8f110fb0>
 
 Requesting a feature
 --------------------
