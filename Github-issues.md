@@ -18,6 +18,7 @@ Rationale: This workflow is a small upfront investment that reduces error and ti
 * you want to request a feature that is 
  * not integral to basic research
  * is unlikely to lead to extended discussions
+
 #### Use Redmine if:
 * your bug or feature request does not belong on GitHub
 
