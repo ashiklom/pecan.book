@@ -125,31 +125,6 @@ git branch -D <branchname>
 ```
 
 
-### For BETY developers (integrating [test with cucumber](https://gist.github.com/chrislerum/566697)):
-
-```
-git pull #(or, if this is your first time ever getting the code, do git clone    
-rake db:migrate
-rake db:test:prepare
-spec spec
-cucumber
-## if either are not green, stop here and investigate. do not continue to develop until all green.
-git checkout -b my_work (create and switch to a local branch where you'll do your work)
-## do a little coding
-## make sure the tests are passing
-git commit
-## repeat steps 7, 8 and 9 as many times as you wish
-git checkout master
-git pull ## you do this at this step in case someone else pushed while you were working)
-## if that git pull says 'Already up-to-date', proceed to next step, otherwise run tests again
-git checkout my_work
-git rebase master
-git checkout master
-git merge my_work
-git push
-```
- 
-
 
 ### Committing Changes Using Pull Requests
 
