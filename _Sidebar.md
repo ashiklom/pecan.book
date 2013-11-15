@@ -31,7 +31,7 @@
   * [[Configuring PEcAn Web Interface | Installing-PEcAn#configuring-pecan-web-interface]]
 * [[PEcAn Configuration and Settings Files | Configuration-Files]]
 
-#### [[Using Git and GitHub | Development#using-git-and-github]]
+#### [[Development | Development]]
 * [[PEcAn Directory Structure | Directory-structure]]
 * [[Using Github and Git | Using-Git]]
   * [[Recommended Workflow for PEcAn and BETY Developers | Using-Git#recommended-workflow-for-pecan-and-bety-developers]]
