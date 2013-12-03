@@ -139,6 +139,27 @@ I use the package that comes from mysql (http://dev.mysql.com/downloads/mysql/) 
 sudo bash -c 'echo "/usr/local/mysql/bin" > /etc/paths.d/mysql'
 ```
 
+#### Install Postgres
+
+For those on a Mac I use the following app for postgresql which has
+postgis already installed (just make sure you have 9.3)
+http://postgresapp.com/
+
+To get postgis run the following commands in psql:
+```
+## Enable PostGIS (includes raster)
+CREATE EXTENSION postgis;
+## Enable Topology
+CREATE EXTENSION postgis_topology;
+## fuzzy matching needed for Tiger
+CREATE EXTENSION fuzzystrmatch;
+## Enable US Tiger Geocoder
+CREATE EXTENSION postgis_tiger_geocoder;
+```
+To check your postgis run the following command again in psql:
+```
+SELECT PostGIS_full_version();
+```
 #### Install JAGS
 
 For more instructions see http://martynplummer.wordpress.com/2011/11/04/rjags-3-for-mac-os-x/
