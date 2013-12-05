@@ -1,6 +1,6 @@
 PEcAn uses the testthat package developed by Hadley Wickham. Hadley has
 written instructions for using this pakcage in his
-[Testing](https://github.com/hadley/devtools/wiki/Testing) wiki.
+[Testing](http://adv-r.had.co.nz/Testing.html) chapter.
 
 Rationale
 ---------
