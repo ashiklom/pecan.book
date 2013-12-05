@@ -526,6 +526,9 @@ cat > ${HOME}/pecan/web/system.php << EOF
 \$db_password="bety";
 \$db_database="bety";
 
+# List of allowed hosts
+$hostlist=array(gethostname());
+
 # Folder where PEcAn is installed
 \$pecan_install="${R_LIBS_USER}";
 
