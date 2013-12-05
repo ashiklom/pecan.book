@@ -32,8 +32,14 @@ apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev 
 # this needs to be done separately from previous command
 apt-get -y install libgdal1-dev libproj-dev
 
-# install packages for mysql and webserver
-apt-get -y install libdbd-mysql mysql-server mysql-client apache2 libapache2-mod-php5 php5 php5-mysql 
+# install packages for webserver
+apt-get -y install apache2 libapache2-mod-php5 php5
+
+# install packages for mysql
+apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql 
+
+# install packages for postgresql (experimental, commands might be wrong)
+apt-get -y install libdbd-postgresql postgresql php5-postgresql
 
 # install packages to compile docs
 apt-get -y install texinfo texlive-latex-base texlive-latex-extra texlive-fonts-recommended
