@@ -138,38 +138,6 @@ HDF5 Tools, netcdf, GDB and emacs
 sudo apt-get -y install hdf5-tools cdo nco netcdf-bin ncview gdb emacs ess nedit
 ```
 
-## Additional datasets from Harvard
-
-Add datasets and runs
-
-```bash
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/Santarem_Km83.zip
-unzip -d sites Santarem_Km83.zip
-sed -i -e "s#/home/pecan#${HOME}#" sites/Santarem_Km83/ED_MET_DRIVER_HEADER
-rm Santarem_Km83.zip
-
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/testrun.s83.zip
-unzip testrun.s83.zip
-sed -i -e "s#/home/pecan#${HOME}#" testrun.s83/ED2IN
-rm testrun.s83.zip
-
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/ed2ws.harvard.tgz
-tar zxf ed2ws.harvard.tgz
-mkdir ed2ws.harvard/analy ed2ws.harvard/histo
-sed -i -e "s#/home/pecan#${HOME}#g" ed2ws.harvard/input_harvard/met_driver/HF_MET_HEADER ed2ws.harvard/ED2IN ed2ws.harvard/*.r
-rm ed2ws.harvard.tgz
-
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/testrun.PDG.zip
-unzip testrun.PDG.zip
-sed -i -e "s#/home/pecan#${HOME}#" testrun.PDG/Met/PDG_MET_DRIVER testrun.PDG/Template/ED2IN
-sed -i -e 's#/n/scratch2/moorcroft_lab/kzhang/PDG/WFire_Pecan/##' testrun.PDG/Template/ED2IN
-rm testrun.PDG.zip
-
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/create_met_driver.tar.gz
-tar zxf create_met_driver.tar.gz
-rm create_met_driver.tar.gz
-```
-
 ## Finishing up the machine
 
 ### Add a message to the login:
@@ -179,7 +147,7 @@ In case of 64 bit machine
 ```bash
 sudo -s
 cat > /etc/motd.tail << EOF
-PEcAn version 0.3.2
+PEcAn version 1.3.3
 
 This system allows you to experiment and create simulations using
 PEcAn, ED, SIPNET and BETY.
@@ -204,7 +172,7 @@ or in case of 32 bit machine
 ```bash
 sudo -s
 cat > /etc/motd.tail << EOF
-PEcAn version 0.3.2
+PEcAn version 1.3.3
 
 This system allows you to experiment and create simulations using
 PEcAn, ED, SIPNET and BETY.
@@ -249,4 +217,36 @@ sudo update-grub
 Once all done, stop the virtual machine
 ```bash
 history -c && ${HOME}/cleanvm.sh
+```
+
+## Additional datasets from Harvard
+
+Add datasets and runs
+
+```bash
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/Santarem_Km83.zip
+unzip -d sites Santarem_Km83.zip
+sed -i -e "s#/home/pecan#${HOME}#" sites/Santarem_Km83/ED_MET_DRIVER_HEADER
+rm Santarem_Km83.zip
+
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/testrun.s83.zip
+unzip testrun.s83.zip
+sed -i -e "s#/home/pecan#${HOME}#" testrun.s83/ED2IN
+rm testrun.s83.zip
+
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/ed2ws.harvard.tgz
+tar zxf ed2ws.harvard.tgz
+mkdir ed2ws.harvard/analy ed2ws.harvard/histo
+sed -i -e "s#/home/pecan#${HOME}#g" ed2ws.harvard/input_harvard/met_driver/HF_MET_HEADER ed2ws.harvard/ED2IN ed2ws.harvard/*.r
+rm ed2ws.harvard.tgz
+
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/testrun.PDG.zip
+unzip testrun.PDG.zip
+sed -i -e "s#/home/pecan#${HOME}#" testrun.PDG/Met/PDG_MET_DRIVER testrun.PDG/Template/ED2IN
+sed -i -e 's#/n/scratch2/moorcroft_lab/kzhang/PDG/WFire_Pecan/##' testrun.PDG/Template/ED2IN
+rm testrun.PDG.zip
+
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/create_met_driver.tar.gz
+tar zxf create_met_driver.tar.gz
+rm create_met_driver.tar.gz
 ```
