@@ -471,7 +471,7 @@ NB: pecan.xml is configured for the virtual machine, you will need to change the
 #### Apache Configuration for Linux Ubuntu 
 
 ```bash
-# bceome root
+# become root
 sudo -s
 
 # get index page
@@ -527,7 +527,7 @@ cat > ${HOME}/pecan/web/system.php << EOF
 \$db_database="bety";
 
 # List of allowed hosts
-$hostlist=array(gethostname());
+\$hostlist=array(gethostname());
 
 # Folder where PEcAn is installed
 \$pecan_install="${R_LIBS_USER}";
