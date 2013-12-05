@@ -1,6 +1,6 @@
-
 ### Setup
 
+* [[VM Creation]]
 * [[Installing PEcAn]]
 * [[PEcAn Configuration and Settings Files | Configuration Files]]
 
