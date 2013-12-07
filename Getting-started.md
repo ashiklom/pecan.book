@@ -16,7 +16,7 @@
 * [[Troubleshooting PEcAn]]
 * [[Settings Files| PEcAn-Configuration]]: what goes in the PEcAn settings files (e.g. `pecan.xml`)
 * [[Workflow Modules]]
-
+* [[Connecting PEcAn to a remote server / HPC]]
 ### Reporting Bugs and Requesting Features
 
 * GitHub
