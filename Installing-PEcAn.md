@@ -439,6 +439,9 @@ git clone https://github.com/PecanProject/pecan.git
 cd pecan
 ./scripts/install.dependencies.R
 
+# install mysql driver
+echo "install.packages('DRIVER', repos='http://cran.rstudio.com/')" | R --vanilla
+
 # compile pecan
 ./scripts/build.sh
 
