@@ -319,7 +319,8 @@ There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minima
 The following creates the user and database.
 ```bash
 # needs to be done only once
-mysql -u root -p -e "grant all on bety.* to bety@localhost identified by 'bety';"
+mysql -u root -p -e "grant all,super on bety.* to bety@localhost identified by 'bety';"
+mysql -u root -p -e "grant super on *.* to bety@localhost identified by 'bety';"
 mysql -u bety -pbety -e "create database bety;"
 ```
 
@@ -569,33 +570,4 @@ Here are the options (see `./scripts/build.sh -h`)
  -n, --noinstall : do not install all R packages
  -c, --check     : check the R packages before install
  -e, --email     : send email to following people on success
-```
-
-
-
-## Additional datasets
-
-### FIA database
-
-FIA database is large and will add an extra 10GB to the installation.
-
-```bash
-# needs to be done only once
-mysql -u root -p -e "grant all on fia5data.* to bety@localhost identified by 'bety';" 
-
-# download and update/install database
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/fiadb.sql
-mysql -u bety -p"bety" -e 'drop database if exists fia5data; create database fia5data;'
-mysql -u bety -p"bety" fia5data < fiadb.sql
-rm fiadb.sql
-```
-
-### Flux Camp
-
-Following will install the data for flux camp (as well as the demo script for PEcAn).
-```bash
-cd
-wget -O plot.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/plot.tgz
-tar zxf plot.tgz
-rm plot.tgz
 ```
