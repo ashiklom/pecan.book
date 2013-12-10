@@ -192,34 +192,34 @@ EOF
 exit
 ```
 
-## Helper Scripts
+## Additional datasets
 
-Script to clean the VM and remove as much as possible history [cleanvm.sh](http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh)
+### FIA database
 
-```bash
-wget -O ~/cleanvm.sh http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh
-chmod 755 ~/cleanvm.sh
-```
-
-Make sure machine has SSH keys [rc.local](http://isda.ncsa.illinois.edu/~kooper/EBI/rc.local)
+FIA database is large and will add an extra 10GB to the installation.
 
 ```bash
-sudo wget -O /etc/rc.local http://isda.ncsa.illinois.edu/~kooper/EBI/rc.local
+# needs to be done only once
+mysql -u root -p -e "grant all on fia5data.* to bety@localhost identified by 'bety';" 
+
+# download and update/install database
+wget http://isda.ncsa.illinois.edu/~kooper/EBI/fiadb.sql
+mysql -u bety -p"bety" -e 'drop database if exists fia5data; create database fia5data;'
+mysql -u bety -p"bety" fia5data < fiadb.sql
+rm fiadb.sql
 ```
 
-Change the resolution of the console
+### Flux Camp
 
+Following will install the data for flux camp (as well as the demo script for PEcAn).
 ```bash
-sudo sed -i -e 's/#GRUB_GFXMODE=640x480/GRUB_GFXMODE=1024x768/' /etc/default/grub
-sudo update-grub
+cd
+wget -O plot.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/plot.tgz
+tar zxf plot.tgz
+rm plot.tgz
 ```
 
-Once all done, stop the virtual machine
-```bash
-history -c && ${HOME}/cleanvm.sh
-```
-
-## Additional datasets from Harvard
+### Harvard for ED tutorial
 
 Add datasets and runs
 
@@ -249,4 +249,31 @@ rm testrun.PDG.zip
 wget http://isda.ncsa.illinois.edu/~kooper/EBI/create_met_driver.tar.gz
 tar zxf create_met_driver.tar.gz
 rm create_met_driver.tar.gz
+```
+
+## Finishing up
+
+Script to clean the VM and remove as much as possible history [cleanvm.sh](http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh)
+
+```bash
+wget -O ~/cleanvm.sh http://isda.ncsa.uiuc.edu/~kooper/EBI/cleanvm.sh
+chmod 755 ~/cleanvm.sh
+```
+
+Make sure machine has SSH keys [rc.local](http://isda.ncsa.illinois.edu/~kooper/EBI/rc.local)
+
+```bash
+sudo wget -O /etc/rc.local http://isda.ncsa.illinois.edu/~kooper/EBI/rc.local
+```
+
+Change the resolution of the console
+
+```bash
+sudo sed -i -e 's/#GRUB_GFXMODE=640x480/GRUB_GFXMODE=1024x768/' /etc/default/grub
+sudo update-grub
+```
+
+Once all done, stop the virtual machine
+```bash
+history -c && ${HOME}/cleanvm.sh
 ```
