@@ -34,6 +34,8 @@ Recommended Workflow for PEcAn and BETY developers
 issue is a branch, names of branches are often the issue in a bug
 tracking system).
 
+**Commit and Push Frequency** On your branch, commit **_at minimum once a day before you push changes:_** even better: every time you reach a stopping point and move to a new issue. best: any time that you have done work that you do not want to re-do. Remember, pushing changes to your branch is like saving a draft. Submit a pull request when you are done.
+
 ### Before any work is done:
 
 1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)) This allows you to create your own
