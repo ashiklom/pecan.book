@@ -91,6 +91,10 @@ git commit -m "<some descriptive information about what was done>"
     * **Redmine**: 
         * to close: "fixes redmine #xxx" (or closes etc.) 
         * to reference: "redmine #xxx"
+    * **Bitbucket**: 
+        * to close: reference and use web interface!
+        * to reference: "re #xxx"
+     
 
 
 5. make sure that code compiles
