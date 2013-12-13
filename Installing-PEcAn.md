@@ -408,8 +408,9 @@ EOF
 ln -s /usr/local/bety/public /var/www/bety
 
 cat > /etc/apache2/conf.d/bety << EOF
-RackEnv production
-RackBaseURI /bety
+PassengerRuby /usr/bin/ruby1.9.1
+RailsEnv production
+RailsBaseURI /bety
 <Directory /var/www/bety>
    Options FollowSymLinks
    AllowOverride None
