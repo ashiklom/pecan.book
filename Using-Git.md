@@ -3,9 +3,7 @@ GIT and GitHub Overview
 
 ## GitHub
 
-### Creating Issues on GitHub
-
-Any issues that are of general interest should be submitted to github. If you want to address specific people and have them alerted, use, e.g. @dlebauer, @robkooper, @mdietze, @serbinsh ... as described in the [GitHub documentation on notifications](https://help.github.com/articles/notifications)
+See our documentation for [reporting issues on Redmine and GitHub](https://help.github.com/articles/notifications)
 
 ## Git
 
