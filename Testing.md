@@ -11,7 +11,7 @@ Rationale
     test has been made
 *  improves code quality
 *  Further reading: [Aruliah et al 2012 Best Practices for Scientific
-    Computing](arxiv.org/pdf/1210.0530v1.pdf)
+    Computing](http://arxiv.org/pdf/1210.0530v3.pdf)
 
 Tests makes development easier and less error prone
 ---------------------------------------------------
