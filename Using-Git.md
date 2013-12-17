@@ -1,6 +1,14 @@
 GIT and GitHub Overview
 ============
 
+## GitHub
+
+### Creating Issues on GitHub
+
+Any issues that are of general interest should be submitted to github. If you want to address specific people and have them alerted, use, e.g. @dlebauer, @robkooper, @mdietze, @serbinsh ... as described in the [GitHub documentation on notifications](https://help.github.com/articles/notifications)
+
+## Git
+
 Git is a version control software; GitHub is a project-hosting website that is similar to [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/) but easier to use for open and collaborative development.
 
 Git is a free & open source, distributed version control system designed
@@ -12,7 +20,6 @@ easy to do.
 
 There are two fun tutorials for learnign git: [LearnGitBranching](http://pcottle.github.com/learnGitBranching/) and
 [TryGit](http://try.github.com). More information is available in the [[References | Using-Git#references]]
-
 
 In the rest of the document I will talk about URL’s to clone the code.
 There a few URL’s you can use to clone a project, using https, ssh and
