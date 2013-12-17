@@ -1,6 +1,6 @@
 ### If the remote machine supports ssh keys
 
-Before the first time, run scripts/sshkey.sh
+Before the first time, run `scripts/sshkey.sh`
 
 ### If the remote machine does not support ssh keys
 
