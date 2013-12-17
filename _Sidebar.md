@@ -15,12 +15,11 @@
 * [[PEcAn Workflow Modules | Workflow-modules]]
 * [[Updating, Building, and Chekcing | Installing-PEcAn#update-build-and-check-pecan ]]
 
-#### [[Reporting Bugs and Requesting Features | Getting-started#reporting-bugs-and-requesting-features]]
-* [[Reporting Bugs | Github-issues#reporting-a-bug]]
-* [[Requesting Features | Github-issues#requesting-a-feature]]
+#### [[Reporting Bugs and Requesting Features | Github-issues]]
 
 ## [[Developer's Guide | Development]]
 
+#### [[Reporting Bugs and Requesting Features | Github-issues]]
 
 #### [[Setup | Development#setup]]
 * [[Installing PEcAn | Installing-PEcAn]]
