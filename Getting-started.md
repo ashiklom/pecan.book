@@ -6,9 +6,8 @@
 2. Create Accounts
  * [GitHub](https://github.com/signup/free)
  * [Redmine (for EBI and CHEAS researchers)](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
-3. Read documentation
- * These are in the process of being migrated from [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/wiki) to github (here, below).
- * As you are reading, make some edits and/or ask questions where documentation is unclear or incomplete
+3. Read [documentation](https://github.com/PecanProject/pecan/wiki)
+ * Edit, ask questions, submit issues to identify where documentation is unclear or incomplete
 
 ### Getting started II: Using PEcAn
 
