@@ -19,8 +19,12 @@ Rationale: This workflow is a small upfront investment that reduces error and ti
  * not integral to basic research
  * is unlikely to lead to extended discussions
 
+**To address specific people**, use a github feature called "@mentions" e.g. write @dlebauer, @robkooper, @mdietze, or @serbinsh ... in the issue to alert the user as described in the [GitHub documentation on notifications](https://help.github.com/articles/notifications)
+
 #### Use Redmine if:
 * your bug or feature request does not belong on GitHub
+
+
 
 Bugs, Issues, Features, etc.
 ============================
