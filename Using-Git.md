@@ -76,7 +76,6 @@ git checkout master
 git pull upstream master
 ```
 2. Build most recent versions of R packages ([`./scripts/build.sh -h` for help)](Installing-PEcAn#update-build-and-check-pecan))
-
 ```bash
 ./scripts/build.sh
 ```
@@ -90,22 +89,7 @@ git commit -m "<some descriptive information about what was done>"
 ```
 * commit often; 
 * each commit can address 0 or 1 issue, many commits can reference an issue
-* to close an issue from a commit message, include the following text:
-    * [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
-        * to close: "closes gh-xxx" (or syn. close, closed, fixes, fix, fixed)  
-        * to reference: just the issue number (e.g. "gh-xxx")
-        * avoid "closes #xxx" which will cross-reference Redmine issues 
-    * **Redmine**: 
-        * to close: "fixes redmine #xxx" (or closes etc.) 
-        * to reference: "redmine #xxx"
-    * **Bitbucket**: 
-        * to close: reference and use web interface!
-        * to reference: "re #xxx"
-     
-
-
 5. make sure that code compiles
-
 ```bash
 ./scripts/build.sh -c
 ```
@@ -131,6 +115,23 @@ git branch -D <branchname>
 
 * ensure that all tests are passing before anything is pushed into master.
 ```
+
+### Link commits to issues (important)
+
+When you work on or close an issue from a commit message, include the following text:
+
+    * [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
+        * to close: "closes gh-xxx" (or syn. close, closed, fixes, fix, fixed)  
+        * to reference: just the issue number (e.g. "gh-xxx")
+        * avoid "closes #xxx" which will cross-reference Redmine issues 
+    * **Redmine**: 
+        * to close: "fixes redmine #xxx" (or closes etc.) 
+        * to reference: "redmine #xxx"
+    * **Bitbucket**: 
+        * to close: reference and use web interface!
+        * to reference: "re #xxx"
+
+
 ## For PEcAn 
 ./scripts/build.sh -c
 ```
