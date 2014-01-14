@@ -36,13 +36,13 @@ The connection to the BETY database is configured using this section. In this se
 	<dbname>bety</dbname>
 	<username>bety</username>
 	<password>bety</password>
-	<location>localhost</location>
+	<host>localhost</host>
 </database>
 ```
 
 * **driver** : [optional] the driver to use to connect to the database. Default value is MySQL  
 * **dbname** : [optional] the name of the database (was name), default value is the username of the current user logged in.  
-* **username** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in (PostgreSQL uses user for this field).
+* **user** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in (PostgreSQL uses user for this field).
 * **password** : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
 * **host** : [optional] the name of the host to connect to, default value is localhost.  
 
