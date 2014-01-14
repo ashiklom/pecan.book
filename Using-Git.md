@@ -88,7 +88,8 @@ git checkout -b <branchname>
 git commit -m "<some descriptive information about what was done>"
 ```
 * commit often; 
-* each commit can address 0 or 1 issue, many commits can reference an issue
+* each commit can address 0 or 1 issue, many commits can reference an issue ([see](#link-commits-to-issues))
+* ensure that all tests are passing before anything is pushed into master.
 5. make sure that code compiles
 ```bash
 ./scripts/build.sh -c
@@ -113,10 +114,8 @@ git push origin --delete <branchname>
 git branch -D <branchname>
 ```
 
-* ensure that all tests are passing before anything is pushed into master.
-```
 
-### Link commits to issues (important)
+### Link commits to issues
 
 When you work on or close an issue from a commit message, include the following text:
 
