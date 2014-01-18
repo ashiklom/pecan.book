@@ -1,6 +1,11 @@
-
 Module Definitions as of PEcAn 1.2.6
 ------------------------------------
+
+## Overview of schema inputs and outputs (click to open in new page, then zoom)
+
+Code used to generate this image is provided in [qaqc/vignettes/module_output.Rmd](https://github.com/PecanProject/pecan/blob/master/qaqc/vignettes/module_output.Rmd)
+
+[![PEcAn Workflow](http://isda.ncsa.illinois.edu/~kooper/EBI/workflow.svg)](http://isda.ncsa.illinois.edu/~kooper/EBI/workflow.svg)
 
 ### Load Settings: 
 #### `read.settings("/home/pecan/pecan.xml")`
