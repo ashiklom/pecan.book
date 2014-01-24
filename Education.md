@@ -6,6 +6,8 @@
 
 The final "Case Study: Terrestrial Ecosystem Models" is a PEcAn-based hands-on activity. Each class has been 25 students.
 
+GE 585 - Ecological forecasting Fall 2013 (Mike Dietze, Boston University)
+
 ### Summer Courses / Workshops
 #### Annual summer course in flux measurement and advanced modeling (Mike Dietze, Ankur Desai) Niwot Ridge, CO 
 
