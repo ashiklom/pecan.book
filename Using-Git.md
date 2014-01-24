@@ -119,26 +119,25 @@ git branch -D <branchname>
 
 When you work on or close an issue from a commit message, include the following text:
 
-    * [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
-        * to close: "closes gh-xxx" (or syn. close, closed, fixes, fix, fixed)  
-        * to reference: just the issue number (e.g. "gh-xxx")
-        * avoid "closes #xxx" which will cross-reference Redmine issues 
-    * **Redmine**: 
-        * to close: "fixes redmine #xxx" (or closes etc.) 
-        * to reference: "redmine #xxx"
-    * **Bitbucket**: 
-        * to close: reference and use web interface!
-        * to reference: "re #xxx"
+* [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
+ * to close: "closes gh-xxx" (or syn. close, closed, fixes, fix, fixed)  
+ * to reference: just the issue number (e.g. "gh-xxx")
+ * avoid "closes #xxx" which will cross-reference Redmine issues 
+* **Redmine**: 
+ * to close: "fixes redmine #xxx" (or closes etc.) 
+ * to reference: "redmine #xxx"
+* **Bitbucket**: 
+ * to close: reference and use web interface!
+ * to reference: "re #xxx"
 
 
 ## For PEcAn 
+
+```
 ./scripts/build.sh -c
 ```
 
-
-
 ### Committing Changes Using Pull Requests
-
 
 GitHub provides a useful overview of how to submit changes to a project, [Using Pull Requests](https://help.github.com/articles/using-pull-requests).
 
