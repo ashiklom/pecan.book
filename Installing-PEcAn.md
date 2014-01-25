@@ -27,7 +27,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get -y update
 
 # install all packages needed
-apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev libmysqlclient-dev 
+apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev 
 
 # this needs to be done separately from previous command
 apt-get -y install libgdal1-dev libproj-dev
@@ -36,7 +36,7 @@ apt-get -y install libgdal1-dev libproj-dev
 apt-get -y install apache2 libapache2-mod-php5 php5
 
 # install packages for mysql
-apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql 
+apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql libmysqlclient-dev
 
 # install packages for postgresql (experimental, commands might be wrong)
 apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql
