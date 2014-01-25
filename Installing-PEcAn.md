@@ -39,7 +39,7 @@ apt-get -y install apache2 libapache2-mod-php5 php5
 apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql 
 
 # install packages for postgresql (experimental, commands might be wrong)
-apt-get -y install libdbd-postgresql postgresql php5-postgresql
+apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql
 
 # install packages to compile docs
 apt-get -y install texinfo texlive-latex-base texlive-latex-extra texlive-fonts-recommended
