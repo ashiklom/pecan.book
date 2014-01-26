@@ -27,7 +27,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 apt-get -y update
 
 # install all packages needed
-apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev 
+apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev libsqlite3-dev
 
 # this needs to be done separately from previous command
 apt-get -y install libgdal1-dev libproj-dev
@@ -36,9 +36,9 @@ apt-get -y install libgdal1-dev libproj-dev
 apt-get -y install apache2 libapache2-mod-php5 php5
 
 # install packages for mysql
-apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql libmysqlclient-dev
+#apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql libmysqlclient-dev
 
-# install packages for postgresql (experimental, commands might be wrong)
+# install packages for postgresql
 apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev 
 
 # install packages to compile docs
@@ -319,9 +319,11 @@ There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minima
 The following creates the user and database.
 ```bash
 # needs to be done only once
-mysql -u root -p -e "grant all,super on bety.* to bety@localhost identified by 'bety';"
-mysql -u root -p -e "grant super on *.* to bety@localhost identified by 'bety';"
-mysql -u bety -pbety -e "create database bety;"
+#mysql -u root -p -e "grant all,super on bety.* to bety@localhost identified by 'bety';"
+#mysql -u root -p -e "grant super on *.* to bety@localhost identified by 'bety';"
+#mysql -u bety -pbety -e "create database bety;"
+sudo -u postgres createuser -D -P -R -S bety
+sudo -u postgres createdb -O bety bety 
 ```
 
 If you plan on installing PEcAn you can skip the following section. Next we populate the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database.
@@ -389,7 +391,8 @@ cp config/additional_environment_vm.rb config/additional_environment.rb
 # setup bety database configuration
 cat > config/database.yml << EOF
 production:
-  adapter: mysql2
+#  adapter: mysql2
+  adapter: postgresql
   encoding: latin1
   reconnect: false
   database: bety
