@@ -530,6 +530,7 @@ cat > ${HOME}/pecan/web/system.php << EOF
 <?php
 
 # Information to connect to the database
+\$db_type="psql";
 \$db_hostname="localhost";
 \$db_username="bety";
 \$db_password="bety";
