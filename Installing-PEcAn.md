@@ -41,6 +41,9 @@ apt-get -y install apache2 libapache2-mod-php5 php5
 # install packages for postgresql
 apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev 
 
+# set ability to trust instead of peer for all
+sudo vi /etc/postgresql/9.1/main/pg_hba.conf 
+
 # install packages to compile docs
 apt-get -y install texinfo texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 
