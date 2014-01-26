@@ -445,7 +445,8 @@ cd pecan
 ./scripts/install.dependencies.R
 
 # install mysql driver
-echo "install.packages('RMySQL', repos='http://cran.rstudio.com/')" | R --vanilla
+#echo "install.packages('RMySQL', repos='http://cran.rstudio.com/')" | R --vanilla
+echo "install.packages('RPostgreSQL', repos='http://cran.rstudio.com/')" | R --vanilla
 
 # compile pecan
 ./scripts/build.sh
