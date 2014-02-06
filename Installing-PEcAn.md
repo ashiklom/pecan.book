@@ -38,7 +38,11 @@ apt-get -y install apache2 libapache2-mod-php5 php5
 # install packages for mysql
 #apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql libmysqlclient-dev
 
-# install packages for postgresql
+# install packages for postgresql (using a newer version than default)
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -s -c`-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+apt-get -y update
+apt-get -y upgrade
 apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev 
 
 # set ability to trust instead of peer for all
