@@ -8,9 +8,34 @@ To upgrade to the latest version of PEcAn/VM you will need to do each of the int
 # List of allowed hosts
 $hostlist=array(gethostname());
 ```
+
+- PEcAn now uses PostgreSQL by default. To switch do the following:
+```bash
+# install postgresql
+sudo -s
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -s -c`-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+apt-get -y update
+apt-get -y upgrade
+apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev 
+exit
+
+# set ability to trust instead of peer for all
+vi /etc/postgresql/9.3/main/pg_hba.conf 
+/etc/init.d/postgresql restart
+
+# create user
+sudo -u postgres createuser -D -P -R -S bety
+sudo -u postgres createdb -O bety bety 
+
+# download database
+pecan/scripts/update.psql.sh 
+```
+
 ### Changes
 
 * Support for HPC
+* Use PostgreSQL as default
 
 ## Version 1.3.2 to 1.3.3 
 
