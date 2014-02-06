@@ -32,6 +32,8 @@ sudo -u postgres createdb -O bety bety
 pecan/scripts/update.psql.sh 
 ```
 
+To force pecan to use a specific database add <driver> to the database section. For MySQL add <driver>MySQL</driver> and for PostgreSQL add <driver>PostgreSQL</driver>
+
 ### Changes
 
 * Support for HPC
