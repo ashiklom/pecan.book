@@ -46,7 +46,7 @@ apt-get -y upgrade
 apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev 
 
 # set ability to trust instead of peer for all
-vi /etc/postgresql/9.1/main/pg_hba.conf 
+vi /etc/postgresql/9.3/main/pg_hba.conf 
 /etc/init.d/postgresql restart
 
 # install packages to compile docs
