@@ -141,7 +141,7 @@ In case of 64 bit machine
 ```bash
 sudo -s
 cat > /etc/motd.tail << EOF
-PEcAn version 1.3.3
+PEcAn version 1.3.4
 
 This system allows you to experiment and create simulations using
 PEcAn, ED, SIPNET and BETY.
@@ -166,7 +166,7 @@ or in case of 32 bit machine
 ```bash
 sudo -s
 cat > /etc/motd.tail << EOF
-PEcAn version 1.3.3
+PEcAn version 1.3.4
 
 This system allows you to experiment and create simulations using
 PEcAn, ED, SIPNET and BETY.
