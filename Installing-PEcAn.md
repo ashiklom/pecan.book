@@ -534,35 +534,7 @@ EOF
 
 ```bash
 # configure for web app
-cat > ${HOME}/pecan/web/system.php << EOF
-<?php
-
-# Information to connect to the database
-\$db_type="psql";
-\$db_hostname="localhost";
-\$db_username="bety";
-\$db_password="bety";
-\$db_database="bety";
-
-# List of allowed hosts
-\$hostlist=array(gethostname());
-
-# Folder where PEcAn is installed
-\$pecan_install="${R_LIBS_USER}";
-
-# Location where PEcAn is installed, not really needed anymore
-\$pecan_home="${HOME}/pecan/";
-
-# Folder where the runs are stored
-\$output_folder="${HOME}/output/";
-
-# ED specific inputs, should come from database
-\$ed_veg="${HOME}/oge2OLD/OGE2_";
-\$ed_soil="${HOME}/faoOLD/FAO_";
-\$ed_inputs="${HOME}/ed_inputs/";
-?>
-EOF
-
+cp ${HOME}/pecan/web/system.example.php ${HOME}/pecan/web/system.php 
 cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
 ```
 
