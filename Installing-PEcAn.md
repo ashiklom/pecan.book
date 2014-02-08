@@ -397,6 +397,7 @@ chmod 0666 log/production.log
 
 # fix configuration for vm
 cp config/additional_environment_vm.rb config/additional_environment.rb
+chmod go+w /usr/local/bety/public/javascripts/cache/
 
 # setup bety database configuration
 cat > config/database.yml << EOF
