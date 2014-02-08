@@ -460,7 +460,7 @@ echo "install.packages('RPostgreSQL', repos='http://cran.rstudio.com/')" | R --v
 ./scripts/build.sh
 
 # update/install database
-./scripts/updatedb.sh
+./scripts/update.psql.sh
 ```
 
 ### PEcAn Testrun
