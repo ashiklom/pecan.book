@@ -401,7 +401,7 @@ cat > config/database.yml << EOF
 production:
 #  adapter: mysql2
   adapter: postgresql
-  encoding: latin1
+  encoding: utf-8
   reconnect: false
   database: bety
   pool: 5
