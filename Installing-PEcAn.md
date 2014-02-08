@@ -474,8 +474,8 @@ mkdir testrun.pecan
 cd testrun.pecan
 
 # download example of pecan workflow and configuration file
-wget -O pecan.xml http://isda.ncsa.uiuc.edu/~kooper/EBI/pecan.xml
-wget -O workflow.R http://isda.ncsa.uiuc.edu/~kooper/EBI/workflow.R
+cp ../pecan/tests/pecan.sipnet.xml pecan.xml
+cp ../pecan/tests/workflow.R workflow.R
 
 # exectute workflow
 rm -rf pecan
