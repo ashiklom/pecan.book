@@ -264,7 +264,7 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 </run>
 ```
 
-* **jobtemplate** : [optional] the template used when creating a job.sh file which is used to launch the actual model. Each model has it's own template in the inst folder of the module. The following variables can e used: @SITE_LAT@, @SITE_LON@, @SITE_MET@, @START_DATE@, @END_DATE@, @OUTDIR@, @RUNDIR@ which all come variables in the pecan.xml file. The following two command can be used to copy and clean the results from a scratch folder (specified as scratch in the run section below, for example local disk vs network disk) : @SCRATCH_COPY@, @SCRATCH_CLEAR@.
+* **jobtemplate** : [optional] the template used when creating a job.sh file which is used to launch the actual model. Each model has it's own [template](https://github.com/PecanProject/pecan/blob/master/models/ed/inst/template.job) in the inst folder of the module. The following variables can e used: @SITE_LAT@, @SITE_LON@, @SITE_MET@, @START_DATE@, @END_DATE@, @OUTDIR@, @RUNDIR@ which all come variables in the pecan.xml file. The following two command can be used to copy and clean the results from a scratch folder (specified as scratch in the run section below, for example local disk vs network disk) : @SCRATCH_COPY@, @SCRATCH_CLEAR@ .
 * **start.date** : [required] the first day of the simulation  
 * **end.date** : [required] the last day of the simulation
 * **dbfiles** : [optional] location where pecan should write files that will be stored in the database. The default is store them in ${HOME}/.pecan/dbfiles
