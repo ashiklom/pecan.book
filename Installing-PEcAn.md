@@ -73,6 +73,28 @@ chkconfig --level 2345 mysqld on
 service mysqld start
 ```
 
+#### Install ruby-netcdf gem 
+
+```bash
+cd $RUBY_APPLICATION_HOME
+export $NETCDF_URL=http://www.gfd-dennou.org/arch/ruby/products/ruby-netcdf/release/ruby-netcdf-0.6.6.tar.gz
+export $NETCDF_DIR=/usr/local/netcdf
+gem install narray
+export NARRAY_DIR="$(ls $GEM_HOME/gems | grep 'narray-')"
+export NARRAY_PATH="$GEM_HOME/gems/$NARRAY_DIR"
+cd $MY_RUBY_HOME/bin
+wget $NETCDF_URL -O ruby-netcdf.tgz
+tar zxf ruby-netcdf.tgz && cd ruby-netcdf-0.6.6/
+ruby -rubygems extconf.rb --with-narray-include=$NARRAY_PATH --with-netcdf-dir=/usr/local/netcdf-4.3.0
+sed -i 's|rb/$|rb|' Makefile
+make
+make install
+cd ../ && sudo rm -rf ruby-netcdf*
+
+cd $RUBY_APPLICATION
+bundle install --without development
+```
+
 #### Install and start Apache
 
 ```bash
