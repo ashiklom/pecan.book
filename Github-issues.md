@@ -11,7 +11,7 @@ Bugs, Issues, Features, etc.
 Reporting a bug
 ---------------
 
-1. work through debugging (see [[debugging]] wiki). 
+1. (For developers) work through debugging (see [[debugging]] wiki). 
 2. Once you have identified a problem, that you can not resolve, you can write a bug report
 3. Write a bug report
 4. submit the bug report
