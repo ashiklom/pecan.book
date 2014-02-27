@@ -15,18 +15,19 @@ The first step is to work through debugging the issue yourself (see [[debugging]
 
 ### Required content
 
-1.  Clear Title - to allow efficient review of bug lists
-2.  Bug description - should be concise but complete
-3.  Reproduction steps - minimum steps required to reproduce the bug
+1.  Clear, specific title
+2.  Description - a bug is only a bug if it is reproducible
+ * What you did
+ * What you expected to happen
+ * What actually happened
+ * What does work, under what conditions does it fail?
+ * Reproduction steps - minimum steps required to reproduce the bug
  * specific code and data / settings required to reproduce the bug
  * _A bug that can’t be reproduced is not a debuggable bug, perhaps not a bug at all._
-4. (Ideally) Write a (regression) test based on the reproducible bug; bug can be closed when test passes.
-5.  Any additional materials that make digging into the problem easier
-    (stack traces, logs, script files, specific data sets, screen shots.
-    Evrionment considerations (OS, browser, hardware) will be less
-    relevant for development and use on ebi-forecast and ebi-cluster.
-    Once we start distributing PEcAn, this will be required.
-
+3. additional materials that could help identify the cause:
+ * screen shots
+ * stack traces, logs, scripts, data sets, configuration files
+ * Environment (operating system, browser, hardware) if relevant 
 
 Requesting a feature
 --------------------
@@ -35,11 +36,10 @@ Requesting a feature
 [ebook](http://proquestcombo.safaribooksonline.com/0-201-61622-X/223)
 through UI libraries, hardcopy on David’s bookshelf)\
 
-* Request should focus on “user stories”, e.g. specific use cases
- * use cases, e.g. farm gate vs regional analysis, parameter tweaks, data access
+* focus on “user stories”, e.g. specific use cases
 * Be as specific as possible, 
 
-* Here is an example (from [Redmine issue https://ebi-forecast.igb.illinois.edu/redmine/issues/62]):
+* Here is an example:
 
  1.  Bob is at www.mysite.edu/maps
  2.  map of the the region (based on user location, e.g. US, Asia, etc)
