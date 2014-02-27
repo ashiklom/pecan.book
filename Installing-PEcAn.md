@@ -113,20 +113,19 @@ sudo yum install php php-mysql
 based on [Rstudio Server documentation](http://www.rstudio.com/ide/docs/server/getting_started)
 
 * add `PATH=$PATH:/usr/sbin:/sbin` to `/etc/profile`
-
- ```bash
+```bash
    cat "PATH=$PATH:/usr/sbin:/sbin; export PATH" >> /etc/profile
- ```
+```
 * add [rstudio.conf](https://gist.github.com/dlebauer/6921889) to /etc/httpd/conf.d/ 
- ```bash
+```bash
    wget https://gist.github.com/dlebauer/6921889/raw/d1e0f945228e5519afa6223d6f49d6e0617262bd/rstudio.conf
    sudo mv rstudio.conf /httpd/conf.d
- ```
+```
 * download and install server:
- ```bash
+```bash
    wget http://download2.rstudio.org/rstudio-server-0.97.551-i686.rpm
    sudo yum install --nogpgcheck rstudio-server-0.97.551-i686.rpm
- ```
+```
 * restart server `sudo httpd restart`
 * now you should be able to access `http://<server>/rstudio`
 
