@@ -11,7 +11,11 @@ Bugs, Issues, Features, etc.
 Reporting a bug
 ---------------
 
-The first step is to work through debugging the issue yourself (see [[debugging]]). Once you have identified a problem, but do not know the solution, you can submit a request for support or bug report 
+1. work through debugging (see [[debugging wiki]]). 
+2. Once you have identified a problem, that you can not resolve, you can write a bug report
+3. Write a bug report
+4. submit the bug report
+5. If you do find the answer, explain the resolution (in the issue) and close the issue
 
 ### Required content
 
