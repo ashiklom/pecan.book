@@ -15,19 +15,23 @@ The first step is to work through debugging the issue yourself (see [[debugging]
 
 ### Required content
 
+Note: 
+
+* **a bug is only a bug if it is reproducible**
+* **clear bug reports save time**
+
 1.  Clear, specific title
-2.  Description - a bug is only a bug if it is reproducible
+2.  Description - 
  * What you did
  * What you expected to happen
  * What actually happened
  * What does work, under what conditions does it fail?
  * Reproduction steps - minimum steps required to reproduce the bug
- * specific code and data / settings required to reproduce the bug
- * _A bug that can’t be reproduced is not a debuggable bug, perhaps not a bug at all._
 3. additional materials that could help identify the cause:
  * screen shots
- * stack traces, logs, scripts, data sets, configuration files
- * Environment (operating system, browser, hardware) if relevant 
+ * stack traces, logs, scripts, output
+ * specific code and data / settings / configuration files required to reproduce the bug
+ * environment (operating system, browser, hardware)
 
 Requesting a feature
 --------------------
