@@ -67,6 +67,38 @@ git remote add upstream git@github.com:PecanProject/pecan.git
 ```
 
 ### During development:
+
+## Option 1: Always work in the same local branch
+
+1. Get the latest code from the main repository
+```bash 
+git pull upstream master
+```
+
+2. Do some coding
+
+3. Commit after each chunk of code (multiple times a day)
+```bash
+git commit -m "<some descriptive information about what was done>"
+```
+
+4. Push to YOUR Github (when a feature is working, a set of bugs are fixed, or you need to share progress with others)
+```bash
+git push origin <branchname>
+```
+
+4. Before submitting code back to the main repository, make sure that code compiles
+```bash
+./scripts/build.sh -c
+```
+
+5. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
+
+
+
+
+## Option 2: A new branch for each change
+
 1. Make sure you start in master 
 ```bash
 git checkout master
