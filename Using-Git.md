@@ -57,6 +57,8 @@ especially on how to keep your fork up to date with respect to the original.
         git config --global user.name "FULLNAME"
         git config --global user.email you@yourdomain.example.com
 
+2. If you are working from a cluster, you may need to [set up ssh keys](https://help.github.com/articles/generating-ssh-keys)
+
 3. Clone to your local machine 
 ```bash 
 git clone git@github.com:<username>/pecan.git
