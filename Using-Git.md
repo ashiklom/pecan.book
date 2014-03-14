@@ -68,9 +68,9 @@ git clone git@github.com:<username>/pecan.git
 git remote add upstream git@github.com:PecanProject/pecan.git
 ```
 
-### During development:
+## During development:
 
-## Option 1: Always work in the same local branch
+### Option 1: Always work in the same local branch
 
 1. Get the latest code from the main repository
 ```bash 
@@ -99,7 +99,7 @@ git push origin <branchname>
 
 
 
-## Option 2: A new branch for each change
+### Option 2: A new branch for each change
 
 1. Make sure you start in master 
 ```bash
