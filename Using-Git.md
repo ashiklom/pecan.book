@@ -65,6 +65,7 @@ git clone git@github.com:<username>/pecan.git
 ```
 3. Define upstream 
 ```bash 
+cd pecan
 git remote add upstream git@github.com:PecanProject/pecan.git
 ```
 
