@@ -55,6 +55,9 @@ Before running the PEcAn workflow, open (and leave open) a single ssh connection
 
 4. Remote queue specification (if applicable)
 
-
+    [see run config details](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration#run-setup)
 
 5. The highest-level `<outdir>` is where output is copied to on the LOCAL machine
+
+
+Finally, for more general info on setting up the pecan settings file see [PEcAn-Configuration](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration)
