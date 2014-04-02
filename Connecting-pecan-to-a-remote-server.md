@@ -55,4 +55,6 @@ Before running the PEcAn workflow, open (and leave open) a single ssh connection
 
 4. Remote queue specification (if applicable)
 
-5. The highest-level <outdir> is where output is copied to on the LOCAL machine
+
+
+5. The highest-level `<outdir>` is where output is copied to on the LOCAL machine
