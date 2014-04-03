@@ -47,9 +47,9 @@ Before running the PEcAn workflow, open (and leave open) a single ssh connection
 
     note that `<psscss>` is not required for a bare-ground run
 
-    Under <run> specify
+    Under `<run>` specify
 
-    * the remote location of the meteorology file <met>
+    * the remote location of the meteorology file `<met>`
 
     Note: for ED2, if you've copied files make sure the ED_MET_DRIVER_HEADER sets it's internal path correctly
 
@@ -59,5 +59,8 @@ Before running the PEcAn workflow, open (and leave open) a single ssh connection
 
 5. The highest-level `<outdir>` is where output is copied to on the LOCAL machine
 
+    For more general info on setting up the pecan settings file see [PEcAn-Configuration](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration)
 
-Finally, for more general info on setting up the pecan settings file see [PEcAn-Configuration](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration)
+6. If you remote server doesn't support ssh keys, ssh to the server from the VM command line
+
+7. At this point you should be able to use workflow.R to run the model, as described in Demo 2 of the tutorial.
