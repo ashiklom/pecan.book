@@ -17,7 +17,7 @@ afterwards will use the same connection and should not require a password.
 
 Before running the PEcAn workflow, open (and leave open) a single ssh connection from the local machine to the remote machine
 
-# Steps for setting for setting up a remote model run
+# Steps for setting up a remote model run
 
 1. Make a copy of an existing pecan settings file, preferably for the same site, using cleansettings.R
 
