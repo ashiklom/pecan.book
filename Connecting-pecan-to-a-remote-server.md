@@ -17,6 +17,10 @@ afterwards will use the same connection and should not require a password.
 
 Before running the PEcAn workflow, open (and leave open) a single ssh connection from the local machine to the remote machine
 
+# Loading modules on a remote server
+
+If running on the BU Geo cluster add `module load hdf5 netcdf nco` to your `.cshrc` file
+
 # Steps for setting up a remote model run
 
 1. Make a copy of an existing pecan settings file, preferably for the same site, using cleansettings.R
