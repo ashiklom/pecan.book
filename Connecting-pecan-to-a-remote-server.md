@@ -19,9 +19,11 @@ Before running the PEcAn workflow, open (and leave open) a single ssh connection
 
 # Loading modules on a remote server
 
-If running on the BU Geo cluster add `module load hdf5 netcdf nco` to your `.cshrc` file
+If running on the BU Geo cluster add `module load hdf5 netcdf nco` to your `.cshrc` or `.bashrc` file (depending upon which shell you use by default)
 
 # Steps for setting up a remote model run
+
+1. Before doing an individual run you will need to make sure that the PEcAn code is installed (and preferably up to date) in your home directory on the remote machine. Note that you just need to install and build the code, not the database.  See the Using Github instructions on how to clone PEcAn.
 
 1. Make a copy of an existing pecan settings file, preferably for the same site, using cleansettings.R
 
