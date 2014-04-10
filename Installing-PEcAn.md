@@ -498,13 +498,13 @@ cd
 mkdir testrun.pecan
 cd testrun.pecan
 
-# download example of pecan workflow and configuration file
+# copy example of pecan workflow and configuration file
 cp ../pecan/tests/pecan.sipnet.xml pecan.xml
-cp ../pecan/tests/workflow.R workflow.R
+cp ../pecan/scripts/workflow.R workflow.R
 
 # exectute workflow
 rm -rf pecan
-R --vanilla < workflow.R
+./workflow.R
 ```
 NB: pecan.xml is configured for the virtual machine, you will need to change the <met> field from '/home/carya/' to wherever you installed your 'sites', usually $HOME
 
