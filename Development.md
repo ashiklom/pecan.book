@@ -15,6 +15,11 @@ Create Accounts
 * [[PEcAn Directory Structure | Directory Structure]]
 * [[Using GitHub and Git | Using Git]]
 
+### Adding or Extending Modules
+
+* [[Adding an Ecosystem Model]]
+* [[Adding an Input Converter]]
+
 ### R Development
 
 * [[Coding Style]]
