@@ -1,3 +1,9 @@
+### Signup
+
+Create Accounts
+ * [GitHub](https://github.com/signup/free)
+ * [Redmine (for EBI and CHEAS researchers)](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
+
 ### Setup
 
 * [[VM Creation]]
