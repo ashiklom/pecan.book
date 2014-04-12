@@ -12,6 +12,7 @@ The quickest way to get started is to download the virtual machine. The demo pro
 * [[Settings Files| PEcAn-Configuration]]: what goes in the PEcAn settings files (e.g. `pecan.xml`)
 * [[Workflow Modules]]
 * [[Connecting PEcAn to a remote server]]
+* [[Uploading New Data]]
 
 ### Reporting Bugs and Requesting Features
 
