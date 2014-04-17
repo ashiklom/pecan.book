@@ -2,7 +2,7 @@ To upgrade to the latest version of PEcAn/VM you will need to do each of the int
 
 ## Version 1.3.4 to 1.3.5 **(Not released yet)**
 
-- sites/addsites.sh was incorrect either redownload sites.tgz or apply change in #103
+- sites/addsites.sh was incorrect either redownload sites.tgz or apply change in [#103](../issues/103)
 - web interface now uses config.php instead of system.php, simply copy pecan/web/config.example.php to pecan/web/config.php
 
 ## Version 1.3.3 to 1.3.4
