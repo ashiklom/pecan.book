@@ -348,26 +348,35 @@ There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minima
 
 ### Database creation
 
-The following creates the user and database.
+The following scripts creates the user and database, and then populates (or updates) the database:
+
+If you plan on installing PEcAn you can skip the following section. Next we populate the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database.
+
+#### PostgreSQL (default, recommended)
+```bash
+wget https://raw.githubusercontent.com/PecanProject/pecan/master/scripts/update.psql.sh
+chmod +x update.psql.sh
+./update.psql.sh
+```
+
+or, more generally:
+
 ```bash
 # needs to be done only once
-#mysql -u root -p -e "grant all,super on bety.* to bety@localhost identified by 'bety';"
-#mysql -u root -p -e "grant super on *.* to bety@localhost identified by 'bety';"
-#mysql -u bety -pbety -e "create database bety;"
 sudo -u postgres createuser -D -P -R -S bety
 sudo -u postgres createdb -O bety bety 
 ```
 
-If you plan on installing PEcAn you can skip the following section. Next we populate the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database.
+#### MySQL
 
 ```bash
-# needs to be done only once
-curl -o ${HOME}/updatedb.sh http://isda.ncsa.illinois.edu/~kooper/EBI/updatedb.sh
-chmod 755 ${HOME}/updatedb.sh
-
-# download and update/install database
-${HOME}/updatedb.sh
+wget https://raw.githubusercontent.com/PecanProject/pecan/master/scripts/update.psql.sh
+chmod +x update.psql.sh
+./update.psql.sh
 ```
+
+
+
 
 ### PHP version
 
