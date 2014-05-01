@@ -352,31 +352,13 @@ The following scripts creates the user and database, and then populates (or upda
 
 If you plan on installing PEcAn you can skip the following section. Next we populate the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database.
 
-#### PostgreSQL (default, recommended)
-```bash
-wget https://raw.githubusercontent.com/PecanProject/pecan/master/scripts/update.psql.sh
-chmod +x update.psql.sh
-./update.psql.sh
-```
-
-or, more generally:
-
-```bash
-# needs to be done only once
-sudo -u postgres createuser -D -P -R -S bety
-sudo -u postgres createdb -O bety bety 
-```
-
-#### MySQL
+(to install MySQL, replace `update.psql.sh` with `update.mysql.sh` in the following example)
 
 ```bash
 wget https://raw.githubusercontent.com/PecanProject/pecan/master/scripts/update.psql.sh
 chmod +x update.psql.sh
 ./update.psql.sh
 ```
-
-
-
 
 ### PHP version
 
