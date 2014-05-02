@@ -141,6 +141,8 @@ Only if this section is defined an ensemble analysis is done.
 * **size** : [required] the number of runs in the ensemble.
 * **variable**: [optional] name of one (or more) variables the analysis should be run for. If not specified, sensitivity.analysis variable is used, otherwise default is GPP.
 
+Note: if the ensemble size is set to 1, PEcAn will select the **posterior median** parameter values rather than taking a single random draw from the posterior
+
 <a name="sensitivity_runs" />
 ## Sensitivity Runs
 
