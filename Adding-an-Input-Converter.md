@@ -1,5 +1,7 @@
 # Met Data
 
+The standard met data inputs should be of the form:
+
 | variable names| standard_name | units* | 
 | :--| :-- | :--|
 | tair | air_temperature|C|
