@@ -15,10 +15,10 @@ The variable names should be `standard_name`
 
 
 | CF standard-name                          | isimip       | cruncep | narr  |
-|-------------------------------------------+--------------+---------+-------|
+|:-------------------------------------------|:--------------|:---------|:-------|
 | air_temperature                           | tasAdjust    | tair    | air   |
-| air_temperature_max                       | tasmaxAdjust |         | tmax  |
-| air_temperature_min                       | tasminAdjust |         | tmin  |
+| air_temperature_max                       | tasmaxAdjust | NA      | tmax  |
+| air_temperature_min                       | tasminAdjust | NA      | tmin  |
 | relative_humidity                         | rhurs        | NA      | rhum  |
 | specific_humidity                         | NA           | qair    | shum  |
 | surface_downwelling_longwave_flux_in_air  | rldsAdjust   | swdown  | dswrf |
