@@ -13,16 +13,18 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 
 The variable names should be `standard_name`
 
-| MsTMIP variable names| standard_name | units | 
-| :--| :-- | :--|
-| tair | air_temperature|C|
-| qair | specific_humidity|g/g|
-| press | air_pressure |Pa|
-|rain | precipitation_flux|mm/_time_|
-|swdown| surface_downwelling_shortwave_flux_in_air|W/m2|
-|lwdown|surface_downwelling_longwave_flux_in_air|W/m2|
-|uwind |eastward_wind|m/s|
-|vwind| northward_wind|m/s|
+
+| CF standard-name                          | isimip       | cruncep | narr  |
+|-------------------------------------------+--------------+---------+-------|
+| air_temperature                           | tasAdjust    | tair    | air   |
+| air_temperature_max                       | tasmaxAdjust |         | tmax  |
+| air_temperature_min                       | tasminAdjust |         | tmin  |
+| relative_humidity                         | rhurs        | NA      | rhum  |
+| specific_humidity                         | NA           | qair    | shum  |
+| surface_downwelling_longwave_flux_in_air  | rldsAdjust   | swdown  | dswrf |
+| surface_downwelling_shortwave_flux_in_air | rsdsAdjust   | lwdown  | dlwrf |
+| precipitation_flux                        | prAdjust     | rain    | acpc  |
+
 
 * variable names are from [MsTMIP](http://nacp.ornl.gov/MsTMIP_variables.shtml), but lowercase to be consistent with the MsTMIP drivers.
 * standard_name is CF-convention standard names
