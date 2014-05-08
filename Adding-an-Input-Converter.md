@@ -4,9 +4,16 @@ The standard met data inputs should be of the form:
 
 Converters from a raw to standard format go in `/modules/data.atmosphere/R`; converters from standard to model-specific go in `models/<mymodel>/R`.
 
+Examples:
+* NARR:
+* CRUNCEP:
+* ISIMIP: 
+
 Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 
-| variable names| standard_name | units | 
+The variable names should be `standard_name`
+
+| MsTMIP variable names| standard_name | units | 
 | :--| :-- | :--|
 | tair | air_temperature|C|
 | qair | specific_humidity|g/g|
