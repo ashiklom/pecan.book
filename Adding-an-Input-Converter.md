@@ -2,6 +2,10 @@
 
 The standard met data inputs should be of the form:
 
+Converters from a raw to standard format go in `/modules/data.atmosphere/R`; converters from standard to model-specific go in `models/<mymodel>/R`.
+
+Names should be `<source>2met` and `met2model.<modelname>`.
+
 | variable names| standard_name | units | 
 | :--| :-- | :--|
 | tair | air_temperature|C|
