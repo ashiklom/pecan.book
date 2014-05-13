@@ -61,94 +61,90 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
 2. If you are working from a cluster, you may need to [set up ssh keys](https://help.github.com/articles/generating-ssh-keys)
 3. Clone to your local machine 
-```bash 
-git clone git@github.com:<username>/pecan.git
-```
-3. Define upstream 
-```bash 
-cd pecan
-git remote add upstream git@github.com:PecanProject/pecan.git
-```
+
+        git clone git@github.com:<username>/pecan.git
+
+3. Define upstream repository
+ 
+        cd pecan
+        git remote add upstream git@github.com:PecanProject/pecan.git
+
 
 ## During development:
+
+* commit often; 
+* each commit can address 0 or 1 issue, many commits can reference an issue ([see](#link-commits-to-issues))
+* ensure that all tests are passing before anything is pushed into master.
 
 ### Option 1: Always work in the same local branch
 
 1. Get the latest code from the main repository
-```bash 
-git pull upstream master
-```
+
+        git pull upstream master
 
 2. Do some coding
 
 3. Commit after each chunk of code (multiple times a day)
-```bash
-git commit -m "<some descriptive information about what was done>"
-```
+        
+        git commit -m "<some descriptive information about what was done; references /fixes gh-X>"
 
 4. Push to YOUR Github (when a feature is working, a set of bugs are fixed, or you need to share progress with others)
-```bash
-git push origin <branchname>
-```
+
+        git push origin <branchname>
 
 4. Before submitting code back to the main repository, make sure that code compiles
-```bash
-./scripts/build.sh -c
-```
+
+        ./scripts/build.sh -c
 
 5. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
-
-
 
 
 ### Option 2: A new branch for each change
 
 1. Make sure you start in master 
-```bash
-git checkout master
-```
+
+        git checkout master
+
 2. Make sure master is up to date 
-```bash 
-git pull upstream master
-```
+
+        git pull upstream master
+
 2. Build most recent versions of R packages ([`./scripts/build.sh -h` for help)](Installing-PEcAn#update-build-and-check-pecan))
-```bash
-./scripts/build.sh
-```
+
+        ./scripts/build.sh
+
 3. Create a branch 
-```bash
-git checkout -b <branchname>
-```
+
+        git checkout -b <branchname>
+
 4. work/commit/etc 
-```bash
-git commit -m "<some descriptive information about what was done>"
-```
-* commit often; 
-* each commit can address 0 or 1 issue, many commits can reference an issue ([see](#link-commits-to-issues))
-* ensure that all tests are passing before anything is pushed into master.
+
+        git commit -m "<some descriptive information about what was done>"
+
 5. make sure that code compiles
-```bash
-./scripts/build.sh -c
-```
+
+        ./scripts/build.sh -c
+
 5. Push this branch to your github space 
-```bash
-git push origin <branchname>
-```
+
+        git push origin <branchname>
+
 6. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
 
 ### After pull request is merged
+
 1. Make sure you start in master 
-```bash
-git checkout master
-```
+
+        git checkout master
+
 2. delete branch remotely 
-```bash
-git push origin --delete <branchname>
-```
+
+        git push origin --delete <branchname>
+
 3. delete branch locally 
-```bash
-git branch -D <branchname>
-```
+
+        git branch -D <branchname>
+
 
 
 ### Link commits to issues
@@ -187,20 +183,10 @@ Once you have added a feature on your local fork of the project that you would l
 
 
 
-Quick Git Overview:
+Summary:
 -------------------
 
-### GitHub notes:
-
-
-Easiest way to get working with GitHub is by installing the GitHub
-client. More instructions for your specific OS and download of the
-GitHub client, see https://help.github.com/articles/set-up-git.
-This will help you setup an SSH key to push code back to GitHub. To
-checkout a project you do not need to have an ssh key and you can use
-the https or git url to check out the code.
-
-### Workflow
+**Git Workflow**
 
 1. Create a Fork 
 2. Clone a Repo
@@ -292,6 +278,13 @@ To tag an earlier commit, just append the commit SHA to the command, e.g.
     git tag -a v0.99 -m "last version before 1.0" 9fceb02
 
 
+**Using GitHub** The easiest way to get working with GitHub is by installing the GitHub
+client. More instructions for your specific OS and download of the
+GitHub client, see https://help.github.com/articles/set-up-git.
+This will help you setup an SSH key to push code back to GitHub. To
+checkout a project you do not need to have an ssh key and you can use
+the https or git url to check out the code.
+
 ## Git + Rstudio
 
 
@@ -301,7 +294,9 @@ The Rstudio documentation includes useful overviews of [version control](http://
 
 Once you have git installed on your computer (see the [Rstudio version control](http://www.rstudio.com/ide/docs/version_control/overview) documentation for instructions), you can use the following steps to install the PEcAn source code in Rstudio.
 
-#### For "read-only" version:
+### Creating a Read-only version:
+
+This is a fast way to clone the repository that does not support contributing new changes (this can be done with further modification). 
 
 1.  install Rstudio (www.rstudio.com)
 2.  click (upper right) project
@@ -311,7 +306,7 @@ Once you have git installed on your computer (see the [Rstudio version control](
  *   paste https://www.github.com/PecanProject/pecan
  *   choose working dir. for repo
 
-#### For development:
+## For development:
 
 1.  create account on github
 2.  create a fork of the PEcAn repository to your own account https://www.github.com/pecanproject/pecan
