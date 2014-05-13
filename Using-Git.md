@@ -51,14 +51,15 @@ code you want to merge back in the main branch you do a pull request.
 This is the way for external people to commit code back to PEcAn and
 BETY. The pull request will start a review process that will eventually
 result in the code being merged into the main copy of the codebase. See https://help.github.com/articles/fork-a-repo for more information, 
-especially on how to keep your fork up to date with respect to the original.
+especially on how to keep your fork up to date with respect to the original. (Rstudio users should also see [[Git + Rstudio | Using-Git#git--rstudio ]], below)
+
+
 1. Introduce yourself to GIT
 
         git config --global user.name "FULLNAME"
         git config --global user.email you@yourdomain.example.com
 
 2. If you are working from a cluster, you may need to [set up ssh keys](https://help.github.com/articles/generating-ssh-keys)
-
 3. Clone to your local machine 
 ```bash 
 git clone git@github.com:<username>/pecan.git
@@ -289,10 +290,6 @@ To use a tagged version, just checkout:
 To tag an earlier commit, just append the commit SHA to the command, e.g. 
 
     git tag -a v0.99 -m "last version before 1.0" 9fceb02
-
-
-
-
 
 
 ## Git + Rstudio
