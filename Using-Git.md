@@ -32,8 +32,8 @@ it. The git protocol is read-only.
  * https://github.com/PecanProject/bety.git
  * git@github.com:PecanProject/bety.git
 
-Recommended Git Workflow for PEcAn and BETY developers
-------------------------------------------------------
+Recommended Git Workflow
+------------------------
 
 **Each feature should be in it’s own branch** (for example each redmine
 issue is a branch, names of branches are often the issue in a bug
