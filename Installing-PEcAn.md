@@ -1,6 +1,6 @@
 We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=version) instead of creating from one from scratch. These instructions are provided to document how to install PEcAn on different Operating Systems.
 
-## Install build environment
+## Installing Prerequisites
 
 Check specific notes in:
 
