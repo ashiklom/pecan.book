@@ -230,7 +230,7 @@ These are large-ish files that contain data used with ED2 and SIPNET
 rm -rf sites
 curl -o sites.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/sites.tgz
 tar zxf sites.tgz
-sed -i -e "s#/home/kooper/projects/EBI#${PWD}#" sites/*/ED_MET_DRIVER_HEADER
+sed -i -e "s#/home/kooper/Projects/EBI#${PWD}#" sites/*/ED_MET_DRIVER_HEADER
 rm sites.tgz
 
 rm -rf inputs
