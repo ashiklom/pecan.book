@@ -2,7 +2,8 @@ To upgrade to the latest version of PEcAn/VM you will need to do each of the int
 
 ## Version 1.3.4 to 1.3.5 **(Not released yet)**
 
-- sites/addsites.sh was incorrect either redownload sites.tgz or apply change in [#103](../issues/103)
+- switch to postgreSQL, see [Installing-PEcAn](Installing-PEcAn) on how to load the database the first time
+- sites/addsites.sh was incorrect download sites.tgz
 - web interface now uses config.php instead of system.php, simply copy pecan/web/config.example.php to pecan/web/config.php
 - added a script to create hooks to prevent people from committing files as carya
 - massive cleanup of repository. This breaks old repositories. Everybody will need to fork and clone a clean copy of pecan.

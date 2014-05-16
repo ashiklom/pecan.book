@@ -91,3 +91,51 @@ sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1 lib
 ```
 
 ## Rstudio-server
+
+*NOTE This will allow anybody to login to the machine through the rstudio interface and run any arbitrary code. The login used however is the same as the system login/password.*
+
+Based on version of ubuntu 32/64 use either of the following
+
+*32bit only*
+```bash
+wget http://download2.rstudio.org/rstudio-server-0.98.507-i386.deb
+```
+
+*64bit only*
+```bash
+wget http://download2.rstudio.org/rstudio-server-0.98.507-amd64.deb
+```
+
+```bash
+# bceome root
+sudo -s
+
+# install required packages
+apt-get -y install libapparmor1 apparmor-utils libssl0.9.8
+
+# install rstudio
+dpkg -i rstudio-server-*
+rm rstudio-server-*
+echo "www-address=127.0.0.1" >> /etc/rstudio/rserver.conf
+echo "r-libs-user=~/R/library" >> /etc/rstudio/rsession.conf
+rstudio-server restart
+
+# setup rstudio forwarding in apache
+a2enmod proxy_http
+cat > /etc/apache2/conf.d/rstudio.conf << EOF
+ProxyPass        /rstudio/ http://localhost:8787/
+ProxyPassReverse /rstudio/ http://localhost:8787/
+RedirectMatch permanent ^/rstudio$ /rstudio/
+EOF
+/etc/init.d/apache2 restart
+
+# all done, exit root
+exit
+```
+
+## Additional packages
+
+HDF5 Tools, netcdf, GDB and emacs
+```bash
+sudo apt-get -y install hdf5-tools cdo nco netcdf-bin ncview gdb emacs ess nedit
+```

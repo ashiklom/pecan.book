@@ -4,9 +4,18 @@ We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.il
 
 Check specific notes in:
 
+- [VM Creation](VM-Creation)
 - [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu)
 - [Installing PEcAn OSX](Installing-PEcAn-OSX)
 - [Installing PEcAn RedHat](Installing-PEcAn-RedHat)
+- [Installing PEcAn Data](Installing-PEcAn-Data)
+- [Enabling Remote Execution](Enabling-Remote-Execution)
+
+To update PEcAn see:
+
+- [Updating PEcAn](Updating-PEcAn)
+
+The rest of the instructions assumes you have done the appropriate steps in each of the above guides.
 
 ### Set `R_LIBS_USER` 
 
@@ -17,23 +26,6 @@ Check specific notes in:
 echo 'export R_LIBS_USER=${HOME}/R/library' >> ~/.bashrc
 source ~/.bashrc
 mkdir -p ${R_LIBS_USER}
-```
-
-## Install data
-
-These are large-ish files that contain data used with ED2 and SIPNET
-
-```bash
-rm -rf sites
-curl -o sites.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/sites.tgz
-tar zxf sites.tgz
-sed -i -e "s#/home/kooper/Projects/EBI#${PWD}#" sites/*/ED_MET_DRIVER_HEADER
-rm sites.tgz
-
-rm -rf inputs
-curl -o inputs.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/inputs.tgz
-tar zxf inputs.tgz
-rm inputs.tgz
 ```
 
 ## Install models
@@ -302,30 +294,4 @@ EOF
 
 # drop out of root
 exit
-```
-
-## Updating BETY database
-
-A new system is in place which will allow you to update the BETY database without loosing any local changes (this is still BETA though). To update the datbase and keep your changes, all you have to do is run the following:
-
-```
-cd
-pecan/scripts/load.bety.sh
-```
-
-## Update Build and Check PEcAn
-
-The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions. To use the email option, bsd mail must be installed (on Ubuntu / CentOS: `apt-get install bsd-mailx` / `yum install bsd-mailx`).
-
-Here are the options (see `./scripts/build.sh -h`)
-
-```
-./scripts/build.sh <options>
- -h, --help      : this help text
- -f, --force     : force a build
- -g, --git       : do a git pull
- -i, --install   : install all R packages (default=yes)
- -n, --noinstall : do not install all R packages
- -c, --check     : check the R packages before install
- -e, --email     : send email to following people on success
 ```
