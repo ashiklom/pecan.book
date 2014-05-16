@@ -9,6 +9,7 @@
 #### [[Using PEcAn | Getting-started#getting-started-ii-using-pecan]] 
 
 * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
+* [[Updating PEcAn | Updating-PEcAn]]
 * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
 * [[Settings Files | PEcAn-Configuration]]
 * [[PEcAn Workflow Modules | Workflow-modules]]
