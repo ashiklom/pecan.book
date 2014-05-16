@@ -5,11 +5,14 @@ We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.il
 Check specific notes in:
 
 - [VM Creation](VM-Creation)
-- [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu)
-- [Installing PEcAn OSX](Installing-PEcAn-OSX)
-- [Installing PEcAn RedHat](Installing-PEcAn-RedHat)
 - [Installing PEcAn Data](Installing-PEcAn-Data)
 - [Enabling Remote Execution](Enabling-Remote-Execution)
+
+OS specific installation instructions:
+
+ - [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu)
+ - [Installing PEcAn OSX](Installing-PEcAn-OSX)
+ - [Installing PEcAn RedHat](Installing-PEcAn-RedHat)
 
 To update PEcAn see:
 
