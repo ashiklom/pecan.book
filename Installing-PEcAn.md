@@ -2,11 +2,15 @@ We recommend that new users download the PEcAn ["pecan.ova"](http://isda.ncsa.il
 
 ## Install build environment
 
+Check specific notes in:
+
+- [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu)
+- [Installing PEcAn OSX](Installing-PEcAn-OSX)
+- [Installing PEcAn RedHat](Installing-PEcAn-RedHat)
 
 ### Set `R_LIBS_USER` 
 
-
-(All platforms) [CRAN Reference](http://cran.r-project.org/doc/manuals/r-devel/R-admin.html#Managing-libraries)
+[CRAN Reference](http://cran.r-project.org/doc/manuals/r-devel/R-admin.html#Managing-libraries)
 
 ```bash
 # point R to personal lib folder
@@ -15,214 +19,7 @@ source ~/.bashrc
 mkdir -p ${R_LIBS_USER}
 ```
 
-### Linux Ubuntu
-
-```bash
-
-sudo -s
-
-# point to latest R
-echo "deb http://cran.rstudio.com/bin/linux/ubuntu `lsb_release -s -c`/" > /etc/apt/sources.list.d/R.list
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
-
-# point to latest PostgreSQL
-echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -s -c`-pgdg main" > /etc/apt/sources.list.d/pgdg.list
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-
-# update package list
-apt-get -y update
-
-# install all packages needed
-apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev libsqlite3-dev libgmp-dev 
-
-# this needs to be done separately from previous command
-apt-get -y install libgdal1-dev libproj-dev
-
-# install packages for webserver
-apt-get -y install apache2 libapache2-mod-php5 php5
-
-# install packages for mysql
-#apt-get -y install libdbd-mysql mysql-server mysql-client php5-mysql libmysqlclient-dev
-
-# install packages for postgresql (using a newer version than default)
-apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev 
-
-# set ability to trust instead of peer for all
-vi /etc/postgresql/9.3/main/pg_hba.conf 
-/etc/init.d/postgresql restart
-
-# install packages to compile docs
-apt-get -y install texinfo texlive-latex-base texlive-latex-extra texlive-fonts-recommended
-
-# install devtools
-echo 'install.packages("devtools", repos="http://cran.rstudio.com/")' | R --vanilla
-
-# done as root
-exit
-```
-
-### CentOS / RHEL
-
-#### Install and configure MySQL, udunits2, NetCDF
-
-[Reference: centoshelp.org](http://centoshelp.org/servers/database/installing-configuring-mysql-server/)
-
-```bash
-yum -y install git R mysql mysql-server udunits2 netcdf
-chkconfig --level 2345 mysqld on 
-service mysqld start
-```
-
-#### Install ruby-netcdf gem 
-
-```bash
-cd $RUBY_APPLICATION_HOME
-export $NETCDF_URL=http://www.gfd-dennou.org/arch/ruby/products/ruby-netcdf/release/ruby-netcdf-0.6.6.tar.gz
-export $NETCDF_DIR=/usr/local/netcdf
-gem install narray
-export NARRAY_DIR="$(ls $GEM_HOME/gems | grep 'narray-')"
-export NARRAY_PATH="$GEM_HOME/gems/$NARRAY_DIR"
-cd $MY_RUBY_HOME/bin
-wget $NETCDF_URL -O ruby-netcdf.tgz
-tar zxf ruby-netcdf.tgz && cd ruby-netcdf-0.6.6/
-ruby -rubygems extconf.rb --with-narray-include=$NARRAY_PATH --with-netcdf-dir=/usr/local/netcdf-4.3.0
-sed -i 's|rb/$|rb|' Makefile
-make
-make install
-cd ../ && sudo rm -rf ruby-netcdf*
-
-cd $RUBY_APPLICATION
-bundle install --without development
-```
-
-#### Install and start Apache
-
-```bash
-yum -y install httpd
-sudo service httpd start
-```
-
-#### Install PHP
-
-```bash
-sudo yum install php php-mysql
-```
-
-#### Install and configure Rstudio-server
-
-based on [Rstudio Server documentation](http://www.rstudio.com/ide/docs/server/getting_started)
-
-* add `PATH=$PATH:/usr/sbin:/sbin` to `/etc/profile`
-```bash
-   cat "PATH=$PATH:/usr/sbin:/sbin; export PATH" >> /etc/profile
-```
-* add [rstudio.conf](https://gist.github.com/dlebauer/6921889) to /etc/httpd/conf.d/ 
-```bash
-   wget https://gist.github.com/dlebauer/6921889/raw/d1e0f945228e5519afa6223d6f49d6e0617262bd/rstudio.conf
-   sudo mv rstudio.conf /httpd/conf.d
-```
-* download and install server:
-```bash
-   wget http://download2.rstudio.org/rstudio-server-0.97.551-i686.rpm
-   sudo yum install --nogpgcheck rstudio-server-0.97.551-i686.rpm
-```
-* restart server `sudo httpd restart`
-* now you should be able to access `http://<server>/rstudio`
-
-### Mac OSX
-
-#### Install R, Fortran, OpenMPI and HDF5
-
-```bash
-# install R
-# download from http://cran.r-project.org/bin/macosx/
-
-# install gfortran 
-# download from http://hpc.sourceforge.net
-sudo tar -xvf ~/Downloads/gcc-mlion.tar -C /
-
-# install OpenMPI
-curl -o openmpi-1.6.3.tar.gz http://www.open-mpi.org/software/ompi/v1.6/downloads/openmpi-1.6.3.tar.gz
-tar zxf openmpi-1.6.3.tar.gz
-cd openmpi-1.6.3
-./configure --prefix=/usr/local
-make all
-sudo make install
-cd ..
-
-# install szip
-curl -o szip-2.1-MacOSX-intel.tar.gz ftp://ftp.hdfgroup.org/lib-external/szip/2.1/bin/szip-2.1-MacOSX-intel.tar.gz
-tar zxf szip-2.1-MacOSX-intel.tar.gz
-sudo mv szip-2.1-MacOSX-intel /usr/local/szip
-
-# install HDF5
-
-curl -o hdf5-1.8.11.tar.gz http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.11.tar.gz
-tar zxf hdf5-1.8.11.tar.gz
-cd hdf5-1.8.11
-sed -i -e 's/-O3/-O0/g' config/gnu-flags 
-./configure --prefix=/usr/local/hdf5 --enable-fortran --enable-cxx --with-szlib=/usr/local/szip
-make
-# make check
-sudo make install
-# sudo make check-install
-cd ..
-```
-
-#### Install MySQL
-
-I use the package that comes from mysql (http://dev.mysql.com/downloads/mysql/) and install the package. And add the mysql/bin folder to your path
-
-```bash
-sudo bash -c 'echo "/usr/local/mysql/bin" > /etc/paths.d/mysql'
-```
-
-#### Install Postgres
-
-For those on a Mac I use the following app for postgresql which has
-postgis already installed (just make sure you have 9.3)
-http://postgresapp.com/
-
-To get postgis run the following commands in psql:
-```
-## Enable PostGIS (includes raster)
-CREATE EXTENSION postgis;
-## Enable Topology
-CREATE EXTENSION postgis_topology;
-## fuzzy matching needed for Tiger
-CREATE EXTENSION fuzzystrmatch;
-## Enable US Tiger Geocoder
-CREATE EXTENSION postgis_tiger_geocoder;
-```
-To check your postgis run the following command again in psql:
-```
-SELECT PostGIS_full_version();
-```
-#### Install JAGS
-
-For more instructions see http://martynplummer.wordpress.com/2011/11/04/rjags-3-for-mac-os-x/
-
-
-
-#### Install udunits
-
-Installing udunits-2 on MacOSX is done from source.
-
-* download most recent [version of Udunits here](http://www.unidata.ucar.edu/downloads/udunits/index.jsp)
-* instructions for [compiling from source](http://www.unidata.ucar.edu/software/udunits/udunits-2/udunits2.html#Obtain)
-
-
-```bash
-wget ftp://ftp.unidata.ucar.edu/pub/udunits/udunits-2.1.24.tar.gz
-tar -xvf udunits-2.1.24.tar.gz
-cd udunits-2.1.24
-./configure; make; make check; make clean
-
-```
-
-## Install models
-
-### Model Testrun data
+## Install data
 
 These are large-ish files that contain data used with ED2 and SIPNET
 
@@ -238,6 +35,8 @@ curl -o inputs.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/inputs.tgz
 tar zxf inputs.tgz
 rm inputs.tgz
 ```
+
+## Install models
 
 ### ED 2.2 r46 (used in PEcAn manuscript)
 
@@ -301,6 +100,20 @@ curl -o config.xml  http://isda.ncsa.illinois.edu/~kooper/EBI/config.r82.xml
 time ed2.r82
 ```
 
+### ED 2.2 bleeding edge
+
+**Needs updating**
+
+```bash
+cd
+git clone ...
+
+cd ED2
+...
+sudo cp ../ed_2.1-opt /usr/local/bin/ed2.git
+cd
+```
+
 ### SIPNET Installation
 
 ```bash
@@ -315,7 +128,7 @@ sudo cp sipnet /usr/local/bin/sipnet.runk
 cd
 ```
 
-SIPNET testrun
+### SIPNET testrun
 
 ```bash
 cd
@@ -342,40 +155,80 @@ wget http://file-server.igb.illinois.edu/~dlebauer/BioCro_0.91.tar.gz
 R CMD INSTALL BioCro_0.91.tar.gz
 ```
 
-## Installing BETY
+## PEcAn Installation
 
-There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minimal interaction with the database while the RUBY version allows for full interaction with the database. Both however require the database to be created and installed
+PEcAn is the software package that ties all the pieces together.
 
-### Database creation
+## Installing PEcAn
 
-The following scripts creates the user and database, and then populates (or updates) the database:
-
-If you plan on installing PEcAn you can skip the following section. Next we populate the database with the latest version from Illinois. Once PEcAn is installed you can use the updatedb.sh script that is bundled with PEcAn to update the database.
-
-(to install MySQL, replace `update.psql.sh` with `update.mysql.sh` in the following example)
+Download, compile and install PEcAn
 
 ```bash
-wget https://raw.githubusercontent.com/PecanProject/pecan/master/scripts/update.psql.sh
-chmod +x update.psql.sh
-./update.psql.sh
+# download pecan
+cd
+git clone https://github.com/PecanProject/pecan.git
+
+# install PEcAn packages in R
+cd pecan
+./scripts/install.dependencies.R
+
+# install mysql driver
+#echo "install.packages('RMySQL', repos='http://cran.rstudio.com/')" | R --vanilla
+echo "install.packages('RPostgreSQL', repos='http://cran.rstudio.com/')" | R --vanilla
+
+# compile pecan
+./scripts/build.sh
+
+# install database (code assumes password is bety)
+sudo -u postgres createuser -d -l -P -R -S bety
+sudo -u postgres CREATE=YES scripts/load.bety.sh
+
+# configure for web app (change passowrd if needed)
+cp web/config.example.php web/config.php 
+cp web/db/config_example.php web/db/config.php
+
+# load models
+echo "INSERT INTO models (model_name, model_type, model_path, revision, created_at, updated_at) VALUES
+  ('ED2.2', 'ED2', '${HOSTNAME}:/usr/local/bin/ed2.r46', '46', NOW(), NOW()),
+  ('ED2.2', 'ED2', '${HOSTNAME}:/usr/local/bin/ed2.r82', '82', NOW(), NOW()),
+  ('SIPNET', 'SIPNET', '${HOSTNAME}:/usr/local/bin/sipnet.runk', 'unk', NOW(), NOW()),
+  ('BIOCRO', 'BIOCRO', '${HOSTNAME}:/bin/true', '0.0.1', NOW(), NOW());" | psql -U bety
+
+# load sites
+(cd ../sites && ./addsites.sh)
 ```
+
+### PEcAn Testrun
+
+Do the run, this assumes you have installed the BETY database, sites tar file and sipnet.
+
+```bash
+# create folder
+cd
+mkdir testrun.pecan
+cd testrun.pecan
+
+# copy example of pecan workflow and configuration file
+cp ../pecan/tests/pecan.sipnet.xml pecan.xml
+cp ../pecan/scripts/workflow.R workflow.R
+
+# exectute workflow
+rm -rf pecan
+./workflow.R
+```
+NB: pecan.xml is configured for the virtual machine, you will need to change the <met> field from '/home/carya/' to wherever you installed your 'sites', usually $HOME
+
+## Installing BETY
+
+There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minimal interaction with the database while the RUBY version allows for full interaction with the database.
 
 ### PHP version
 
-The php version comes with PEcAn and should be accessible from http://<host>:<port>/pecan/db/ once PEcAn is installed.
+The php version comes with PEcAn and is already configured.
 
 ### RUBY version
 
 The RUBY version requires a few extra packages to be installed first.
-
-```bash
-sudo apt-get -y install python-software-properties
-sudo apt-add-repository -y ppa:brightbox/ruby-ng
-sudo apt-get update
-
-# install all ruby related packages
-sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1 libapache2-mod-passenger 
-```
 
 Next we install the web app.
 
@@ -451,111 +304,14 @@ EOF
 exit
 ```
 
-## PEcAn Installation
+## Updating BETY database
 
-PEcAn is the software package that ties all the pieces together.
+A new system is in place which will allow you to update the BETY database without loosing any local changes (this is still BETA though). To update the datbase and keep your changes, all you have to do is run the following:
 
-## Installing PEcAn
-
-Download, compile and install PEcAn
-
-```bash
-# download pecan
+```
 cd
-git clone https://github.com/PecanProject/pecan.git
-
-# install PEcAn packages in R
-cd pecan
-./scripts/install.dependencies.R
-
-# install mysql driver
-#echo "install.packages('RMySQL', repos='http://cran.rstudio.com/')" | R --vanilla
-echo "install.packages('RPostgreSQL', repos='http://cran.rstudio.com/')" | R --vanilla
-
-# compile pecan
-./scripts/build.sh
-
-# update/install database
-./scripts/update.psql.sh
+pecan/scripts/load.bety.sh
 ```
-
-### PEcAn Testrun
-
-Do the run, this assumes you have installed the BETY database, sites tar file and sipnet.
-
-```bash
-# create folder
-cd
-mkdir testrun.pecan
-cd testrun.pecan
-
-# copy example of pecan workflow and configuration file
-cp ../pecan/tests/pecan.sipnet.xml pecan.xml
-cp ../pecan/scripts/workflow.R workflow.R
-
-# exectute workflow
-rm -rf pecan
-./workflow.R
-```
-NB: pecan.xml is configured for the virtual machine, you will need to change the <met> field from '/home/carya/' to wherever you installed your 'sites', usually $HOME
-
-### Configuring PEcAn Web Interface
-
-#### Apache Configuration for Linux Ubuntu 
-
-```bash
-# become root
-sudo -s
-
-# get index page
-rm /var/www/index.html
-ln -s ${HOME}/pecan/documentation/index_vm.html /var/www/index.html
-
-# setup a redirect
-cat > /etc/apache2/conf.d/pecan.conf << EOF
-Alias /pecan ${HOME}/pecan/web
-<Directory ${HOME}/pecan/web>
-  DirectoryIndex index.php
-  Options +All
-  Order allow,deny
-  Allow from all
-</Directory>
-EOF
-/etc/init.d/apache2 restart
-
-# done as root
-exit
-```
-
-#### Apache Configuration for Mac OSX
-
-```bash
-sudo sed -i '' 's/^#LoadModule php5_module/LoadModule php5_module/' /etc/apache2/httpd.conf
-
-sudo mkdir /var/mysql
-sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock
-
-cat > /etc/apache2/users/pecan.conf << EOF
-Alias /pecan ${PWD}/pecan/web
-<Directory ${PWD}/pecan/web>
-  DirectoryIndex index.php
-  Options +All
-  Order allow,deny
-  Allow from all
-</Directory>
-EOF
-```
-
-#### Instructions for all OS
-
-```bash
-# configure for web app
-cp ${HOME}/pecan/web/system.example.php ${HOME}/pecan/web/system.php 
-cp ${HOME}/pecan/web/db/config_example.php ${HOME}/pecan/web/db/config.php
-```
-
-All done you can now visit the server http://\<hostname>:\<port>/pecan' and you can interact with the database using 'http://\<hostname>:\<port>/pecan/db/'
-
 
 ## Update Build and Check PEcAn
 
