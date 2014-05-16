@@ -85,6 +85,8 @@ Host remotehost
 
 FIA database is not installed by default, this would add an extra 10GB to the VM. Add a text file describing how to install the FIA database.
 
+**NEEDS UPDATING**
+
 ```bash
 cat > FIA.txt << EOF
 The following command will downaload and install the FIA database
@@ -111,12 +113,12 @@ Based on version of ubuntu 32/64 use either of the following
 
 *32bit only*
 ```bash
-wget http://download2.rstudio.org/rstudio-server-0.98.501-i386.deb
+wget http://download2.rstudio.org/rstudio-server-0.98.507-i386.deb
 ```
 
 *64bit only*
 ```bash
-wget http://download2.rstudio.org/rstudio-server-0.98.501-amd64.deb
+wget http://download2.rstudio.org/rstudio-server-0.98.507-amd64.deb
 ```
 
 ```bash
