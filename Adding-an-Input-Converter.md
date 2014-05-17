@@ -14,16 +14,17 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 The variable names should be `standard_name`
 
 
-| CF standard-name                          | isimip       | cruncep | narr  |
-|:-------------------------------------------|:--------------|:---------|:-------|
-| air_temperature                           | tasAdjust    | tair    | air   |
-| air_temperature_max                       | tasmaxAdjust | NA      | tmax  |
-| air_temperature_min                       | tasminAdjust | NA      | tmin  |
-| relative_humidity                         | rhurs        | NA      | rhum  |
-| specific_humidity                         | NA           | qair    | shum  |
-| surface_downwelling_longwave_flux_in_air  | rldsAdjust   | swdown  | dswrf |
-| surface_downwelling_shortwave_flux_in_air | rsdsAdjust   | lwdown  | dlwrf |
-| precipitation_flux                        | prAdjust     | rain    | acpc  |
+| CF standard-name                          | units | bety         | isimip       | cruncep | narr  |
+|:------------------------------------------|:------|:-------------|:-------------|:--------|:------|
+| air_temperature                           | K     | airT         | tasAdjust    | tair    | air   |
+| air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |
+| air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |
+| air_pressure                              | Pa    | air_pressure |              |         |       |
+| relative_humidity                         |       |              | rhurs        | NA      | rhum  |
+| specific_humidity                         |       |              | NA           | qair    | shum  |
+| surface_downwelling_longwave_flux_in_air  |       |              | rldsAdjust   | swdown  | dswrf |
+| surface_downwelling_shortwave_flux_in_air |       |              | rsdsAdjust   | lwdown  | dlwrf |
+| precipitation_flux                        |       |              | prAdjust     | rain    | acpc  |
 
 
 * variable names are from [MsTMIP](http://nacp.ornl.gov/MsTMIP_variables.shtml), but lowercase to be consistent with the MsTMIP drivers.
