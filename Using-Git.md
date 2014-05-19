@@ -3,7 +3,7 @@ GIT and GitHub Overview
 
 ## GitHub
 
-See our documentation for [reporting issues on Redmine and GitHub](https://help.github.com/articles/notifications)
+See our documentation for [[reporting issues on Redmine and GitHub | Github-issues]]
 
 ## Git
 
