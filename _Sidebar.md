@@ -19,7 +19,6 @@
 
 ## [[Developer's Guide | Development]]
 
-#### [[Reporting Bugs and Requesting Features | Github-issues]]
 
 #### [[Setup | Development#setup]]
 * [[Installing PEcAn | Installing-PEcAn]]
