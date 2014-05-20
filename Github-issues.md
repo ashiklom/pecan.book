@@ -5,6 +5,9 @@ We use Both GitHub and Redmine to track development.
 
 To learn about GitHub, it is worth taking some time to read through the [FAQ](https://help.github.com/). When in doubt, the first step is to click the "Help" button at the top of the page.
 
+* **To address specific people**, use a github feature called "@mentions" e.g. write @dlebauer, @robkooper, @mdietze, or @serbinsh ... in the issue to alert the user as described in the [GitHub documentation on notifications](https://help.github.com/articles/notifications)
+
+
 Bugs, Issues, Features, etc.
 ============================
 
@@ -90,8 +93,6 @@ Rationale: This workflow is a small upfront investment that reduces error and ti
 * you want to request a feature that is 
  * not integral to basic research
  * is unlikely to lead to extended discussions
-
-**To address specific people**, use a github feature called "@mentions" e.g. write @dlebauer, @robkooper, @mdietze, or @serbinsh ... in the issue to alert the user as described in the [GitHub documentation on notifications](https://help.github.com/articles/notifications)
 
 #### Use Redmine if:
 * your bug or feature request does not belong on GitHub
