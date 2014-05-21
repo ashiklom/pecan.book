@@ -20,8 +20,8 @@ The variable names should be `standard_name`
 | air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |
 | air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |
 | air_pressure                              | Pa    | air_pressure |              |         |       |
-| relative_humidity                         |       |              | rhurs        | NA      | rhum  |
-| specific_humidity                         |       |              | NA           | qair    | shum  |
+| relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  |
+| specific_humidity                         | 1 | specific_humidity | NA           | qair    | shum  |
 | surface_downwelling_longwave_flux_in_air  |       |              | rldsAdjust   | swdown  | dswrf |
 | surface_downwelling_shortwave_flux_in_air |       |              | rsdsAdjust   | lwdown  | dlwrf |
 | precipitation_flux                        |       |              | prAdjust     | rain    | acpc  |
