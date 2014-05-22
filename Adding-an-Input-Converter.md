@@ -25,11 +25,13 @@ The variable names should be `standard_name`
 | **surface_downwelling_longwave_flux_in_air** |       |           | rldsAdjust   | swdown  | dswrf |
 | **surface_downwelling_shortwave_flux_in_air**|       |           | rsdsAdjust   | lwdown  | dlwrf |
 | **precipitation_flux**                    |       |              | prAdjust     | rain    | acpc  |
+|                                           | degrees | wind_direction |          |         |       |
 | wind_speed                                | m/s   | Wspd         |              |         |       |
 | **eastward_wind**                         | m/s   | eastward_wind |             |         |       |
 | **northward_wind**                        | m/s   |              |              |         |       |
 
 * preferred variables indicated in bold
+* wind_direction has no CF equivalent and should not be converted, instead the met2CF functions should convert wind_direction and wind_speed to eastward_wind and northward_wind
 * variable names are from [MsTMIP](http://nacp.ornl.gov/MsTMIP_variables.shtml), but lowercase to be consistent with the MsTMIP drivers.
 * standard_name is CF-convention standard names
 * units can be converted by udunits, so these can vary (e.g. the time denominator may change with time frequency of inputs)
