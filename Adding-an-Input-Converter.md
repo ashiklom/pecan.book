@@ -16,17 +16,20 @@ The variable names should be `standard_name`
 
 | CF standard-name                          | units | bety         | isimip       | cruncep | narr  |
 |:------------------------------------------|:------|:-------------|:-------------|:--------|:------|
-| air_temperature                           | K     | airT         | tasAdjust    | tair    | air   |
+| **air_temperature**                       | K     | airT         | tasAdjust    | tair    | air   |
 | air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |
 | air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |
-| air_pressure                              | Pa    | air_pressure |              |         |       |
+| **air_pressure**                          | Pa    | air_pressure |              |         |       |
 | relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  |
-| specific_humidity                         | 1 | specific_humidity | NA           | qair    | shum  |
-| surface_downwelling_longwave_flux_in_air  |       |              | rldsAdjust   | swdown  | dswrf |
-| surface_downwelling_shortwave_flux_in_air |       |              | rsdsAdjust   | lwdown  | dlwrf |
-| precipitation_flux                        |       |              | prAdjust     | rain    | acpc  |
+| **specific_humidity**                     | 1 | specific_humidity | NA          | qair    | shum  |
+| **surface_downwelling_longwave_flux_in_air** |       |           | rldsAdjust   | swdown  | dswrf |
+| **surface_downwelling_shortwave_flux_in_air**|       |           | rsdsAdjust   | lwdown  | dlwrf |
+| **precipitation_flux**                    |       |              | prAdjust     | rain    | acpc  |
+| wind_speed                                | m/s   | Wspd         |              |         |       |
+| **eastward_wind**                         | m/s   | eastward_wind |             |         |       |
+| **northward_wind**                        | m/s   |              |              |         |       |
 
-
+* preferred variables indicated in bold
 * variable names are from [MsTMIP](http://nacp.ornl.gov/MsTMIP_variables.shtml), but lowercase to be consistent with the MsTMIP drivers.
 * standard_name is CF-convention standard names
 * units can be converted by udunits, so these can vary (e.g. the time denominator may change with time frequency of inputs)
