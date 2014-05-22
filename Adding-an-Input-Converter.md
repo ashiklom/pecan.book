@@ -22,13 +22,13 @@ The variable names should be `standard_name`
 | **air_pressure**                          | Pa    | air_pressure |              |         |       |
 | relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  |
 | **specific_humidity**                     | 1 | specific_humidity | NA          | qair    | shum  |
-| **surface_downwelling_longwave_flux_in_air** |       |           | rldsAdjust   | swdown  | dswrf |
-| **surface_downwelling_shortwave_flux_in_air**|       |           | rsdsAdjust   | lwdown  | dlwrf |
+| **surface_downwelling_longwave_flux_in_air** | W m-2 | same      | rldsAdjust   | lwdown  | dlwrf |
+| **surface_downwelling_shortwave_flux_in_air**| W m-2 |solar_radiation|rsdsAdjust| swdown  | dswrf |
 | **precipitation_flux**                    |       |              | prAdjust     | rain    | acpc  |
 |                                           | degrees | wind_direction |          |         |       |
 | wind_speed                                | m/s   | Wspd         |              |         |       |
 | **eastward_wind**                         | m/s   | eastward_wind |             |         |       |
-| **northward_wind**                        | m/s   |              |              |         |       |
+| **northward_wind**                        | m/s   | northward_wind |            |         |       |
 
 * preferred variables indicated in bold
 * wind_direction has no CF equivalent and should not be converted, instead the met2CF functions should convert wind_direction and wind_speed to eastward_wind and northward_wind
