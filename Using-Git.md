@@ -44,10 +44,10 @@ tracking system).
 ### Before any work is done:
 
 1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)) This allows you to create your own
-copy of the code. When you do the fork a copy of the code is created and
-placed in your personal space. This is your personal copy, you can
+copy of the code. When you do the fork, a copy of the code is created and
+placed in your personal space. This is your personal copy: you can
 clone, branch and push things back here. If you have a branch or some
-code you want to merge back in the main branch you do a pull request.
+code you want to merge back in the main branch, you make a pull request.
 This is the way for external people to commit code back to PEcAn and
 BETY. The pull request will start a review process that will eventually
 result in the code being merged into the main copy of the codebase. See https://help.github.com/articles/fork-a-repo for more information, 
@@ -73,7 +73,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 ## During development:
 
 * commit often; 
-* each commit can address 0 or 1 issue, many commits can reference an issue ([see](#link-commits-to-issues))
+* each commit can address 0 or 1 issue; many commits can reference an issue ([see](#link-commits-to-issues))
 * ensure that all tests are passing before anything is pushed into master.
 
 ### Option 1: Always work in the same local branch
@@ -86,7 +86,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
 3. Commit after each chunk of code (multiple times a day)
         
-        git commit -m "<some descriptive information about what was done; references /fixes gh-X>"
+        git commit -m "<some descriptive information about what was done; references/fixes gh-X>"
 
 4. Push to YOUR Github (when a feature is working, a set of bugs are fixed, or you need to share progress with others)
 
@@ -113,7 +113,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
         ./scripts/build.sh
 
-3. Create a branch 
+3. Create a branch and switch to it
 
         git checkout -b <branchname>
 
@@ -147,7 +147,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
 
 
-### Link commits to issues
+### <a name="link-commits-to-issues"></a>Link commits to issues
 
 When you work on or close an issue from a commit message, include the following text:
 
@@ -197,7 +197,7 @@ Summary:
 
 The Basic Workflow is a starting point. The standard method used for PEcAn is found above under [Recommended Workflow](https://github.com/PecanProject/pecan/wiki/_preview#recommended-workflow-for-pecan-and-bety-developers)
 
-* GIT encourages to branch "early and often"
+* GIT encourages branching "early and often"
  * First pull from master 
  * Branch before working on feature
  * One branch per feature
@@ -224,7 +224,7 @@ your code, create a new branch, and work on new branch.
 
 * Delete a branch: `git branch -d <name of branch>`
 * To push a branch git: `push -u origin `<name of branch>`
-* To checkout a branch: 
+* To check out a branch: 
   ```
   git fetch origin
   git checkout --track origin/<name of branch>
@@ -239,7 +239,7 @@ your code, create a new branch, and work on new branch.
 
         git pull
 
-* To add new files to to local repository:
+* To add new files to the local repository:
 
         git add <file>
 
@@ -259,13 +259,13 @@ your code, create a new branch, and work on new branch.
 
 Git supports two types of tags: lightweight and annotated. For more information see the [Tagging Chapter in the Git documentation](http://git-scm.com/book/ch2-6.html).
 
-Lightweight are useful, but here we discuss the annotated tags that are used for marking stable versions, major releases, and versions associated with published results. 
+Lightweight tags are useful, but here we discuss the annotated tags that are used for marking stable versions, major releases, and versions associated with published results. 
 
 The basic command is `git tag`. The `-a` flag means 'annotated' and `-m` is used before a message.  Here is an example:
 
     git tag -a v0.6 -m "stable version with foo and bar features, used in the foobar publication by Bob"
 
-Adding a tag to the master branch must be done explicitly with a push, e.g.
+Adding a tag to the a remote repository must be done explicitly with a push, e.g.
 
     git push v0.6
     
@@ -279,17 +279,17 @@ To tag an earlier commit, just append the commit SHA to the command, e.g.
 
 
 **Using GitHub** The easiest way to get working with GitHub is by installing the GitHub
-client. More instructions for your specific OS and download of the
+client. For instructions for your specific OS and download of the
 GitHub client, see https://help.github.com/articles/set-up-git.
-This will help you setup an SSH key to push code back to GitHub. To
-checkout a project you do not need to have an ssh key and you can use
+This will help you set up an SSH key to push code back to GitHub. To
+check out a project you do not need to have an ssh key and you can use
 the https or git url to check out the code.
 
 ## Git + Rstudio
 
 
 Rstudio is nicely integrated with many development tools, including git and GitHub. 
-It is quite easy to checkout source code from within the Rstudio program or browser.
+It is quite easy to check out source code from within the Rstudio program or browser.
 The Rstudio documentation includes useful overviews of [version control](http://www.rstudio.com/ide/docs/version_control/overview) and [R package development](http://www.rstudio.com/ide/docs/packages/overview). 
 
 Once you have git installed on your computer (see the [Rstudio version control](http://www.rstudio.com/ide/docs/version_control/overview) documentation for instructions), you can use the following steps to install the PEcAn source code in Rstudio.
