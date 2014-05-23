@@ -138,8 +138,9 @@ Reference: Stack Overflow ["What is the difference between require and library?"
 
 It is considered best practice to use DEPENDS and SUGGESTS in DESCRIPTION; SUGGESTS should be used for packages that are called infrequently, or only in examples and vignettes; suggested packages are called by require inside a function.
 
+Consider using IMPORTS instead of depends in the DESCRIPTION files. This will make loading packages faster by allowing it to have functions available without loading the hierarchy of dependencies, dependencies of dependencies, ad infinitum ...
 From p. 6 of the "R extensions manual":http://cran.r-project.org/doc/manuals/R-exts.html
 
 > The `Suggests` field uses the same syntax as `Depends` and lists packages that are not necessarily needed. This includes packages used only in examples, tests or vignettes (see Section 1.4 [Writing package vignettes], page 26), and packages loaded in the body of functions. E.g., suppose an example from package foo uses a dataset from package bar. Then it is not necessary to have bar use foo unless one wants to execute all the examples/tests/vignettes: it is useful to have bar, but not necessary. Version requirements can be specified, and will be used by R CMD check.
 
-Consider using IMPORTS instead of depends in the DESCRIPTION files. This will make loading packages faster by allowing it to have functions available without loading the hierarchy of dependencies, dependencies of dependencies, ad infinitum ...
+
