@@ -195,7 +195,7 @@ Summary:
 5. Submitting a Pull Request
 
 
-The Basic Workflow is a starting point. The standard method used for PEcAn is found above under [Recommended Workflow](https://github.com/PecanProject/pecan/wiki/_preview#recommended-workflow-for-pecan-and-bety-developers)
+The Basic Workflow is a starting point. The standard method used for PEcAn is found above under [Recommended Workflow](#recommended-git-workflow)
 
 * GIT encourages branching "early and often"
  * First pull from master 
