@@ -34,7 +34,7 @@
 * [[PEcAn Directory Structure | Directory-structure]]
 * [[Using Github and Git | Using-Git]]
   * [[Recommended Workflow for PEcAn and BETY Developers | Using-Git#recommended-workflow-for-pecan-and-bety-developers]]
-  * [[Git Overview | Using-Git#quick-git-overview]]
+  * [[Git Overview | Using-Git#summary]]
   * [[Git + RStudio | Using-Git#git--rstudio]]
 
 #### [[R Development | Development#r-development]]
