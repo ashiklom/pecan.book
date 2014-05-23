@@ -1,4 +1,4 @@
-## [[User's Guide | Getting-started]]
+# [[User's Guide | Getting-started]]
 
 #### [[Background | Getting-started#getting-started-i-background]]
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
@@ -17,7 +17,7 @@
 
 #### [[Reporting Bugs and Requesting Features | Github-issues]]
 
-## [[Developer's Guide | Development]]
+# [[Developer's Guide | Development]]
 
 
 #### [[Setup | Development#setup]]
