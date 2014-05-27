@@ -6,7 +6,8 @@ Create Accounts
 
 ### Making Changes to the Code
 
-* [[Using GitHub and Git | Using Git]] to get a copy of the development code and/or submit changes to the mainline
+* [[ Reporting bugs or requesting features | Github issues]]
+* [[Using GitHub and Git | Using Git]] to get a copy of the latest development code and/or submit changes to the main repository
 * [[PEcAn Directory Structure | Directory Structure]]
 
 
