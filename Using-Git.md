@@ -1,3 +1,24 @@
+Summary:
+-------------------
+
+* If you are new to GitHub or to PEcAn it is recommended that you start with the one-time set-up instructions under **Before any work is done**
+
+* If you just want to work with the latest code 
+
+```
+cd pecan
+
+git pull upstream master
+
+./scripts/build.sh
+```
+
+* If you want to make changes to the code it is recommended that you start with the **Basic Workflow**
+
+* If you want to submit changes that you've made to be part of PEcAn you'll want to follow **Committing Changes Using Pull Requests**
+
+
+
 GIT and GitHub Overview
 ============
 
@@ -43,6 +64,8 @@ tracking system).
 
 ### Before any work is done:
 
+The first step below only needs to be done once when you first start working on the PEcAn code. The steps below that need to be done to set up PEcAn on your computer, and would need to be repeated if you move to a new computer. If you are working from the PEcAn VM, you can skip the "git clone" since the PEcAn code is already installed. 
+
 1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)) This allows you to create your own
 copy of the code. When you do the fork, a copy of the code is created and
 placed in your personal space. This is your personal copy: you can
@@ -76,7 +99,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 * each commit can address 0 or 1 issue; many commits can reference an issue ([see](#link-commits-to-issues))
 * ensure that all tests are passing before anything is pushed into master.
 
-### Option 1: Always work in the same local branch
+### Basic Workflow: Always work in the same local branch
 
 1. Get the latest code from the main repository
 
@@ -99,7 +122,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 5. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
 
 
-### Option 2: A new branch for each change
+### Advanced Workflow: A new branch for each change
 
 1. Make sure you start in master 
 
@@ -182,20 +205,9 @@ Once you have added a feature on your local fork of the project that you would l
 * When ready, changes are merged
 
 
-
-Summary:
--------------------
-
-**Git Workflow**
-
-1. Create a Fork 
-2. Clone a Repo
-3. Make Changes
-4. Commit
-5. Submitting a Pull Request
+### Other Useful Git Commands:
 
 
-The Basic Workflow is a starting point. The standard method used for PEcAn is found above under [Recommended Workflow](#recommended-git-workflow)
 
 * GIT encourages branching "early and often"
  * First pull from master 
@@ -218,9 +230,6 @@ The Basic Workflow is a starting point. The standard method used for PEcAn is fo
 If during above process you want to work on something else, commit all
 your code, create a new branch, and work on new branch. 
 
-
-
-### Other Useful Git Commands:
 
 * Delete a branch: `git branch -d <name of branch>`
 * To push a branch git: `push -u origin `<name of branch>`
