@@ -10,7 +10,7 @@ Create Accounts
 * [[Installing PEcAn]]
 * [[PEcAn Configuration and Settings Files | Configuration Files]]
 
-### Using Git and GitHub
+### Making Changes to the Code
 
 * [[PEcAn Directory Structure | Directory Structure]]
 * [[Using GitHub and Git | Using Git]]
