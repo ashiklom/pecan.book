@@ -119,8 +119,8 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
         ./scripts/build.sh -c
 
-5. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
-
+5. submit pull request with [[link-commits-to-issues]]; 
+   * also see [github documentation](https://help.github.com/articles/using-pull-requests)
 
 ### Advanced Workflow: A new branch for each change
 
@@ -152,7 +152,8 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
         git push origin <branchname>
 
-6. submit pull request ([see github documentation](https://help.github.com/articles/using-pull-requests))
+6. submit pull request with [[link-commits-to-issues]]; 
+   * also see [github documentation](https://help.github.com/articles/using-pull-requests)
 
 ### After pull request is merged
 
@@ -170,9 +171,11 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
 
 
-### <a name="link-commits-to-issues"></a>Link commits to issues
+### Link commits to issues
 
-When you work on or close an issue from a commit message, include the following text:
+You can reference and close issues from comments, pull requests, and commit messages. This should be done when you commit code that is related to or will close/fix an existing issue. 
+
+There are two ways to do this. One easy way is to include the following text in your commit message:
 
 * [**Github**](https://github.com/blog/1386-closing-issues-via-commit-messages)
  * to close: "closes gh-xxx" (or syn. close, closed, fixes, fix, fixed)  
@@ -185,6 +188,7 @@ When you work on or close an issue from a commit message, include the following 
  * to close: reference and use web interface!
  * to reference: "re #xxx"
 
+Another way is to just add the url to the issue that you are updating. For example, if you are resolving an issue in Redmine, you can simply write the text "resolved by pull request https://github.com/PecanProject/pecan/pull/1" in the comments.
 
 ## For PEcAn 
 
