@@ -96,7 +96,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 ## During development:
 
 * commit often; 
-* each commit can address 0 or 1 issue; many commits can reference an issue ([see](#link-commits-to-issues))
+* each commit can address 0 or 1 issue; many commits can reference an issue (see [[Link commits to issue|Using-Git#link-commits-to-issues]])
 * ensure that all tests are passing before anything is pushed into master.
 
 ### Basic Workflow: Always work in the same local branch
@@ -119,7 +119,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
         ./scripts/build.sh -c
 
-5. submit pull request with [[link-commits-to-issues]]; 
+5. submit pull request with a reference to related issue (see [[Link commits to issue|Using-Git#link-commits-to-issues]]); 
    * also see [github documentation](https://help.github.com/articles/using-pull-requests)
 
 ### Advanced Workflow: A new branch for each change
