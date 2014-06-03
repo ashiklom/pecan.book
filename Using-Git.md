@@ -1,30 +1,25 @@
 Summary:
 -------------------
 
-* If you are new to GitHub or to PEcAn it is recommended that you start with the one-time set-up instructions under **Before any work is done**
+This document describes the steps required to download PEcAn, make changes to code, and submit your changes.
 
-* If you just want to work with the latest code 
+* For asking questions, reporting bugs, and requesting features, see our documentation for [[reporting issues on Redmine and GitHub | Github-issues]]. 
+* If you are new to GitHub or to PEcAn, start with the one-time set-up instructions under [[**Before any work is done**|Using-Git#Before-any-work-is-done]]. 
+* To make trivial changes, see [[Quick and Easy|Using-Git#Quick-and-Easy]]
+* To make changes to the code, start with the **[[basic workflow|Using-Git#Basic-Workflow**]]. 
+* If you want to submit changes that you've made to be part of PEcAn you'll want to follow [[**Committing Changes Using Pull Requests**|Using-Git#Committing-Changes-Using-Pull-Requests]]
+* **To update your local branch**
 
-```
+ ```
+git clone 
 cd pecan
-
 git pull upstream master
-
 ./scripts/build.sh
-```
-
-* If you want to make changes to the code it is recommended that you start with the **Basic Workflow**
-
-* If you want to submit changes that you've made to be part of PEcAn you'll want to follow **Committing Changes Using Pull Requests**
-
-
+ ```
 
 GIT and GitHub Overview
 ============
 
-## GitHub
-
-See our documentation for [[reporting issues on Redmine and GitHub | Github-issues]]
 
 ## Git
 
@@ -37,10 +32,11 @@ history and full revision tracking capabilities, not dependent on
 network access or a central server. Branching and merging are fast and
 easy to do.
 
-There are two fun tutorials for learning git: [LearnGitBranching](http://pcottle.github.com/learnGitBranching/) and
-[TryGit](http://try.github.com). More information is available in the [[References | Using-Git#references]]
+A good place to start is the [GitHub 5 minute illustrated tutorial](https://guides.github.com/introduction/flow/). 
+In addition, there are two fun tutorials for learning git: [LearnGitBranching](http://pcottle.github.com/learnGitBranching/) and
+[TryGit](http://try.github.com). For additional tutorials and background see [[References | Using-Git#references]]
 
-In the rest of the document I will talk about URL’s to clone the code.
+**URLs** In the rest of the document will use specific URL’s to clone the code.
 There a few URL’s you can use to clone a project, using https, ssh and
 git. You can use either https or git to clone a repository and write to
 it. The git protocol is read-only.
@@ -52,6 +48,12 @@ it. The git protocol is read-only.
 * BETYdb source code:
  * https://github.com/PecanProject/bety.git
  * git@github.com:PecanProject/bety.git
+* These instructions apply to other repositories too.
+
+### Quick and Easy
+
+The **easiest** approach is to use GitHub's browser based workflow. This is useful when your change is a few lines, if you are editing a wiki, of if the edit is trivial (and won't break the code). The [GitHub documentation is here](https://help.github.com/articles/github-flow-in-the-browser) but it is simple: finding the page or file you want to edit, click "edit" and then the GitHub web application will automatically forking and branch, then allow you to submitting a pull request.
+
 
 Recommended Git Workflow
 ------------------------
@@ -61,6 +63,7 @@ issue is a branch, names of branches are often the issue in a bug
 tracking system).
 
 **Commit and Push Frequency** On your branch, commit **_at minimum once a day before you push changes:_** even better: every time you reach a stopping point and move to a new issue. best: any time that you have done work that you do not want to re-do. Remember, pushing changes to your branch is like saving a draft. Submit a pull request when you are done.
+
 
 ### Before any work is done:
 
@@ -99,7 +102,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 * each commit can address 0 or 1 issue; many commits can reference an issue (see [[Link commits to issue|Using-Git#link-commits-to-issues]])
 * ensure that all tests are passing before anything is pushed into master.
 
-### Basic Workflow: Always work in the same local branch
+### Basic Workflow
 
 1. Get the latest code from the main repository
 
@@ -361,6 +364,6 @@ When in doubt, the first step is to click the "Help" button at the top of the pa
 
 * [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html) by
 Scott Chacon (Git evangelist and Ruby developer working on GitHub.com)
-* [GitHub FAQ]((https://help.github.com/)
+* [GitHub FAQ](https://help.github.com/)
 * [Using Pull Requests](https://help.github.com/articles/using-pull-requests)
 * [SSH Keys](https://help.github.com/articles/generating-ssh-keys)
