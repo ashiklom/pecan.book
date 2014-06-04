@@ -155,7 +155,7 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
         git push origin <branchname>
 
-6. submit pull request with [[link-commits-to-issues]]; 
+6. submit pull request with [[link commits to issues|Using-Git#link-commits-to-issuess]]; 
    * also see [github documentation](https://help.github.com/articles/using-pull-requests)
 
 ### After pull request is merged
