@@ -52,7 +52,7 @@ it. The git protocol is read-only.
 
 ### Quick and Easy
 
-The **easiest** approach is to use GitHub's browser based workflow. This is useful when your change is a few lines, if you are editing a wiki, of if the edit is trivial (and won't break the code). The [GitHub documentation is here](https://help.github.com/articles/github-flow-in-the-browser) but it is simple: finding the page or file you want to edit, click "edit" and then the GitHub web application will automatically forking and branch, then allow you to submitting a pull request.
+The **easiest** approach is to use GitHub's browser based workflow. This is useful when your change is a few lines, if you are editing a wiki, or if the edit is trivial (and won't break the code). The [GitHub documentation is here](https://help.github.com/articles/github-flow-in-the-browser) but it is simple: finding the page or file you want to edit, click "edit" and then the GitHub web application will automatically forking and branch, then allow you to submitting a pull request.
 
 
 Recommended Git Workflow
