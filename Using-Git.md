@@ -1,10 +1,11 @@
 Summary:
 -------------------
 
+
 This document describes the steps required to download PEcAn, make changes to code, and submit your changes.
 
 * For asking questions, reporting bugs, and requesting features, see our documentation for [[reporting issues on Redmine and GitHub | Github-issues]]. 
-* If you are new to GitHub or to PEcAn, start with the one-time set-up instructions under **[[Before any work is done|Using-Git#Before-any-work-is-done]]**. 
+* If you are new to GitHub or to PEcAn, start with the one-time set-up instructions under **[[Before any work is done|Using-Git#Before-any-work-is-done]]**. Also see the excellent tutorials and references in the [[References|Using-Git#references]] section at the the bottom of this page.
 * To make trivial changes, see [[Quick and Easy|Using-Git#Quick-and-Easy]]
 * To make changes to the code, start with the **[[basic workflow|Using-Git#Basic-Workflow]]**. 
 * If you want to submit changes that you've made to be part of PEcAn you'll want to follow **[[Committing Changes Using Pull Requests|Using-Git#Committing-Changes-Using-Pull-Requests]]**
