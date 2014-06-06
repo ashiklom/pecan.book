@@ -4,7 +4,7 @@
 #### [[Background | Getting-started#getting-started-i-background]]
 * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
 * [[VM to Desktop Converter | Vm-desktop-conversion]]
-* [[Work through Demo | https://ebi-forecast.igb.illinois.edu/redmine/documents/27]]
+* [[Work through Demo | http://pecanproject.github.io/tutorials.html]]
 * [[Create Github Account | https://github.com/signup/free]]
 
 #### [[Using PEcAn | Getting-started#getting-started-ii-using-pecan]] 
