@@ -167,10 +167,6 @@ git clone https://github.com/PecanProject/pecan.git
 cd pecan
 ./scripts/install.dependencies.R
 
-# install mysql driver
-#echo "install.packages('RMySQL', repos='http://cran.rstudio.com/')" | R --vanilla
-echo "install.packages('RPostgreSQL', repos='http://cran.rstudio.com/')" | R --vanilla
-
 # compile pecan
 ./scripts/build.sh
 
@@ -191,6 +187,14 @@ echo "INSERT INTO models (model_name, model_type, model_path, revision, created_
 
 # load sites
 (cd ../sites && ./addsites.sh)
+```
+
+Following will run a small script to setup some hooks to prevent people from using the pecan demo user account to check in any code.
+
+```bash
+# prevent pecan user from checking in code
+./scripts/create-hooks.sh
+
 ```
 
 ### PEcAn Testrun
