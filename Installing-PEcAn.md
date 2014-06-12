@@ -194,7 +194,6 @@ Following will run a small script to setup some hooks to prevent people from usi
 ```bash
 # prevent pecan user from checking in code
 ./scripts/create-hooks.sh
-
 ```
 
 ### PEcAn Testrun
