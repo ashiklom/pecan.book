@@ -14,6 +14,16 @@ The quickest way to get started is to download the virtual machine. The demo pro
 * [[Connecting PEcAn to a remote server]]
 * [[Uploading New Data]]
 
+### Site-level Runs
+
+* [[Choose as site]]
+* [[Choose a model]]
+* [[Choosing meteorology]]
+* [[Choosing PFTs]]
+* [[Choosing initial vegetation]]
+* [[Choosing soils]]
+
+
 ### Reporting Bugs and Requesting Features
 
 * GitHub
