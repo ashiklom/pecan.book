@@ -31,6 +31,7 @@ The connection to the BETY database is configured using this section. In this se
 
 `db.open()`, and thus by `db.query()` and `db.check()`.
 
+Old format
 ```{xml}
 <database>
 	<dbname>bety</dbname>
@@ -39,6 +40,26 @@ The connection to the BETY database is configured using this section. In this se
 	<host>localhost</host>
 </database>
 ```
+
+New format (starting with PEcAn 1.3.6)
+```{xml}
+<database>
+	<bety>
+		<dbname>bety</dbname>
+		<username>bety</username>
+		<password>bety</password>
+		<host>localhost</host>
+	</bety>
+	<fia>
+		<dbname>fia5</dbname>
+		<username>fia5</username>
+		<password>fia5</password>
+		<host>localhost</host>
+	</fia>
+</database>
+```
+
+The connection information under bety will be used by most of the PEcAn system, only the extraction of pss/css/site information from the FIA database will use the connection information in the fia section.
 
 * **driver** : [optional] the driver to use to connect to the database. Default value is MySQL  
 * **dbname** : [optional] the name of the database (was name), default value is the username of the current user logged in.  
