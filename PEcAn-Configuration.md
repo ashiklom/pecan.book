@@ -66,15 +66,16 @@ The connection information under bety will be used by most of the PEcAn system, 
 * **user** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in (PostgreSQL uses user for this field).
 * **password** : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
 * **host** : [optional] the name of the host to connect to, default value is localhost.  
+* **readonly** : [optional] should any results be written back to the database, setting this to FALSE (the default) will write any results back into the database. (since PEcAn 1.3.6)
 
 For other database drivers these parameters will change. See the driver documentation in R for the right parameters.
-
-**This section might become a subsection of BETY Database Configuration in the future**
 
 <a name="bety_database" />
 ## BETY Database Configuration
 
 This section describes how to connect to the BETY Database.
+
+This is prior to version 1.3.6, starting at 1.3.6 this parameter is called read-only and defaults to false and is stored as part of <database><bety>.
 
 ### functions: 
 
