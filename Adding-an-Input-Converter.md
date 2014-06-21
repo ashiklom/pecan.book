@@ -20,8 +20,11 @@ The variable names should be `standard_name`
 | air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |
 | air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |
 | **air_pressure**                          | Pa    | air_pressure |              |         |       |
+| moisture_content_of_soil_layer            | kg m-2 |             |              |         |       |
+| soil_temperature                          | K     | soilT        |              |         |       |
 | relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  |
 | **specific_humidity**                     | 1 | specific_humidity | NA          | qair    | shum  |
+| water_vapor_saturation_deficit            | Pa    | VPD           |              |         |       |
 | **surface_downwelling_longwave_flux_in_air** | W m-2 | same      | rldsAdjust   | lwdown  | dlwrf |
 | **surface_downwelling_shortwave_flux_in_air**| W m-2 |solar_radiation|rsdsAdjust| swdown  | dswrf |
 | surface_downwelling_photosynthetic_photon_flux_in_air | mol m-2 s-1 | PAR |     |         |       |
@@ -36,6 +39,7 @@ The variable names should be `standard_name`
 * variable names are from [MsTMIP](http://nacp.ornl.gov/MsTMIP_variables.shtml), but lowercase to be consistent with the MsTMIP drivers.
 * standard_name is CF-convention standard names
 * units can be converted by udunits, so these can vary (e.g. the time denominator may change with time frequency of inputs)
+* soil moisture for the full column, rather than a layer, is soil_moisture_content
 
 For the standardized files, we are using CF standard names as variable names.
 
