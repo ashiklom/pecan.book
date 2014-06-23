@@ -13,6 +13,7 @@ The quickest way to get started is to download the virtual machine. The demo pro
 * [[Workflow Modules]]
 * [[Connecting PEcAn to a remote server]]
 * [[Uploading New Data]]
+* [[Updating BETY]]
 
 ### Site-level Runs
 
