@@ -1,9 +1,19 @@
+Release notes for all releases can be found at: https://github.com/PecanProject/pecan/releases
+
+This page will only list any steps you have to do to upgrade an existing system. When updating PEcAn it is highly encouraged to update BETY. You can find instructions on how to do this, as well on how to update the database at: https://github.com/PecanProject/pecan/wiki/Updating-BETY
+
 To upgrade to the latest version of PEcAn/VM you will need to do each of the intermediate steps, you can not skip to the latest version.
 
-## Version 1.3.4 to 1.3.5 **(Not released yet)**
+## Version 1.3.5 to 1.3.6
+
+- update pecan/web/config.php, see config.example.php for all options
+- pecan.xml has changed the database section, read.settings will take care of this automatically.
+- models now uses dbfiles to store path to binaries, please add binaries to database. For example see pecan/scripts/addmodels.sh on how this is done in the VM.
+
+## Version 1.3.4 to 1.3.5
 
 - switch to postgreSQL, see [Installing-PEcAn](Installing-PEcAn) on how to load the database the first time
-- sites/addsites.sh was incorrect download sites.tgz
+- sites/addsites.sh was incorrect, download sites.tgz
 - web interface now uses config.php instead of system.php, simply copy pecan/web/config.example.php to pecan/web/config.php
 - added a script to create hooks to prevent people from committing files as carya
 - massive cleanup of repository. This breaks old repositories. Everybody will need to fork and clone a clean copy of pecan.
@@ -59,7 +69,7 @@ install.packages("rgdal")
 
 ## Version 1.3.1 to Version 1.3.2
 
-### Changes
+d### Changes
 
 * [PEcAn/BETY] support for postgresql
 * [PEcAn] store results from get.traits and run.meta.analysis for reuse
