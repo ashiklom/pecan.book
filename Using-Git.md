@@ -7,7 +7,7 @@ This document describes the steps required to download PEcAn, make changes to co
 * For asking questions, reporting bugs, and requesting features, see our documentation for [[reporting issues on Redmine and GitHub | Github-issues]]. 
 * If you are new to GitHub or to PEcAn, start with the one-time set-up instructions under **[[Before any work is done|Using-Git#Before-any-work-is-done]]**. Also see the excellent tutorials and references in the [[References|Using-Git#references]] section at the the bottom of this page.
 * To make trivial changes, see [[Quick and Easy|Using-Git#Quick-and-Easy]]
-* To make changes to the code, start with the **[[basic workflow|Using-Git#Basic-Workflow]]**. 
+* To make changes to the code, start with the **[[Git Workflow|Using-Git#Git-Workflow]]**. 
 * If you want to submit changes that you've made to be part of PEcAn you'll want to follow **[[Committing Changes Using Pull Requests|Using-Git#Committing-Changes-Using-Pull-Requests]]**
 * **To update your local branch**
 
@@ -102,30 +102,9 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 * each commit can address 0 or 1 issue; many commits can reference an issue (see [[Link commits to issue|Using-Git#link-commits-to-issues]])
 * ensure that all tests are passing before anything is pushed into master.
 
-### Basic Workflow
+### Git Workflow
 
-1. Get the latest code from the main repository
-
-        git pull upstream master
-
-2. Do some coding
-
-3. Commit after each chunk of code (multiple times a day)
-        
-        git commit -m "<some descriptive information about what was done; references/fixes gh-X>"
-
-4. Push to YOUR Github (when a feature is working, a set of bugs are fixed, or you need to share progress with others)
-
-        git push origin <branchname>
-
-4. Before submitting code back to the main repository, make sure that code compiles
-
-        ./scripts/build.sh -c
-
-5. submit pull request with a reference to related issue (see [[Link commits to issue|Using-Git#link-commits-to-issues]]); 
-   * also see [github documentation](https://help.github.com/articles/using-pull-requests)
-
-### Advanced Workflow: A new branch for each change
+A new branch for each change
 
 1. Make sure you start in master 
 
