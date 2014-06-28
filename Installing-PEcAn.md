@@ -177,7 +177,6 @@ sudo -u postgres CREATE=YES scripts/load.bety.sh
 
 # configure for web app (change passowrd if needed)
 cp web/config.example.php web/config.php 
-cp web/db/config_example.php web/db/config.php
 
 # add models to database
 ./scripts/add.models.sh
