@@ -183,6 +183,10 @@ cp web/config.example.php web/config.php
 
 # add data to database
 ./scripts/add.data.sh
+
+# create outputs folder
+mkdir ~/output
+chmod 777 ~/output
 ```
 
 Following will run a small script to setup some hooks to prevent people from using the pecan demo user account to check in any code.
