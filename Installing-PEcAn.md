@@ -178,15 +178,11 @@ sudo -u postgres CREATE=YES scripts/load.bety.sh
 cp web/config.example.php web/config.php 
 cp web/db/config_example.php web/db/config.php
 
-# load models
-echo "INSERT INTO models (model_name, model_type, model_path, revision, created_at, updated_at) VALUES
-  ('ED2.2', 'ED2', '${HOSTNAME}:/usr/local/bin/ed2.r46', '46', NOW(), NOW()),
-  ('ED2.2', 'ED2', '${HOSTNAME}:/usr/local/bin/ed2.r82', '82', NOW(), NOW()),
-  ('SIPNET', 'SIPNET', '${HOSTNAME}:/usr/local/bin/sipnet.runk', 'unk', NOW(), NOW()),
-  ('BIOCRO', 'BIOCRO', '${HOSTNAME}:/bin/true', '0.0.1', NOW(), NOW());" | psql -U bety
+# add models to database
+./scripts/add.models.sh
 
-# load sites
-(cd ../sites && ./addsites.sh)
+# add data to database
+./scripts/add.data.sh
 ```
 
 Following will run a small script to setup some hooks to prevent people from using the pecan demo user account to check in any code.
