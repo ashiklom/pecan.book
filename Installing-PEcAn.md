@@ -172,6 +172,7 @@ cd pecan
 
 # install database (code assumes password is bety)
 sudo -u postgres createuser -d -l -P -R -S bety
+sudo -u postgres createdb -O bety bety
 sudo -u postgres CREATE=YES scripts/load.bety.sh
 
 # configure for web app (change passowrd if needed)
