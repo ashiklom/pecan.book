@@ -236,7 +236,7 @@ git clone https://github.com/PecanProject/bety.git
 # install gems
 cd bety
 gem install bundler
-bundle install
+bundle install --without test_js
 exit
 ```
 
