@@ -1,3 +1,14 @@
+## Updating BETY database
+
+A new system is in place which will allow you to update the BETY database without loosing any local changes (this is still BETA though). To update the datbase and keep your changes, all you have to do is run the following:
+
+```
+cd
+pecan/scripts/load.bety.sh
+```
+
+## Update the Rails app and schema
+
 If you have an instance of BETY and you might want to update it to the latest version at certain points for the following reasons.
 - security updates
 - new functionality
@@ -20,3 +31,11 @@ touch tmp/restart.txt
 ```
 
 At this point your database should have migrated to the latest version and the BETY application should have restarted.
+
+## Load a fresh version of database
+
+This will overwrite your existing database; quick and easy way to set up system for development
+
+```
+./scripts/update.psql.sh
+```
