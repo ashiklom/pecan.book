@@ -17,6 +17,7 @@ OS specific installation instructions:
 To update PEcAn see:
 
 - [Updating PEcAn](Updating-PEcAn)
+- [Updating BETY](Updating-BETY)
 
 The rest of the instructions assumes you have done the appropriate steps in each of the above guides.
 
