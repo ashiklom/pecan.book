@@ -9,7 +9,7 @@ cd
 pecan/scripts/load.bety.sh
 ```
 
-For more information see the [Updating BETYdb | https://github.com/PecanProject/bety/wiki/Updating-BETY] documentation.
+For more information see the [Updating BETYdb](https://github.com/PecanProject/bety/wiki/Updating-BETY) documentation.
 
 ## Update Build and Check PEcAn
 
