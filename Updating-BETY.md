@@ -3,7 +3,8 @@ If you have an instance of BETY and you might want to update it to the latest ve
 - new functionality
 - importing data and remote server has newer version
 
-To update BETY you can use the following steps to update your system (this is assuming the VM, if you installed BETY in another location please change the path accordingly).
+To update BETY you can use the following steps to update your system (this is assuming the VM, if you installed BETY in another location please change the path accordingly). This requires the development version of ruby.
+
 ```bash
 sudo -s
 # change to BETY
