@@ -9,6 +9,8 @@ cd
 pecan/scripts/load.bety.sh
 ```
 
+For more information see the [Updating BETYdb | https://github.com/PecanProject/bety/wiki/Updating-BETY] documentation.
+
 ## Update Build and Check PEcAn
 
 The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions. 
