@@ -135,9 +135,15 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
         git pull upstream master
 
-2. Build most recent versions of R packages ([`./scripts/build.sh -h` for help)](Installing-PEcAn#update-build-and-check-pecan))
+2.  Run any tests / make sure that code compiles
+
+* For PEcAn: Build most recent versions of R packages ([`./scripts/build.sh -h` for help)](Installing-PEcAn#update-build-and-check-pecan))
 
         ./scripts/build.sh
+
+* For BETYdb ([see wiki](https://github.com/PecanProject/bety/wiki/Testing#running-the-tests))
+
+        rspec
 
 3. Create a branch and switch to it
 
@@ -147,8 +153,9 @@ especially on how to keep your fork up to date with respect to the original. (Rs
 
         git commit -m "<some descriptive information about what was done>"
 
-5. make sure that code compiles
+5. Run any tests / make sure that code compiles
 
+For PEcAn:
         ./scripts/build.sh -c
 
 5. Push this branch to your github space 
