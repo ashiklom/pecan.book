@@ -11,7 +11,7 @@ Examples:
 
 Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 
-Dimensions:
+## Dimensions:
 
 |CF standard-name | units |
 |:------------------------------------------|:------|
@@ -19,7 +19,7 @@ Dimensions:
 | longitude degrees_east|
 | latitude |degrees_north|
 
-The variable names should be `standard_name`
+## The variable names should be `standard_name`
 
 | CF standard-name                          | units | bety         | isimip       | cruncep | narr  |
 |:------------------------------------------|:------|:-------------|:-------------|:--------|:------|
