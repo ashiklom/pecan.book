@@ -4,6 +4,8 @@ The standard met data inputs should be of the form:
 
 Converters from a raw to standard format go in `/modules/data.atmosphere/R`; converters from standard to model-specific go in `models/<mymodel>/R`.
 
+* For a number of common gridded products (NARR, CRUNCEP, ISIMIP), there are bash scripts for converting and rechunking in this repository: https://github.com/ebimodeling/model-drivers; these are not generalized, but may be merged into PEcAn at some point.
+
 Examples:
 * NARR:
 * CRUNCEP:
