@@ -28,7 +28,7 @@ The variable names should be `standard_name`
 | **surface_downwelling_longwave_flux_in_air** | W m-2 | same      | rldsAdjust   | lwdown  | dlwrf |
 | **surface_downwelling_shortwave_flux_in_air**| W m-2 |solar_radiation|rsdsAdjust| swdown  | dswrf |
 | surface_downwelling_photosynthetic_photon_flux_in_air | mol m-2 s-1 | PAR |     |         |       |
-| **precipitation_flux**                    |       |              | prAdjust     | rain    | acpc  |
+| **precipitation_flux**                    |  kg m-2 s-1     |              | prAdjust     | rain    | acpc  |
 |                                           | degrees | wind_direction |          |         |       |
 | wind_speed                                | m/s   | Wspd         |              |         |       |
 | **eastward_wind**                         | m/s   | eastward_wind |             |         |       |
