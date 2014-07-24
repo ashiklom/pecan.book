@@ -17,7 +17,7 @@ The quickest way to get started is to download the virtual machine. The demo pro
 
 ### Site-level Runs
 
-* [[Choose as site]]
+* [[Choose a site]]
 * [[Choose a model]]
 * [[Choosing meteorology]]
 * [[Choosing PFTs]]
