@@ -28,7 +28,7 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 | **air_temperature**                       | K     | airT         | tasAdjust    | tair    | air   |
 | air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |
 | air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |
-| **air_pressure**                          | Pa    | air_pressure |              |         |       |
+| **air_pressure_at_sea_level**                          | Pa    | air_pressure |              |         |       |
 | moisture_content_of_soil_layer            | kg m-2 |             |              |         |       |
 | soil_temperature                          | K     | soilT        |              |         |       |
 | relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  |
