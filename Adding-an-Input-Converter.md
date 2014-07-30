@@ -18,7 +18,7 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 |CF standard-name | units |
 |:------------------------------------------|:------|
 | time | days since 1700-01-01 00:00:00 UTC|
-| longitude degrees_east|
+| longitude | degrees_east|
 | latitude |degrees_north|
 
 ## The variable names should be `standard_name`
