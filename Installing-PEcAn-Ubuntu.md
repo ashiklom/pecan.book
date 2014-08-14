@@ -48,8 +48,13 @@ apt-get -y update
 # install packages for postgresql (using a newer version than default)
 apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev 
 
-# set ability to trust instead of peer for all
-vi /etc/postgresql/9.3/main/pg_hba.conf 
+# enable bety user to login with trust by adding the following lines after
+# the ability of postgres user to login in /etc/postgresql/9.3/main/pg_hba.conf
+local   all             bety                                    trust
+host    all             bety            127.0.0.1/32            trust
+host    all             bety            ::1/128                 trust
+
+# Once done restart postgresql
 /etc/init.d/postgresql restart
 ```
 
