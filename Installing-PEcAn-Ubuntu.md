@@ -37,6 +37,8 @@ exit
 
 ## Install Postgres
 
+Documentation: http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt
+
 ```bash
 # point to latest PostgreSQL
 echo "deb http://apt.postgresql.org/pub/repos/apt `lsb_release -s -c`-pgdg main" > /etc/apt/sources.list.d/pgdg.list
@@ -58,6 +60,7 @@ host    all             bety            ::1/128             
 /etc/init.d/postgresql restart
 ```
 
+To install the BETYdb database .. 
 ## Apache Configuration
 
 ```bash
