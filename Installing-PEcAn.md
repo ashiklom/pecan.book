@@ -182,7 +182,14 @@ Following will run a small script to setup some hooks to prevent people from usi
 
 ## Installing BETY
 
-### Install Database+Data
+### Install Postgres
+
+See OS-specific instructions for installing Postgres + PostGIS
+* [[Ubuntu | Installing-PEcAn-Ubuntu#install-postgres]]
+* [[OSX | Installing-PEcAn-OSX#install-postgres]]
+* [RedHat / CentOS](https://github.com/PecanProject/bety/wiki/Installing-Postgresql)
+
+### Install Database + Data
 
 ```
 # install database (code assumes password is bety)
