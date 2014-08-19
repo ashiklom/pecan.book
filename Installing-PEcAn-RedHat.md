@@ -75,3 +75,7 @@ based on [Rstudio Server documentation](http://www.rstudio.com/ide/docs/server/g
 ```
 * restart server `sudo httpd restart`
 * now you should be able to access `http://<server>/rstudio`
+
+## Install Postgres
+
+See [documentation under the BETYdb Wiki](https://github.com/PecanProject/bety/wiki/Installing-Postgresql)
