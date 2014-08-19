@@ -170,7 +170,21 @@ cd pecan
 
 # compile pecan
 ./scripts/build.sh
+```
 
+
+Following will run a small script to setup some hooks to prevent people from using the pecan demo user account to check in any code.
+
+```bash
+# prevent pecan user from checking in code
+./scripts/create-hooks.sh
+```
+
+## Installing BETY
+
+### Install Database+Data
+
+```
 # install database (code assumes password is bety)
 sudo -u postgres createuser -d -l -P -R -S bety
 sudo -u postgres createdb -O bety bety
@@ -190,42 +204,15 @@ mkdir ~/output
 chmod 777 ~/output
 ```
 
-Following will run a small script to setup some hooks to prevent people from using the pecan demo user account to check in any code.
-
-```bash
-# prevent pecan user from checking in code
-./scripts/create-hooks.sh
-```
-
-### PEcAn Testrun
-
-Do the run, this assumes you have installed the BETY database, sites tar file and sipnet.
-
-```bash
-# create folder
-cd
-mkdir testrun.pecan
-cd testrun.pecan
-
-# copy example of pecan workflow and configuration file
-cp ../pecan/tests/pecan.sipnet.xml pecan.xml
-cp ../pecan/scripts/workflow.R workflow.R
-
-# exectute workflow
-rm -rf pecan
-./workflow.R
-```
-NB: pecan.xml is configured for the virtual machine, you will need to change the <met> field from '/home/carya/' to wherever you installed your 'sites', usually $HOME
-
-## Installing BETY
+### Installing BETYdb Web Application
 
 There are two flavors of BETY, PHP and RUBY. The PHP version allows for a minimal interaction with the database while the RUBY version allows for full interaction with the database.
 
-### PHP version
+#### PHP version
 
 The php version comes with PEcAn and is already configured.
 
-### RUBY version
+#### RUBY version
 
 The RUBY version requires a few extra packages to be installed first.
 
@@ -302,3 +289,24 @@ EOF
 # drop out of root
 exit
 ```
+
+
+### PEcAn Testrun
+
+Do the run, this assumes you have installed the BETY database, sites tar file and sipnet.
+
+```bash
+# create folder
+cd
+mkdir testrun.pecan
+cd testrun.pecan
+
+# copy example of pecan workflow and configuration file
+cp ../pecan/tests/pecan.sipnet.xml pecan.xml
+cp ../pecan/scripts/workflow.R workflow.R
+
+# exectute workflow
+rm -rf pecan
+./workflow.R
+```
+NB: pecan.xml is configured for the virtual machine, you will need to change the <met> field from '/home/carya/' to wherever you installed your 'sites', usually $HOME
