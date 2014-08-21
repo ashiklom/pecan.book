@@ -2,10 +2,10 @@
 
 see [[Adding-an-Input-Converter]]
 
-### Defining new inputs
+### Defining new input formats
 
-* New inputs can be defined on the ['formats' page of BETYdb](http://betydb.org/formats)
-* The contents should be defined using EML
+* New formats can be defined on the ['formats' page of BETYdb](http://betydb.org/formats)
+* After creating a new format, the contents should be defined by specifying the BETYdb variable name and the name used in the file/
 
 ## Outputs
 
