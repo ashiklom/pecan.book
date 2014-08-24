@@ -106,12 +106,12 @@ Based on version of ubuntu 32/64 use either of the following
 
 *32bit only*
 ```bash
-wget http://download2.rstudio.org/rstudio-server-0.98.945-i386.deb
+wget http://download2.rstudio.org/rstudio-server-0.98.1028-i386.deb
 ```
 
 *64bit only*
 ```bash
-wget http://download2.rstudio.org/rstudio-server-0.98.945-amd64.deb
+wget http://download2.rstudio.org/rstudio-server-0.98.1028-amd64.deb
 ```
 
 ```bash
