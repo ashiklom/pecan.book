@@ -16,11 +16,8 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 # update package list
 apt-get -y update
 
-# this needs to be done separately from next command
-apt-get -y install libgdal1-dev libproj-dev
-
 # install all packages needed
-apt-get -y install build-essential git gfortran openmpi-bin libhdf5-openmpi-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev libsqlite3-dev libgmp-dev python-dev
+apt-get -y install build-essential git gfortran libhdf5-serial-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-openssl-dev curl udunits-bin libudunits2-dev libsqlite3-dev libgmp-dev python-dev libgdal1-dev libproj-dev
 
 # install packages for webserver
 apt-get -y install apache2 libapache2-mod-php5 php5
