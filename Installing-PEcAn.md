@@ -305,7 +305,7 @@ mkdir testrun.pecan
 cd testrun.pecan
 
 # copy example of pecan workflow and configuration file
-cp ../pecan/tests/pecan.sipnet.xml pecan.xml
+cp ../pecan/tests/pecan32.sipnet.xml pecan.xml
 cp ../pecan/scripts/workflow.R workflow.R
 
 # exectute workflow
