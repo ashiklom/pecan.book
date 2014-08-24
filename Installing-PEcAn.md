@@ -107,7 +107,6 @@ git clone ...
 cd ED2
 ...
 sudo cp ../ed_2.1-opt /usr/local/bin/ed2.git
-cd
 ```
 
 ### SIPNET Installation
@@ -121,7 +120,6 @@ rm sipnet_unk.tar.gz
 cd sipnet_unk
 make
 sudo cp sipnet /usr/local/bin/sipnet.runk
-cd
 ```
 
 ### SIPNET testrun
