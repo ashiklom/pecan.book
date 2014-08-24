@@ -39,6 +39,7 @@ mkdir -p ${R_LIBS_USER}
 ```bash
 # ----------------------------------------------------------------------
 # Get version r46 with a few patches for ubuntu
+cd
 curl -o ED.r46.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/ED.r46.tgz
 tar zxf ED.r46.tgz
 rm ED.r46.tgz
@@ -48,7 +49,6 @@ cd ~/ED.r46/ED/build/bin
 curl -o include.mk.opt http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
 ./install.sh
 sudo cp ../ed_2.1-opt /usr/local/bin/ed2.r46
-cd
 ```
 
 Perform a test run using pre configured ED settings for ED2.2 r46
@@ -69,6 +69,7 @@ time ed2.r46
 ### ED 2.2 r82
 
 ```bash
+cd
 curl -o ED.r82.tgz http://isda.ncsa.illinois.edu/~kooper/EBI/ED.r82.tgz
 tar zxf ED.r82.tgz
 rm ED.r82.tgz
@@ -80,7 +81,6 @@ cd ED/build/bin
 curl -o include.mk.opt http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`.r82
 ./install.sh
 sudo cp ../ed_2.1-opt /usr/local/bin/ed2.r82
-cd
 ```
 
 Perform a test run using pre configured ED settings for ED2.2 r82
