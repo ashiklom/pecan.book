@@ -236,16 +236,12 @@ git clone https://github.com/PecanProject/bety.git
 # install gems
 cd bety
 gem install bundler
-bundle install --without test_js
-exit
+bundle install --without test
 ```
 
 and configure BETY
 
 ```bash
-sudo -s
-cd /usr/local/bety
-
 # create folders for upload folders
 mkdir paperclip/files paperclip/file_names
 chmod 777 paperclip/files paperclip/file_names
