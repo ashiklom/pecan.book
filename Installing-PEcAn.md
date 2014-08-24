@@ -262,8 +262,7 @@ chmod go+w /usr/local/bety/public/javascripts/cache/
 # setup bety database configuration
 cat > config/database.yml << EOF
 production:
-#  adapter: mysql2
-  adapter: postgresql
+  adapter: postgis
   encoding: utf-8
   reconnect: false
   database: bety
