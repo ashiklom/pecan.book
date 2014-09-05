@@ -49,28 +49,18 @@ plot(X, Y)
 
 with(mydata, plot(X, Y)
 ```
-### Function Names
+### Function Names (`verb.noun`)
 
-By arbitrary decree, we decided early on to use the all lowercase with periods to separate words. They should generally have a verb.noun format, such as query.traits, get.samples, etc.
+Following convention established in PEcAn 0.1, we use the all lowercase with periods to separate words. They should generally have a `verb.noun` format, such as `query.traits`, `get.samples`, etc.
 
 ### File Names
 
-File names should end in .R and should be meaningful. For example, they should be named after the primary functions that they contain. There should be a separate file for each major high-level function. This aids in identifying the contents from a list of file names
+File names should end in `.R`, `.Rdata`, `.Rscript` and should be meaningful, e.g. named after the primary functions that they contain. There should be a separate file for each major high-level function to aid in identifying the contents of files in a directory.
 
 ### Use "<-" as an assignment operator
 
 * Because most R code uses <- (except where = is required), we will use <-
 * "=" is used for function arguments
-* examples:
-```{r}
-# appropriate use of "="
-plot(x = 1, y = 2)
-
-# appropriate use of "<-"
-X <- 1
-Y <- 2
-plot(X, Y)
-```
 
 ### Use Spaces
 
@@ -81,33 +71,9 @@ plot(X, Y)
 
 The option to omit curly braces is another shortcut that makes code easier to write but harder to read and more prone to error.
 
-```{r}
-* Good:
-myfn <- function(x, y) {
-ans <- sum(x, y)
-return(ans)
-}
-
-if(this) {
-  a <- 1
-} else {
-  a <- 2
-}
-
-* Bad:
-myfn <- function(x,y)
-    sum(x,y)
-
-if(this) 
-  a <- 1
- else 
-  a <- 2
-```
-
 ## Package Dependencies: 
 
 ### library vs require 
-
 
 When another package is required by a function or script, it can be called in the following ways:
 
@@ -117,7 +83,6 @@ When another package is required by a function or script, it can be called in th
    if dependency is not met, will print an error and stop
 3. using `require`
    will print a warning and continue (but will throw an error when a function from the required package is called) 
-
 
 Reference: Stack Overflow ["What is the difference between require and library?"](http://stackoverflow.com/questions/5595512/what-is-the-difference-between-require-and-library)
 
