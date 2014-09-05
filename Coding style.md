@@ -23,16 +23,18 @@ Any function that you create or make a meaningful contribution to should
 have your name listed after the
 `author tag in the function documentation.
 
-### Use testthat testing package
+## Use testthat testing package
+
+See [[Unit_Testing|Testing]] wiki for instructions, and [Advanced R: Tests](http://r-pkgs.had.co.nz/tests.html).
 
 * tests provide support for documentation - they define what a function is (and is not) expected to do 
 * all functions need tests to ensure basic functionality is maintained during development.
 * all bugs should have a test that reproduces the bug, and the test should pass before bug is closed
-* See [[Unit_Testing|Testing]] wiki for instructions
 
-### Don't use shortcuts
 
-R provides many shortcuts that are useful when coding interactively, but that can cause problems when written into packages. 
+## Don't use shortcuts
+
+R provides many shortcuts that are useful when coding interactively, or for writing scripts. However, these can make code more difficult to read and can cause problems when written into packages.
 
 For example, the following are equivalent:
 
