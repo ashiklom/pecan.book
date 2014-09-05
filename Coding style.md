@@ -36,19 +36,6 @@ See [[Unit_Testing|Testing]] wiki for instructions, and [Advanced R: Tests](http
 
 R provides many shortcuts that are useful when coding interactively, or for writing scripts. However, these can make code more difficult to read and can cause problems when written into packages.
 
-For example, the following are equivalent:
-
-```{r}
-mydata <- data.frame(X = 1, Y = 2)
-# Good
-plot(mydata$X, mydata$Y)
-# Bad:
-# which() and attach() are useful in interactive mode 
-attach(mydata)
-plot(X, Y)
-
-with(mydata, plot(X, Y)
-```
 ### Function Names (`verb.noun`)
 
 Following convention established in PEcAn 0.1, we use the all lowercase with periods to separate words. They should generally have a `verb.noun` format, such as `query.traits`, `get.samples`, etc.
