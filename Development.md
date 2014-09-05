@@ -24,6 +24,8 @@ Create Accounts
 
 ### R Development
 
+The pages listed below provide project-specific guidelines and motivations. Hadley Wickham's Books [Advanced R](http://adv-r.had.co.nz/) and [Package Development](http://r-pkgs.had.co.nz/) are canonical, free, online references.
+
 * [[Coding Style]]
 * [[Documentation|Roxygen2]]
 * [[Testing]]
