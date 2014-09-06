@@ -147,7 +147,7 @@ R CMD INSTALL biocro
 
 ```bash
 cd
-wget http://file-server.igb.illinois.edu/~dlebauer/BioCro_0.91.tar.gz
+curl -o BioCro_0.91.tar.gz http://file-server.igb.illinois.edu/~dlebauer/BioCro_0.91.tar.gz
 R CMD INSTALL BioCro_0.91.tar.gz
 rm BioCro_0.91.tar.gz
 ```
