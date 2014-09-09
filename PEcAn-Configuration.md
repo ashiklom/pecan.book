@@ -263,9 +263,9 @@ Starting at 1.3.7 the tags for inputs have moved to <run><inputs>. This includes
 		<lat>40.032900</lat>
 		<lon>-105.546000</lon>
 	</site>
-        <inputs>
+	<inputs>
 		<met>/home/carya/sites/niwot/niwot.clim</met>
-        <inputs>
+	<inputs>
 	<host>
 		<name>localhost</name>
 		<rundir>/home/carya/testrun.pecan/run/</rundir>
