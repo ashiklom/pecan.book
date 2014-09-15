@@ -1,4 +1,5 @@
 * **[[User's Guide| Getting Started]]**
+ * **[[Configuration | PEcAn-Configuration]]**
 * **[[Developer's Guide | Development]]**
 * **[[FAQ|https://github.com/PecanProject/pecan/issues?labels=question&page=1&state=closed]]**
 * **[[Education]]**
