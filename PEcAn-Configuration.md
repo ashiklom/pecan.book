@@ -195,7 +195,9 @@ Only if this section is defined a sensitivity analysis is done. This section wil
 
 This section is required and tells PEcAn what model to run. This section should either specify `<id>` or both `<name>` and `<binary>`  of the model. If both id and name and/or binary are specified the id is used to check the specified name and/or binary.
 
-As of version 1.3.7 the tag <name> has been renamed to be <type>. This is the type of the model, and will be used to check the pft to make sure it is fit for the model type. The option <type> is also used to check the inputs specified in the <run> section. The code will automatically convert from <name> to <type>.
+As of version 1.3.7 the `<name>' tag has been renamed `<type>`. The `<type>' tag refers to the "type" of model and is used for a) identifying appropriate pfts and b) identifying whether appropriate inputs (i.e. met data) are available for the given site and model (or if they can be created). 
+
+To ensure compatability, the code will automatically convert from `<name>' to `<type>`.
 
 ### functions: 
 
@@ -224,7 +226,7 @@ As of version 1.3.7 the tag <name> has been renamed to be <type>. This is the ty
 
 Following variables are ED specific and are used in the [ED2 Configuration](ED2-Configuration).
 
-Starting at 1.3.7 the tags for inputs have moved to <run><inputs>. This includes, veg, soil, psscss, inputs.
+Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includes, veg, soil, psscss, inputs.
 
 ```{xml}
    <config.header>
@@ -241,10 +243,10 @@ Starting at 1.3.7 the tags for inputs have moved to <run><inputs>. This includes
 
   
 * **edin** : [required] template used to write ED2IN file  
-* **veg** : **OBSOLETE** [required] location of VEG database, now part of <run><inputs>
-* **soil** : **OBSOLETE** [required] location of soild database, now part of <run><inputs>
-* **psscss** : **OBSOLETE** [required] location of site inforation, now part of <run><inputs>. Should be specified as <pss>, <css> and <site>.
-* **inputs** : **OBSOLETE** [required] location of additional input files (e.g. data assimilation data), now part of <run><inputs>. Should be specified as <lu> and <thsums>.
+* **veg** : **OBSOLETE** [required] location of VEG database, now part of `<run><inputs>
+* **soil** : **OBSOLETE** [required] location of soild database, now part of `<run><inputs>
+* **psscss** : **OBSOLETE** [required] location of site inforation, now part of `<run><inputs>`. Should be specified as `<pss>, `<css>' and `<site>`.
+* **inputs** : **OBSOLETE** [required] location of additional input files (e.g. data assimilation data), now part of `<run><inputs>`. Should be specified as `<lu>' and `<thsums>`.
 
 <a name="run_setup" />
 ## Run Setup
