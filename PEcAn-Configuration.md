@@ -195,9 +195,9 @@ Only if this section is defined a sensitivity analysis is done. This section wil
 
 This section is required and tells PEcAn what model to run. This section should either specify `<id>` or both `<name>` and `<binary>`  of the model. If both id and name and/or binary are specified the id is used to check the specified name and/or binary.
 
-As of version 1.3.7 the `<name>' tag has been renamed `<type>`. The `<type>' tag refers to the "type" of model and is used for a) identifying appropriate pfts and b) identifying whether appropriate inputs (i.e. met data) are available for the given site and model (or if they can be created). 
+As of version 1.3.7 the `<name>` tag has been renamed `<type>`. The `<type>` tag refers to the "type" of model and is used for a) identifying appropriate pfts and b) identifying whether appropriate inputs (i.e. met data) are available for the given site and model (or if they can be created). 
 
-To ensure compatability, the code will automatically convert from `<name>' to `<type>`.
+To ensure compatability, the code will automatically convert from `<name>` to `<type>`.
 
 ### functions: 
 
@@ -245,7 +245,7 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 * **edin** : [required] template used to write ED2IN file  
 * **veg** : **OBSOLETE** [required] location of VEG database, now part of `<run><inputs>
 * **soil** : **OBSOLETE** [required] location of soild database, now part of `<run><inputs>
-* **psscss** : **OBSOLETE** [required] location of site inforation, now part of `<run><inputs>`. Should be specified as `<pss>, `<css>' and `<site>`.
+* **psscss** : **OBSOLETE** [required] location of site inforation, now part of `<run><inputs>`. Should be specified as `<pss>`, `<css>` and `<site>`.
 * **inputs** : **OBSOLETE** [required] location of additional input files (e.g. data assimilation data), now part of `<run><inputs>`. Should be specified as `<lu>' and `<thsums>`.
 
 <a name="run_setup" />
@@ -286,7 +286,7 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 * **end.date** : [required] the last day of the simulation
 * **dbfiles** : [optional] location where pecan should write files that will be stored in the database. The default is store them in ${HOME}/.pecan/dbfiles
 
-Site specific information is specified in the `<site>`subsection. Either `<id>` or `<name>`, `<lat>` and `<lon>` should be specified. If id and any of the others are specified the values will be compared with those from the bETY database.
+Site specific information is specified in the `<site>` subsection. Either `<id>` or `<name>`, `<lat>` and `<lon>` should be specified. If id and any of the others are specified the values will be compared with those from BETYdb.
  
 * **id** : [optional/required] id of the site in the BETY database, see above.  
 * **name** : [optional/required] site name, see above.  
