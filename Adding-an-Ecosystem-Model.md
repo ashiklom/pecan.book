@@ -4,8 +4,8 @@ The [models/template](https://github.com/PecanProject/pecan/tree/master/models/t
 
 Adding a model to PEcAn involves two activities:
 
-1) Writing the interface modules between the model and PEcAn
-2) Updating the PEcAn database to register the model
+1. Writing the interface modules between the model and PEcAn
+2. Updating the PEcAn database to register the model
 
 # Interface Modules
 
@@ -31,4 +31,32 @@ This module converts model output into the PEcAn standard (netCDF with metadata 
 
 Converts meteorology input files from the PEcAn standard (netCDF, CF metadata) to the format required by the model. This file is optional if you want to specify input files explicitly, which is often the easiest way to get up and running quickly. However, this function is required if you want to benefit from PEcAn's meteorology workflows and model run cloning.
 
+## Commit changes
+
+Once the MODEL modules are written, you should follow the [[Using-Git]] instructions on how to commit your changes to your local git repository, verify that PEcAn compiles, push these changes to github, and submit a pull request so that your model module is added to the PEcAn system. It is important to note that while we encourage users to make their models open, adding the PEcAn interface module to the github repository in no way requires that the model code itself be made public. It does, however, allow anyone who already has a copy of the model code to use PEcAn so we strongly encourage that any new model modules be committed to github.
+
 # PEcAn Database
+
+To run a model within PEcAn requires that the PEcAn database know about the model -- this includes a MODEL_TYPE designation, the location of the model executable, the types of inputs the model requires, and the plant functional types used by the model. The instructions below assume that you will be specifying this information using the BETYdb web-based interface. This can be done either on your local VM or on a server installation of BETYdb, though in either case we'd encourage you to set up your PEcAn instance to support database syncs so that these changes can be shared and backed-up across the PEcAn network.
+
+## Define MODEL_TYPE
+
+The first step is to create a new MODEL_TYPE by selecting on Runs > Model Type and then clicking on _New Model Type_. The model type should be identical to the MODEL package name. 
+
+## MACHINE
+
+In order to start specifying model executables and input files we're going to have to tell PEcAn what computer those are located on. If you are running on the VM then the local machine is already defined as _pecan32_ or _pecan64_ for the 32-bit and 64-bit versions respectively. Otherwise, you will need to select Runs > Machines, click _New Machine_, and enter the URL of your server (e.g. pecan2.bu.edu).
+
+## MODEL
+
+Next we are going to tell PEcAn where the model executable is. Select Runs > Files, and click ADD. Use the pull down menu to specify the machine you just defined above and fill in the path and name for the executable. For example, if SIPNET is installed at /usr/local/bin/sipnet then the path is /usr/local/bin/ and the file (executable) is sipnet.
+
+Now we will create the model record and associate this with the File we just registered. The first time you do this select Runs > Models and click _New Model_. Specify a descriptive name of the model (which doesn't have to be the same as MODEL_TYPE), select the MODEL_TYPE from the pull down, and provide a revision identifier for the model (e.g. v3.2.1). Once the record is created select it from the Models table and click EDIT RECORD. Click on "View Related Files" and when the search window appears search for the model executable you just added (if you are unsure which file to choose you can go back to the Files menu and look up the unique ID number). You can then associate this Model record with the File by clicking on the +/- symbol. Clicking on the name itself will take you to the File record.
+
+In the future, if you set up the SAME MODEL VERSION on a different computer you can add that Machine and File to PEcAn and then associate this new File with this same Model record. A single version of a model should only be entered into PEcAn **once**.
+
+If a new version of the model is developed that is derived from the current version you should add this as a new Model record but with the same MODEL_TYPE as the original. Furthermore, you should set the previous version of the model as Parent of this new version.
+
+## FORMATS
+
+The PEcAn database keep track of all the input files passed to models, as well as any date used in model validation or data assimilation. Before we start to register these files with PEcAn we need to define the format these files will be in. To create a new format click on Runs > Formats and click _New Format_. Lets start with the input meteorology used by your model. The first thing you need to do is specify the mime type of your met file (e.g. CSV, netCDF, etc) and then give a unique, descriptive name to your file format (e.g. SIPNET clim). If your met file is text-bases you can also specify whether the file has a header or not (TRUE / FALSE)
