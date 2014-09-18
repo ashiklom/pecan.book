@@ -21,12 +21,14 @@ Once the package is defined you will then need to add it to the PEcAn build scri
 
 ## write.config.MODEL (required)
 
+This module performs two primary tasks. The first is to take the list of parameter values and model input files that it receives as inputs and write those out in whatever format(s) the MODEL reads (e.g. a settings file). The second is to write out a shell script, jobs.sh, which, when run, will start your model run and convert its output to the PEcAn standard (netCDF with metadata currently equivalent to the [MsTMIP standard](http://nacp.ornl.gov/MsTMIP_variables.shtml)). Within the MODEL directory take a close look at inst/template.job and the example write.config.MODEL to see an example of how this is done. It is important that this script writes or moves outputs to the correct location so that PEcAn can find them. The example function also shows an example of writing a model-specific settings/config file, also by using a template.
 
+## model2netcdf.MODEL
 
-## model2netcdf.MODEL (required)
+This module converts model output into the PEcAn standard (netCDF with metadata currently equivalent to the [MsTMIP standard](http://nacp.ornl.gov/MsTMIP_variables.shtml)). This file was previously required, but now that the conversion is called within jobs.sh it is much easier to convert outputs using other approaches.
 
 ## met2model.MODEL
 
-Converts meteorology input files from the PEcAn standard (netCDF, CF metadata) to the format required by the model.
+Converts meteorology input files from the PEcAn standard (netCDF, CF metadata) to the format required by the model. This file is optional if you want to specify input files explicitly, which is often the easiest way to get up and running quickly. However, this function is required if you want to benefit from PEcAn's meteorology workflows and model run cloning.
 
 # PEcAn Database
