@@ -66,7 +66,7 @@ based on [Rstudio Server documentation](http://www.rstudio.com/ide/docs/server/g
 * add [rstudio.conf](https://gist.github.com/dlebauer/6921889) to /etc/httpd/conf.d/ 
 ```bash
    wget https://gist.github.com/dlebauer/6921889/raw/d1e0f945228e5519afa6223d6f49d6e0617262bd/rstudio.conf
-   sudo mv rstudio.conf /httpd/conf.d
+   sudo mv rstudio.conf /httpd/conf.d/
 ```
 * download and install server:
 ```bash
