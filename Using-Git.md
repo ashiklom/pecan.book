@@ -69,23 +69,19 @@ tracking system).
 
 The first step below only needs to be done once when you first start working on the PEcAn code. The steps below that need to be done to set up PEcAn on your computer, and would need to be repeated if you move to a new computer. If you are working from the PEcAn VM, you can skip the "git clone" since the PEcAn code is already installed. 
 
-1. First fork pecan on github into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)) This allows you to create your own
-copy of the code. When you do the fork, a copy of the code is created and
-placed in your personal space. This is your personal copy: you can
-clone, branch and push things back here. If you have a branch or some
-code you want to merge back in the main branch, you make a pull request.
-This is the way for external people to commit code back to PEcAn and
-BETY. The pull request will start a review process that will eventually
-result in the code being merged into the main copy of the codebase. See https://help.github.com/articles/fork-a-repo for more information, 
-especially on how to keep your fork up to date with respect to the original. (Rstudio users should also see [[Git + Rstudio | Using-Git#git--rstudio ]], below)
+Most people will not be able to work in the PEcAn repository directly and will need to create a fork of the PEcAn source code in their own folder. To fork PEcAn into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)). This forked repository will allow you to create branches and commit changes back to GitHub and create pull requests to the master of PEcAn.
 
+The forked repository is the only way for external people to commit code back to PEcAn and BETY. The pull request will start a review process that will eventually result in the code being merged into the main copy of the codebase. See https://help.github.com/articles/fork-a-repo for more information,  especially on how to keep your fork up to date with respect to the original. (Rstudio users should also see [[Git + Rstudio | Using-Git#git--rstudio ]], below)
+
+You can setup SSH keys to make it easier to commit cod back to GitHub. This might especially be true if you are working from a cluster, see [set up ssh keys](https://help.github.com/articles/generating-ssh-keys)
 
 1. Introduce yourself to GIT
 
         git config --global user.name "FULLNAME"
         git config --global user.email you@yourdomain.example.com
 
-2. If you are working from a cluster, you may need to [set up ssh keys](https://help.github.com/articles/generating-ssh-keys)
+2. Fork PEcAn on GitHub. Goto the PEcAn source code and click on the Fork button in the upper right. This will create a copy of PEcAn in your personal space.
+
 3. Clone to your local machine 
 
         git clone git@github.com:<username>/pecan.git
