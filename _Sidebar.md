@@ -38,5 +38,4 @@
 * [[Data Formats]]
   * [[Inputs | Data-Formats#Inputs]]
   * [[Outputs | Data-Formats#Inputs]]
-  * [[[Outputs | Data-Formats#Inputs]]
   * [[Defining | Data-Formats#Definition]]
