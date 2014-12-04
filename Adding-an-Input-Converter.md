@@ -32,7 +32,7 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 | moisture_content_of_soil_layer            | kg m-2 |             |              |         |       |           |
 | soil_temperature                          | K     | soilT        |              |         |       |           |
 | relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  | RH        |
-| **specific_humidity**                     | 1 | specific_humidity | NA          | qair    | shum  |           |
+| **specific_humidity**                     | 1 | specific_humidity | NA          | qair    | shum  | CALC(RH)  |
 | water_vapor_saturation_deficit            | Pa    | VPD          |              |         |       | VPD *(NOT DONE)*     |
 | **surface_downwelling_longwave_flux_in_air** | W m-2 | same      | rldsAdjust   | lwdown  | dlwrf | Rgl       |
 | **surface_downwelling_shortwave_flux_in_air**| W m-2 |solar_radiation|rsdsAdjust| swdown  | dswrf | Rg        |
@@ -40,8 +40,8 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 | **precipitation_flux**                    |  kg m-2 s-1 | cccc   | prAdjust     | rain    | acpc  | PREC (mm/s)          |
 |                                           | degrees | wind_direction |          |         |       | WD        |
 | wind_speed                                | m/s   | Wspd         |              |         |       | WS        |
-| **eastward_wind**                         | m/s   | eastward_wind |             |         |       | WS+WD     |
-| **northward_wind**                        | m/s   | northward_wind |            |         |       | WS+WD     |
+| **eastward_wind**                         | m/s   | eastward_wind |             |         |       | CALC(WS+WD) |
+| **northward_wind**                        | m/s   | northward_wind |            |         |       | CALC(WS+WD) |
 
 * preferred variables indicated in bold
 * wind_direction has no CF equivalent and should not be converted, instead the met2CF functions should convert wind_direction and wind_speed to eastward_wind and northward_wind
