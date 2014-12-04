@@ -23,25 +23,25 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 
 ## The variable names should be `standard_name`
 
-| CF standard-name                          | units | bety         | isimip       | cruncep | narr  |
-|:------------------------------------------|:------|:-------------|:-------------|:--------|:------|
-| **air_temperature**                       | K     | airT         | tasAdjust    | tair    | air   |
-| air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |
-| air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |
-| **air_pressure**                          | Pa    | air_pressure |              |         |       |
-| moisture_content_of_soil_layer            | kg m-2 |             |              |         |       |
-| soil_temperature                          | K     | soilT        |              |         |       |
-| relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  |
-| **specific_humidity**                     | 1 | specific_humidity | NA          | qair    | shum  |
-| water_vapor_saturation_deficit            | Pa    | VPD           |              |         |       |
-| **surface_downwelling_longwave_flux_in_air** | W m-2 | same      | rldsAdjust   | lwdown  | dlwrf |
-| **surface_downwelling_shortwave_flux_in_air**| W m-2 |solar_radiation|rsdsAdjust| swdown  | dswrf |
-| surface_downwelling_photosynthetic_photon_flux_in_air | mol m-2 s-1 | PAR |     |         |       |
-| **precipitation_flux**                    |  kg m-2 s-1     |              | prAdjust     | rain    | acpc  |
-|                                           | degrees | wind_direction |          |         |       |
-| wind_speed                                | m/s   | Wspd         |              |         |       |
-| **eastward_wind**                         | m/s   | eastward_wind |             |         |       |
-| **northward_wind**                        | m/s   | northward_wind |            |         |       |
+| CF standard-name                          | units | bety         | isimip       | cruncep | narr  | ameriflux |
+|:------------------------------------------|:------|:-------------|:-------------|:--------|:------|:----------|
+| **air_temperature**                       | K     | airT         | tasAdjust    | tair    | air   | TA (C)    |
+| air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |           |
+| air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |           |
+| **air_pressure**                          | Pa    | air_pressure |              |         |       | PRESS (KPa) |
+| moisture_content_of_soil_layer            | kg m-2 |             |              |         |       |           |
+| soil_temperature                          | K     | soilT        |              |         |       |           |
+| relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  | RH        |
+| **specific_humidity**                     | 1 | specific_humidity | NA          | qair    | shum  |           |
+| water_vapor_saturation_deficit            | Pa    | VPD          |              |         |       | VPD *(NOT DONE)*     |
+| **surface_downwelling_longwave_flux_in_air** | W m-2 | same      | rldsAdjust   | lwdown  | dlwrf | Rgl       |
+| **surface_downwelling_shortwave_flux_in_air**| W m-2 |solar_radiation|rsdsAdjust| swdown  | dswrf | Rg        |
+| surface_downwelling_photosynthetic_photon_flux_in_air | mol m-2 s-1 | PAR |     |         |       | PAR *(NOT DONE)*          |
+| **precipitation_flux**                    |  kg m-2 s-1 | cccc   | prAdjust     | rain    | acpc  | PREC (mm/s)          |
+|                                           | degrees | wind_direction |          |         |       | WD        |
+| wind_speed                                | m/s   | Wspd         |              |         |       | WS        |
+| **eastward_wind**                         | m/s   | eastward_wind |             |         |       | WS+WD     |
+| **northward_wind**                        | m/s   | northward_wind |            |         |       | WS+WD     |
 
 * preferred variables indicated in bold
 * wind_direction has no CF equivalent and should not be converted, instead the met2CF functions should convert wind_direction and wind_speed to eastward_wind and northward_wind
