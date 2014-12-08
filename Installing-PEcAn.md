@@ -210,8 +210,8 @@ See OS-specific instructions for installing Postgres + PostGIS
 # install database (code assumes password is bety)
 sudo -u postgres createuser -d -l -P -R -S bety
 sudo -u postgres createdb -O bety bety
-sudo -u postgres CREATE=YES REMOTE=0 scripts/load.bety.sh
-REMOTE=1 scripts/load.bety.sh
+sudo -u postgres CREATE=YES REMOTESITE=0 scripts/load.bety.sh
+REMOTESITE=1 scripts/load.bety.sh
 
 # configure for web app (change passowrd if needed)
 cp web/config.example.php web/config.php 
