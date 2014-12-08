@@ -1,6 +1,6 @@
 # Ubuntu
 
-These are specific notes for installing PEcAn on Ubuntu and will be referenced from the main [installing PEcAn](Installing-PEcAn) page. You will at least need to install the build environment and Postgres sections. If you want to access the database/PEcAn using a web browser you will need to install Apache. To access the database using the BETY interface, you will need to have Ruby installed.
+These are specific notes for installing PEcAn on Ubuntu (14.04) and will be referenced from the main [installing PEcAn](Installing-PEcAn) page. You will at least need to install the build environment and Postgres sections. If you want to access the database/PEcAn using a web browser you will need to install Apache. To access the database using the BETY interface, you will need to have Ruby installed.
 
 This document also contains information on how to install the Rstudio server edition as well as any other packages that can be helpful.
 
@@ -72,8 +72,8 @@ To install the BETYdb database ..
 sudo -s
 
 # get index page
-rm /var/www/index.html
-ln -s ${HOME}/pecan/documentation/index_vm.html /var/www/index.html
+rm /var/www/html/index.html
+ln -s ${HOME}/pecan/documentation/index_vm.html /var/www/html/index.html
 
 # setup a redirect
 cat > /etc/apache2/conf.d/pecan.conf << EOF
