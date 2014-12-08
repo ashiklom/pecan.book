@@ -29,6 +29,7 @@ Names should be `met2CF.<sourcename>` and `met2model.<modelname>`.
 | air_temperature_max                       | K     |              | tasmaxAdjust | NA      | tmax  |           |
 | air_temperature_min                       | K     |              | tasminAdjust | NA      | tmin  |           |
 | **air_pressure**                          | Pa    | air_pressure |              |         |       | PRESS (KPa) |
+| mass_concentration_of_carbon_dioxide_in_air | umol/mol |         |              |         |       | CO2       |
 | moisture_content_of_soil_layer            | kg m-2 |             |              |         |       |           |
 | soil_temperature                          | K     | soilT        |              |         |       | TS1 *(NOT DONE)* |
 | relative_humidity                         | % | relative_humidity | rhurs       | NA      | rhum  | RH        |
