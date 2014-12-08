@@ -40,6 +40,8 @@ exit
 Documentation: http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt
 
 ```bash
+sudo -s
+
 # point to latest PostgreSQL
 echo "deb http://apt.postgresql.org/pub/repos/apt `lsb_release -s -c`-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
@@ -58,6 +60,8 @@ host    all             bety            ::1/128             
 
 # Once done restart postgresql
 /etc/init.d/postgresql restart
+
+exit
 ```
 
 To install the BETYdb database .. 
