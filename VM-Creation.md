@@ -64,7 +64,7 @@ sudo addgroup carya vboxsf
 sudo -s
 export PORT=$( hostname | sed 's/pecan//' )
 cat > /etc/motd.tail << EOF
-PEcAn version 1.3.7
+PEcAn version 1.4.0
 
 This system allows you to experiment and create simulations using
 PEcAn, ED, SIPNET and BETY.
