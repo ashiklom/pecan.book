@@ -7,7 +7,7 @@ First create  virtual machine
 # CREATE VM USING FOLLOWING:
 # - VM NAME  = PEcAn 32bit | PEcAn 64bit
 # - CPU      = 1
-# - MEMORY   = 1GB 
+# - MEMORY   = 2GB 
 # - DISK     = 100GB
 # - HOSTNAME = pecan32/64
 # - FULLNAME = PEcAn Demo User
