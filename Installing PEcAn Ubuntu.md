@@ -76,7 +76,7 @@ rm /var/www/html/index.html
 ln -s ${HOME}/pecan/documentation/index_vm.html /var/www/html/index.html
 
 # setup a redirect
-cat > /etc/apache2/conf.available/pecan.conf << EOF
+cat > /etc/apache2/conf-available/pecan.conf << EOF
 Alias /pecan ${HOME}/pecan/web
 <Directory ${HOME}/pecan/web>
   DirectoryIndex index.php
@@ -136,7 +136,7 @@ rstudio-server restart
 
 # setup rstudio forwarding in apache
 a2enmod proxy_http
-cat > /etc/apache2/conf.available/rstudio.conf << EOF
+cat > /etc/apache2/conf-available/rstudio.conf << EOF
 ProxyPass        /rstudio/ http://localhost:8787/
 ProxyPassReverse /rstudio/ http://localhost:8787/
 RedirectMatch permanent ^/rstudio$ /rstudio/
