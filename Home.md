@@ -1,6 +1,7 @@
 * **[[User's Guide| Getting Started]]**
  * **[[Configuration | PEcAn-Configuration]]**
- * **[[Inputs| Adding-an-Input-Converter]]**
+ * **[[Site-Level Run | Getting-started#site-level-runs]]**
+ * **[[Inputs | How-to-insert-new-Input-data]]**
 * **[[Developer's Guide | Development]]**
 * **[[FAQ|https://github.com/PecanProject/pecan/issues?labels=question&page=1&state=closed]]**
 * **[[Education]]**
