@@ -13,7 +13,7 @@ From your BETY interface:
  * From the menu click RUNS then INPUTS
  * Click “New Input”
  * Select the SITE that this data is associated with the input data set
- * Other required fields are a unique name for the input, the start and end dates of the data set, and the format of the data. If the data is not in a currently known format you will need to create a NEW FORMAT
+ * Other required fields are a unique name for the input, the start and end dates of the data set, and the format of the data. If the data is not in a currently known format you will need to create a NEW FORMAT and possibly a [[new Input Converter| Adding-an-Input-Converter]]
  * Parent ID is an optional variable to indicated that one dataset was derived from another.
  * Click “Create”
 * Associate the DBFILE with the INPUT
