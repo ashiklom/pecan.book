@@ -94,12 +94,13 @@ exit
 ## Ruby
 
 ```bash
-sudo apt-get -y install python-software-properties
-sudo apt-add-repository -y ppa:brightbox/ruby-ng
-sudo apt-get update
+#sudo apt-get -y install python-software-properties
+#sudo apt-add-repository -y ppa:brightbox/ruby-ng
+#sudo apt-get update
 
 # install all ruby related packages
-sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1 libapache2-mod-passenger 
+#sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1 libapache2-mod-passenger 
+sudo apt-get -y install ruby-dev libapache2-mod-passenger 
 ```
 
 ## Rstudio-server
