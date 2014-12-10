@@ -251,7 +251,7 @@ git clone https://github.com/PecanProject/bety.git
 # install gems
 cd bety
 gem install bundler
-bundle install --local without development:test:javascript_testing:debug
+bundle install --without development:test:javascript_testing:debug
 ```
 
 and configure BETY
