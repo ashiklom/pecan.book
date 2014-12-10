@@ -325,6 +325,6 @@ cp ../pecan/scripts/workflow.R workflow.R
 
 # exectute workflow
 rm -rf pecan
-./workflow.R
+./workflow.R pecan.xml
 ```
 NB: pecan.xml is configured for the virtual machine, you will need to change the <met> field from '/home/carya/' to wherever you installed your 'sites', usually $HOME
