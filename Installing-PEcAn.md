@@ -288,23 +288,6 @@ REST_AUTH_SITE_KEY         = 'thisisnotasecret'
 REST_AUTH_DIGEST_STRETCHES = 10
 EOF
 
-# configure apache
-ln -s /usr/local/bety/public /var/www/html/bety
-
-cat > /etc/apache2/conf-available/bety.conf << EOF
-PassengerRuby /usr/bin/ruby1.9.1
-RailsEnv production
-RailsBaseURI /bety
-<Directory /var/www/bety>
-   Options FollowSymLinks
-   AllowOverride None
-   Order allow,deny
-   Allow from all
-</Directory>
-EOF
-a2enconf bety
-/etc/init.d/apache2 restart
-
 # drop out of root
 exit
 ```
