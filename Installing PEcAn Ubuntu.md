@@ -115,6 +115,15 @@ RailsBaseURI /bety
    Allow from all
 </Directory>
 EOF
+cat > /etc/apache2/conf-available/bety.conf << EOF
+PassengerRuby /usr/bin/ruby
+RailsEnv production
+RailsBaseURI /bety
+<Directory /var/www/html/bety>
+  Options +FollowSymLinks
+  Require all granted
+</Directory>
+EOF
 a2enconf bety
 /etc/init.d/apache2 restart
 ```
