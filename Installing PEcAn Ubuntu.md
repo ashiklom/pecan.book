@@ -106,6 +106,9 @@ PassengerRuby /usr/bin/ruby1.9.1
 RailsEnv production
 RailsBaseURI /bety
 <Directory /var/www/bety>
+  Options +ExecCGI
+  Require all granted
+
    Options FollowSymLinks
    AllowOverride None
    Order allow,deny
