@@ -102,21 +102,6 @@ ln -s /usr/local/bety/public /var/www/html/bety
 
 # setup a redirect
 cat > /etc/apache2/conf-available/bety.conf << EOF
-PassengerRuby /usr/bin/ruby1.9.1
-RailsEnv production
-RailsBaseURI /bety
-<Directory /var/www/bety>
-  Options +ExecCGI
-  Require all granted
-
-   Options FollowSymLinks
-   AllowOverride None
-   Order allow,deny
-   Allow from all
-</Directory>
-EOF
-cat > /etc/apache2/conf-available/bety.conf << EOF
-PassengerRuby /usr/bin/ruby
 RailsEnv production
 RailsBaseURI /bety
 <Directory /var/www/html/bety>
