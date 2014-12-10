@@ -65,7 +65,7 @@ exit
 ```
 
 To install the BETYdb database .. 
-## Apache Configuration
+## Apache Configuration PEcAn
 
 ```bash
 # become root
@@ -80,9 +80,8 @@ cat > /etc/apache2/conf-available/pecan.conf << EOF
 Alias /pecan ${HOME}/pecan/web
 <Directory ${HOME}/pecan/web>
   DirectoryIndex index.php
-  Options +All
-  Order allow,deny
-  Allow from all
+  Options +ExecCGI
+  Require all granted
 </Directory>
 EOF
 a2enconf pecan
@@ -92,16 +91,29 @@ a2enconf pecan
 exit
 ```
 
-## Ruby
+## Apache Configuration BETY
 
 ```bash
-#sudo apt-get -y install python-software-properties
-#sudo apt-add-repository -y ppa:brightbox/ruby-ng
-#sudo apt-get update
-
 # install all ruby related packages
-#sudo apt-get -y install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1 libapache2-mod-passenger 
 sudo apt-get -y install ruby-dev libapache2-mod-passenger 
+
+# link static content
+ln -s /usr/local/bety/public /var/www/html/bety
+
+# setup a redirect
+cat > /etc/apache2/conf-available/bety.conf << EOF
+PassengerRuby /usr/bin/ruby1.9.1
+RailsEnv production
+RailsBaseURI /bety
+<Directory /var/www/bety>
+   Options FollowSymLinks
+   AllowOverride None
+   Order allow,deny
+   Allow from all
+</Directory>
+EOF
+a2enconf bety
+/etc/init.d/apache2 restart
 ```
 
 ## Rstudio-server
