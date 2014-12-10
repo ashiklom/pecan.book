@@ -289,7 +289,7 @@ REST_AUTH_DIGEST_STRETCHES = 10
 EOF
 
 # configure apache
-ln -s /usr/local/bety/public /var/www/bety
+ln -s /usr/local/bety/public /var/www/html/bety
 
 cat > /etc/apache2/conf-available/bety.conf << EOF
 PassengerRuby /usr/bin/ruby1.9.1
