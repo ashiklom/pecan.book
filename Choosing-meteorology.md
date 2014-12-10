@@ -1,3 +1,3 @@
 * Has files
 * Can generate files
-* How to insert new data
+* [[How to insert new Input data]]
