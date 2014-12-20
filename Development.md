@@ -1,12 +1,7 @@
-### Signup
+### Contributing, Bug reports, Etc
 
-Create Accounts
- * [GitHub](https://github.com/signup/free)
- * [Redmine (for EBI and CHEAS researchers)](https://ebi-forecast.igb.illinois.edu/redmine/account/register)
-
-### Making Changes to the Code
-
-* [[ Reporting bugs or requesting features | Github issues]]
+* Create [GitHub](https://github.com/signup/free) account
+* [[Reporting bugs or requesting features | Github issues]]
 * [[Using GitHub and Git | Using Git]] to get a copy of the latest development code and/or submit changes to the main repository
 * [[PEcAn Directory Structure | Directory Structure]]
 
