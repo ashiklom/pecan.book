@@ -10,6 +10,7 @@
 
 * [[Adding an Ecosystem Model]]
 * [[Adding an Input Converter]]
+* [[Implementing state data assimilation]]
 
 ### Advanced Installation
 
