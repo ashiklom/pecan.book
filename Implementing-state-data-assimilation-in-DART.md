@@ -47,40 +47,70 @@ As for location, there are many ways to set in DART and the method needs to be c
 Creating/adjusting a state variable vector in DART is relatively straight-forward. Below are listed the steps to specify a state variable vector in DART.
 
 I. For each specific model, there should be an own folder within the DART root models folder. In this folder there is a model_mod.f90, which contains the model specific subroutines necessary for a DART run. 
+
 At the beginning of this file there should be the following line:
+
 integer, parameter :: model_size = [number]
+
 The number here should be the number of variables in the vector. So for example if there were three state variables, then the line should look like this:
+
 integer, parameter :: model_size = 3
+
 This number should also be changed to match with any of the other executables called during the run as indicated by the list above.
+
+
 II. In the DART root, there should be a folder named obs_kind, which contains a file called DEFAULT_obs_kind_mod.F90. It is important to note that all changes should be done to this file instead of obs_kind_mod.f90, as during compilation DART creates obs_kind_mod.f90 from DEFAULT_obs_kind_mod.F90.
 This program file contains all the defined observation types used by DART and numbers them for easier reference later. Different types are classified according to observation instrument or relevant observation phenomenon. Adding a new type only requires finding an unused number and starting a new identifying line with the following:
+
 integer, parameter, public :: &
 	KIND_...
+
 Note that the observation kind should always be easy to understand, so avoid using unnecessary acronyms.  For example, when adding an observation type for Leaf Area Index, it would look like below:
+
 integer, parameter, public :: &
 	KIND_LEAF_AREA_INDEX = [number]
+
+
 III. In the DART root, there should be a folder named obs_def, which contains several files starting with obs_def_. There files contain the different available observation kinds classified either according to observation instrument or observable system. Each file starts with the line
+
 ! BEGIN DART PREPROCESS KIND LIST
+
 And end with line
+
 ! END DART PREPROCESS KIND LIST
+
 The lines between these two should contain
+
 ! The desired observation reference, the observation type, COMMON_CODE.
+
 For example, for observations relating to phenology, I have created a file called obs_def_phen_mod.f90. In this file I define the Leaf Area Index observations in the following way.
+
 ! BEGIN DART PREPROCESS KIND LIST
 ! LAI, TYPE_LEAF_AREA_INDEX, COMMON_CODE
 ! END DART PREPROCESS KIND LIST
+
 Note that the exclamation marks are necessary for the file.
+
+
 IV. In the model specific folder, in the work subfolder there is a namelist file input.nml. This contains all the run specific information for DART. In it, there is a subtitle &preprocess, under which there is a line
+
 input_files = ‘….’
+
 This input_files sections must be set to refer to the obs_def file created in step III. The input files can contain references to multiple obs_def files if necessary.
+
 As an example, the reference to the obs_def_phen_mod.f90 would look like 
 input_files = ‘../../../obs_def/obs_def_phen_mod.f90’
+
 V. Finally, as an optional step, the different values in state vector can be typed. In model_mod, referred to in step I, there is a subroutine get_state_meta_data. In it, there is an input variable index_in, which refers to the vector component. So for instance for the second component of the vector index_in would be 2. If this is done, the variable kind has to be also included at the beginning of the model_mod.f90 file, at the section which begins 
+
 use obs_kind_mod, only ::
 
-Here the location of the variable can be set, but for a 0-dimensional model we are discussing here, this is not necessary.
+The location of the variable can be set, but for a 0-dimensional model we are discussing here, this is not necessary.
+
 Here, though, it is possible to set the variable types by including the following line
+
 if(index_in .eq. [number]) var_type = [One of the variable kinds set in step II]
+
 VI. If the length of the state vector is changed, it is important that the script ran with DART produces a vector of that length. Change appropriately if necessary.
 
 After these steps, DART should be able to run with the state vector of interest.
