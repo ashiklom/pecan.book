@@ -2,7 +2,8 @@ Our current approach for implementing state data assimilation in PEcAn is throug
 
 In this section I will try to give a straight-forward explanation how to implement DART. I am focusing more here on the technical aspects of the implementation. If there are any questions, feel  free to send me an email (tt.viskari@gmail.com) or contacting DART support as they are quite awesome in helping people with problems. Also, if there are any suggestions on how to improve the wiki, please let me know.
 
-Running with current folders in PEcAn
+**Running with current folders in PEcAn**
+
 Currently the DART folders in PEcAn are that you can simply copy the structure there over a downloaded DART workflow and it should replace/add relevant files and folders. The most important step after that is to check and change the run paths in the following files:
 Path_name files in the work folders
 T_ED2IN file, as it indicates where the run results be written.
@@ -14,7 +15,8 @@ Third thing needed are the initial condition and observation sequence files. The
 
 Finally the ensemble size, which is the easiest to change. In the work subfolder, there is a file named input.nml. Simply changing the ensemble size there will set it for the run itself. Also remember that initial conditions file should have the equal amount of state vectors as there are ensemble members.
 
-Adjusting the workflow
+**Adjusting the workflow**
+
 The central file for the actual workflow is advance_model.csh. It is a script DART calls to determine how the state vector changes between the two observation times and is essentially the only file one needs to change when changing state models or observations operators. The file itself should be commented to give a good idea of the flow, but beneath is a crude order of events.
 1. Create a temporary folder to run the model in and copy/link required files in to it.
 2. Read in the state vector values and times from DART. Here it is important to note that the values will be in binary format, which need to be read in by a Fortran program. In my system, there is a program called F2R which reads in the binary values and writes out in ascii form the state vector values as well as which ED2 history files it needs to copy based on the time stamps.
@@ -23,13 +25,15 @@ The central file for the actual workflow is advance_model.csh. It is a script DA
 5. Read the new state vector values from output files.
 6. Convert the state vector values to the binary. In my system, this is done by the program R2F.
 
-Initial conditions file
+**Initial conditions file**
+
 The initial conditions file, commonly named filter_ics although you can set it to something else in input.nml, is relatively simple in structure. It has one sequence repeating over the number of ensemble members.
 First line contains two times: Seconds and days. Just use one of them in this situation, but it has to match the starting time given in input.nml.
 After that each line should contain a value from the state vector in the order you want to treat them.
 R functions filter_ics.R and B_filter_ics.R in the R folder give good examples of how to create these.
 
-Observations files
+**Observations files**
+
 The file which contains the observations is commonly known as obs_seq.out, although again the name of the file can be changed in input.nml. The structure of the file is relatively straight-forward and the R function ObsSeq.R in the R subfolder has the write structure for this. Instead of writing it out here, I want to focus on a few really important details in this file.
 Each observations will have a time, a value, an uncertainty, a location and a kind. The first four are self-explanatory, but the kind is really important, but also unfortunately really easy to misunderstand. In this file, the kind does not refer to a unit or a type of observation, but which member of the state vector is this observation of. So if the kind was, for example, 5, it would mean that it was of the fifth member of the state vector. However, if the kind value is positive, the system assumes that there is some sort of an operator change in comparing the observation and state vector value which is specified in a subprogram in model_mod.f90.
 
@@ -38,7 +42,7 @@ So for an direct identity comparison between the observation and the state vecto
 As for location, there are many ways to set in DART and the method needs to be chosen when compiling the code by giving the program which of the location mods it is to use. In our examples we used a 1-dimensional location vector with scaled values between 0 and 1. For future it makes sense to switch to a 2 dimensional long- and lat-scale, but for the time being the location does not impact the system a lot. The main impact will be if the covariances will be localized, as that will be decided on their locations.
 
 
-State variable vector in DART
+**State variable vector in DART**
 
 Creating/adjusting a state variable vector in DART is relatively straight-forward. Below are listed the steps to specify a state variable vector in DART.
 
