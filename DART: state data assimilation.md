@@ -1,6 +1,6 @@
-Our current approach for implementing state data assimilation in PEcAn is through the DART workflow created by the DARES group in NCAR.
+In addition to the state assimilation routines found in the assim.sequential module, another approach for state data assimilation in PEcAn is through the DART workflow created by the DARES group in NCAR.
 
-In this section I will try to give a straight-forward explanation how to implement DART. I am focusing more here on the technical aspects of the implementation. If there are any questions, feel  free to send me an email (tt.viskari@gmail.com) or contacting DART support as they are quite awesome in helping people with problems. Also, if there are any suggestions on how to improve the wiki, please let me know.
+This section gives a straight-forward explanation how to implement DART, focused on the technical aspects of the implementation. If there are any questions, feel free to send @Viskari an email (tt.viskari@gmail.com) or contacting DART support as they are quite awesome in helping people with problems. Also, if there are any suggestions on how to improve the wiki, please let me know.
 
 **Running with current folders in PEcAn**
 
