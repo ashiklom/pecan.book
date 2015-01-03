@@ -11,7 +11,7 @@ To run a model within PEcAn requires that the PEcAn database know about the mode
 
 ## Define MODEL_TYPE
 
-The first step is to create a new MODEL_TYPE by selecting on Runs > Model Type and then clicking on _New Model Type_. The model type should be identical to the MODEL package name. 
+The first step is to create a new MODEL_TYPE by selecting on Runs > Model Type and then clicking on _New Model Type_. The model type should be identical to the MODEL package name (see Interface Module below) and is case sensitive.
 
 ## MACHINE
 
