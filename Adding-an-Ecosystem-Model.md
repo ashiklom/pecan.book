@@ -1,41 +1,9 @@
-Under development.
+**Adding a model to PEcAn involves two activities:**
 
-The [models/template](https://github.com/PecanProject/pecan/tree/master/models/template) package should provide a generic instruction for adding a new template, with example functions. An out-of-date draft of these instructions is located in the model template package [README](https://github.com/PecanProject/pecan/blob/master/models/template/README.Rmd) file.
+1. Updating the PEcAn database to register the model
+2. Writing the interface modules between the model and PEcAn
 
-Adding a model to PEcAn involves two activities:
-
-1. Writing the interface modules between the model and PEcAn
-2. Updating the PEcAn database to register the model
-
-# Interface Modules
-
-## Setting up the module directory (required)
-
-PEcAn assumes that the interface modules are available as an R package in the models directory named after the model in question. The simplest way to get started on that R package is to make a copy the _template_ directory and re-name it to the name of your model. In the code, filenames, and examples below you will want to substitute the word *MODEL* for the name of your model. If you do not want to write the interface modules in R then it is fairly simple to set up the functions describe below to just call the script you want to run using R's _system_ command. Scripts that are not R functions can be placed in the _inst_ folder and R can look up the location of these files using the function _system.file_ which takes as arguments the _local_ path of the file within the package folder and the name of the package (typically PEcAn.MODEL).
-
-Within the module folder open the *DESCRIPTION* file and change the package name to PEcAn.MODEL. Fill out other fields such as Title, Author, Maintainer, and Date.
-
-Open the *NAMESPACE* file and change all instances of MODEL to the name of your model. If you are not going to implement one of the optional modules (described below) at this time then you will want to comment those out using the pound sign `#`. For a complete description of R NAMESPACE files [see here](http://cran.r-project.org/doc/manuals/r-devel/R-exts.html#Package-namespaces).
-
-Once the package is defined you will then need to add it to the PEcAn build scripts.  From the root of the pecan directory, within _scripts_ folder open the file _build.sh_ and within the section of code that includes PACKAGES= add model/MODEL to the list of packages to compile. If, in writing your module, you add any other R packages to the system you will want to make sure those are listed in the DESCRIPTION and in the script *install.dependencies.R*. Next, from the root pecan directory open all/DESCRIPTION and add your model package to the *Suggests:* list
-
-## write.config.MODEL (required)
-
-This module performs two primary tasks. The first is to take the list of parameter values and model input files that it receives as inputs and write those out in whatever format(s) the MODEL reads (e.g. a settings file). The second is to write out a shell script, jobs.sh, which, when run, will start your model run and convert its output to the PEcAn standard (netCDF with metadata currently equivalent to the [MsTMIP standard](http://nacp.ornl.gov/MsTMIP_variables.shtml)). Within the MODEL directory take a close look at inst/template.job and the example write.config.MODEL to see an example of how this is done. It is important that this script writes or moves outputs to the correct location so that PEcAn can find them. The example function also shows an example of writing a model-specific settings/config file, also by using a template.
-
-You are encouraged to read the section below on defining PFTs before writing write.config.MODEL so that you understand what model parameters PEcAn will be passing you, how they will be named, and what units they will be in.
-
-## model2netcdf.MODEL
-
-This module converts model output into the PEcAn standard (netCDF with metadata currently equivalent to the [MsTMIP standard](http://nacp.ornl.gov/MsTMIP_variables.shtml)). This file was previously required, but now that the conversion is called within jobs.sh it is much easier to convert outputs using other approaches.
-
-## met2model.MODEL
-
-Converts meteorology input files from the PEcAn standard (netCDF, CF metadata) to the format required by the model. This file is optional if you want to specify input files explicitly, which is often the easiest way to get up and running quickly. However, this function is required if you want to benefit from PEcAn's meteorology workflows and model run cloning.
-
-## Commit changes
-
-Once the MODEL modules are written, you should follow the [[Using-Git]] instructions on how to commit your changes to your local git repository, verify that PEcAn compiles, push these changes to github, and submit a pull request so that your model module is added to the PEcAn system. It is important to note that while we encourage users to make their models open, adding the PEcAn interface module to the github repository in no way requires that the model code itself be made public. It does, however, allow anyone who already has a copy of the model code to use PEcAn so we strongly encourage that any new model modules be committed to github.
+**Note that coupling a model to PEcAn should not require any changes to the model code itself**. A key aspect of our design philosophy is that we want it to be easy to add models to the system and we want to using the working version of the code that is used by all other model users, not a special branch (which would rapidly end up out-of-date).
 
 # PEcAn Database
 
@@ -80,3 +48,57 @@ In addition to adding species, a PFT is defined in PEcAn by the list of variable
 ## PRIORS
 
 There are a wide variety of priors already defined in the PEcAn database that often range from very diffuse and generic to very informative priors for specific PFTs. If the current set of Priors for a variable are inadequate, or if a prior needs to be specified for a new variable, this can be done under Data > Priors then “New Prior”. After using the pull-down menu to select the Variable you want to generate a prior for, the prior is defined by choosing a probability distribution and specifying values for that distribution’s parameters. These are labeled Parameter a & b but their exact meaning depends upon the distribution chosen. For example, for the Normal distribution a and b are the mean and standard deviation while for the Uniform they are the minimum and maximum. All parameters are defined based on their standard parameterization in the R language.  If the prior is based on observed data (independent of data in the PEcAn database) then you can also specify the prior sample size, _N_. The _Phylogeny_ variable allows one to specify what taxonomic grouping the prior is defined for, at it is important to note that this is just for reference and doesn’t have to be specified in any standard way nor does it have to be monophyletic (i.e. it can be a functional grouping). Finally, the _Citation_ is a required variable that provides a reference for how the prior was defined. That said, there are a number of unpublished Citations in current use that simply state the expert opinion of an individual.
+
+# Interface Modules
+
+## Setting up the module directory (required)
+
+PEcAn assumes that the interface modules are available as an R package in the models directory named after the model in question. The simplest way to get started on that R package is to make a copy the [_template_](https://github.com/PecanProject/pecan/tree/master/models/template) directory in the pecan/models folder and re-name it to the name of your model. In the code, filenames, and examples below you will want to substitute the word **MODEL** for the name of your model (note: R is case-sensitive). 
+
+If you do not want to write the interface modules in R then it is fairly simple to set up the R functions describe below to just call the script you want to run using R's _system_ command. Scripts that are not R functions should be placed in the _inst_ folder and R can look up the location of these files using the function _system.file_ which takes as arguments the _local_ path of the file within the package folder and the name of the package (typically PEcAn.MODEL). For example
+
+    ## Example met conversion wrapper function
+    met2model.MODEL <- function(in.path, in.prefix, outfolder, start_date, end_date){
+       myMetScript <- system.file("inst/met2model.MODEL.sh","PEcAn.MODEL")
+       system(paste(myMetScript,file.path(in.path,in.prefix),outfolder, start_date,end_date))
+    }
+
+would execute the following at the Linux command line
+
+    inst/met2model.MODEL.sh in.path/in.prefix outfolder start_date end_date    `
+
+### DESCRIPTION
+Within the module folder open the *DESCRIPTION* file and change the package name to PEcAn.MODEL. Fill out other fields such as Title, Author, Maintainer, and Date.
+
+### NAMESPACE
+Open the *NAMESPACE* file and change all instances of MODEL to the name of your model. If you are not going to implement one of the optional modules (described below) at this time then you will want to comment those out using the pound sign `#`. For a complete description of R NAMESPACE files [see here](http://cran.r-project.org/doc/manuals/r-devel/R-exts.html#Package-namespaces). If you create additional functions in your R package that you want to be used make sure you include them in the NAMESPACE as well (internal functions don't need to be declared)
+
+### Building the package
+
+Once the package is defined you will then need to add it to the PEcAn build scripts.  From the root of the pecan directory, go into the _scripts_ folder and open the file _build.sh_. Within the section of code that includes PACKAGES= add model/MODEL to the list of packages to compile. If, in writing your module, you add any other R packages to the system you will want to make sure those are listed in the DESCRIPTION and in the script **scripts/install.dependencies.R**. Next, from the root pecan directory open all/DESCRIPTION and add your model package to the *Suggests:* list.
+
+At any point, if you want to check if PEcAn can build your MODEL package successfully, just go to the linux command prompt and run **scripts/build.sh**. You will need to do this before the system can use these packages.
+
+## write.config.MODEL (required)
+
+This module performs two primary tasks. The first is to take the list of parameter values and model input files that it receives as inputs and write those out in whatever format(s) the MODEL reads (e.g. a settings file). The second is to write out a shell script, jobs.sh, which, when run, will start your model run and convert its output to the PEcAn standard (netCDF with metadata currently equivalent to the [MsTMIP standard](http://nacp.ornl.gov/MsTMIP_variables.shtml)). Within the MODEL directory take a close look at inst/template.job and the example write.config.MODEL to see an example of how this is done. It is important that this script writes or moves outputs to the correct location so that PEcAn can find them. The example function also shows an example of writing a model-specific settings/config file, also by using a template.
+
+You are encouraged to read the section above on defining PFTs before writing write.config.MODEL so that you understand what model parameters PEcAn will be passing you, how they will be named, and what units they will be in. Also note that the (optional) PEcAn input/driver processing scripts are called by separate workflows, so the paths to any required inputs (e.g. meteorology) will already be in the model-specific format by the time write.config.MODEL receives that info.
+
+## Output Conversions 
+
+The module model2netcdf.MODEL converts model output into the PEcAn standard (netCDF with metadata currently equivalent to the [MsTMIP standard](http://nacp.ornl.gov/MsTMIP_variables.shtml)). This function was previously required, but now that the conversion is called within jobs.sh it may be easier for you to convert outputs using other approaches (or to just directly write outputs in the standard). 
+
+Whether you implement this function or convert outputs some other way, please note that PEcAn expects all outputs to be broken up into ANNUAL files with the year number as the file name (i.e. YEAR.nc), though these files may contain any number of scalars, vectors, matrices, or arrays of model outputs, such as time-series of each output variable at the model's native timestep.
+
+Note: PEcAn reads all variable names from the files themselves so it is possible to add additional variables that are not part of the MsTMIP standard. Similarly, there are no REQUIRED output variables, though *time* is highly encouraged. We are shortly going establish a canonical list of PEcAn variables so that if users add additional output variables they become part of the standard. **We don't want two different models to call the same output with two different names or different units** as this would prohibit the multi-model syntheses and comparisons that PEcAn is designed to facilitate.
+
+## met2model.MODEL
+
+`met2model.MODEL(in.path, in.prefix, outfolder, start_date, end_date)`
+
+Converts meteorology input files from the PEcAn standard (netCDF, CF metadata) to the format required by the model. This file is optional if you want to load all of your met files into the Inputs table as described in [How to insert new Input data], which is often the easiest way to get up and running quickly. However, this function is required if you want to benefit from PEcAn's meteorology workflows and model run cloning. You'll want to take a close look at [Adding-an-Input-Converter] to see the exact variable names and units that PEcAn will be providing. Also note that PEcAn splits all meteorology up into ANNUAL files, with the year number explicitly included in the file name, and thus what PEcAn will actually be providing is **in.path**, the input path to the folder where multiple met files may stored, and **in.prefix**, the start of the filename that precedes the year (i.e. an individual file will be named <in.prefix>.YEAR.nc). It is valid for in.prefix to be blank. The additional REQUIRED arguments to met2model.MODEL are **outfolder**, the output folder where PEcAn wants you to write your meteorology, and **start_date** and **end_date**, the time range the user has asked the meteorology to be processed for.
+
+## Commit changes
+
+Once the MODEL modules are written, you should follow the [[Using-Git]] instructions on how to commit your changes to your local git repository, verify that PEcAn compiles using *scripts/build.sh*, push these changes to Github, and submit a pull request so that your model module is added to the PEcAn system. It is important to note that while we encourage users to make their models open, adding the PEcAn interface module to the Github repository in no way requires that the model code itself be made public. It does, however, allow anyone who already has a copy of the model code to use PEcAn so we strongly encourage that any new model modules be committed to Github.
