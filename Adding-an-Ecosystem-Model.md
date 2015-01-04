@@ -7,11 +7,15 @@
 
 # PEcAn Database
 
-To run a model within PEcAn requires that the PEcAn database know about the model -- this includes a MODEL_TYPE designation, the location of the model executable, the types of inputs the model requires, and the plant functional types used by the model. The instructions below assume that you will be specifying this information using the BETYdb web-based interface. This can be done either on your local VM or on a server installation of BETYdb, though in either case we'd encourage you to set up your PEcAn instance to support database syncs so that these changes can be shared and backed-up across the PEcAn network.
+To run a model within PEcAn requires that the PEcAn database know about the model -- this includes a MODEL_TYPE designation, the types of inputs the model requires, the location of the model executable, and the plant functional types used by the model. The instructions below assume that you will be specifying this information using the BETYdb web-based interface. This can be done either on your local VM (localhost:3280/bety or localhost:6480/bety) or on a server installation of BETYdb, though in either case we'd encourage you to set up your PEcAn instance to support [database syncs](https://github.com/PecanProject/bety/wiki/Distributed-BETYdb) so that these changes can be shared and backed-up across the PEcAn network.
+
+The figure below summarizes the relevant database tables that need to be updated to add a new model and the primary variables that define each table.
+
+![](https://www.lucidchart.com/publicSegments/view/54a8aea8-9360-4628-af9e-392a0a00c27b/image.png)
 
 ## Define MODEL_TYPE
 
-The first step is to create a new MODEL_TYPE by selecting on Runs > Model Type and then clicking on _New Model Type_. The model type should be identical to the MODEL package name (see Interface Module below) and is case sensitive.
+The first step to adding a model is to create a new MODEL_TYPE, which defines the abstract model class which we will then use to specify input requirements, define plant functional types, and keep track of different model versions. A MODEL_TYPE is created by selecting Runs > Model Type and then clicking on _New Model Type_. The MODEL_TYPE name should be identical to the MODEL package name (see Interface Module below) and is case sensitive.
 
 ## MACHINE
 
