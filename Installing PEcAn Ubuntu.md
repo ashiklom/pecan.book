@@ -16,11 +16,11 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 # update package list
 apt-get -y update
 
-# install all packages needed for PEcAn
-apt-get -y install build-essential git r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-gnutls-dev curl udunits-bin libudunits2-dev libgmp-dev python-dev libgdal1-dev libproj-dev
+# install packages needed for PEcAn
+apt-get -y install build-essential gfortran git r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-gnutls-dev curl udunits-bin libudunits2-dev libgmp-dev python-dev libgdal1-dev libproj-dev
 
-# install all packages needed for ED2
-apt-get -y install build-essential git gfortran openmpi-bin libopenmpi-dev libhdf5-serial-dev r-base-core jags liblapack-dev libnetcdf-dev netcdf-bin bc libcurl4-gnutls-dev curl udunits-bin libudunits2-dev libsqlite3-dev libgmp-dev python-dev libgdal1-dev libproj-dev
+# install packages needed for ED2
+apt-get -y install openmpi-bin libopenmpi-dev
 
 # install requirements for DALEC
 apt-get -y install libgsl0-dev
