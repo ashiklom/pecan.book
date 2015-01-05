@@ -63,7 +63,7 @@ sudo addgroup carya vboxsf
 ```bash
 sudo -s
 export PORT=$( hostname | sed 's/pecan//' )
-cat > /etc/motd.tail << EOF
+cat > /etc/motd << EOF
 PEcAn version 1.4.0
 
 This system allows you to experiment and create simulations using
