@@ -4,8 +4,10 @@
 
 3. If the model you want to run is not listed login to BETY and navigate to Runs > Models.
 
-4. If there are already entries for the model you want to run then most likely the PEcAn modules for that model have been implemented but PEcAn is unaware that the model has been installed on your server. Click on **New Model**, fill in the record, and click Create. The **Model path** is particularly important as this tells PEcAn where the model is installed on your server. Af this point your model should appear on the PEcAn **Select Host** page after your refresh the page
+4. If there are already entries for the model you want to run then most likely the PEcAn modules for that model have been implemented but PEcAn is unaware that the model has been installed on your server. Information on adding a model executable to the PEcAn database can be found [here](https://github.com/PecanProject/pecan/wiki/Adding-an-Ecosystem-Model#model). After this is done, your model should appear on the PEcAn **Select Host** page after your refresh the page.
 
-5. If there a no entries for the model you want to run then most likely the PEcAn modules need to be implemented. See the instructions at [[Adding-an-Ecosystem-Model]]
+5. If there a no entries for the model you want to run then most likely the PEcAn modules need to be implemented. See the instructions at [[Adding an Ecosystem Model]]
 
-6. If selection your model causes your site to disappear from the Google Map then the site exists but there are no drivers for that site registered in the database. See the instruction at [[Choosing meteorology]]
+6. If selection your model causes your site to disappear from the Google Map then the site exists but there are no drivers for that site registered in the database. See the instruction [here](https://github.com/PecanProject/pecan/wiki/Choose-a-site#my-site-shows-up-when-i-dont-have-any-model-selected-but-disappears-once-i-select-the-model-i-want-to-run) for more info on diagnosing what drivers are missing.
+
+The most common required model Input is meteorology, so click [[Choosing meteorology]] for additional information about adding meteorological data.
