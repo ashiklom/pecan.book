@@ -22,6 +22,18 @@ Once data is in the standard format and processed, it will be converted to the m
 
 At the current moment (PEcAn 1.4.0), most of the issues below address possible errors that the Ameriflux meteorology workflow might report
 
-### 
+### Could not do gapfill ... The following variables have NA's
 
+This error message means that there were gaps in the downloaded data, for whatever variables that were listed, which were larger than the current algorithm could fill. Particularly common is missing radiation or PAR data, as Ameriflux frequently converts nighttime data to NULL, and work is in progress to detect this based on solar geometry. Also common are incomplete years (first or last year of tower operations).
 
+### Could not get information about <site> . Is this an Ameriflux site? 
+
+This message occurs when PEcAn believes that a site is part of Ameriflux (because it was listed on the Ameriflux or FLUXNET webpage and has a US-* site code), but no data is present on the Ameriflux server. The most common reasons for this is that you have selected a site that has not submitted data to Ameriflux yet (or that data hasn't been processed yet), or you have selected a year that's outside the tower's operational period. Visit [Ameriflux](http://ameriflux.lbl.gov/sites/site-list-and-pages/) and [FLUXNET](http://fluxnet.ornl.gov/site_status) for lists of available site years.
+
+### Could not download data for <site> for the year <YEAR>
+
+This is similar to the previous error, but in this case PEcAn did find data for the site listed, but just not for the year requested. This can usually be fixed by just altering the years of the run to match those with available data.
+
+###  I could not find the requested var (or dimvar) in the file!
+
+PEcAn could not find a required variable within the downloaded file. Most likely this is due to that variable not being measured at this site. The most common cause of failure is the absence of atmospheric pressure data (PRESS), but since most models have a low sensitivity to this variable we are working on methods to estimate this from other sources.
