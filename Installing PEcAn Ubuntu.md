@@ -59,7 +59,7 @@ apt-get -y install libdbd-pgsql postgresql postgresql-client libpq-dev postgresq
 apt-get -y install php5-pgsql
 
 # enable bety user to login with trust by adding the following lines after
-# the ability of postgres user to login in /etc/postgresql/9.3/main/pg_hba.conf
+# the ability of postgres user to login in /etc/postgresql/9.4/main/pg_hba.conf
 local   all             bety                                    trust
 host    all             bety            127.0.0.1/32            trust
 host    all             bety            ::1/128                 trust
