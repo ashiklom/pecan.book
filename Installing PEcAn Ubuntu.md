@@ -53,7 +53,7 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key a
 apt-get -y update
 
 # install packages for postgresql (using a newer version than default)
-apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev postgresql-9.3-postgis-2.1
+apt-get -y install libdbd-pgsql postgresql postgresql-client php5-pgsql libpq-dev postgresql-9.4-postgis-2.1 postgresql-9.4-postgis-2.1-scripts
 
 # enable bety user to login with trust by adding the following lines after
 # the ability of postgres user to login in /etc/postgresql/9.3/main/pg_hba.conf
