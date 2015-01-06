@@ -4,7 +4,6 @@
   * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
   * [[VM to Desktop Converter | Vm-desktop-conversion]]
   * [[Work through Demo | http://pecanproject.github.io/tutorials.html]]
-  * [[Create Github Account | https://github.com/signup/free]]
 * [[Using PEcAn | Getting-started#getting-started-ii-using-pecan]] 
   * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
   * [[Updating PEcAn | Updating-PEcAn]]
