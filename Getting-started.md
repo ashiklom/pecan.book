@@ -1,4 +1,4 @@
-### Getting Started I: Background
+### Getting Started: Background
 
 The quickest way to get started is to download the virtual machine. The demo provides instructions to get started on your own machine. 
  * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/minimal.php?project=PEcAn&category=vm) and optionally convert VM to [[Desktop Machine | VM-Desktop-Conversion]]
@@ -15,7 +15,19 @@ The most basic function of PEcAn is to make it easier to run models at different
 * [[Choosing initial vegetation]]
 * [[Choosing soils]]
 
-### Getting started II: Using PEcAn
+### Additional PEcAn Modules and Tools
+
+### Supported Models
+
+The following is a list of supported models. See [[Adding an Ecosystem Model]] for info on how to add new models to the system and don't hesitate to contact us if you need help. That said, the PEcAn team is not experts in all the models linked to PEcAn, so if there are issues with models themselves you would be encouraged to contact the original modeling teams.
+
+* [Ecosystem Demography model](https://github.com/EDmodel/ED2)
+* [SIPNET](http://thesipnetmodel.blogspot.com/)
+* [DALEC](http://www.geos.ed.ac.uk/homes/mwilliam/DALEC.html)
+* [BioCro](https://github.com/dlebauer/biocro)
+* [LINKAGES](http://daac.ornl.gov/MODELS/guides/LINKAGES.html)
+
+### Beyond the Basics
 
 The following links describe more of the details of how PEcAn works
 
