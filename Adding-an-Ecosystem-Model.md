@@ -60,6 +60,8 @@ In addition to adding species, a PFT is defined in PEcAn by the list of variable
 
 There are a wide variety of priors already defined in the PEcAn database that often range from very diffuse and generic to very informative priors for specific PFTs. If the current set of Priors for a variable are inadequate, or if a prior needs to be specified for a new variable, this can be done under Data > Priors then “New Prior”. After using the pull-down menu to select the Variable you want to generate a prior for, the prior is defined by choosing a probability distribution and specifying values for that distribution’s parameters. These are labeled Parameter a & b but their exact meaning depends upon the distribution chosen. For example, for the Normal distribution a and b are the mean and standard deviation while for the Uniform they are the minimum and maximum. All parameters are defined based on their standard parameterization in the R language.  If the prior is based on observed data (independent of data in the PEcAn database) then you can also specify the prior sample size, _N_. The _Phylogeny_ variable allows one to specify what taxonomic grouping the prior is defined for, at it is important to note that this is just for reference and doesn’t have to be specified in any standard way nor does it have to be monophyletic (i.e. it can be a functional grouping). Finally, the _Citation_ is a required variable that provides a reference for how the prior was defined. That said, there are a number of unpublished Citations in current use that simply state the expert opinion of an individual.
 
+Additional information on adding PFTs, Species, and Priors can be found under [[Choosing PFTs]]
+
 # Interface Modules
 
 ## Setting up the module directory (required)
