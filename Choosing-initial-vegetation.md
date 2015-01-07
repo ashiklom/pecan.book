@@ -13,7 +13,22 @@ Two additional options are in development:
 
 ## Spin up
 
-A number of ecosystem models are typically initialized by spinning up to steady state. At the moment PEcAn doesn't handle spin up automatically (e.g. looping met, checking for stability), but there are various ways to achieve a spin-up within the system. First, if there are model-specific settings in a model's settings/config file, then that file can be accessed by clicking on the **Edit model config** check box. If this box is selected then PEcAn will pause the site run workflow after it has generated your model config file, but before it runs the model, and give you an opportunity to edit the file 
+A number of ecosystem models are typically initialized by spinning up to steady state. At the moment PEcAn doesn't handle spin up automatically (e.g. looping met, checking for stability), but there are various ways to achieve a spin-up within the system. 
+
+**Option 1:** If there are model-specific settings in a model's settings/config file, then that file can be accessed by clicking on the **Edit model config** check box. If this box is selected then PEcAn will pause the site run workflow after it has generated your model config file, but before it runs the model, and give you an opportunity to edit the file by hand, allowing you to change any model-specific spin up settings (e.g met recycling, spin up length)
+
+**Option 2:** Set start_year very early and set the met drivers to be a long time series (e.g. PalEON, something custom uploaded to Inputs)
+
+**Option 3:** In the MODEL_TYPE table, add your model's restart format as an optional input, modify the model specific write.config function to use that restart, and then load a previous spin-up to the Inputs table
+
+Beyond these options, we hope to eventually develop more general, model-agnostic tools for spin up. In particular, we have started to explore the accelerated spin-up and semi-analytical techniques being developed by Yiqi Luo's lab
 
 ## Veg workflow
 
+As with meteorology, PEcAn is working to develop a model-agnostic workflow for converting various sources of vegetation data to common standards, developing common processing tools, and then writing out to model-specific formats. This process is in a much early stage than the meteorology workflow, as we are still researching what the options are for standard formats, but ultimately aims to be much more broad in scope, considering not just plot inventory data but also historical documentation, paleoecological proxies, satellite remote sensing (e.g. LANDSAT), airborne hyperspectral imagery, and active remote sensing (Lidar, Radar).
+
+At the moment, what is functional is a model-specific workflow for the ED2 model that can query the USFS Forest Inventory and Analysis and then construct initial condition files for ED2. This tool works with an internal copy of the FIA that is uploaded to a postGRES database along side BETY, however for space reasons this database does not ship with the PEcAn VM. To turn this feature on:
+
+1. [Download and Install the FIA database](https://github.com/PecanProject/pecan/wiki/Installing-PEcAn-Data#fia-database)
+2. For web-base runs, specify the database settings in the [config.php](https://github.com/PecanProject/pecan/blob/master/web/config.example.php)
+3. For R-based runs, specify the database settings in the [pecan.xml](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration#database-access)
