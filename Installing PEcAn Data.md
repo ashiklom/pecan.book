@@ -21,17 +21,13 @@ rm inputs.tgz
 
 FIA database is large and will add an extra 10GB to the installation.
 
-**NEEDS UPDATING**
-
 ```bash
-# needs to be done only once
-mysql -u root -p -e "grant all on fia5data.* to bety@localhost identified by 'bety';" 
-
-# download and update/install database
-wget http://isda.ncsa.illinois.edu/~kooper/EBI/fiadb.sql
-mysql -u bety -p"bety" -e 'drop database if exists fia5data; create database fia5data;'
-mysql -u bety -p"bety" fia5data < fiadb.sql
-rm fiadb.sql
+# download and install database
+curl -o fia5data.psql.gz http://isda.ncsa.illinois.edu/~kooper/EBI/fia5data.psql.gz
+dropdb --if-exists fia5data
+createdb -O bety fia5data
+gzcat fia5data.psql.gz | psql -U bety -d fia5data
+rm fia5data.psql.gz
 ```
 
 ## Flux Camp
