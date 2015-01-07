@@ -2,7 +2,7 @@
 
 PEcAn does not automatically know what vegetations types are present at your study site so you need to select the PFT.
 
-Some models, such as ED2, support competition among multiple PFTs and thus you are encouraged to highlight multiple choices. Other models, such as SIPNET, only support one PFT at a site.
+Some models, such as ED2 and LINKAGES, support competition among multiple PFTs and thus you are encouraged to highlight multiple choices. Other models, such as SIPNET and DALEC, only support one PFT at a site.
 
 # Creating new PFTs
 
