@@ -34,6 +34,8 @@ existing variable (or create a new one). Please try not to create new variables
 unnecessarily (e.g. changes of variable name or units to what your model uses is handled 
 internally, so you want to find the trait with the correct MEANING).
 
+Additional information on adding PFTs, Species, and Priors can be found [here](https://github.com/PecanProject/pecan/wiki/Adding-an-Ecosystem-Model#pfts-plant-functional-types)
+
 Follow up: Refining PFT parameterization
 
           * MA/SA/VD -> performing analyses, adding new trait data
