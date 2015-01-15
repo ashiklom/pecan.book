@@ -14,6 +14,7 @@
 ### Advanced Installation
 
 * [[Installing PEcAn]] on a server
+* Install [[PEcAn in the Cloud]] (e.g. Amazon Web Services [AWS])
 * [[VM Creation]] documentation
 * [[PEcAn Configuration and Settings Files | Configuration Files]]
 
