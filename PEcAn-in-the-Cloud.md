@@ -13,7 +13,7 @@ AWS allows upload of files as VMDK but the default PEcAn VM is in OVA format
 
 3. Export the VM  
 
-** note, the OVA is a tar file, you can also use tar xf <ovafile> and it will create two files, one of which is the VMDK file **
+**note, the OVA is a tar file, you can also use tar xf <ovafile> and it will create two files, one of which is the VMDK file**
 
 ### Set up an account on [AWS](http://aws.amazon.com/)
 
