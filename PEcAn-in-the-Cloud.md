@@ -33,16 +33,17 @@ In my case I created a user named 'carya'
 If need be, download and install [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 `export JAVA_HOME=$(/usr/libexec/java_home)`
+
 `export EC2_HOME=/usr/local/ec2/ec2-api-tools-<version>`
+
 `export PATH=$PATH:$EC2_HOME/bin`
 
 
 Then set your user credentials as environment variables:
 
-`
-export AWS_ACCESS_KEY=xxxxxxxxxxxxxx
-export AWS_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxx
-`
+`export AWS_ACCESS_KEY=xxxxxxxxxxxxxx`
+
+`export AWS_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxx`
 
 ### Create an AWS S3 'bucket' to upload VM to
 
