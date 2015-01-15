@@ -21,6 +21,8 @@ After you have an account you need to set up a user and save your [access key an
 
 In my case I created a user named 'carya'
 
+Note: the key that ended up working had to be made at [https://console.aws.amazon.com/iam/home#security_credential](https://console.aws.amazon.com/iam/home#security_credential), not the link above.
+
 ### Install [AWS Command Line Interface](http://aws.amazon.com/cli/) and EC2 command line tools
 `pip install awscli`
 
@@ -56,8 +58,10 @@ In my case I named the bucket 'pecan'
 
 ### Upload
 
-In the code below, make sure to change the PEcAn version, the name of the bucket, and the name of the region. Also make sure that the architecture matches the version of PEcAn you downloaded (x86 for 32 bit, x86_64 for 64 bit).
+In the code below, make sure to change the PEcAn version, the name of the bucket, and the name of the region. Make sure that the architecture matches the version of PEcAn you downloaded (i386 for 32 bit, x86_64 for 64 bit).
+
+Also, you may want to choose a considerably larger instance type. The one chosen below is that corresponding to the AWS Free Tier
 
 `
-ec2-import-instance PEcAn32bit_1.2.6.ova --instance-type m3.large --format OVA --architecture x86 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
+ec2-import-instance PEcAn32bit_1.2.6-disk1.vmdk --instance-type t2.micro --format VMDK --architecture i386 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
 `
