@@ -24,19 +24,18 @@ In my case I created a user named 'carya'
 
 [EC2 tools](http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html)
 
-`
-wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
-sudo mkdir /usr/local/ec2
-sudo unzip ec2-api-tools.zip -d /usr/local/ec2
-`
+`wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip`
+
+`sudo mkdir /usr/local/ec2`
+
+`sudo unzip ec2-api-tools.zip -d /usr/local/ec2`
 
 If need be, download and install [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
-`
-export JAVA_HOME=$(/usr/libexec/java_home)
-export EC2_HOME=/usr/local/ec2/ec2-api-tools-<version>
-export PATH=$PATH:$EC2_HOME/bin 
-`
+`export JAVA_HOME=$(/usr/libexec/java_home)`
+`export EC2_HOME=/usr/local/ec2/ec2-api-tools-<version>`
+`export PATH=$PATH:$EC2_HOME/bin`
+
 
 Then set your user credentials as environment variables:
 
