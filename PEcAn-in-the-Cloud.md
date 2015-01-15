@@ -9,11 +9,11 @@ AWS allows upload of files as VMDK but the default PEcAn VM is in OVA format
 
 1. If you haven't done so already, download the [PEcAn VM](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category)
 
-2. Import the VM into Virtual Box
+2. Split the OVA file into OVF and VMDK files
 
-3. Export the VM  
-
-**note, the OVA is a tar file, you can also use tar xf <ovafile> and it will create two files, one of which is the VMDK file**
+`
+tar xf <ovafile>
+` 
 
 ### Set up an account on [AWS](http://aws.amazon.com/)
 
