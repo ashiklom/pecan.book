@@ -13,6 +13,8 @@ AWS allows upload of files as VMDK but the default PEcAn VM is in OVA format
 
 3. Export the VM  
 
+** note, the OVA is a tar file, you can also use tar xf <ovafile> and it will create two files, one of which is the VMDK file **
+
 ### Set up an account on [AWS](http://aws.amazon.com/)
 
 After you have an account you need to set up a user and save your [access key and secret key](http://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingCredentials.html)
@@ -59,4 +61,3 @@ In the code below, make sure to change the PEcAn version, the name of the bucket
 `
 aws ec2-import-instance PEcAn32bit_1.2.6.ova --instance-type m3.large --format OVA --architecture x86 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
 `
-
