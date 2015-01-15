@@ -59,5 +59,5 @@ In my case I named the bucket 'pecan'
 In the code below, make sure to change the PEcAn version, the name of the bucket, and the name of the region. Also make sure that the architecture matches the version of PEcAn you downloaded (x86 for 32 bit, x86_64 for 64 bit).
 
 `
-aws ec2-import-instance PEcAn32bit_1.2.6.ova --instance-type m3.large --format OVA --architecture x86 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
+ec2-import-instance PEcAn32bit_1.2.6.ova --instance-type m3.large --format OVA --architecture x86 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
 `
