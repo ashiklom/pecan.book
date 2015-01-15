@@ -73,9 +73,17 @@ ec2-describe-conversion-tasks <image.ID>
 
 ### Booting the VM
 
-On the EC2 management webpage you should be able to see your new PEcAn image as an option under Launch Instance.
+On the EC2 management webpage, [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com/ec2), if you select Instances on the left hand menu you should be able to see your new PEcAn image as an option under Launch Instance.
 
-Before launching, you will want to update the firewall to open up additional ports that PEcAn needs -- specifically port 80 for the webpage and 8787 for RStudio. Port 22 (ssh/sftp) should be open by default.  Under "Security Groups" select "Inbound" then "Edit" and then add “Custom TCP Rule”.
+Select "Elastic IPs" on the LHS, and "Allocate New Address"
+
+Select "Network Interfaces" on the LHS and then under Actions select "Associate Addresses" then choose the Elastic IP you just created.
+
+Before launching, you will want to update the firewall to open up additional ports that PEcAn needs -- specifically port 80 for the webpage and 8787 for RStudio. Port 22 (ssh/sftp) should be open by default.  Under "Security Groups" select "Inbound" then "Edit" and then add "HTTP" and then “Custom TCP Rule” to add 8787.
+
+To boot the VM select "Actions" then "Instance State" then "Start"
+
+The menu provided should specify the IP where the VM has launched
 
 
 
