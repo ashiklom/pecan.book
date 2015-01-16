@@ -81,6 +81,9 @@ Select "Elastic IPs" on the LHS, and "Allocate New Address" in order to create a
 
 Next, select "Network Interfaces" on the LHS and then under Actions select "Associate Addresses" then choose the Elastic IP you just created.
 
+see also http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/GetStarted.html
+
+
 ### Booting the VM
 
 Return to "Instances" using the menu on the LHS.
@@ -88,6 +91,3 @@ Return to "Instances" using the menu on the LHS.
 To boot the VM select "Actions" then "Instance State" then "Start". In the future, once you have the VM loaded and configured this last step is the only one you will need to repeat to turn your VM on and off.
 
 The menu provided should specify the Public IP where the VM has launched
-
-
-
