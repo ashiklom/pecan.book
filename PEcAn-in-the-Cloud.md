@@ -23,10 +23,7 @@ In my case I created a user named 'carya'
 
 Note: the key that ended up working had to be made at [https://console.aws.amazon.com/iam/home#security_credential](https://console.aws.amazon.com/iam/home#security_credential), not the link above.
 
-### Install [AWS Command Line Interface](http://aws.amazon.com/cli/) and EC2 command line tools
-`pip install awscli`
-
-[EC2 tools](http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html)
+### Install [EC2 command line tools](http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html)
 
 `wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip`
 
@@ -49,6 +46,8 @@ Then set your user credentials as environment variables:
 
 `export AWS_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxx`
 
+Note: you may want to add all the variables set in the above EXPORT commands above into your .bashrc or equivalent.
+
 ### Create an AWS S3 'bucket' to upload VM to
 
 Go to [https://console.aws.amazon.com/s3](https://console.aws.amazon.com/s3) and click "Create Bucket"
@@ -65,25 +64,30 @@ Also, you may want to choose a considerably larger instance type. The one chosen
 `
 ec2-import-instance PEcAn32bit_1.2.6-disk1.vmdk --instance-type t2.micro --format VMDK --architecture i386 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
 `
+
 Make sure to note the ID of the image since you'll need it to check the VM status.  Once the image is uploaded it will take a while (typically about an hour) for Amazon to convert the image to one it can run. You can check on this progress by running
 
 `
 ec2-describe-conversion-tasks <image.ID>
 `
 
+### Configuring the VM
+
+On the EC2 management webpage, [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com/ec2), if you select **Instances** on the left hand side (LHS) you should be able to see your new PEcAn image as an option under Launch Instance.
+
+Before launching, you will want to update the firewall to open up additional ports that PEcAn needs -- specifically port 80 for the webpage. Port 22 (ssh/sftp) should be open by default.  Under "Security Groups" select "Inbound" then "Edit" and then add "HTTP".
+
+Select "Elastic IPs" on the LHS, and "Allocate New Address" in order to create a public IP for your VM. 
+
+Next, select "Network Interfaces" on the LHS and then under Actions select "Associate Addresses" then choose the Elastic IP you just created.
+
 ### Booting the VM
 
-On the EC2 management webpage, [https://console.aws.amazon.com/ec2](https://console.aws.amazon.com/ec2), if you select Instances on the left hand menu you should be able to see your new PEcAn image as an option under Launch Instance.
+Return to "Instances" using the menu on the LHS.
 
-Select "Elastic IPs" on the LHS, and "Allocate New Address"
+To boot the VM select "Actions" then "Instance State" then "Start". In the future, once you have the VM loaded and configured this last step is the only one you will need to repeat to turn your VM on and off.
 
-Select "Network Interfaces" on the LHS and then under Actions select "Associate Addresses" then choose the Elastic IP you just created.
-
-Before launching, you will want to update the firewall to open up additional ports that PEcAn needs -- specifically port 80 for the webpage and 8787 for RStudio. Port 22 (ssh/sftp) should be open by default.  Under "Security Groups" select "Inbound" then "Edit" and then add "HTTP" and then “Custom TCP Rule” to add 8787.
-
-To boot the VM select "Actions" then "Instance State" then "Start"
-
-The menu provided should specify the IP where the VM has launched
+The menu provided should specify the Public IP where the VM has launched
 
 
 
