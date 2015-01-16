@@ -81,8 +81,9 @@ Select "Elastic IPs" on the LHS, and "Allocate New Address" in order to create a
 
 Next, select "Network Interfaces" on the LHS and then under Actions select "Associate Addresses" then choose the Elastic IP you just created.
 
-see also http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/GetStarted.html
+See also http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/GetStarted.html
 
+For info on setting up multiple instances with load balancing see: http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/gs-ec2VPC.html
 
 ### Booting the VM
 
