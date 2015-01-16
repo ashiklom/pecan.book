@@ -83,7 +83,13 @@ Next, select "Network Interfaces" on the LHS and then under Actions select "Asso
 
 See also http://docs.aws.amazon.com/AmazonVPC/latest/GettingStartedGuide/GetStarted.html
 
+### Set up multiple instances (optional)
+
 For info on setting up multiple instances with load balancing see: http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/gs-ec2VPC.html
+
+Select "Load Balancers" on the LHS, click on "Create Load Balancer", follow Wizard keeping defaults.
+
+To be able to launch multiple VMs: Under "Instances" convert VM to an Image. When done, select Launch, enable multiple instances, and associate with the previous security group. Once running, go back to "Load Balancers" and add the instances to the load balancer. Each instance can be accessed individually by it's own public IP, but external users should access the system more generally via the Load Balancers DNS.
 
 ### Booting the VM
 
