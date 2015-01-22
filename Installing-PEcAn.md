@@ -249,10 +249,8 @@ The RUBY version requires a few extra packages to be installed first.
 Next we install the web app.
 
 ```bash
-sudo -s
-
 # install bety
-cd /usr/local
+cd
 git clone https://github.com/PecanProject/bety.git
 
 # install gems
@@ -275,7 +273,7 @@ chmod 0666 log/production.log
 
 # fix configuration for vm
 cp config/additional_environment_vm.rb config/additional_environment.rb
-chmod go+w /usr/local/bety/public/javascripts/cache/
+chmod go+w public/javascripts/cache/
 
 # setup bety database configuration
 cat > config/database.yml << EOF
@@ -294,9 +292,6 @@ cat > config/initializers/site_keys.rb << EOF
 REST_AUTH_SITE_KEY         = 'thisisnotasecret'
 REST_AUTH_DIGEST_STRETCHES = 10
 EOF
-
-# drop out of root
-exit
 ```
 
 
