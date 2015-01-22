@@ -104,7 +104,7 @@ exit
 sudo apt-get -y install ruby-dev libapache2-mod-passenger 
 
 # link static content
-ln -s /usr/local/bety/public /var/www/html/bety
+ln -s ${HOME}/bety/public /var/www/html/bety
 
 # setup a redirect
 cat > /etc/apache2/conf-available/bety.conf << EOF
