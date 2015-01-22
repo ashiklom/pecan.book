@@ -100,8 +100,10 @@ exit
 ## Apache Configuration BETY
 
 ```bash
+sudo -s
+
 # install all ruby related packages
-sudo apt-get -y install ruby-dev libapache2-mod-passenger 
+apt-get -y install ruby-dev libapache2-mod-passenger 
 
 # link static content
 ln -s ${HOME}/bety/public /var/www/html/bety
