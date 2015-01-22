@@ -166,6 +166,16 @@ make dalec_seqMH
 sudo cp dalec_EnKF dalec_seqMH /usr/local/bin
 ```
 
+### LINKAGES Installation
+
+```
+cd
+git clone https://github.com/araiho/Linkages.git
+cd Linkages
+gfortran -o linkages linkages.f
+sudo cp linkages /usr/local/bin/linkages.git
+```
+
 ## PEcAn Installation
 
 PEcAn is the software package that ties all the pieces together.
