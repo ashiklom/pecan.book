@@ -189,12 +189,9 @@ Download, compile and install PEcAn
 cd
 git clone https://github.com/PecanProject/pecan.git
 
-# install PEcAn packages in R
-cd pecan
-./scripts/install.dependencies.R
-
 # compile pecan
-./scripts/build.sh
+cd pecan
+./scripts/build.sh --dependencies
 ```
 
 
