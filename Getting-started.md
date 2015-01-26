@@ -47,6 +47,7 @@ The following links describe more of the details of how PEcAn works
 * [[Connecting PEcAn to a remote server]]
 * [[Troubleshooting PEcAn]]: solutions to known gotchas 
 * [[Upgrading PEcAn/VM]] and/or installing it on your own server
+* [[Database Synchronization]] Retrieving latest updates and sharing your changes
 * [[Updating BETY]]: handling database schema updates 
 * [[Workflow Modules]]
 
