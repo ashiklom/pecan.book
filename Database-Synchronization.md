@@ -29,13 +29,13 @@ Sharing your data requires a few steps. First, before entering any data, you wil
 You will now need to synchronize the database again and use your ID.  For example if you are given ID=42 you can use the following command: `MYID=42 REMOTEID=0 ./scripts/load.bety.sh`. This will load the EBI database and set the ID's such that any data you insert will have the right ID.
 
 To share your data you can now run the dump.bey.sh. The script is configured using environment variables, the following variables are recognized:
-- DATABASE: database where the script should write the results, default is bety
-- PG_OPT: additional options to be added to psql, default is nothing.
-- MYSITE: ID of your site, if you have none requested use 99 which is used for all sites that do not want to share their data (i.e. VM), default is 99.
-- LEVEL: minimum level of the data to be dumped (0=private, 4=public), default is level 3.
-- UNCHECKED: should all unchecked traits and yields be dumped, set to YES (all caps) to dump unchecked data, default is NO.
-- ANONYMOUS: should all users be anonymized, set to YES (all caps) to keep the original users (**INCLUDING PASSWORD**) in the dump file, default is NO.
-- OUTPUT: location on disk where to write the result file, default is ${PWD}/dump.
+- DATABASE: the database where the script should write the results.  The default is `bety`.
+- PG_OPT: additional options to be added to psql (default is nothing).
+- MYSITE: the ID of your site.  If you have not requested an ID, use 99, which is used for all sites that do not want to share their data (i.e. VM).  99 is the default.
+- LEVEL: the minimum access-protection level of the data to be dumped (0=private, 4=public).  The default is level 3.
+- UNCHECKED: specifies whether unchecked traits and yields be dumped.  Set to YES (all caps) to dump unchecked data.  The default is NO.
+- ANONYMOUS: specifies whether all users be anonymized.  Set to YES (all caps) to keep the original users (**INCLUDING PASSWORD**) in the dump file.  The default is NO.
+- OUTPUT: the location of where on disk to write the result file.  The default is ${PWD}/dump.
 
 ## Tasks
 
