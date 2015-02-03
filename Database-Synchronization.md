@@ -13,14 +13,14 @@ The synchronization code itself is split into two parts, load.bety.sh and dump.b
 When logged into the machine you can fetch the latest data using the load.bety.sh script. The script will check what site you want to get the data for and will remove all data in the database associated with that id. It will then reinsert all the data from the remote database.
 
 The script is configured using environment variables.  The following variables are recognized:
-- DATABASE: database where the script should write the results, default is bety
-- OWNER: owner of the database if it is to be created, default is bety.
-- PG_OPT: additional options to be added to psql, default is nothing.
-- MYSITE: ID of your site, if you have none requested use 99 which is used for all sites that do not want to share their data (i.e. VM), default is 99.
-- REMOTESITE: ID of the site you want to fetch the data from, default is 0, EBI.
-- CREATE: should existing database be removed, **THIS WILL REMOVE ALL DATA**, set to YES (in caps) to remove the database, default is NO.
-- KEEPTMP: should the file downloaded be preserved, set to YES (in caps) to keep downloaded files, default is NO.
-- USERS: should default users be created, set to YES (in caps) to create default users with default passwords, default is NO unless you are downloading REMOTESITE=0 and MYSITE=99 in which case it will create the default users.
+- DATABASE: the database where the script should write the results.  The default is `bety`.
+- OWNER: the owner of the database (if it is to be created).  The default is `bety`.
+- PG_OPT: additional options to be added to psql (default is nothing).
+- MYSITE: the (numerical) ID of your site.  If you have not requested an ID, use 99; this is used for all sites that do not want to share their data (i.e. VM). 99 is in fact the default.
+- REMOTESITE: the ID of the site you want to fetch the data from.  The default is 0 (EBI).
+- CREATE: If 'YES', this indicates that the existing database (`bety`, or the one specified by DATABASE) should be removed. Set to YES (in caps) to remove the database.  **THIS WILL REMOVE ALL DATA** in DATABASE.  The default is NO.
+- KEEPTMP: indicates whether the downloaded file should be preserved.  Set to YES (in caps) to keep downloaded files; the default is NO.
+- USERS: determines if default users should be created.  Set to YES (in caps) to create default users with default passwords.  The default is NO unless you are downloading with REMOTESITE=0 and MYSITE=99 in which case  default users will be created.
 
 ## Sharing data
 
