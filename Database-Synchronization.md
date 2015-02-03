@@ -24,9 +24,9 @@ The script is configured using environment variables.  The following variables a
 
 ## Sharing data
 
-To share your data requires a few steps. First before entering any data you will need to request an ID from the pecan developers. Simply open an issue at github and we will generate an ID for you. If possible add the URL of where you will host your data.
+Sharing your data requires a few steps. First, before entering any data, you will need to request an ID from the PEcAn developers. Simply open an issue at github and we will generate an ID for you.  If possible, add the URL of your data host.
 
-You will now need to synchronize the database again and use your ID, for example if you are given ID=42 you can use the following command: `MYID=42 REMOTEID=0 ./scripts/load.bety.sh`. This will load the EBI database and set the ID's such that any data you insert will have the right ID.
+You will now need to synchronize the database again and use your ID.  For example if you are given ID=42 you can use the following command: `MYID=42 REMOTEID=0 ./scripts/load.bety.sh`. This will load the EBI database and set the ID's such that any data you insert will have the right ID.
 
 To share your data you can now run the dump.bey.sh. The script is configured using environment variables, the following variables are recognized:
 - DATABASE: database where the script should write the results, default is bety
