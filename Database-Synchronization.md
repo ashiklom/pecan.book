@@ -4,7 +4,7 @@ The database synchronization consists of 2 parts:
 
 ## How does it work?
 
-Each server that runs the BETY database will have a unique machine_id and a sequence of ID's associated. Whenever the user creates a new record in BETY it will receive an ID in the sequence. This allows us to uniquely identify where a record came from. This is information is crucial for the code that works with the synchronization since we can now copy those records that have an ID in the sequence specified. If you have not asked for a unique ID your ID will be 99.
+Each server that runs the BETY database will have a unique machine_id and a sequence of ID's associated. Whenever the user creates a new row in BETY it will receive an ID in the sequence. This allows us to uniquely identify where a row came from. This is information is crucial for the code that works with the synchronization since we can now copy those rows that have an ID in the sequence specified. If you have not asked for a unique ID your ID will be 99.
 
 The synchronization code itself is split into two parts, load.bety.sh and dump.bey.sh. Unless you plan on sharing your data you will only use load.bety.sh to update your database.
 
