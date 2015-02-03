@@ -12,7 +12,7 @@ The synchronization code itself is split into two parts, load.bety.sh and dump.b
 
 When logged into the machine you can fetch the latest data using the load.bety.sh script. The script will check what site you want to get the data for and will remove all data in the database associated with that id. It will then reinsert all the data from the remote database.
 
-The script is configured using environment variables, the following variables are recognized:
+The script is configured using environment variables.  The following variables are recognized:
 - DATABASE: database where the script should write the results, default is bety
 - OWNER: owner of the database if it is to be created, default is bety.
 - PG_OPT: additional options to be added to psql, default is nothing.
