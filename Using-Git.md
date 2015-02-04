@@ -41,7 +41,8 @@ There a few URL’s you can use to clone a project, using https, ssh and
 git. You can use either https or git to clone a repository and write to
 it. The git protocol is read-only.
 
-#### PEcAnProject GitHub location: https://github.com/organizations/PecanProject
+### PEcAnProject on GitHub: https://github.com/organizations/PecanProject
+
 * PEcAn source code: 
  * https://github.com/PecanProject/pecan.git
  * git@github.com:PecanProject/pecan.git
@@ -49,6 +50,18 @@ it. The git protocol is read-only.
  * https://github.com/PecanProject/bety.git
  * git@github.com:PecanProject/bety.git
 * These instructions apply to other repositories too.
+
+### Milestones, Issues, Tasks
+
+The Milestones, issues, and tasks can be used to organize specific features or research projects. In general, there is a heirarchy:
+
+* milestones (Big picture, "Epic"): contains many issues
+* issues (Specific features / bugs, "Story"): may contain a list of tasks; represent * task list (to do list, "Tasks"): list of steps required to close an issue, e.g.:
+```
+ * [ ] first do this
+ * [ ] then this
+ * [ ] completed when x and y
+```
 
 ### Quick and Easy
 
