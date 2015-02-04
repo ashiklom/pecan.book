@@ -10,7 +10,7 @@ This document describes the steps required to download PEcAn, make changes to co
 * To make changes to the code, start with the **[[basic workflow|Using-Git#basic-workflow]]**. 
 * If you want to submit changes that you've made to be part of PEcAn you'll want to follow **[[Committing Changes Using Pull Requests|Using-Git#committing-changes-using-pull-requests]]**
 * **To update your local branch**
-* **[[GitHub Issues and Milestones|Issues-and-milestones]]**
+* **[[GitHub Issues and Milestones|Using-Git#Issues-and-milestones]]**
 
  ```
 cd pecan
