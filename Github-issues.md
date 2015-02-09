@@ -1,7 +1,7 @@
 Overview
 =========
 
-We use Both GitHub and Redmine to track development. 
+We use GitHub to track development. 
 
 To learn about GitHub, it is worth taking some time to read through the [FAQ](https://help.github.com/). When in doubt, the first step is to click the "Help" button at the top of the page.
 
@@ -82,19 +82,6 @@ When to submit an issue?
 
 ### Ideally, non-trivial code changes will be linked to an issue and a commit.
 
-This requires creating issues for each task, making small commits, and referencing the issue within your commit message. Issues can be created [on GitHub](https://github.com/PecanProject/pecan/issues/new) or [Redmine](https://ebi-forecast.igb.illinois.edu/redmine/projects/pecan/issues/new). These issues can be linked to commits by adding text such as `fixes redmine # 200` or `fixes gh-5` (see [[Using Git During Development|Using-Git#during-development]]).
+This requires creating issues for each task, making small commits, and referencing the issue within your commit message. Issues can be created [on GitHub](https://github.com/PecanProject/pecan/issues/new). These issues can be linked to commits by adding text such as `fixes gh-5` (see [[Using Git During Development|Using-Git#during-development]]).
 
 Rationale: This workflow is a small upfront investment that reduces error and time spent re-creating and debugging errors. Associating issues and commits, makes it easier to identify why a change was made, and potential bugs that could arise when the code is changed. In addition, knowing which issue you are working on clarifies the scope and objectives of your current task. 
-
-### Should I use Redmine or Github?
-
-#### Use GitHub if:
-* you find a bug in a stable release of PEcAn
-* you want to request a feature that is 
- * not integral to basic research
- * is unlikely to lead to extended discussions
-
-#### Use Redmine if:
-* your bug or feature request does not belong on GitHub
-
-
