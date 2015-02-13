@@ -56,7 +56,8 @@ it. The git protocol is read-only.
 The Milestones, issues, and tasks can be used to organize specific features or research projects. In general, there is a heirarchy:
 
 * milestones (Big picture, "Epic"): contains many issues
-* issues (Specific features / bugs, "Story"): may contain a list of tasks; represent * task list (to do list, "Tasks"): list of steps required to close an issue, e.g.:
+* issues (Specific features / bugs, "Story"): may contain a list of tasks; represent 
+* task list (to do list, "Tasks"): list of steps required to close an issue, e.g.:
 ```
  * [ ] first do this
  * [ ] then this
