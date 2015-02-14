@@ -57,4 +57,4 @@ The following links describe more of the details of how PEcAn works
  * [[Reporting Bugs | GitHub Issues]]
  * [[Requesting Features | GitHub Issues ]]
 * HipChat
- * [PEcAn Chatroom](http://www.hipchat.com/gauJX3rFJ)
+ * [PEcAn Chatroom](https://hipchat.ncsa.illinois.edu/gW51EFhtT)
