@@ -2,7 +2,9 @@ Following is information on how to update the software and data to the latest ve
 
 ## Updating BETY database
 
-A new system is in place which will allow you to update the BETY database without loosing any local changes (this is still BETA though). To update the datbase and keep your changes, all you have to do is run the following:
+BETYdb can be hosted anywhere, forming a network of instances. Data marked as public that has not failed QA/QC can be synced across different servers. For more details, see the BETYdb wiki page [Distributed BETYdb](https://github.com/PecanProject/bety/wiki/Distributed-BETYdb). 
+
+This feature enables you to update a local instance of BETYdb (e.g. on a PEcAn Virtual Machine or version of the database used for development) without losing any local changes. To update the database and keep your changes, all you have to do is run the following:
 
 ```
 cd
