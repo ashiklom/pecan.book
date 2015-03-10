@@ -34,7 +34,9 @@ mkdir -p ${R_LIBS_USER}
 
 ## Install models
 
-### ED 2.2 r46 (used in PEcAn manuscript)
+### ED2
+
+#### ED2.2 r46 (used in PEcAn manuscript)
 
 ```bash
 # ----------------------------------------------------------------------
@@ -66,7 +68,7 @@ curl -o config.xml  http://isda.ncsa.illinois.edu/~kooper/EBI/config.r46.xml
 time ed2.r46
 ```
 
-### ED 2.2 r82
+#### ED 2.2 r82
 
 ```bash
 cd
@@ -96,7 +98,7 @@ curl -o config.xml  http://isda.ncsa.illinois.edu/~kooper/EBI/config.r82.xml
 time ed2.r82
 ```
 
-### ED 2.2 bleeding edge
+#### ED 2.2 bleeding edge
 
 **Needs updating**
 
@@ -107,7 +109,9 @@ cd ED2
 # compile ...
 ```
 
-### SIPNET Installation
+### SIPNET
+
+#### Sipnet Installation
 
 ```bash
 cd
@@ -120,7 +124,7 @@ make
 sudo cp sipnet /usr/local/bin/sipnet.runk
 ```
 
-### SIPNET testrun
+#### SIPNET testrun
 
 ```bash
 cd
@@ -131,8 +135,9 @@ cd testrun.sipnet
 sipnet.runk
 ```
 
-### Installing BioCro
+### BioCro
 
+#### Installation 
 ```r
 # Public
 devtools::install_github("ebimodeling/biocro")
@@ -143,7 +148,9 @@ devtools::install_github("ebimodeling/biocro-dev")
 _BioCro Developers:_ request from [@dlebauer on GitHub](https://github.com/dlebauer)
 
 
-### DALEC Installation
+### DALEC
+
+#### Installation
 
 ```bash
 cd
@@ -157,7 +164,9 @@ make dalec_seqMH
 sudo cp dalec_EnKF dalec_seqMH /usr/local/bin
 ```
 
-### LINKAGES Installation
+### LINKAGES
+
+#### Installation
 
 ```
 cd
