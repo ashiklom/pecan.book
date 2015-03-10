@@ -102,11 +102,9 @@ time ed2.r82
 
 ```bash
 cd
-git clone ...
-
+git clone git@github.com:EDmodel/ED2.git
 cd ED2
-...
-sudo cp ../ed_2.1-opt /usr/local/bin/ed2.git
+# compile ...
 ```
 
 ### SIPNET Installation
