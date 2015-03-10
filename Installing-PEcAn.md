@@ -135,22 +135,15 @@ sipnet.runk
 
 ### Installing BioCro
 
-**Developers: Install BioCro from Source** 
-
-```bash
-cd
-git clone ebi-forecast.igb.illinois.edu:/home/share/source/biocro.git
-R CMD INSTALL biocro
+```r
+# Public
+devtools::install_github("ebimodeling/biocro")
+# Development:
+devtools::install_github("ebimodeling/biocro-dev")
 ```
 
-**Public: Install BioCro Binary**
+_BioCro Developers:_ request from [@dlebauer on GitHub](https://github.com/dlebauer)
 
-```bash
-cd
-curl -o BioCro_0.91.tar.gz http://file-server.igb.illinois.edu/~dlebauer/BioCro_0.91.tar.gz
-R CMD INSTALL BioCro_0.91.tar.gz
-rm BioCro_0.91.tar.gz
-```
 
 ### DALEC Installation
 
