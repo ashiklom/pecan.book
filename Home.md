@@ -8,7 +8,7 @@
 * **[[Education]]**
 * **[[Developer's Guide | Development]]**
  * **[[Scrum Board|https://huboard.com/PecanProject/pecan]]**
- * **[[Jenkins Build Status|http://ebi-forecast.igb.illinois.edu/jenkins/job/PEcAn%20build/]]**
+ * **[[Build Status|http://ebi-forecast.igb.illinois.edu/jenkins/job/PEcAn%20build/]]**
 
 ## PEcAn: Facilitating feedbacks between field measurements and ecosystem models
 
