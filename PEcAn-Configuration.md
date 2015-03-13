@@ -121,7 +121,7 @@ The PEcAn system requires at least 1 PFT (Plant Functional Type) to be specified
 	<iter>1000</iter>
 	<random.effects>FALSE</random.effects>
 	<update>FALSE</update>
-        <threshold>1.2</threshold>
+	<threshold>1.2</threshold>
 </meta.analysis>
 ```
 
