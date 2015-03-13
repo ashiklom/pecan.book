@@ -114,6 +114,8 @@ You can setup SSH keys to make it easier to commit cod back to GitHub. This migh
 
 ### Basic Workflow
 
+PLEASE DO NOT USE THIS, SEE ADVANCED WORKFLOW!
+
 1. Get the latest code from the main repository
 
         git pull upstream master
