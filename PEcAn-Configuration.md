@@ -267,7 +267,11 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 		<lon>-105.546000</lon>
 	</site>
 	<inputs>
-		<met>/home/carya/sites/niwot/niwot.clim</met>
+       <met>
+             <id>10000000001</id>
+             <path>/fs/data1/pecan.data/input/</path>
+             <source>Ameriflux</source>
+        </met>
 	<inputs>
 	<host>
 		<name>localhost</name>
@@ -294,7 +298,18 @@ Site specific information is specified in the `<site>` subsection. Either `<id>`
 * **lat** : [optional/required] site latitude, see above.  
 * **lon** : [optional/required] site longitude, see above.  
 
-Inputs specific information for each model type is specified in the `<inputs>` subsection. One common input will be the weather data, often specified in `<met>`. Other model types will have other model. Each tag can either be the path to the dataset, or an id that points to the input. PEcAn will find the location of the file on the host you run PEcAn on.
+Inputs specific information for each model type is specified in the `<inputs>` subsection. 
+Each input will have three tags:
+* **id** :  [optional/required] An id that points to the input if already in the database.
+* **path** : [optional/required] The path to the dataset if already downloaded.
+* **source** : [optional/required] The input data type. This tag name needs to match the names in the conversion functions. 
+In general, the path should be filled in by PEcAn and not by the user.
+If PEcAn is processing all the input, id is not required. Alternatively, if you're using data processed by hand, source is not required. 
+
+
+One common input will be the weather data, often specified in `<met>`.
+
+Other model types will have different model specific inputs.  PEcAn will find the location of the file on the host you run PEcAn on.
 
 * **met** : [model type specific] most models will have a met tag to specify location of the weather data.
 * **pss** : [ED2, required] location of patch file
