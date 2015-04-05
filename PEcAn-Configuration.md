@@ -3,6 +3,7 @@ The PEcAn system is configured using a xml file, often called settings.xml. The 
 1. [PEcAn Folders](#pecan_folders)
 1. [Database Access](#database_access)
 1. [BETY Configuration](#bety_database)
+1. [Brown Dog](#brown_dog)
 1. [PFT Selection](#pft_selection)
 1. [Meta Analysis](#meta_analysis)
 1. [Ensemble Runs](#ensemble_runs)
@@ -77,6 +78,27 @@ This section describes how to connect to the BETY Database. This section is used
 ```
 
 * **write** : [optional] this can be TRUE/FALSE (the default is TRUE). If set to TRUE, runs, ensembles and workflows are written to the database.
+
+<a name="brown_dog" />
+## Brown Dog Configuration
+
+This section describes how to connect to [Brown Dog](http://browndog.ncsa.illinois.edu). This will allow for conversions of data (currently only met data).
+
+### functions: 
+
+`met.process()`
+
+```{xml}
+<browndog>
+	<url>...</url>
+	<username>...</username>
+	<password>...</password>
+</browndog>
+```
+
+* **url** : [required] endpoint for Brown Dog to be used.
+* **username** : [optional] username to be used with the endpoint for Brown Dog.
+* **password** : [optional] password to be used with the endpoint for Brown Dog.
 
 <a name="pft_selection" />
 ## PFT Selection
