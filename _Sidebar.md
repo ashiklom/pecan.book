@@ -36,6 +36,6 @@
   * [[Logging, Warnings, and Error Messages | Logging]]
 * [[Data Formats]]
   * [[Inputs | Data-Formats#Inputs]]
-    * [[Standard Names | Adding-an-Input-Converter#the-variable-names-should-be-standard_name]
+    * [[Standard Names | Adding-an-Input-Converter#the-variable-names-should-be-standard_name]]
   * [[Outputs | Data-Formats#Inputs]]
   * [[Defining | Data-Formats#Definition]]
