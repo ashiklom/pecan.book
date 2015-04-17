@@ -17,6 +17,8 @@ The most basic function of PEcAn is to make it easier to run models at different
 
 ### Additional PEcAn Modules and Tools
 
+R Package documentation for the PEcAn modules can be found [here](http://pecanproject.github.io/pecan/)
+
 * [allometries Module](https://github.com/PecanProject/pecan/tree/master/modules/allometry) - Bayesian synthesis of allometric equations
 * [assim.batch Module](https://github.com/PecanProject/pecan/tree/master/modules/assim.batch) - Batch data assimilation tools (e.g. MCMC)
 * [assim.sequential Module](https://github.com/PecanProject/pecan/tree/master/modules/assim.sequential) - Sequential data assimilation tools (e.g. EnKF, particle filter)
