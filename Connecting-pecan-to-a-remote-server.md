@@ -2,6 +2,8 @@
 
 Before the first time, run `scripts/sshkey.sh`
 
+Note: some systems (e.g. BU cluster) use authentication at the machine-level rather than the user-level. In this case you will need to create a .rhosts file in your home directory on the remote machine and list the servers you want to connect from. [See issue #428](https://github.com/PecanProject/pecan/issues/428)
+
 ### If the remote machine does not support ssh keys
 
 Add the following to `~/.ssh/config`
