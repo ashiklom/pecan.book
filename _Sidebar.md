@@ -10,7 +10,7 @@
   * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
   * [[Settings Files | PEcAn-Configuration]]
   * [[PEcAn Workflow Modules | Workflow-modules]]
-  * [[Updating, Building, and Chekcing | Updating-PEcAn ]]
+  * [[Updating, Building, and Checking | Updating-PEcAn ]]
 * [[Reporting Bugs and Requesting Features | Github-issues]]
 
 ### [[Developer's Guide | Development]]
