@@ -1,7 +1,9 @@
 * **[[User's Guide| Getting Started]]**
  * **[[Configuration | PEcAn-Configuration]]**
  * **[[Site-Level Runs | Getting-started#site-level-runs]]**
- * **[[Inputs | How-to-insert-new-Input-data]]**
+ * **Inputs**
+  * [[Input formats | Data-Formats#Inputs]]
+  * [[Adding Inputs | How-to-insert-new-Input-data]]
  * **[[Modules & Tools | Getting-started#additional-pecan-modules-and-tools]]**
  * **[[Models | Getting-started#supported-models]]**
 * **[[FAQ|https://github.com/PecanProject/pecan/issues?labels=question&page=1&state=closed]]**
