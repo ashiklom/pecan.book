@@ -7,7 +7,6 @@
 * **[[FAQ|https://github.com/PecanProject/pecan/issues?labels=question&page=1&state=closed]]**
 * **[[Education]]**
 * **[[Developer's Guide | Development]]**
- * **[[Scrum Board|https://huboard.com/PecanProject/pecan]]**
  * **[[Build Status|http://ebi-forecast.igb.illinois.edu/jenkins/job/PEcAn%20build/]]**
 
 If you would like to search the wiki for keywords, we recommend using a plugin for Google Chrome found [here](https://chrome.google.com/webstore/detail/github-wiki-search/gdifdhnjmjaidbajhapmbcbnoocoeooc?hl=en)
