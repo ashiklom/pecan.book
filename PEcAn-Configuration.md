@@ -53,7 +53,7 @@ New format (starting with PEcAn 1.3.6)
 
 The connection information under bety will be used by most of the PEcAn system, only the extraction of pss/css/site information from the FIA database will use the connection information in the fia section.
 
-* **driver** : [optional] the driver to use to connect to the database. Default value is MySQL  
+* **driver** : [optional] the driver to use to connect to the database. Default value is PostgreSQL  
 * **dbname** : [optional] the name of the database (was name), default value is the username of the current user logged in.  
 * **user** : [optional] the username to connect to the database (was userid), default value is the username of the current user logged in (PostgreSQL uses user for this field).
 * **password** : [optional] the password to connect to the database (was passwd), if not specified no password is used.  
