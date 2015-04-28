@@ -26,7 +26,7 @@ The following are the tags that can be used to configure the folders used by PEc
 <a name="database_access" />
 ## Database Access
 
-The connection to the BETY database is configured using this section. In this section you will specify what driver to use to connect to the database (MySQL by default) and the connection parameters to connect to the database. This section is very picky and will only accept parameters that are passed into the connection function for each database driver, any other entries will result in an error by the database driver.
+The connection to the BETY database is configured using this section. In this section you will specify what driver to use to connect to the database (PostgreSQL by default) and the connection parameters to connect to the database. This section is very picky and will only accept parameters that are passed into the connection function for each database driver, any other entries will result in an error by the database driver.
 
 ### functions: 
 
