@@ -29,8 +29,7 @@ The most basic function of PEcAn is to make it easier to run models at different
 |PEcAn.MA | [meta.analysis](https://pecanproject.github.io/pecan//modules/meta.analysis/inst/web/index.html)| [meta.analysis ](https://github.com/PecanProject/pecan/tree/master/modules/meta.analysis) | Trait assimilation workflow & hierarchical Bayes meta-analysis|
 |PEcAn.allometry | |  [allometries ](https://github.com/PecanProject/pecan/tree/master/modules/allometry)  | Bayesian synthesis of allometric equations|
 |PEcAn.benchmark| |  [benchmark ](https://github.com/PecanProject/pecan/tree/master/modules/benchmark)  | Model benchmarking
-|PEcAn.uncertainty | [uncertainty](https://pecanproject.github.io/pecan//modules/uncertainty/inst/web/index.html) | [uncertainty ](https://github.com/PecanProject/pecan/tree/master/modules/uncertainty) | Sensitivity and Uncertainty Analysis workflow. Variance Decomposition
-|
+|PEcAn.uncertainty | [uncertainty](https://pecanproject.github.io/pecan//modules/uncertainty/inst/web/index.html) | [uncertainty ](https://github.com/PecanProject/pecan/tree/master/modules/uncertainty) | Sensitivity and Uncertainty Analysis workflow. Variance Decomposition|
 |PEcAn.data.land| [data.land](https://pecanproject.github.io/pecan//modules/data.land/inst/web/index.html)| [data.land ](https://github.com/PecanProject/pecan/tree/master/modules/data.land/R) | Tools for land and vegetation data. At the moment predominantly Bayesian state-space tree-ring models.|
 |PEcAn.data.atmosphere| [data.atmosphere](https://pecanproject.github.io/pecan//modules/data.atmosphere/inst/web/index.html)| [data.atmosphere ](https://github.com/PecanProject/pecan/tree/master/modules/data.atmosphere) | Meteorology workflow|
 |PEcAn.assim.batch| [assim.batch](https://pecanproject.github.io/pecan//modules/assim.batch/inst/web/index.html) | [assim.batch ](https://github.com/PecanProject/pecan/tree/master/modules/assim.batch) | Batch data assimilation tools (e.g. MCMC)
