@@ -20,7 +20,7 @@ The script is configured using environment variables.  The following variables a
 - REMOTESITE: the ID of the site you want to fetch the data from.  The default is 0 (EBI).
 - CREATE: If 'YES', this indicates that the existing database (`bety`, or the one specified by DATABASE) should be removed. Set to YES (in caps) to remove the database.  **THIS WILL REMOVE ALL DATA** in DATABASE.  The default is NO.
 - KEEPTMP: indicates whether the downloaded file should be preserved.  Set to YES (in caps) to keep downloaded files; the default is NO.
-- USERS: determines if default users should be created.  Set to YES (in caps) to create default users with default passwords.  The default is NO unless you are downloading with REMOTESITE=0 and MYSITE=99 in which case  default users will be created.
+- USERS: determines if default users should be created.  Set to YES (in caps) to create default users with default passwords.  The default is NO.
 
 ## Sharing data
 
