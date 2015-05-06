@@ -42,4 +42,3 @@ To share your data you can now run the dump.bey.sh. The script is configured usi
 Following is a list of tasks we plan on working on to improve these scripts:
 - #149 : add server to EBI, currently we will assign ID by hand and the range is based on this ID and is computed in the scripts. This information should be stored in the database, as well as the URL where to get the data from. This will allow a user to update the URL.
 - #341 : currently scripts are configured with environment variables, it would be good to use command line arguments instead
-- #342 : users should not automatically be generated even on VM.
