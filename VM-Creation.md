@@ -76,10 +76,12 @@ or using SSH at
 where <hosting machine> is the machine where the VM runs on.
 
 For more information about:
-Pecan  - http://pecanproject.org
-SIPNET - http://thesipnetmodel.blogspot.com
-BETY   - http://www.betydb.org
-ED     - http://www.esm.harvard.edu
+Pecan    - http://pecanproject.org
+BETY     - http://www.betydb.org
+ED       - http://www.esm.harvard.edu
+SIPNET   - http://thesipnetmodel.blogspot.com
+DALEC    - http://www.geos.ed.ac.uk/homes/mwilliam/DALEC.html
+LINKAGES - http://daac.ornl.gov/MODELS/guides/LINKAGES.html
 EOF
 exit
 ```
