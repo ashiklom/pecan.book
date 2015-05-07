@@ -103,7 +103,7 @@ exit
 sudo -s
 
 # install all ruby related packages
-apt-get -y install ruby-dev libapache2-mod-passenger 
+apt-get -y install ruby2.0-dev libapache2-mod-passenger 
 
 # link static content
 ln -s ${HOME}/bety/public /var/www/html/bety
@@ -112,6 +112,7 @@ ln -s ${HOME}/bety/public /var/www/html/bety
 cat > /etc/apache2/conf-available/bety.conf << EOF
 RailsEnv production
 RailsBaseURI /bety
+PassengerRuby /usr/bin/ruby2.0
 <Directory /var/www/html/bety>
   Options +FollowSymLinks
   Require all granted
