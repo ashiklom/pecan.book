@@ -104,7 +104,7 @@ time ed2.r82
 
 ```bash
 cd
-git clone git@github.com:EDmodel/ED2.git
+git clone https://github.com/EDmodel/ED2.git
 
 cd ED2/ED/build/bin
 curl -o include.mk.VM http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
