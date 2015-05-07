@@ -48,9 +48,9 @@ rm ED.r46.tgz
 # ----------------------------------------------------------------------
 # configure and compile ed
 cd ~/ED.r46/ED/build/bin
-curl -o include.mk.opt http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
-./install.sh
-sudo cp ../ed_2.1-opt /usr/local/bin/ed2.r46
+curl -o include.mk.VM http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
+make OPT=VM
+sudo cp ../ed_2.1-VM /usr/local/bin/ed2.r46
 ```
 
 Perform a test run using pre configured ED settings for ED2.2 r46
@@ -80,9 +80,9 @@ cd ED.r82
 curl -o ED.r82.patch http://isda.ncsa.illinois.edu/~kooper/EBI/ED.r82.patch
 patch -p1 < ED.r82.patch
 cd ED/build/bin
-curl -o include.mk.opt http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`.r82
-./install.sh
-sudo cp ../ed_2.1-opt /usr/local/bin/ed2.r82
+curl -o include.mk.VM http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
+make OPT=VM
+sudo cp ../ed_2.1-VM /usr/local/bin/ed2.r82
 ```
 
 Perform a test run using pre configured ED settings for ED2.2 r82
@@ -106,6 +106,10 @@ time ed2.r82
 cd
 git clone git@github.com:EDmodel/ED2.git
 cd ED2
+cd ED/build/bin
+curl -o include.mk.VM http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
+make OPT=VM
+sudo cp ../ed_2.1-VM /usr/local/bin/ed2.git
 # compile ...
 ```
 
