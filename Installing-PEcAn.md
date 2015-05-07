@@ -108,6 +108,7 @@ git clone https://github.com/EDmodel/ED2.git
 
 cd ED2/ED/build/bin
 curl -o include.mk.VM http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
+./generate_deps.sh
 make OPT=VM
 sudo cp ../ed_2.1-VM /usr/local/bin/ed2.git
 ```
