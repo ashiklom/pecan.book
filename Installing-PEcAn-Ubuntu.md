@@ -103,7 +103,7 @@ exit
 sudo -s
 
 # install all ruby related packages
-apt-get -y install ruby2.0-dev libapache2-mod-passenger 
+apt-get -y install ruby2.0 ruby2.0-dev libapache2-mod-passenger 
 
 # link static content
 ln -s ${HOME}/bety/public /var/www/html/bety
