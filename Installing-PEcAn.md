@@ -100,7 +100,7 @@ time ed2.r82
 
 #### ED 2.2 bleeding edge
 
-**Needs updating**
+Compile error needs little patch, see https://github.com/EDmodel/ED2/issues/65 and https://github.com/EDmodel/ED2/issues/66
 
 ```bash
 cd
