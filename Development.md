@@ -1,5 +1,6 @@
 ### Contributing, Bug reports, Etc
 
+* [[Code of Conduct]]
 * [[Reporting bugs or requesting features | Github issues]]
 * [[Using GitHub and Git | Using Git]] to get a copy of the latest development code and/or submit changes to the main repository
 * [[PEcAn Directory Structure | Directory Structure]]
