@@ -13,6 +13,7 @@ OS specific installation instructions:
  - [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu)
  - [Installing PEcAn OSX](Installing-PEcAn-OSX)
  - [Installing PEcAn RedHat](Installing-PEcAn-RedHat)
+ - [Installing PEcAn HPC]
 
 To update PEcAn see:
 
