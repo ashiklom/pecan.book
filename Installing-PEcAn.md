@@ -101,16 +101,11 @@ time ed2.r82
 
 #### ED 2.2 bleeding edge
 
-Compile error needs little patch, see https://github.com/EDmodel/ED2/issues/65 and https://github.com/EDmodel/ED2/issues/66
-
 ```bash
 cd
 git clone https://github.com/EDmodel/ED2.git
 
-cd ED2
-curl -o ED.git.patch http://isda.ncsa.illinois.edu/~kooper/EBI/ED.git.patch
-patch -p1 < ED.git.patch
-cd ED/build/bin
+cd ED2/ED/build/bin
 curl -o include.mk.VM http://isda.ncsa.illinois.edu/~kooper/EBI/include.mk.opt.`uname -s`
 ./generate_deps.sh
 make OPT=VM
