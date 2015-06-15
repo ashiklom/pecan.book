@@ -66,22 +66,18 @@ export PORT=$( hostname | sed 's/pecan//' )
 cat > /etc/motd << EOF
 PEcAn version 1.4.2
 
-This system allows you to experiment and create simulations using
-PEcAn, ED, SIPNET and BETY.
+For more information about:
+Pecan    - http://pecanproject.org
+BETY     - http://www.betydb.org
+
+For a list of all models currently supported see:
+https://github.com/PecanProject/pecan/wiki/Getting-started#supported-models
 
 You can access this system using a webbrowser at
  http://<hosting machine>:${PORT}80/
 or using SSH at
  ssh -l carya -p ${PORT}22 <hosting machine>
 where <hosting machine> is the machine where the VM runs on.
-
-For more information about:
-Pecan    - http://pecanproject.org
-BETY     - http://www.betydb.org
-ED       - http://www.esm.harvard.edu
-SIPNET   - http://thesipnetmodel.blogspot.com
-DALEC    - http://www.geos.ed.ac.uk/homes/mwilliam/DALEC.html
-LINKAGES - http://daac.ornl.gov/MODELS/guides/LINKAGES.html
 EOF
 exit
 ```
