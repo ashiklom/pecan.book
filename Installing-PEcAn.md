@@ -183,27 +183,67 @@ sudo cp linkages /usr/local/bin/linkages.git
 
 The version of CLM installed on PEcAn is the ORNL branch provided by Dan Ricciuto. This version includes Dan's point-level CLM processing scripts
 
-Download the code (~300M compressed) and example input data (1.7GB compressed and expands to 14 GB)
+Download the code (~300M compressed), input data (1.7GB compressed and expands to 14 GB), and a few misc inputs.
 
 ```
+mkdir models
+cd models
 ##wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/clm4_5_ornl-bb4ddd8c53fc.tar.gz
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm4_5_1_r085.tar.gz
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/1x1pt_US-Wrc/ccsm_inputdata.tar.gz
 tar -xvzf clm4_5*
 tar -xvzf ccsm_inputdata.tar.gz
 
+#Parameter file:
+cd  /home/carya/models/ccsm_inputdata/lnd/clm2/paramdata
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm_params.c130821.nc
+
+#Domain file:
+cd /home/carya/models/ccsm_inputdata/share/domains/domain.clm/
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/domain.lnd.1x1pt_US-UMB_navy.nc
+
+#Aggregated met data file:
+cd /home/carya/models/ccsm_inputdata/atm/datm7/CLM1PT_data/1x1pt_US-UMB
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/all_hourly.nc 
+```
+Required libraries
+```
 sudo apt-get install mercurial 
 sudo apt-get install csh
 sudo apt-get install tcsh
 sudo apt-get install subversion
 sudo apt-get install cmake
 
-wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm_params.c130821.nc
-to:  /home/carya/models/ccsm_inputdata/lnd/clm2/paramdata
-
-cd clm4_5_1_r085/scripts
+sudo ln -s /usr/bin/make /usr/bin/gmake
+```
+Compile and build default inputs
+```
+cd ~/models/clm4_5_1_r085/scripts
+python runCLM.py --site US-UMB ––compset I1850CLM45CN --mach ubuntu --ccsm_input /home/carya/models/ccsm_inputdata --tstep 1 --nopointdata --coldstart --cpl_bypass --clean_build
 ```
 
+#### CLM Test Run
+You will see a new directory in scripts:  US-UMB_I1850CLM45CN
+Enter this directory and run (you shouldn’t have to do this normally, but there is a bug with the python script and doing this ensures all files get to the right place):
+```
+./US-UMB_I1850CLM45CN.build
+```
+
+Next you are ready to go to the run directory:
+```
+/home/carya/models/clm4_5_1_r085/run/US-UMB_I1850CLM45CN
+```
+From this directory, launch the executable that resides in the bld directory:
+```
+/home/carya/clm4_5_1_r085/run/US-UMB_I1850CLM45CN/bld/cesm.exe
+```    
+not sure this was the right location, but wherever the executable is
+
+You should begin to see output files that look like this:
+US-UMB_I1850CLM45CN.clm2.h0.yyyy-mm.nc (yyyy is year, mm is month)
+These are netcdf files containing monthly averages of lots of variables.
+
+The lnd_in file in the run directory can be modified to change the output file frequency and variables.
 
 
 ## PEcAn Installation
