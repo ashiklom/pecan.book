@@ -183,11 +183,25 @@ sudo cp linkages /usr/local/bin/linkages.git
 
 The version of CLM installed on PEcAn is the ORNL branch provided by Dan Ricciuto. This version includes Dan's point-level CLM processing scripts
 
-Download the code (83M compressed) and example input data (1.7GB compressed and expands to 14 GB)
+Download the code (~300M compressed) and example input data (1.7GB compressed and expands to 14 GB)
 
 ```
-wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/clm4_5_ornl-bb4ddd8c53fc.tar.gz
+##wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/clm4_5_ornl-bb4ddd8c53fc.tar.gz
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm4_5_1_r085.tar.gz
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/1x1pt_US-Wrc/ccsm_inputdata.tar.gz
+tar -xvzf clm4_5*
+tar -xvzf ccsm_inputdata.tar.gz
+
+sudo apt-get install mercurial 
+sudo apt-get install csh
+sudo apt-get install tcsh
+sudo apt-get install subversion
+sudo apt-get install cmake
+
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm_params.c130821.nc
+to:  /home/carya/models/ccsm_inputdata/lnd/clm2/paramdata
+
+cd clm4_5_1_r085/scripts
 ```
 
 
