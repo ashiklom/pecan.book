@@ -179,6 +179,19 @@ gfortran -o linkages linkages.f
 sudo cp linkages /usr/local/bin/linkages.git
 ```
 
+### CLM 4.5
+
+The version of CLM installed on PEcAn is the ORNL branch provided by Dan Ricciuto. This version includes Dan's point-level CLM processing scripts
+
+Download the code (83M compressed) and example input data (1.7GB compressed and expands to 14 GB)
+
+```
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/clm4_5_ornl-bb4ddd8c53fc.tar.gz
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/1x1pt_US-Wrc/ccsm_inputdata.tar.gz
+```
+
+
+
 ## PEcAn Installation
 
 PEcAn is the software package that ties all the pieces together.
