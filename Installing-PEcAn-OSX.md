@@ -67,8 +67,7 @@ To check your postgis run the following command again in psql: `SELECT PostGIS_f
 
 ### Install JAGS
 
-For more instructions see http://martynplummer.wordpress.com/2011/11/04/rjags-3-for-mac-os-x/
-
+Download JAGS from http://sourceforge.net/projects/mcmc-jags/files/JAGS/3.x/Mac%20OS%20X/JAGS-Mavericks-3.4.0.dmg/download
 
 ### Install udunits
 
