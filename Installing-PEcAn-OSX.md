@@ -91,16 +91,12 @@ sudo make install
 ```bash
 sudo sed -i '' 's/^#LoadModule php5_module/LoadModule php5_module/' /etc/apache2/httpd.conf
 
-sudo mkdir /var/mysql
-sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock
-
-cat > /etc/apache2/users/pecan.conf << EOF
+cat > /etc/apache2/others/pecan.conf << EOF
 Alias /pecan ${PWD}/pecan/web
 <Directory ${PWD}/pecan/web>
   DirectoryIndex index.php
   Options +All
-  Order allow,deny
-  Allow from all
+  Require all granted
 </Directory>
 EOF
 ```
