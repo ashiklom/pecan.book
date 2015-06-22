@@ -12,8 +12,7 @@ This document also contains information on how to install the Rstudio server edi
 # download from http://cran.r-project.org/bin/macosx/
 
 # install gfortran 
-# download from http://hpc.sourceforge.net
-sudo tar -xvf ~/Downloads/gcc-mlion.tar -C /
+# download from http://cran.r-project.org/bin/macosx/tools/
 
 # install OpenMPI
 curl -o openmpi-1.6.3.tar.gz http://www.open-mpi.org/software/ompi/v1.6/downloads/openmpi-1.6.3.tar.gz
@@ -46,8 +45,7 @@ cd ..
 ## Install Postgres
 
 For those on a Mac I use the following app for postgresql which has
-postgis already installed (just make sure you have 9.3)
-http://postgresapp.com/
+postgis already installed (http://postgresapp.com/)
 
 To get postgis run the following commands in psql:
 
@@ -81,10 +79,12 @@ Installing udunits-2 on MacOSX is done from source.
 
 
 ```bash
-wget ftp://ftp.unidata.ucar.edu/pub/udunits/udunits-2.1.24.tar.gz
-tar -xvf udunits-2.1.24.tar.gz
+curl -o udunits-2.1.24.tar.gz ftp://ftp.unidata.ucar.edu/pub/udunits/udunits-2.1.24.tar.gz
+tar zxf udunits-2.1.24.tar.gz
 cd udunits-2.1.24
-./configure; make; make check; make clean
+./configure
+make
+sudo make install
 ```
 
 ## Apache Configuration
