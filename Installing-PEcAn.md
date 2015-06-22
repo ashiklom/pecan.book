@@ -195,6 +195,7 @@ tar -xvzf clm4_5*
 tar -xvzf ccsm_inputdata.tar.gz
 
 #Parameter file:
+mkdir /home/carya/models/ccsm_inputdata/lnd/clm2/paramdata
 cd  /home/carya/models/ccsm_inputdata/lnd/clm2/paramdata
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm_params.c130821.nc
 
@@ -205,6 +206,10 @@ wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/domain.lnd.1x1pt_US-UMB_nav
 #Aggregated met data file:
 cd /home/carya/models/ccsm_inputdata/atm/datm7/CLM1PT_data/1x1pt_US-UMB
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/all_hourly.nc 
+
+## lightning database
+cd /home/carya/models/ccsm_inputdata/atm/datm7/NASA_LIS/
+wget clmforc.Li_2012_climo1995-2011.T62.lnfm_Total_c140423.nc
 ```
 Required libraries
 ```
