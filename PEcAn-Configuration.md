@@ -301,9 +301,9 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 		<outdir>/home/carya/testrun.pecan/out/</outdir>
 		<scratchdir>/tmp/carya</scratchdir>
 		<clearscratch>TRUE</clearscratch>
-		<qsub>qsub -N @NAME@ -o @STDOUT@ -e @STDERR@</qsub>
-		<qsub.jobid>lionxo_test ([0-9]+) .*</qsub.jobid>
-		<qstat>qstat -j @JOBID@ 2>1 >/dev/null || echo DONE</qstat>
+		<qsub>qsub -N @NAME@ -o @STDOUT@ -e @STDERR@ -S /bin/bash</qsub>
+		<qsub.jobid>Your job ([0-9]+) .*</qsub.jobid>
+		<qstat>qstat -j @JOBID@ &> /dev/null || echo DONE</qstat>
 	</host>
 </run>
 ```
@@ -349,6 +349,6 @@ Host on which the simulation will run is specified in the `<host>` subsection. I
 * **outdir** : [optional/required] location where all the outputs of the model are written. For localhost this is optional (`<outdir>/out` is the default), for any other host this is required.
 * **scratchdir** : [optional] location where output is written. If specified the output from the model is written to this folder and copied to the outdir when the model is finished, this could significantly speed up the model execution (by using local or ram disk).
 * **clearscratch** : [optional] if set to TRUE the scratchfolder is cleaned up after copying the results to the outdir, otherwise the folder will be left. The default is to clean up after copying.
-* **qsub** : [optional] the command to submit a job to the queuing system. There are 3 parameters you can use when specifying the qsub command, you can add additional values for your specific setup (for example -l walltime to specify the walltime, etc). You can specify @NAME@ the pretty name, @STDOUT@ where to write stdout and @STDERR@, where to write stderr. The default value is "qsub -N @NAME@ -o @STDOUT@ -e @STDERR@".
-* **qsub.jobid** : [optional] the regular expression used to find the jobid returned from qsub. The default value is "Your job ([0-9]+) .*"
-* **qstat** : [optional] the command to execute to check if a job is finished, this should return DONE if the job is finished. There is one parameter this command should take @JOBID@ which is the id of the job as returned by qsub.jobid. The default value is "qstat -j @JOBID@ 2>1 >/dev/null || echo DONE"
+* **qsub** : [optional] the command to submit a job to the queuing system. There are 3 parameters you can use when specifying the qsub command, you can add additional values for your specific setup (for example -l walltime to specify the walltime, etc). You can specify @NAME@ the pretty name, @STDOUT@ where to write stdout and @STDERR@, where to write stderr. You can specify an empty element (<qsub/>) in which case it will use the default value is "qsub -N @NAME@ -o @STDOUT@ -e @STDERR@".
+* **qsub.jobid** : [optional] the regular expression used to find the jobid returned from qsub. If not specified (and qsub is) it will use the default value is "Your job ([0-9]+) .*"
+* **qstat** : [optional] the command to execute to check if a job is finished, this should return DONE if the job is finished. There is one parameter this command should take @JOBID@ which is the id of the job as returned by qsub.jobid. If not specified (and qsub is) it will use the default value is "qstat -j @JOBID@ 2>1 >/dev/null || echo DONE"
