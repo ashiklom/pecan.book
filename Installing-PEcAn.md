@@ -208,11 +208,7 @@ wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/all_hourly.nc
 ```
 Required libraries
 ```
-sudo apt-get install mercurial 
-sudo apt-get install csh
-sudo apt-get install tcsh
-sudo apt-get install subversion
-sudo apt-get install cmake
+sudo apt-get install mercurial csh tcsh subversion cmake
 
 sudo ln -s /usr/bin/make /usr/bin/gmake
 ```
