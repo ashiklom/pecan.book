@@ -107,7 +107,7 @@ EOF
 
 ## Ruby
 
-For Ruby on the mac please use [JewelryBox](https://jewelrybox.unfiniti.com/).
+The default version of ruby should work. Or use [JewelryBox](https://jewelrybox.unfiniti.com/).
 
 ## Rstudio Server
 
