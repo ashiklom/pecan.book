@@ -88,9 +88,10 @@ sudo make install
 
 ## Apache Configuration
 
-```bash
-sudo sed -i '' 's/^#LoadModule php5_module/LoadModule php5_module/' /etc/apache2/httpd.conf
+Mac does not support pdo/postgresql by default. The easiest way to install is use: http://php-osx.liip.ch/
 
+To enable pecan to run from your webserver.
+```bash
 cat > /etc/apache2/others/pecan.conf << EOF
 Alias /pecan ${PWD}/pecan/web
 <Directory ${PWD}/pecan/web>
