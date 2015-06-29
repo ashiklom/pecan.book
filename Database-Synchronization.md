@@ -22,6 +22,33 @@ The script is configured using environment variables.  The following variables a
 - KEEPTMP: indicates whether the downloaded file should be preserved.  Set to YES (in caps) to keep downloaded files; the default is NO.
 - USERS: determines if default users should be created.  Set to YES (in caps) to create default users with default passwords.  The default is NO.
 
+All of these variables can be specified as command line arguments, to see the options use -h.
+
+```
+load.bety.sh -h
+./scripts/load.bety.sh [-c YES|NO] [-d database] [-h] [-m my siteid] [-o owner] [-p psql options] [-r remote siteid] [-t YES|NO] [-u YES|NO]
+ -c create database, THIS WILL ERASE THE CURRENT DATABASE, default is NO
+ -d database, default is bety
+ -h this help page
+ -m site id, default is 99 (VM)
+ -o owner of the database, default is bety
+ -p additional psql command line options, default is empty
+ -r remote site id, default is 0 (EBI)
+ -t keep temp folder, default is NO
+ -u create carya users, this will create some default users
+
+dump.bety.sh -h
+./scripts/dump.bety.sh [-a YES|NO] [-d database] [-h] [-l 0,1,2,3,4] [-m my siteid] [-o folder] [-p psql options] [-u YES|NO]
+ -a use anonymous user, default is YES
+ -d database, default is bety
+ -h this help page
+ -l level of data that can be dumped, default is 3
+ -m site id, default is 99 (VM)
+ -o output folder where dumped data is written, default is dump
+ -p additional psql command line options, default is -U bety
+ -u should unchecked data be dumped, default is NO
+```
+
 ## Sharing data
 
 Sharing your data requires a few steps. First, before entering any data, you will need to request an ID from the PEcAn developers. Simply open an issue at github and we will generate an ID for you.  If possible, add the URL of your data host.
@@ -41,4 +68,3 @@ To share your data you can now run the dump.bey.sh. The script is configured usi
 
 Following is a list of tasks we plan on working on to improve these scripts:
 - #149 : add server to EBI, currently we will assign ID by hand and the range is based on this ID and is computed in the scripts. This information should be stored in the database, as well as the URL where to get the data from. This will allow a user to update the URL.
-- #341 : currently scripts are configured with environment variables, it would be good to use command line arguments instead
