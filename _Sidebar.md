@@ -39,4 +39,4 @@
     * [[Standard Names | Adding-an-Input-Converter#the-variable-names-should-be-standard_name]]
   * [[Outputs | Data-Formats#Inputs]]
   * [[Defining | Data-Formats#Definition]]
-* [[Code of Coduct]]
+* [[Code of Conduct]]
