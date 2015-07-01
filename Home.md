@@ -8,6 +8,7 @@
 * **[[Education]]**
 * **[[Developer's Guide | Development]]**
  * **[[Build Status|http://ebi-forecast.igb.illinois.edu/jenkins/job/PEcAn%20build/]]**
+* **[[Code of Conduct]]**
 
 If you would like to search the wiki for keywords, we recommend using a plugin for Google Chrome found [here](https://chrome.google.com/webstore/detail/github-wiki-search/gdifdhnjmjaidbajhapmbcbnoocoeooc?hl=en)
 
