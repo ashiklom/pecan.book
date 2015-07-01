@@ -12,6 +12,7 @@
   * [[PEcAn Workflow Modules | Workflow-modules]]
   * [[Updating, Building, and Checking | Updating-PEcAn ]]
 * [[Reporting Bugs and Requesting Features | Github-issues]]
+* [[Code of Conduct]]
 
 ### [[Developer's Guide | Development]]
 * [[Setup | Development#setup]]
@@ -39,4 +40,3 @@
     * [[Standard Names | Adding-an-Input-Converter#the-variable-names-should-be-standard_name]]
   * [[Outputs | Data-Formats#Inputs]]
   * [[Defining | Data-Formats#Definition]]
-* [[Code of Conduct]]
