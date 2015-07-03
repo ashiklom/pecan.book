@@ -143,9 +143,9 @@ sipnet.runk
 #### Installation 
 ```r
 # Public
-devtools::install_github("ebimodeling/biocro")
+echo 'devtools::install_github("ebimodeling/biocro")' | R --vanilla
 # Development:
-devtools::install_github("ebimodeling/biocro-dev")
+echo 'devtools::install_github("ebimodeling/biocro-dev")' | R --vanilla
 ```
 
 _BioCro Developers:_ request from [@dlebauer on GitHub](https://github.com/dlebauer)
@@ -288,8 +288,9 @@ See OS-specific instructions for installing Postgres + PostGIS
 # install database (code assumes password is bety)
 sudo -u postgres createuser -d -l -P -R -S bety
 sudo -u postgres createdb -O bety bety
-sudo -u postgres CREATE=YES USERS=YES REMOTESITE=0 scripts/load.bety.sh
-sudo -u postgres REMOTESITE=1 scripts/load.bety.sh
+sudo -u postgres scripts/load.bety.sh -c YES -u YES -r 0
+sudo -u postgres scripts/load.bety.sh -r 1
+sudo -u postgres scripts/load.bety.sh -r 2
 
 # configure for web app (change passowrd if needed)
 cp web/config.example.php web/config.php 
