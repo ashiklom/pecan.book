@@ -11,7 +11,7 @@ To learn about GitHub, it is worth taking some time to read through the [FAQ](ht
 Bugs, Issues, Features, etc.
 ============================
 
-* **Label Issues**. Use labels e.g. "bug", "question", or "High Priority" ... to denote the type of issue you are submitting.
+* **Label Issues**. Use "labels" e.g. "bug", "question", or "High Priority" ... to denote the type of issue you are submitting.
 
 Reporting a bug
 ---------------
