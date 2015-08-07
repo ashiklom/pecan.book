@@ -89,50 +89,33 @@ Rationale: This workflow is a small upfront investment that reduces error and ti
 Label Categories
 ----------------
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-asmn{font-weight:bold;font-size:18px;text-align:center}
-.tg .tg-0lao{font-weight:bold;font-style:italic;text-align:center}
-.tg .tg-uitq{font-weight:bold;font-style:italic}
-.tg .tg-mkqr{background-color:#fef2c0;text-align:center}
-.tg .tg-97cz{background-color:#bfe5bf;text-align:center}
-.tg .tg-0gsl{background-color:#f7c6c7;}
-.tg .tg-yjqy{background-color:#d7e102;text-align:center}
-.tg .tg-og1l{background-color:#5319e7;text-align:center}
-.tg .tg-earr{background-color:#bfe5bf;text-align:center}
-.tg .tg-38vt{background-color:#f7c6c7;text-align:center}
-.tg .tg-6t6n{background-color:#e11d21;text-align:center}
-.tg .tg-303t{background-color:#bfe5bf}
-</style>
-<table class="tg">
+<table border="1">
   <tr>
-    <th class="tg-asmn" colspan="3">Label</th>
+    <th>Type</th>
+    <th>Status</th>
+    <th>Priority</th>
   </tr>
   <tr>
-    <td class="tg-0lao">Type<br></td>
-    <td class="tg-uitq">Status</td>
-    <td class="tg-uitq">Priority</td>
+    <td>BETY, BioCro, BrownDog, CLM, DALEC, ED, LINKAGES, SIPNET</td>
+    <td>0-Backlog</td>
+    <td>pri:Critical</td>
   </tr>
   <tr>
-    <td class="tg-mkqr">BETY, BioCro, BrownDog, CLM, DALEC, ED, LINKAGES, SIPNET</td>
-    <td class="tg-97cz">0-Backlog</td>
-    <td class="tg-0gsl">pri:Critical</td>
+    <td>VM, Web, HPC</td>
+    <td>1-Ready</td>
+    <td>pri:Normal</td>
   </tr>
   <tr>
-    <td class="tg-yjqy">VM, Web, HPC</td>
-    <td class="tg-97cz">1-Ready</td>
-    <td class="tg-0gsl">pri:Normal</td>
+    <td>Documentation, Question, Discussion, Enhancement, Feature</td>
+    <td>2-Working</td>
+    <td>pri:Low</td>
   </tr>
   <tr>
-    <td class="tg-og1l">Documentation, Question, Discussion, Enhancement, Feature</td>
-    <td class="tg-earr">2-Working</td>
-    <td class="tg-38vt">pri:Low</td>
-  </tr>
-  <tr>
-    <td class="tg-6t6n">Bug</td>
-    <td class="tg-303t">3-Done</td>
-    <td class="tg-031e"></td>
+    <td>Bug</td>
+    <td>3-Done</td>
   </tr>
 </table>
+
+
+
+
