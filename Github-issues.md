@@ -89,7 +89,7 @@ Rationale: This workflow is a small upfront investment that reduces error and ti
 Label Categories
 ----------------
 
-<table border="1">
+<table border="2">
   <tr>
     <th>Type</th>
     <th>Status</th>
@@ -108,12 +108,11 @@ Label Categories
   <tr>
     <td>Documentation, Question, Discussion, Enhancement, Feature</td>
     <td>2-Working</td>
-    <td>pri:Normal</td>
+    <td>pri:Low</td>
   </tr>
   <tr>
     <td>Bug</td>
     <td>3-Done</td>
-    <td>pri:Low</td>
   </tr>
 </table>
 
