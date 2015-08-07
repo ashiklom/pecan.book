@@ -11,8 +11,6 @@ To learn about GitHub, it is worth taking some time to read through the [FAQ](ht
 Bugs, Issues, Features, etc.
 ============================
 
-* **Label Issues**. Use "labels" e.g. "bug", "question", or "High Priority" ... to denote the type of issue you are submitting.
-
 Reporting a bug
 ---------------
 
@@ -87,3 +85,38 @@ When to submit an issue?
 This requires creating issues for each task, making small commits, and referencing the issue within your commit message. Issues can be created [on GitHub](https://github.com/PecanProject/pecan/issues/new). These issues can be linked to commits by adding text such as `fixes gh-5` (see [[Using Git During Development|Using-Git#during-development]]).
 
 Rationale: This workflow is a small upfront investment that reduces error and time spent re-creating and debugging errors. Associating issues and commits, makes it easier to identify why a change was made, and potential bugs that could arise when the code is changed. In addition, knowing which issue you are working on clarifies the scope and objectives of your current task. 
+
+Label Categories
+----------------
+
+<table border="1">
+  <tr>
+    <th>Type</th>
+    <th>Status</th>
+    <th>Priority</th>
+  </tr>
+  <tr>
+    <td>BETY, BioCro, BrownDog, CLM, DALEC, ED, LINKAGES, SIPNET</td>
+    <td>0-Backlog</td>
+    <td>pri:Critical</td>
+  </tr>
+  <tr>
+    <td>VM, Web, HPC</td>
+    <td>1-Ready</td>
+    <td>pri:Normal</td>
+  </tr>
+  <tr>
+    <td>Documentation, Question, Discussion, Enhancement, Feature</td>
+    <td>2-Working</td>
+    <td>pri:Normal</td>
+  </tr>
+  <tr>
+    <td>Bug</td>
+    <td>3-Done</td>
+    <td>pri:Low</td>
+  </tr>
+</table>
+
+
+
+
