@@ -88,7 +88,7 @@ Rationale: This workflow is a small upfront investment that reduces error and ti
 
 Label Categories
 ----------------
-When submitting an issue please add an issue 
+When submitting an issue please add a label from the "*_Type_*" and "*_Status_*" categories in the table below. 
 
 <table border="1">
   <tr>
