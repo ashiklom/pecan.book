@@ -88,6 +88,7 @@ Rationale: This workflow is a small upfront investment that reduces error and ti
 
 Label Categories
 ----------------
+When submitting an issue please add an issue 
 
 <table border="1">
   <tr>
