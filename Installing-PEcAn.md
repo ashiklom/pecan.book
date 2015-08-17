@@ -284,7 +284,9 @@ See OS-specific instructions for installing Postgres + PostGIS
 
 ### Install Database + Data
 
-```
+* _note_ To install BETYdb without PEcAn, first download the [`load.bety.sh` script](https://raw.githubusercontent.com/PecanProject/pecan/master/scripts/load.bety.sh)
+
+```sh
 # install database (code assumes password is bety)
 sudo -u postgres createuser -d -l -P -R -S bety
 sudo -u postgres createdb -O bety bety
