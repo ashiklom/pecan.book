@@ -4,16 +4,16 @@ These are specific notes for installing PEcAn on RedHat/CentOS and will be refer
 
 This document also contains information on how to install the Rstudio server edition as well as any other packages that can be helpful.
 
-**Need to update these instructions for PostgreSQL**
-
 ## Install build environment
 
-#### Install and configure MySQL, udunits2, NetCDF
+#### Install and configure PostgreSQL, udunits2, NetCDF
 
-[Reference: centoshelp.org](http://centoshelp.org/servers/database/installing-configuring-mysql-server/)
+[Reference: centoshelp.org](http://www.postgresql.org/download/linux/redhat/)
 
 ```bash
-yum -y install git R mysql mysql-server udunits2 netcdf
+rpm -ihv http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+yum -y install http://yum.postgresql.org/9.4/redhat/rhel-7-x86_64/pgdg-centos94-9.4-1.noarch.rpm
+yum -y install git R postgresql94-server postgresql94-contrib postgis2_9.4 udunits2 netcdf
 chkconfig --level 2345 mysqld on 
 service mysqld start
 ```
