@@ -11,11 +11,12 @@ This document also contains information on how to install the Rstudio server edi
 [Reference: centoshelp.org](http://www.postgresql.org/download/linux/redhat/)
 
 ```bash
-rpm -ihv http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+yum install -y epel-release 
 yum -y install http://yum.postgresql.org/9.4/redhat/rhel-7-x86_64/pgdg-centos94-9.4-1.noarch.rpm
-yum -y install git R postgresql94-server postgresql94-contrib postgis2_9.4 udunits2 netcdf
-chkconfig --level 2345 mysqld on 
-service mysqld start
+yum -y install git R postgresql94-server postgresql94-contrib postgis2_94 udunits2 netcdf
+systemctl enable postgresql-9.4
+/usr/pgsql-9.4/bin/postgresql94-setup initdb
+systemctl start postgresql-9.4
 ```
 
 #### Install and start Apache
