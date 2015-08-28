@@ -58,6 +58,7 @@ sudo apt-get -y install build-essential linux-headers-server dkms
 CENTOS/REDHAT
 ```bash
 sudo yum -y groupinstall "Development Tools"
+sudo yum -y install wget
 ```
 
 Install Virtual Box additions for better integration
