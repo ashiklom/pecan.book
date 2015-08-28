@@ -14,8 +14,8 @@ This document also contains information on how to install the Rstudio server edi
 yum install -y epel-release 
 yum -y install http://yum.postgresql.org/9.4/redhat/rhel-7-x86_64/pgdg-centos94-9.4-1.noarch.rpm
 yum -y install git R postgresql94-server postgresql94-contrib postgis2_94 udunits2 netcdf
-systemctl enable postgresql-9.4
 /usr/pgsql-9.4/bin/postgresql94-setup initdb
+systemctl enable postgresql-9.4
 systemctl start postgresql-9.4
 ```
 
@@ -23,13 +23,14 @@ systemctl start postgresql-9.4
 
 ```bash
 yum -y install httpd
-sudo service httpd start
+systemctl enable httpd
+systemctl start httpd
 ```
 
 #### Install PHP
 
 ```bash
-sudo yum install php php-mysql
+sudo yum -y install php php-pgsql
 ```
 
 #### Install ruby-netcdf gem 
