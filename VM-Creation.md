@@ -35,16 +35,29 @@ VBoxManage modifyvm "PEcAn 64bit" --natpf1 "www,tcp,,6480,,80"
 
 Make sure machine is up to date.
 
+UBUNTU
 ```bash
 sudo apt-get update
 sudo apt-get -y dist-upgrade
 sudo reboot
 ```
 
+CENTOS/REDHAT
+```bash
+sudo yum -y update
+sudo reboot
+```
+
 Install compiler and other packages needed and install the tools.
 
+UBUNTU
 ```bash
 sudo apt-get -y install build-essential linux-headers-server dkms
+```
+
+CENTOS/REDHAT
+```bash
+sudo yum -y groupinstall "Development Tools"
 ```
 
 Install Virtual Box additions for better integration
@@ -53,7 +66,7 @@ Install Virtual Box additions for better integration
 sudo mount /dev/cdrom /mnt
 sudo /mnt/VBoxLinuxAdditions.run
 sudo umount /mnt
-sudo addgroup carya vboxsf
+sudo usermod -a -G vboxsf carya
 ```
 
 ## Finishing up the machine
@@ -64,7 +77,7 @@ sudo addgroup carya vboxsf
 sudo -s
 export PORT=$( hostname | sed 's/pecan//' )
 cat > /etc/motd << EOF
-PEcAn version 1.4.2
+PEcAn version 1.4.3
 
 For more information about:
 Pecan    - http://pecanproject.org
