@@ -26,8 +26,9 @@ FIA database is large and will add an extra 10GB to the installation.
 curl -o fia5data.psql.gz http://isda.ncsa.illinois.edu/~kooper/EBI/fia5data.psql.gz
 dropdb --if-exists fia5data
 createdb -O bety fia5data
-gzcat fia5data.psql.gz | psql -U bety -d fia5data
-rm fia5data.psql.gz
+gunzip fia5data.psql.gz
+psql -U bety -d fia5data < fia5data.psql
+rm fia5data.psql
 ```
 
 ## Flux Camp
