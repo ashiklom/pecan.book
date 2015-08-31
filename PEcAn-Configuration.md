@@ -43,9 +43,9 @@ New format (starting with PEcAn 1.3.6)
 		<write>true</write>
 	</bety>
 	<fia>
-		<dbname>fia5</dbname>
-		<username>fia5</username>
-		<password>fia5</password>
+		<dbname>fia5data</dbname>
+		<username>bety</username>
+		<password>bety</password>
 		<host>localhost</host>
 	</fia>
 </database>
