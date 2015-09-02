@@ -12,7 +12,8 @@ OS specific installation instructions:
 
  - [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu)
  - [Installing PEcAn OSX](Installing-PEcAn-OSX)
- - [Installing PEcAn RedHat](Installing-PEcAn-RedHat)
+ - [Installing PEcAn CentOS](Installing-PEcAn-CentOS)
+ - [Installing PEcAn RedHat](Installing-PEcAn-RedHat) **deprecated**
  - [[Installing PEcAn HPC]]
 
 To update PEcAn see:
