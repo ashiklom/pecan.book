@@ -12,7 +12,6 @@ sudo -s
 # install packages needed for PEcAn
 yum -y groupinstall 'Development Tools' 
 yum -y install git netcdf-fortran-openmpi-devel R bc curl libxml2-devel openssl-devel ed  udunits2 udunits2-devel netcdf netcdf-devel gmp-devel python-devel gdal-devel proj-devel proj-epsg
-# missing gfortran jags liblapack-dev libcurl4-gnutls-dev  python-dev libgdal1-dev libproj-dev
 
 # jags
 yum -y install http://download.opensuse.org/repositories/home:/cornell_vrdc/CentOS_7/x86_64/jags3-3.4.0-54.1.x86_64.rpm
@@ -22,7 +21,7 @@ yum -y install http://download.opensuse.org/repositories/home:/cornell_vrdc/Cent
 ln -s /usr/include/udunits2/* /usr/include/
 
 # install packages needed for ED2
-apt-get -y install environment-modules openmpi-bin libopenmpi-dev
+yum -y install environment-modules openmpi-bin libopenmpi-dev
 
 # install requirements for DALEC
 yum -y install gsl-devel
@@ -58,7 +57,6 @@ yum -y install http://yum.postgresql.org/9.4/redhat/rhel-7-x86_64/pgdg-centos94-
 
 # install packages for postgresql (using a newer version than default)
 yum -y install postgresql94-server postgresql94-contrib postgis2_94 postgresql94-devel
-#apt-get -y install libdbd-pgsql postgresql postgresql-client libpq-dev postgresql-9.4-postgis-2.1 postgresql-9.4-postgis-2.1-scripts
 
 # install following if you want to run pecan through the web
 yum -y install php-pgsql
