@@ -1,7 +1,7 @@
 ### Getting Started: Background
 
 The quickest way to get started is to download the virtual machine. The demo provides instructions to get started on your own machine. 
- * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/minimal.php?project=PEcAn&category=vm) and optionally convert VM to [[Desktop Machine | VM-Desktop-Conversion]]
+ * [Download Virtual Machine](http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN) and optionally convert VM to [[Desktop Machine | VM-Desktop-Conversion]]
  * [Work through Demo](http://pecanproject.github.io/tutorials.html)
 
 ### Site-level Runs
