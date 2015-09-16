@@ -72,8 +72,8 @@ If you do not want to write the interface modules in R then it is fairly simple 
 
     ## Example met conversion wrapper function
     met2model.MODEL <- function(in.path, in.prefix, outfolder, start_date, end_date){
-       myMetScript <- system.file("inst/met2model.MODEL.sh","PEcAn.MODEL")
-       system(paste(myMetScript,file.path(in.path,in.prefix),outfolder, start_date,end_date))
+       myMetScript <- system.file("inst/met2model.MODEL.sh", "PEcAn.MODEL")
+       system(paste(myMetScript, file.path(in.path, in.prefix), outfolder, start_date, end_date))
     }
 
 would execute the following at the Linux command line
