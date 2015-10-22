@@ -13,6 +13,28 @@ pecan/scripts/load.bety.sh
 
 For more information see the [Updating BETYdb](https://github.com/PecanProject/bety/wiki/Updating-BETY) documentation.
 
+## Updating BETY code
+
+BETY uses rails to update. To update BETY and not loose any of your data the following steps can be used:
+
+```
+cd <bety installation folder>
+
+# dump database
+sudo -u postgres pg_dump -d bety > ~kooper/bety.sql
+
+# update BETY and database
+# become user that installed bety
+sudo -u <owner of Rakefile> -s
+git checkout master
+git pull
+export PATH=/usr/local/rbenv/versions/2.1.5/bin:${PATH}
+bundle install
+bundle install --deployment
+RAILS_ENV="production" bundle exec rake db:migrate
+touch tmp/restart.txt
+exit
+```
 ## Update Build and Check PEcAn
 
 The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions. 
