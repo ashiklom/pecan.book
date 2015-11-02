@@ -173,11 +173,16 @@ sudo cp dalec_EnKF dalec_seqMH /usr/local/bin
 #### Installation
 
 ```
+#FORTRAN VERSION
 cd
 git clone https://github.com/araiho/Linkages.git
 cd Linkages
 gfortran -o linkages linkages.f
 sudo cp linkages /usr/local/bin/linkages.git
+
+#R Version
+git clone https://github.com/araiho/linkages_package.git
+R CMD INSTALL --no-multiarch --with-keep.source linkages_package
 ```
 
 ### CLM 4.5
