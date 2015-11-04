@@ -252,7 +252,9 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includes, veg, soil, psscss, inputs.
 
 ```{xml}
-   <config.header>
+	<edin>/home/carya/runs/PEcAn_4/ED2IN.template</edin>
+	<job.sh>module load hdf5</job.sh>
+	<config.header>
 		<radiation>
 			<lai_min>0.01</lai_min>
 		</radiation>
@@ -260,12 +262,12 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 			<output_month>12</output_month>      
 		</ed_misc> 
 	</config.header>
-	<edin>/home/carya/runs/PEcAn_4/ED2IN.template</edin>
 	<phenol.scheme>0</phenol.scheme>
 ```
 
   
-* **edin** : [required] template used to write ED2IN file  
+* **edin** : [required] template used to write ED2IN file
+* **job.sh** : [optional] additional options to add to the job.sh at the top  
 * **veg** : **OBSOLETE** [required] location of VEG database, now part of `<run><inputs>
 * **soil** : **OBSOLETE** [required] location of soild database, now part of `<run><inputs>
 * **psscss** : **OBSOLETE** [required] location of site inforation, now part of `<run><inputs>`. Should be specified as `<pss>`, `<css>` and `<site>`.
@@ -304,6 +306,7 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 		<qsub>qsub -N @NAME@ -o @STDOUT@ -e @STDERR@ -S /bin/bash</qsub>
 		<qsub.jobid>Your job ([0-9]+) .*</qsub.jobid>
 		<qstat>qstat -j @JOBID@ &> /dev/null || echo DONE</qstat>
+		<job.sh>module load udunits R/R-3.0.0_gnu-4.4.6</job.sh>
 	</host>
 </run>
 ```
@@ -349,6 +352,7 @@ Host on which the simulation will run is specified in the `<host>` subsection. I
 * **outdir** : [optional/required] location where all the outputs of the model are written. For localhost this is optional (`<outdir>/out` is the default), for any other host this is required.
 * **scratchdir** : [optional] location where output is written. If specified the output from the model is written to this folder and copied to the outdir when the model is finished, this could significantly speed up the model execution (by using local or ram disk).
 * **clearscratch** : [optional] if set to TRUE the scratchfolder is cleaned up after copying the results to the outdir, otherwise the folder will be left. The default is to clean up after copying.
-* **qsub** : [optional] the command to submit a job to the queuing system. There are 3 parameters you can use when specifying the qsub command, you can add additional values for your specific setup (for example -l walltime to specify the walltime, etc). You can specify @NAME@ the pretty name, @STDOUT@ where to write stdout and @STDERR@, where to write stderr. You can specify an empty element (<qsub/>) in which case it will use the default value is "qsub -N @NAME@ -o @STDOUT@ -e @STDERR@".
+* **qsub** : [optional] the command to submit a job to the queuing system. There are 3 parameters you can use when specifying the qsub command, you can add additional values for your specific setup (for example -l walltime to specify the walltime, etc). You can specify @NAME@ the pretty name, @STDOUT@ where to write stdout and @STDERR@, where to write stderr. You can specify an empty element (<qsub/>) in which case it will use the default value is "qsub -V -N @NAME@ -o @STDOUT@ -e @STDERR@ -s /bin/bash".
 * **qsub.jobid** : [optional] the regular expression used to find the jobid returned from qsub. If not specified (and qsub is) it will use the default value is "Your job ([0-9]+) .*"
-* **qstat** : [optional] the command to execute to check if a job is finished, this should return DONE if the job is finished. There is one parameter this command should take @JOBID@ which is the id of the job as returned by qsub.jobid. If not specified (and qsub is) it will use the default value is "qstat -j @JOBID@ 2>1 >/dev/null || echo DONE"
+* **qstat** : [optional] the command to execute to check if a job is finished, this should return DONE if the job is finished. There is one parameter this command should take @JOBID@ which is the id of the job as returned by qsub.jobid. If not specified (and qsub is) it will use the default value is "qstat -j @JOBID@ || echo DONE"
+* **job.sh** : [optional] additional options to add to the job.sh at the top  
