@@ -233,9 +233,10 @@ To ensure compatability, the code will automatically convert from `<name>` to `<
 	<id>7</id>
 	<type>ED2</type>
 	<binary>/usr/local/bin/ed2.r82</binary>
-  <config.header>
-    <!--...xml code passed directly to config file...-->
-  </config.header>
+	<job.sh>module load hdf5</job.sh>
+	<config.header>
+		<!--...xml code passed directly to config file...-->
+	</config.header>
 </model>
 ```
 
@@ -243,6 +244,7 @@ To ensure compatability, the code will automatically convert from `<name>` to `<
 * **name** : **OBSOLETE** name of the model, use type from version 1.3.7
 * **type** : [optional/required] type of model, see above.
 * **binary** : [optional/required] path to the model executable, see above.  
+* **job.sh** : [optional] additional options to add to the job.sh at the top  
 * **config.headers** : [optional] XML that will appear at the start of generated config files.
 
 ### ED2 specific tags
@@ -253,7 +255,6 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 
 ```{xml}
 	<edin>/home/carya/runs/PEcAn_4/ED2IN.template</edin>
-	<job.sh>module load hdf5</job.sh>
 	<config.header>
 		<radiation>
 			<lai_min>0.01</lai_min>
@@ -267,7 +268,6 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 
   
 * **edin** : [required] template used to write ED2IN file
-* **job.sh** : [optional] additional options to add to the job.sh at the top  
 * **veg** : **OBSOLETE** [required] location of VEG database, now part of `<run><inputs>
 * **soil** : **OBSOLETE** [required] location of soild database, now part of `<run><inputs>
 * **psscss** : **OBSOLETE** [required] location of site inforation, now part of `<run><inputs>`. Should be specified as `<pss>`, `<css>` and `<site>`.
