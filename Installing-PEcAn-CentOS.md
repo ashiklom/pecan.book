@@ -11,7 +11,7 @@ sudo -s
 
 # install packages needed for PEcAn
 yum -y groupinstall 'Development Tools' 
-yum -y install git netcdf-fortran-openmpi-devel R bc curl libxml2-devel openssl-devel ed  udunits2 udunits2-devel netcdf netcdf-devel gmp-devel python-devel gdal-devel proj-devel proj-epsg
+yum -y install git netcdf-fortran-openmpi-devel R bc curl libxml2-devel openssl-devel ed  udunits2 udunits2-devel netcdf netcdf-devel gmp-devel python-devel gdal-devel proj-devel proj-epsg expect
 
 # jags
 yum -y install http://download.opensuse.org/repositories/home:/cornell_vrdc/CentOS_7/x86_64/jags3-3.4.0-54.1.x86_64.rpm
