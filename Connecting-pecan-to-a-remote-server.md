@@ -1,12 +1,45 @@
-### If the remote machine supports ssh keys
+This section will describe how to use PEcAn with remote machines. This
+will be split into three pieces. The first section will describe how to
+setup your system to allow you to execute remotely without any password
+prompts. The next section will describe any items to add to the
+pecan.xml and the config.php files to enable remote execution from both
+PEcAn on the command line and PEcAn on the web. Finally the final
+section will describe how to install sub pieces of PEcAn on machines, to
+allow those machines to run the models.
 
-Before the first time, run `scripts/sshkey.sh`
+## SSH to remote machines
 
-Note: some systems (e.g. BU cluster) use authentication at the machine-level rather than the user-level. In this case you will need to create a .rhosts file in your home directory on the remote machine and list the servers you want to connect from. [See issue #428](https://github.com/PecanProject/pecan/issues/428)
+PEcAn leverages of SSH to communicate with remote machines. PEcAn expects
+to be able to connect to the remote machines without any password prompts.
+This can be accomplished many different ways, two common methods are to
+use a public/private keypair, the other is to use tunnels. The web
+interface is build to leverage the latter.
 
-### If the remote machine does not support ssh keys
+Once setup you should be able to login to the remote machine without
+being asked for a password.
 
-Add the following to `~/.ssh/config`
+### public/prvate keypairs
+
+Before the first time, run `scripts/sshkey.sh` This will create a
+public/private keypair, and places the public key on the remote server.
+
+### machine authentcation
+
+Some systems (e.g. BU cluster) use authentication at the machine-level
+rather than the user-level. In this case you will need to create a .rhosts
+file in your home directory on the remote machine and list the servers you
+want to connect from. [See issue #428](https://github.com/PecanProject/pecan/issues/428)
+
+### ssh tunnels
+
+This works espeically well for servers that use two factor authentication.
+This method leverages of the ability of SSH to send multiple channels
+across the same encrypted connection (tunnel). You will setup the
+first connection, and all subsequent connections will use the same
+connection.
+
+To automatically create the tunnels, you can add the following to your
+`~/.ssh/config`
 
 ```
 Host <hostname goes here>
@@ -14,61 +47,129 @@ Host <hostname goes here>
  ControlPath /tmp/%r@%h:%p
 ```
 
+You can also create the tunnel using the following comamnd:
+
+```
+ssh -o ControlMaster=yes -o ControlPath=/tmp/mytunnel -l username host
+```
+
 Next create a single ssh connection to the host, any ssh connection
-afterwards will use the same connection and should not require a password.
+afterwards will use the same connection and should not require a
+password.
 
-Before running the PEcAn workflow, open (and leave open) a single ssh connection from the local machine to the remote machine
+Before running the PEcAn workflow, open (and leave open) a single ssh
+connection from the local machine to the remote machine.
 
-# Loading modules on a remote server
+## Configuring PEcAn to execute remotely
 
-If running on the BU Geo cluster add `module load hdf5 netcdf nco` to your `.cshrc` or `.bashrc` file (depending upon which shell you use by default)
+To enable PEcAn to run remotely we will need to modify the pecan.xml
+to specify what host to connect to, what user to connect as, and how
+to connect. The web interface will create the pecan.xml with the
+appropriate entries.
 
-# Steps for setting up a remote model run
+### config.php for PEcAn web interface
 
-1. Before doing an individual run you will need to make sure that the PEcAn code is installed (and preferably up to date) in your home directory on the remote machine. Note that you just need to install and build the code, not the database.  See the Using Github instructions on how to clone PEcAn.
+The config.php has a few variables that will control where the web
+interface can run jobs, and how to run those jobs. These variables
+are `$hostlist`, `$qsublist`, `$qsuboptions`, and `$SSHtunnel`. In
+the near future `$hostlist`, `$qsublist`, `$qsuboptions` will be
+combined into a single list.
 
-1. Make a copy of an existing pecan settings file, preferably for the same site, using cleansettings.R
+`$SSHtunnel` : points to the script that creates an SSH tunnel.
+The script is located in the web folder and the default value of
+`dirname(__FILE__) . DIRECTORY_SEPARATOR . "sshtunnel.sh";` most
+likely will work.
 
-2. Open the copy new settings file (e.g. in RStudio)
+`$hostlist` : is an array with by default a single value, only
+allowing jobs to run on the local server. Adding any other servers
+to this list will show them in the pull down menu when selecting
+machines, and will trigger the web page to be show to ask for a
+username and password for the remote execution (make sure to use
+HTTPS setup when asking for password to prevent it from being send
+in the clear).
 
-2. Remote machine settings
+`$qsublist` : is an array of hosts that require qsub to be used
+when running the models. This list can include `$fqdn` to indicate
+that jobs on the local machine should use qsub to run the models.
 
-    Under `<host>` specify
+`$qsuboptions` : is an array that lists options for each machine.
+Currently it support the following options (see also
+[PEcAn-Configuration](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration#run_setup))
 
-    * the name of the remote server and your login, e.g. `<name>dietze@geo.bu.edu</name>`
+ ```
+array("geo.bu.edu" =>
+    array("qsub"   => "qsub -V -N @NAME@ -o @STDOUT@ -e @STDERR@ -S /bin/bash",
+          "jobid"  => "Your job ([0-9]+) .*",
+          "qstat"  => "qstat -j @JOBID@ || echo DONE",
+          "job.sh" => "module load udunits R/R-3.0.0_gnu-4.4.6",
+          "models" => array("ED2"    => "module load hdf5"))
+ ```
 
-    * the remote run directory `<rundir>`
+In this list `qsub` is the actual command line for qsub, `jobid`
+is the text returned from qsub, `qstat` is the command to check
+to see if the job is finished. `job.sh` and the value in models
+are additional entries to add to the job.sh file generated to
+run the model. This can be used to make sure modules are loaded
+on the HPC cluster before running the actual model.
 
-    * the remote output directory `<outdir>`
+### pecan.xml for PEcAn command line runs
 
-3. Remote file directories
+To enable remote execution from the command line you will need
+to add the &lt;host&gt; tag to pecan.xml (under &lt;run&gt;).
+This will let PEcAn know it should run the model on the remote
+system. You will need to specify the &lt;name&gt; tag to specify
+the remote machine. You can add &lt;user&gt; to specify the
+user, or you can use &lt;tunnel&gt; to specify the location of
+the tunnel to be used.
 
-    Under `<model>` specify 
+You can also add &lt;job.sh&gt; to both &lt;host&gt; and
+&lt;model&gt; to add specific information to the job.sh file
+used to run the model.
 
-    * the location of the model executable on the remote machine, e.g. `<binary>/usr2/faculty/dietze/ED.r82/ED/build/ed_2.1-opt</binary>`
+## Running PEcAn code for modules remotely
 
-    * for ED2, also specify remote databases: `<veg>`, `<soil>`, `<psscss>`, `<inputs>`
+You can compile and install the model specific code pieces of
+PEcAn on the cluster easily without having to install the
+full code base of PEcAn (and all OS dependencies). All of the
+code pieces depend on PEcAn.utils to install this you can
+run the following on the cluster:
 
-      `<veg>/projectnb/cheas/EDI/oge2OLD/OGE2_</veg>`
-      `<soil>/projectnb/cheas/EDI/faoOLD/FAO_</soil>`
-      `<inputs>/projectnb/cheas/EDI/ed_inputs/</inputs>`
+```
+devtools::install_github("pecanproject/pecan", subdir = 'utils')
+```
 
-    note that `<psscss>` is not required for a bare-ground run
+Next we need to install the model specifc pieces, this is done
+almost the same:
 
-    Under `<run>` specify
+```
+devtools::install_github("pecanproject/pecan", subdir = 'models/ed')
+```
 
-    * the remote location of the meteorology file `<met>`
+This should install dependencies required. Following are some
+notes on how to install the model specifics on differetn HPC
+clusters.
 
-    Note: for ED2, if you've copied files make sure the ED_MET_DRIVER_HEADER sets it's internal path correctly
+### geo.bu.edu
 
-4. Remote queue specification (if applicable)
+Following modules need to be loaded:
 
-    [see run config details](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration#run-setup)
+```
+module load hdf5 udunits R/R-3.0.0_gnu-4.4.6
+```
 
-5. The highest-level `<outdir>` is where output is copied to on the LOCAL machine
+Next the following packages need to be installed, otherwise it
+will fall back on the older versions install site-library
 
-    For more general info on setting up the pecan settings file see [PEcAn-Configuration](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration)
+```
+install.packages(c('udunits2', 'lubridate'), 
+   configure.args=c(udunits2='--with-udunits2-lib=/project/earth/packages/udunits-2.1.24/lib --with-udunits2-include=/project/earth/packages/udunits-2.1.24/include'),
+   repos='http://cran.us.r-project.org')
+```
 
-6. If you remote server doesn't support ssh keys, ssh to the server from the VM command line
+Finally to install support for both ED and SIPNET:
 
-7. At this point you should be able to use workflow.R to run the model, as described in Demo 2 of the tutorial.
+```
+devtools::install_github("pecanproject/pecan", subdir = 'utils')
+devtools::install_github("pecanproject/pecan", subdir = 'models/sipnet')
+devtools::install_github("pecanproject/pecan", subdir = 'models/ed')
+```
