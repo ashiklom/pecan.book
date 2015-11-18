@@ -68,4 +68,4 @@ To share your data you can now run the dump.bey.sh. The script is configured usi
 
 Following is a list of tasks we plan on working on to improve these scripts:
 - [pecanproject/pecan#149](https://github.com/PecanProject/pecan/issues/149) : add server to EBI, currently we will assign ID by hand and the range is based on this ID and is computed in the scripts. This information should be stored in the database, as well as the URL where to get the data from. This will allow a user to update the URL.
-- [pecanproject/bety#368](https://github.com/PecanProject/bety/issues/368) allow site-specific customization.
+- [pecanproject/bety#368](https://github.com/PecanProject/bety/issues/368) allow site-specific customization of information and UI elements including title, contacts, logo, color scheme.
