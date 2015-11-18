@@ -1,9 +1,9 @@
 ### [[User's Guide | Getting-started]]
 
 * [[Background | Getting-started#getting-started-i-background]]
-  * [[Download Virtual Machine | http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category]]
+  * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category')
   * [[VM to Desktop Converter | Vm-desktop-conversion]]
-  * [[Work through Demo | http://pecanproject.github.io/tutorials.html]]
+  * [Work through Demo](http://pecanproject.github.io/tutorials.html)
 * [[Using PEcAn | Getting-started#getting-started-ii-using-pecan]] 
   * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
   * [[Updating PEcAn | Updating-PEcAn]]
