@@ -6,7 +6,7 @@ The database synchronization consists of 2 parts:
 
 Each server that runs the BETY database will have a unique machine_id and a sequence of ID's associated. Whenever the user creates a new row in BETY it will receive an ID in the sequence. This allows us to uniquely identify where a row came from. This is information is crucial for the code that works with the synchronization since we can now copy those rows that have an ID in the sequence specified. If you have not asked for a unique ID your ID will be 99.
 
-The synchronization code itself is split into two parts, load.bety.sh and dump.bety.sh. Unless you plan on sharing your data you will only use load.bety.sh to update your database.
+The synchronization code itself is split into two parts, loading data with the `load.bety.sh` script and exporting data using `dump.bety.sh`. If you do not plan to share data, you only need to use `load.bety.sh` to update your database.
 
 ## Fetch latest data
 
@@ -59,10 +59,11 @@ To share your data you can now run the dump.bey.sh. The script is configured usi
 - DATABASE: the database where the script should write the results.  The default is `bety`.
 - PG_OPT: additional options to be added to psql (default is nothing).
 - MYSITE: the ID of your site.  If you have not requested an ID, use 99, which is used for all sites that do not want to share their data (i.e. VM).  99 is the default.
-- LEVEL: the minimum access-protection level of the data to be dumped (0=private, 4=public).  The default is level 3.
+- LEVEL: the minimum access-protection level of the data to be dumped (0=private, 1=restricted, 2=internal collaborators, 3=external collaborators, 4=public).  The default level for exported data is level 3.
+   - note that currently only the traits and yields tables have restrictions on sharing. If you share data, records from other (meta-data) tables will be shared. If you wish to extend the access_level to other tables please [submit a feature request](https://github.com/pecanproject/bety/issues/new).
 - UNCHECKED: specifies whether unchecked traits and yields be dumped.  Set to YES (all caps) to dump unchecked data.  The default is NO.
 - ANONYMOUS: specifies whether all users be anonymized.  Set to YES (all caps) to keep the original users (**INCLUDING PASSWORD**) in the dump file.  The default is NO.
-- OUTPUT: the location of where on disk to write the result file.  The default is ${PWD}/dump.
+- OUTPUT: the location of where on disk to write the result file.  The default is `${PWD}/dump`.
 
 ## Tasks
 
