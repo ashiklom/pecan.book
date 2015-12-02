@@ -8,7 +8,6 @@
 * **[[Developer's Guide | Development]]**
  * **[[Build Status|http://ebi-forecast.igb.illinois.edu/jenkins/job/PEcAn%20build/]]**
  * **[[Guidelines For Contributing|https://github.com/PecanProject/pecan/blob/master/CONTRIBUTING.md]]**
- * **[[HipChat Discussion|https://hipchat.ncsa.illinois.edu/gW51EFhtT]]**
  * **[[Gitter Discussion|https://gitter.im]]**
 * **[[Code of Conduct]]**
 * **[[FAQ|https://github.com/PecanProject/pecan/issues?labels=question&page=1&state=closed]]**
