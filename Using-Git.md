@@ -33,8 +33,12 @@ network access or a central server. Branching and merging are fast and
 easy to do.
 
 A good place to start is the [GitHub 5 minute illustrated tutorial](https://guides.github.com/introduction/flow/). 
-In addition, there are two fun tutorials for learning git: [LearnGitBranching](http://pcottle.github.com/learnGitBranching/) and
-[TryGit](http://try.github.com). For additional tutorials and background see [[References | Using-Git#references]]
+In addition, there are three fun tutorials for learning git:
+
+* [Learn Git](https://www.codecademy.com/learn/learn-git) is a great web-based interactive tutorial.
+* [LearnGitBranching](http://pcottle.github.com/learnGitBranching/)
+* [TryGit](http://try.github.com).
+For additional tutorials and background see [[References | Using-Git#references]]
 
 **URLs** In the rest of the document will use specific URL’s to clone the code.
 There a few URL’s you can use to clone a project, using https, ssh and
