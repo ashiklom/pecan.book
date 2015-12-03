@@ -38,6 +38,7 @@ In addition, there are three fun tutorials for learning git:
 * [Learn Git](https://www.codecademy.com/learn/learn-git) is a great web-based interactive tutorial.
 * [LearnGitBranching](http://pcottle.github.com/learnGitBranching/)
 * [TryGit](http://try.github.com).
+
 For additional tutorials and background see [[References | Using-Git#references]]
 
 **URLs** In the rest of the document will use specific URL’s to clone the code.
