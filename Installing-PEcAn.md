@@ -152,6 +152,14 @@ echo 'devtools::install_github("ebimodeling/biocro-dev")' | R --vanilla
 _BioCro Developers:_ request from [@dlebauer on GitHub](https://github.com/dlebauer)
 
 
+### Linkages
+
+#### Installation 
+```r
+# Public
+echo 'devtools::install_github("araiho/linkages_package")' | R --vanilla
+```
+
 ### DALEC
 
 #### Installation
