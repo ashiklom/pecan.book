@@ -202,7 +202,6 @@ Download the code (~300M compressed), input data (1.7GB compressed and expands t
 ```
 mkdir models
 cd models
-##wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/clm4_5_ornl-bb4ddd8c53fc.tar.gz
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm4_5_1_r085.tar.gz
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/1x1pt_US-Wrc/ccsm_inputdata.tar.gz
 tar -xvzf clm4_5*
@@ -212,6 +211,7 @@ tar -xvzf ccsm_inputdata.tar.gz
 mkdir /home/carya/models/ccsm_inputdata/lnd/clm2/paramdata
 cd  /home/carya/models/ccsm_inputdata/lnd/clm2/paramdata
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm_params.c130821.nc
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm_params.c140423.nc
 
 #Domain file:
 cd /home/carya/models/ccsm_inputdata/share/domains/domain.clm/
@@ -223,7 +223,13 @@ wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/all_hourly.nc
 
 ## lightning database
 cd /home/carya/models/ccsm_inputdata/atm/datm7/NASA_LIS/
-wget clmforc.Li_2012_climo1995-2011.T62.lnfm_Total_c140423.nc
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clmforc.Li_2012_climo1995-2011.T62.lnfm_Total_c140423.nc
+
+## surface data
+cd /home/carya/modela/ccsm_inputdata/lnd/clm2/surfdata
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc_new
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/surfdata_360x720cru_simyr1850_c130927.nc
+mv surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc_new surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc
 ```
 Required libraries
 ```
