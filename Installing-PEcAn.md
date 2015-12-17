@@ -226,7 +226,7 @@ cd /home/carya/models/ccsm_inputdata/atm/datm7/NASA_LIS/
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clmforc.Li_2012_climo1995-2011.T62.lnfm_Total_c140423.nc
 
 ## surface data
-cd /home/carya/modela/ccsm_inputdata/lnd/clm2/surfdata
+cd /home/carya/models/ccsm_inputdata/lnd/clm2/surfdata
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc_new
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/surfdata_360x720cru_simyr1850_c130927.nc
 mv surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc_new surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc
@@ -239,7 +239,7 @@ sudo ln -s /usr/bin/make /usr/bin/gmake
 ```
 Compile and build default inputs
 ```
-cd ~/models/clm4_5_1_r085/scripts
+cd ~/carya/models/clm4_5_1_r085/scripts
 python runCLM.py --site US-UMB ––compset I1850CLM45CN --mach ubuntu --ccsm_input /home/carya/models/ccsm_inputdata --tstep 1 --nopointdata --coldstart --cpl_bypass --clean_build
 ```
 
