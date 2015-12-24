@@ -203,7 +203,7 @@ Download the code (~300M compressed), input data (1.7GB compressed and expands t
 mkdir models
 cd models
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm4_5_1_r085.tar.gz
-wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/1x1pt_US-Wrc/ccsm_inputdata.tar.gz
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/ccsm_inputdata.tar.gz
 tar -xvzf clm4_5*
 tar -xvzf ccsm_inputdata.tar.gz
 
