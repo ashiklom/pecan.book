@@ -229,8 +229,8 @@ wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clmforc.Li_2012_climo1995-2
 cd /home/carya/models/ccsm_inputdata/lnd/clm2/surfdata
 wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/surfdata_360x720cru_simyr1850_c130927.nc
 cd /home/carya/models/ccsm_inputdata/lnd/clm2/surfdata_map
-wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc_new
-mv surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc_new surfdata_1x1pt_US-UMB_I1850CLM34CN_simyr1850.nc
+wget ftp://nacp.ornl.gov/synthesis/2008/firenze/site/clm/surfdata_1x1pt_US-UMB_I1850CLM45CN_simyr1850.nc_new
+mv surfdata_1x1pt_US-UMB_I1850CLM45CN_simyr1850.nc_new surfdata_1x1pt_US-UMB_I1850CLM45CN_simyr1850.nc
 ```
 Required libraries
 ```
