@@ -4,8 +4,9 @@ The quickest way to get started is to download the virtual machine. The demo pro
  * [Download Virtual Machine](http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN) and optionally convert VM to [[Desktop Machine | VM-Desktop-Conversion]]
  * [Work through Demo](http://pecanproject.github.io/tutorials.html)
 
-### Site-level Runs
+### Using PEcAn
 
+#### Site-level Runs
 The most basic function of PEcAn is to make it easier to run models at different sites and evaluate their outputs. The [Demo](http://pecanproject.github.io/tutorials.html) describes the basics of running the model at an existing site. The following links walk through not only this, but also how to set up new sites and new model inputs so that you can extend PEcAn to your own research.
 
 * [[Choose a site]]
