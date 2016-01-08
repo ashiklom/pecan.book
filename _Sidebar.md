@@ -1,19 +1,29 @@
-### [[User's Guide | Getting-started]]
-
+## User's Guide
+### [[Getting Started | Getting-started]]
 * [[Background | Getting-started#getting-started-i-background]]
   * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category')
   * [[VM to Desktop Converter | Vm-desktop-conversion]]
   * [Work through Demo](http://pecanproject.github.io/tutorials.html)
 * [[Using PEcAn | Getting-started#getting-started-ii-using-pecan]] 
+  * [[Choose a site]]
+  * [[Choose a model]]
+  * [[Choosing meteorology]]
+  * [[Choosing PFTs]]
+  * [[Choosing initial vegetation]]
+  * [[Choosing soils]]
+* [[Modules and Tools | additional-pecan-modules-and-tools]]
+* [[Supported Models | supported-models]]
+* [[Beyond the Basics | beyond-the-basics]]
+  * [[Settings Files | PEcAn-Configuration]]
+  * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
   * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
   * [[Updating PEcAn | Updating-PEcAn]]
-  * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
-  * [[Settings Files | PEcAn-Configuration]]
   * [[PEcAn Workflow Modules | Workflow-modules]]
   * [[Updating, Building, and Checking | Updating-PEcAn ]]
 * [[Reporting Bugs and Requesting Features | Github-issues]]
 * [[Code of Conduct]]
 
+## Developer's Guide
 ### [[Developer's Guide | Development]]
 * [[Setup | Development#setup]]
   * [[Installing PEcAn | Installing-PEcAn]]
