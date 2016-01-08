@@ -1,5 +1,4 @@
-## User's Guide
-### [[Getting Started | Getting-started]]
+## [[User's Guide | Getting-started]]
 * [[Background | Getting-started#getting-started-i-background]]
   * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category')
   * [[VM to Desktop Converter | Vm-desktop-conversion]]
@@ -23,8 +22,7 @@
 * [[Reporting Bugs and Requesting Features | Github-issues]]
 * [[Code of Conduct]]
 
-## Developer's Guide
-### [[Developer's Guide | Development]]
+## [[Developer's Guide | Development]]
 * [[Setup | Development#setup]]
   * [[Installing PEcAn | Installing-PEcAn]]
     * [[Installing Data | Installing-PEcAn-Data]]
