@@ -1,50 +1,40 @@
-## [[User's Guide | Getting-started]]
-* [[Background | Getting-started#getting-started-i-background]]
-  * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category')
-  * [[VM to Desktop Converter | Vm-desktop-conversion]]
-  * [Work through Demo](http://pecanproject.github.io/tutorials.html)
-* [[Using PEcAn | Getting-started#getting-started-ii-using-pecan]] 
-  * [[Choose a site]]
-  * [[Choose a model]]
-  * [[Choosing meteorology]]
-  * [[Choosing PFTs]]
-  * [[Choosing initial vegetation]]
-  * [[Choosing soils]]
-* [[Modules and Tools | Getting-started#additional-pecan-modules-and-tools]]
-* [[Supported Models | Getting-started#supported-models]]
-* [[Beyond the Basics | Getting-started#beyond-the-basics]]
-  * [[PEcAn Workflow Modules | Workflow-modules]]
-  * [[PEcAn Configuration | Getting-started#PEcAn-Configuration]]
-  * [[Updating, Building, and Checking PEcAn | Updating-PEcAn#update-build-and-check-pecan ]]
-  * [[Upgrading PEcAn/VM | Upgrading-pecan-vm]]
-  * [[Updating BETY database | Updating-PEcAn#updating-bety-database]]
-  * [[Troubleshooting PEcAn | Troubleshooting-pecan]]
-* [[Reporting Bugs and Requesting Features | Github-issues]]
-* [[Code of Conduct]]
+# Summary
 
-## [[Developer's Guide | Development]]
-* [[Setup | Development#setup]]
-  * [[Installing PEcAn | Installing-PEcAn]]
-    * [[Installing Data | Installing-PEcAn-Data]]
-    * [[Install Models | Installing-PEcAn#install-models]]
-    * [[Installing BETY | Installing-PEcAn#installing-bety]]
-    * [[Installing PEcAn | Installing-PEcAn#installing-pecan]]
-    * [[Configuring PEcAn Web Interface | Installing-PEcAn#configuring-pecan-web-interface]]
-    * [[PEcAn Configuration and Settings Files | Configuration-Files]]
-* [[Development | Development]]
-  * [[PEcAn Directory Structure | Directory-structure]]
-  * [[Using Github and Git | Using-Git]]
-    * [[Recommended Workflow for PEcAn and BETY Developers | Using-Git#recommended-workflow-for-pecan-and-bety-developers]]
-    * [[Git Overview | Using-Git#summary]]
-    * [[Git + RStudio | Using-Git#git--rstudio]]
-* [[R Development | Development#r-development]]
-  * [[Coding Style | Coding-style]]
-  * [[Documentation | Roxygen2]]
-  * [[Testing | Testing]]
-  * [[Package Data | Package-data]]
-  * [[Logging, Warnings, and Error Messages | Logging]]
-* [[Data Formats]]
-  * [[Inputs | Data-Formats#Inputs]]
-    * [[Standard Names | Adding-an-Input-Converter#the-variable-names-should-be-standard_name]]
-  * [[Outputs | Data-Formats#Inputs]]
-  * [[Defining | Data-Formats#Definition]]
+* [Introduction](README.md)
+* [Basic User's Guide](Background/basic_users_guide.md)
+   * [Getting Started Using PEcAn](Background/getting_started_using_pecan.md)
+   * [Choose a site](Background/Initialization/Choose-a-site.md)
+   * [Choose a model](Background/Initialization/Choose-a-model.md)
+   * [Choose a meteorological driver](Background/Initialization/Choosing-meteorology.md)
+   * [Choose PFTs](Background/Initialization/Choosing-PFTs.md)
+   * [Choose initial vegetation](Background/Initialization/Choosing-initial-vegetation.md)
+   * [Choose soils](Background/Initialization/Choosing-soils.md)
+   * [Additional Modules and Tools](Background/additional_modules_and_tools.md)
+   * [Supported Models](Background/supported_models.md)
+   * [Advanced User's Guide](Advanced/advanced_users_guide.md)
+* [PEcAn Workflow Modules](Advanced/Workflow-modules.md)
+* [PEcAn Configuration ](Advanced/pecan_conf/PEcAn-Configuration.md)
+* [Updating, Building, and Checking PEcAn](Advanced/pecan_conf/Updating-PEcAn.md)
+* [Upgrading PEcAn/VM](Advanced/VM_conf/Upgrading-pecan-vm.md)
+* [Updating BETY database](Advanced/db_conf/Updating-BETY.md)
+* [Troubleshooting PEcAn](Advanced/pecan_conf/Troubleshooting-pecan.md)
+* [Reporting Bugs and Requesting Features](reporting_bugs_and_requesting_new_features.md)
+* [Developer's Guide](Developers/developer_users_guide.md)
+   * [Installing Data](Developers/Install/Installing-PEcAn-Data.md)
+   * [Installing PEcAn](Developers/Install/Installing-PEcAn.md)
+   * [PEcAn Configuration and Settings Files](Advanced/Configuration-Files.md)
+   * [Development](Developers/Development.md)
+   * [PEcAn Directory Structure](Developers/Dev/Directory-structure.md)
+   * [Using Github and Git](Developers/Dev/Using-Git.md)
+   * [R Development](Developers/Development.md)
+   * [Coding Style](Developers/R_dev/Coding style.md])
+   * [Documentation](Developers/R_dev/Roxygen2)
+   * [Testing](Developers/R_dev/Testing.md)
+   * [Package Data](Developers/R_devPackage-data.md)
+   * [Logging, Warnings, and Error Messages](Developers/R_dev/Logging.md)
+   * [Inputs](Developers/Data_Formats/Data-Formats.md)
+   * [Standard Names](Developers/Data_Formats/Adding-an-Input-Converter.md)
+   * [Outputs](Developers/Data_Formats/Data-Formats.md)
+   * [Defining](Developers/Data_Formats/Data-Formats.md)
+   * [Code of Conduct](Code-of-Conduct.md)
+   
