@@ -1,3 +1,4 @@
+![Pecan Logo](PecanLogo.png)
 
 ## The Predictive Ecosystem Analyzer (PEcAn): Facilitating feedbacks between field measurements and ecosystem models
 
