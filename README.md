@@ -1,20 +1,5 @@
-* **[[User's Guide| Getting Started]]**
- * **[[Configuration | PEcAn-Configuration]]**
- * **[[Site-Level Runs | Getting-started#site-level-runs]]**
- * **Inputs:** [[Met data format | Adding-an-Input-Converter#met-data]] and [[Adding Inputs | How-to-insert-new-Input-data]]
- * **[[Modules & Tools | Getting-started#additional-pecan-modules-and-tools]]**
- * **[[Models | Getting-started#supported-models]]**
- * **[[Education]]**
-* **[[Developer's Guide | Development]]**
- * **[[Build Status|http://ebi-forecast.igb.illinois.edu/jenkins/job/PEcAn%20build/]]**
- * **[[Guidelines For Contributing|https://github.com/PecanProject/pecan/blob/master/CONTRIBUTING.md]]**
- * **[[Gitter Discussion|https://gitter.im]]**
-* **[[Code of Conduct]]**
-* **[[FAQ|https://github.com/PecanProject/pecan/issues?labels=question&page=1&state=closed]]**
 
-If you would like to search the wiki for keywords, we recommend using a plugin for Google Chrome found [here](https://chrome.google.com/webstore/detail/github-wiki-search/gdifdhnjmjaidbajhapmbcbnoocoeooc?hl=en)
-
-## PEcAn: Facilitating feedbacks between field measurements and ecosystem models
+## The Predictive Ecosystem Analyzer (PEcAn): Facilitating feedbacks between field measurements and ecosystem models
 
 ### Project Overview
 
