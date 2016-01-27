@@ -19,7 +19,7 @@
    * [Updating BETY database](users_guide/basic_users_guide/Updating-BETY.md)
    * [Troubleshooting PEcAn](users_guide/basic_users_guide/Troubleshooting-pecan.md)
    * [Reporting Bugs and Requesting Features](reporting_bugs_and_requesting_new_features.md)
-* [Developer's Guide](developer_guide/developer_users_guide.md)
+* [Developer's Guide]
    * [Installing Data](developer_guide/Installing-PEcAn-Data.md)
    * [Installing PEcAn](developer_guide/Installing-PEcAn.md)
    * [PEcAn Configuration and Settings Files](developer_guide/Configuration-Files.md)
