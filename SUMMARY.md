@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Basic User's Guide](Background/basic_users_guide.md)
+* [Basic User's Guide]
    * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
    * [Choose a site](users_guide/basic_users_guide/Choose-a-site.md)
    * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
@@ -11,7 +11,7 @@
    * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
    * [Additional Modules and Tools](users_guide/basic_users_guide/additional_modules_and_tools.md)
    * [Supported Models](users_guide/basic_users_guide/supported_models.md)
-* [Advanced User's Guide](users_guide/basic_users_guide/advanced_users_guide.md)
+* [Advanced User's Guide]
    * [PEcAn Workflow Modules](users_guide/basic_users_guide/Workflow-modules.md)
    * [PEcAn Configuration ](users_guide/basic_users_guide/pecan_conf/PEcAn-Configuration.md)
    * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/pecan_conf/Updating-PEcAn.md)
@@ -19,7 +19,7 @@
    * [Updating BETY database](users_guide/basic_users_guide/Updating-BETY.md)
    * [Troubleshooting PEcAn](users_guide/basic_users_guide/Troubleshooting-pecan.md)
    * [Reporting Bugs and Requesting Features](reporting_bugs_and_requesting_new_features.md)
-* [Developer's Guide](developer_guide/developer_users_guide.md)
+* [Developer's Guide]
    * [Installing Data](developer_guide/Installing-PEcAn-Data.md)
    * [Installing PEcAn](developer_guide/Installing-PEcAn.md)
    * [PEcAn Configuration and Settings Files](developer_guide/Configuration-Files.md)
