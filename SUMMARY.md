@@ -24,7 +24,7 @@
    * [Development](developer_guide/Development.md)
    * [PEcAn Directory Structure](developer_guide/Directory-structure.md)
    * [Using Github and Git](developer_guide/Using-Git.md)
-   * [Coding Style](Coding style.md])
+   * [Coding Style](developer_guide/Coding style.md])
    * [Documentation](developer_guide/Roxygen2.md)
    * [Testing](developer_guide/Testing.md)
    * [Package Data](Package-data.md)
