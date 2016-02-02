@@ -11,7 +11,7 @@
    * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
 * [Advanced User's Guide]
    * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
-   * [PEcAn Configuration ](users_guide/advanced_users_guide/pecan_conf/PEcAn-Configuration.md)
+   * [PEcAn Configuration ](users_guide/advanced_users_guide/PEcAn-Configuration.md)
    * [Updating, Building, and Checking PEcAn](Updating-PEcAn.md)
    * [Upgrading PEcAn/VM](users_guide/advanced_users_guide/VM_conf/Upgrading-pecan-vm.md)
    * [Updating BETY database](users_guide/advanced_users_guide/Updating-BETY.md)
