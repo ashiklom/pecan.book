@@ -12,8 +12,8 @@
    * [Additional Modules and Tools](users_guide/basic_users_guide/additional_modules_and_tools.md)
    * [Supported Models](users_guide/basic_users_guide/supported_models.md)
 * [Advanced User's Guide]
-   * [PEcAn Workflow Modules](users_guide/basic_users_guide/Workflow-modules.md)
-   * [PEcAn Configuration ](users_guide/basic_users_guide/pecan_conf/PEcAn-Configuration.md)
+   * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
+   * [PEcAn Configuration ](users_guide/advanced_users_guide/pecan_conf/PEcAn-Configuration.md)
    * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/pecan_conf/Updating-PEcAn.md)
    * [Upgrading PEcAn/VM](users_guide/basic_users_guide/VM_conf/Upgrading-pecan-vm.md)
    * [Updating BETY database](users_guide/basic_users_guide/Updating-BETY.md)
