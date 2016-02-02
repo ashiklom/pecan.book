@@ -13,7 +13,7 @@
    * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
    * [PEcAn Configuration ](users_guide/advanced_users_guide/PEcAn-Configuration.md)
    * [Updating, Building, and Checking PEcAn](Updating-PEcAn.md)
-   * [Upgrading PEcAn/VM](users_guide/advanced_users_guide/VM_conf/Upgrading-pecan-vm.md)
+   * [Upgrading PEcAn/VM](users_guide/advanced_users_guide/Upgrading-pecan-vm.md)
    * [Updating BETY database](users_guide/advanced_users_guide/Updating-BETY.md)
    * [Troubleshooting PEcAn](users_guide/advanced_users_guide/Troubleshooting-pecan.md)
    * [Reporting Bugs and Requesting Features](Github-issues.md)
