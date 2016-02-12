@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Basic User's Guide](users_guide/basic_users_guide/Basic_Users_Guide.md)
    * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
+   * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/Updating-PEcAn.md)
    * [Choose a site](users_guide/basic_users_guide/Choose-a-site.md)
    * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
    * [Choose a meteorological driver](users_guide/basic_users_guide/Choosing-meteorology.md)
@@ -12,7 +13,7 @@
 * [Advanced User's Guide](users_guide/advanced_users_guide/Advanced_Users_Guide.md)
    * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
    * [PEcAn Configuration ](users_guide/advanced_users_guide/PEcAn-Configuration.md)
-   * [Updating, Building, and Checking PEcAn](Updating-PEcAn.md)
+ 
    * [Upgrading PEcAn/VM](users_guide/advanced_users_guide/Upgrading-pecan-vm.md)
    * [Updating BETY database](users_guide/advanced_users_guide/Updating-BETY.md)
    * [Troubleshooting PEcAn](users_guide/advanced_users_guide/Troubleshooting-pecan.md)
