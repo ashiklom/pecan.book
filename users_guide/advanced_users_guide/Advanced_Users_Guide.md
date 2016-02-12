@@ -4,7 +4,9 @@ For those wanting to take advantage of PEcAn's more advanced features and custom
 
 [PEcAn Workflow](users_guide/advanced_users_guide/PEcAn-Configuration.md)
 [Remote Execution](
-[Updating 
+[Updating PEcAn](
+[ED2 Configuration]
+[
 
 ```
 library(PEcAn.all)
