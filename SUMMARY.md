@@ -9,7 +9,7 @@
    * [Choose PFTs](users_guide/basic_users_guide/Choosing-PFTs.md)
    * [Choose initial vegetation](users_guide/basic_users_guide/Choosing-initial-vegetation.md)
    * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
-* [Advanced User's Guide](users_guide/basic_users_guide/Advanced_Users_Guide.md)
+* [Advanced User's Guide](users_guide/advanced_users_guide/Advanced_Users_Guide.md)
    * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
    * [PEcAn Configuration ](users_guide/advanced_users_guide/PEcAn-Configuration.md)
    * [Updating, Building, and Checking PEcAn](Updating-PEcAn.md)
