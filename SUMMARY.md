@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Basic User's Guide
+* [Basic User's Guide](users_guide/basic_users_guide/Basic_Users_Guide.md)
    * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
    * [Choose a site](users_guide/basic_users_guide/Choose-a-site.md)
    * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
