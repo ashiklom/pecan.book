@@ -1,0 +1,37 @@
+# Summary
+
+* [Introduction](README.md)
+* [Basic User's Guide]
+   * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
+   * [Choose a site](users_guide/basic_users_guide/Choose-a-site.md)
+   * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
+   * [Choose a meteorological driver](users_guide/basic_users_guide/Choosing-meteorology.md)
+   * [Choose PFTs](users_guide/basic_users_guide/Choosing-PFTs.md)
+   * [Choose initial vegetation](users_guide/basic_users_guide/Choosing-initial-vegetation.md)
+   * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
+   * [Additional Modules and Tools](users_guide/basic_users_guide/additional_modules_and_tools.md)
+   * [Supported Models](users_guide/basic_users_guide/supported_models.md)
+* [Advanced User's Guide]
+   * [PEcAn Workflow Modules](users_guide/basic_users_guide/Workflow-modules.md)
+   * [PEcAn Configuration ](users_guide/basic_users_guide/pecan_conf/PEcAn-Configuration.md)
+   * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/pecan_conf/Updating-PEcAn.md)
+   * [Upgrading PEcAn/VM](users_guide/basic_users_guide/VM_conf/Upgrading-pecan-vm.md)
+   * [Updating BETY database](users_guide/basic_users_guide/Updating-BETY.md)
+   * [Troubleshooting PEcAn](users_guide/basic_users_guide/Troubleshooting-pecan.md)
+   * [Reporting Bugs and Requesting Features](reporting_bugs_and_requesting_new_features.md)
+* [Developer's Guide]
+   * [Installing Data](developer_guide/Installing-PEcAn-Data.md)
+   * [Installing PEcAn](developer_guide/Installing-PEcAn.md)
+   * [PEcAn Configuration and Settings Files](developer_guide/Configuration-Files.md)
+   * [Development](developer_guide/Development.md)
+   * [PEcAn Directory Structure](developer_guide/Directory-structure.md)
+   * [Using Github and Git](developer_guide/Using-Git.md)
+   * [Coding Style](developer_guide/Coding style.md])
+   * [Documentation](developer_guide/Roxygen2)
+   * [Testing](developer_guide/Testing.md)
+   * [Package Data](developer_guide/R_devPackage-data.md)
+   * [Logging, Warnings, and Error Messages](developer_guide/Logging.md)
+   * [Inputs](developer_guide/Data-Formats.md)
+   * [Standard Names](developer_guide/Adding-an-Input-Converter.md)
+* [Code of Conduct](Code-of-Conduct.md)
+   
