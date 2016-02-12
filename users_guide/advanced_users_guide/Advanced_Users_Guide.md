@@ -3,7 +3,8 @@
 For those wanting to take advantage of PEcAn's more advanced features and customizations, this section will provide in-depth guides.
 
 [PEcAn Workflow](users_guide/advanced_users_guide/PEcAn-Configuration.md)
-    *[]
+[Remote Execution](
+[Updating 
 
 ```
 library(PEcAn.all)
