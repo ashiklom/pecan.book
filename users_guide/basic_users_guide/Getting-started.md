@@ -15,17 +15,7 @@ There are two ways of using PEcAn, via the web interface and directly within R. 
 
 The basic workflow in R is:
 
-```r
-library(PEcAn.all)
-settings <- read.settings()
-settings$pfts <- get.trait.data(settings)
-run.meta.analysis(settings)
-run.write.configs(settings)
-start.model.runs(settings)
-convert.outputs(settings)
-run.sensitivity.analysis(settings)
-run.ensemble.analysis(settings)
-```
+
 
 ### Quick Start
 
