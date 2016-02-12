@@ -1,0 +1,12 @@
+{
+	"plugins": [
+             "autosize-iframe",
+             "comment",
+             "heading-anchors",
+             "youtube",
+             "-anchors"
+         ],
+         "pluginsConfig":{
+        }
+    }
+}
