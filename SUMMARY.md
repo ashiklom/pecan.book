@@ -9,7 +9,7 @@
    * [Choose PFTs](users_guide/basic_users_guide/Choosing-PFTs.md)
    * [Choose initial vegetation](users_guide/basic_users_guide/Choosing-initial-vegetation.md)
    * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
-* [Advanced User's Guide]
+* [Advanced User's Guide](users_guide/basic_users_guide/Advanced_Users_Guide.md)
    * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
    * [PEcAn Configuration ](users_guide/advanced_users_guide/PEcAn-Configuration.md)
    * [Updating, Building, and Checking PEcAn](Updating-PEcAn.md)
@@ -17,8 +17,9 @@
    * [Updating BETY database](users_guide/advanced_users_guide/Updating-BETY.md)
    * [Troubleshooting PEcAn](users_guide/advanced_users_guide/Troubleshooting-pecan.md)
    * [Reporting Bugs and Requesting Features](Github-issues.md)
-* [Developer's Guide]
-   * [Installing Data](developersguide/Installing-PEcAn-Data.md)
+* [Developer's Guide](developers_guide/Developers_guide.md)
+   * [Installing Data](developers_guide/Installing-PEcAn-Data.md)
+   * [Adding Ecosystem Model](
    * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
    * [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
    * [Development](developers_guide/Development.md)
