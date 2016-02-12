@@ -1,6 +1,6 @@
-### Getting Started I: Background
+### Basic User's Guide
 
-1. The quickest way to get started is to download the virtual machine. The demo provides instructions to get started on your own machine. 
+1. The quickest way to get started is to vistin our [website](http://pecanproject.github.io/) and click the download tab to get the PecAn Virtual Machine. The demo provides instructions to get started on your own machine. 
  * [Download Virtual Machine](http://isda.ncsa.illinois.edu/download/index.php?project=PEcAn&sort=category) and optionally convert VM to [[Desktop Machine | VM-Desktop-Conversion]]
  * [Work through Demo](https://ebi-forecast.igb.illinois.edu/redmine/documents/27)
 2. Create Accounts
