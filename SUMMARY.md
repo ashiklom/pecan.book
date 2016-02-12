@@ -19,7 +19,7 @@
 * [Developer's Guide](developers_guide/Developers_guide.md)
    * [Reporting Bugs and Requesting Features](developers_guide/Github-issues.md)
    * [Installing Data](developers_guide/Installing-PEcAn-Data.md)
-   * [Adding Ecosystem Model](Adding-an-Input-Converter.md)
+   * [Adding Ecosystem Model](developers_guide/Adding-an-Ecosystem-Model.md)
    * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
    * [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
    * [Development](developers_guide/Development.md)
