@@ -17,10 +17,10 @@
    * [Upgrading PEcAn/VM](users_guide/advanced_users_guide/Upgrading-pecan-vm.md)
    * [Updating BETY database](users_guide/advanced_users_guide/Updating-BETY.md)
    * [Troubleshooting PEcAn](users_guide/advanced_users_guide/Troubleshooting-pecan.md)
-   * [Reporting Bugs and Requesting Features](Github-issues.md)
 * [Developer's Guide](developers_guide/Developers_guide.md)
+   * [Reporting Bugs and Requesting Features](developers_guide/Github-issues.md)
    * [Installing Data](developers_guide/Installing-PEcAn-Data.md)
-   * [Adding Ecosystem Model](
+   * [Adding Ecosystem Model](Adding-an-Input-Converter.md)
    * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
    * [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
    * [Development](developers_guide/Development.md)
