@@ -1,8 +1,8 @@
 ### Background / Overview
 
-Ecosystem models simulate biology, physics, and chemistry of a system and interactions with the environment.
+Ecosystem models simulate the biology, physics, and chemistry of a system and interactions within the environment.
 
-PEcAn provides an interface to a variety of different ecosystem models and attempts to standardize and automate the processes of model parameterization, execution, and analysis. First, you choose an ecosystem model, then the time and location of interest (a site), and the plant community (or crop) that you are interested in simulating. All of these are set in a "settings" file, commonly named `pecan.xml`. 
+PEcAn provides an interface to a variety of ecosystem models and attempts to standardize and automate the processes of model parameterization, execution, and analysis. First, you choose an ecosystem model, then the time and location of interest (a site), and the plant community (or crop) that you are interested in simulating. All of these are set in a "settings" file, commonly named `pecan.xml`. 
 To run the model forward in time requires information about the soil and a time series of weather. 
 
 PEcAn is built to provide a common interface for these steps as well as executing model runs and summarizing the output in a unified format. 
