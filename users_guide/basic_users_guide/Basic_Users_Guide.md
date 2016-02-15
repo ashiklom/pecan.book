@@ -4,9 +4,10 @@ The quickest way to get started is to visit our [website](http://pecanproject.gi
 
 This section gives in-depth information on topics relevant to basic usage of PEcAn.
 
-
+#### Topics
   * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
-    * [Background and Overview](https://pecan.gitbooks.io/pecan-documentation/content/users_guide/basic_users_guide/Getting-started.html#background--overview)
+    * Background and Overview
+    * 
   * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/Updating-PEcAn.md)
   * [Choose a site](users_guide/basic_users_guide/Choose-a-site.md)
   * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
