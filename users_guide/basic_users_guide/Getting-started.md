@@ -20,7 +20,7 @@ The basic workflow in R is:
 ### Quick Start
 
 The quickest way to get started is to download the virtual machine. The demo provides instructions to get started on your own machine. 
- * [Download Virtual Machine](http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN) and optionally convert VM to [[Desktop Machine | VM-Desktop-Conversion]]
+ * [Download Virtual Machine](http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN) 
  * [Work through Demo](http://pecanproject.github.io/tutorials.html)
 
 ### Using PEcAn
