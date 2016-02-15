@@ -63,7 +63,7 @@ The most basic function of PEcAn is to make it easier to run models at different
 
 ### Supported Models
 
-The following is a list of supported models. See [[Adding an Ecosystem Model]] for info on how to add new models to the system and don't hesitate to contact us if you need help. That said, the PEcAn team is not experts in all the models linked to PEcAn, so if there are issues with models themselves you would be encouraged to contact the original modeling teams.
+The following is a list of supported models. See [Adding an Ecosystem Model]( for info on how to add new models to the system and don't hesitate to contact us if you need help. That said, the PEcAn team is not experts in all the models linked to PEcAn, so if there are issues with models themselves you would be encouraged to contact the original modeling teams.
 
 * [Ecosystem Demography model](https://github.com/EDmodel/ED2)
 * [SIPNET](http://thesipnetmodel.blogspot.com/)
@@ -73,15 +73,8 @@ The following is a list of supported models. See [[Adding an Ecosystem Model]] f
 
 ### Beyond the Basics
 
-The following links describe more of the details of how PEcAn works
+If you are interested in learning more about configuring PEcAn to fit your usage needs, continue on to the Advanced user section to.
 
-* [[Settings Files| PEcAn-Configuration]]: what goes in the PEcAn settings files (e.g. `pecan.xml`) and how to gain additional control over more advanced PEcAn features and analyses.
-* [[Connecting PEcAn to a remote server]]
-* [[Troubleshooting PEcAn]]: solutions to known gotchas 
-* [[Upgrading PEcAn/VM]] and/or installing it on your own server
-* [[Database Synchronization]] Retrieving latest updates and sharing your changes
-* [[Updating BETY]]: handling database schema updates 
-* [[Workflow Modules]]
 
 ### Reporting Bugs and Requesting Features
 
