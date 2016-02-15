@@ -1,13 +1,11 @@
 ### Basic User's Guide
 
-
-
-This section gives in-depth information on topics relevant to basic usage of PEcAn.
+This section gives in-depth information on topics relevant to basic usage of PEcAn listed below
 
 #### Topics
   * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
     * Background and Overview
-    * 
+
   * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/Updating-PEcAn.md)
   * [Choose a site](users_guide/basic_users_guide/Choose-a-site.md)
   * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
