@@ -13,9 +13,6 @@ There are two ways of using PEcAn, via the web interface and directly within R. 
 
 <!--can add figures of the web interface and workflow here-->
 
-The basic workflow in R is:
-
-
 
 ### Quick Start
 
