@@ -62,5 +62,6 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * FIA database
     * Flux Camp
     * Harvard for ED tutorial
+#### Inputs
 * [Inputs](developers_guide/Data-Formats.md)
 * [Standard Names](developers_guide/Adding-an-Input-Converter.md)
