@@ -35,7 +35,7 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * Output Conversions
     * met2model.MODEL
     * Commit changes
-* [Adding an Input Converter](developers_guide/Adding-an-Inut-Converter.md)
+* [Adding an Input Converter](developers_guide/Adding-an-Input-Converter.md)
 * [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
 #### Advanced Installation
 * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
