@@ -3,7 +3,7 @@
 This section gives in-depth information on topics relevant to basic usage of PEcAn listed below
 
 #### Topics
-  * [Getting Started Using PEcAn](./Getting-started.md)
+  * [Getting Started Using PEcAn](Getting-started.md)
     * Background and Overview
     * [Quick Start](users_guide/basic_users_guide/Getting-started.md#quick-start)
     * Using PEcAn
