@@ -20,9 +20,9 @@ This section gives in-depth information on topics relevant to basic usage of PEc
     * [Troubleshooting](Choose-a-site.md#troubleshooting)
   * [Choose a model](Choose-a-model.md)
   * [Choose a meteorological driver](Choosing-meteorology.md)
-    * Met workflowChoosing-meteorology.md#met-workflow
-    * Troubleshooting meteorological conversionsChoosing-meteorology.md#troubleshooting-meteorological-conversions
-  * [Choose PFTs](users_guide/basic_users_guide/Choosing-PFTs.md)
+    * [Met workflow](Choosing-meteorology.md#met-workflow)
+    * [Troubleshooting meteorological conversions](Choosing-meteorology.md#troubleshooting-meteorological-conversions)
+  * [Choose PFTs](Choosing-PFTs.md)
     * Use existing
     * Creating new PFTs
   * [Choose initial vegetation](users_guide/basic_users_guide/Choosing-initial-vegetation.md)
