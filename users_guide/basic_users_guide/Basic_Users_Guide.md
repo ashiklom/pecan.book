@@ -3,10 +3,10 @@
 This section gives in-depth information on topics relevant to basic usage of PEcAn listed below
 
 #### Topics
-  * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
+  * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.html)
     * Background and Overview
-    * [Quick Start](users_guide/basic_users_guide/Getting-started.md#quick-start)
-    * Using PEcAn
+    * [Quick Start](users_guide/basic_users_guide/Getting-started.html#quick-start)
+    * [Using PEcAn]
     * How to make a run
     * Additional PEcAn Modules and Tools
     * Supported Models
