@@ -12,6 +12,24 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * When to submit an issue?
     * Label Categories
 * [Using Github and Git](developers_guide/Using-Git.md)
+    * GIT and GitHub Overview
+    * Milestones, Issues, Tasks
+    * Quick and Easy
+    * Recommended Git Workflow
+    * Before any work is done
+    * During development
+    * Basic Workflow
+    * Advanced Workflow: A new branch for each change
+    * After pull request is merged
+    * Link commits to issues
+    * For PEcAn
+    * Committing Changes Using Pull Requests
+    * Other Useful Git Commands
+    * Tags
+    * Git + Rstudio
+    * Creating a Read-only version
+    * For development
+    * References
 * [PEcAn Directory Structure](developers_guide/Directory-structure.md)
 #### Adding or Extending Modules
 * [Adding Ecosystem Model](developers_guide/Adding-an-Ecosystem-Model.md)
