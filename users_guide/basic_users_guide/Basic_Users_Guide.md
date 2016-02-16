@@ -1,6 +1,6 @@
 ### Basic User's Guide
 
-This section gives in-depth information on topics relevant to basic usage of PEcAn listed below
+The sections listed below give in-depth information on topics relevant to basic usage of PEcAn.
 
 #### Topics
   * [Getting Started Using PEcAn](Getting-started.md)
@@ -23,10 +23,10 @@ This section gives in-depth information on topics relevant to basic usage of PEc
     * [Met workflow](Choosing-meteorology.md#met-workflow)
     * [Troubleshooting meteorological conversions](Choosing-meteorology.md#troubleshooting-meteorological-conversions)
   * [Choose PFTs](Choosing-PFTs.md)
-    * Use existing
-    * Creating new PFTs
-  * [Choose initial vegetation](users_guide/basic_users_guide/Choosing-initial-vegetation.md)
-    * Spin up
-    * Veg workflow
+    * [Use existing](Choosing-PFTs.md#use-existing)
+    * [Creating new PFTs](Choosing-PFTs.md#creating-new-pfts)
+  * [Choose initial vegetation](Choosing-initial-vegetation.md)
+    * [Spin up](Choosing-initial-vegetation.md#spin-up)
+    * [Veg workflow](Choosing-initial-vegetation.md#veg-workflow)
   * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
 
