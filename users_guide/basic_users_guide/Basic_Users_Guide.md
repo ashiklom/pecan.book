@@ -22,10 +22,7 @@ This section gives in-depth information on topics relevant to basic usage of PEc
   * [Choose a meteorological driver](users_guide/basic_users_guide/Choosing-meteorology.md)
     * Met workflow
     * Troubleshooting meteorological conversions
-    * Could not do gapfill ... The following variables have NA's
-    * Could not get information about . Is this an Ameriflux site?
-    * Could not download data for for the year 
-    * I could not find the requested var (or dimvar) in the file!
+ 
   * [Choose PFTs](users_guide/basic_users_guide/Choosing-PFTs.md)
     * Use existing
     * Creating new PFTs
