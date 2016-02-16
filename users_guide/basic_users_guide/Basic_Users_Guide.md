@@ -18,7 +18,7 @@ This section gives in-depth information on topics relevant to basic usage of PEc
     * [Does my study site already exist in PEcAn?](Choose-a-site.md#does-my-study-site-already-exist-in-pecan)
     * [Adding a new site](Choose-a-site.md#adding-a-new-site)
     * [Troubleshooting](Choose-a-site.md#troubleshooting)
-  * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
+  * [Choose a model](Choose-a-model.md)
   * [Choose a meteorological driver](users_guide/basic_users_guide/Choosing-meteorology.md)
     * Met workflow
     * Troubleshooting meteorological conversions
