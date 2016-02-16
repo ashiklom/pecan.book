@@ -15,29 +15,6 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
 * [PEcAn Directory Structure](developers_guide/Directory-structure.md)
 #### Adding or Extending Modules
 * [Adding Ecosystem Model](developers_guide/Adding-an-Ecosystem-Model.md)
-* [Adding Ecosystem Model](developers_guide/Adding-an-Inut-Converter.md)
-* [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
-#### Advanced Installation
-* [Installing PEcAn](developers_guide/Installing-PEcAn.md)
-* [PEcAn in the Cloud](PEcAn-in-the-Cloud.md)
-* [VM Creation](developers_guide/VM-Creation.md)
-* [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
-#### R Development
-* [Coding Style](developers_guide/Coding_style.md)
-* [Documentation](developers_guide/Roxygen2.md)
-* [Testing](developers_guide/Testing.md)
-* [Package Data](developers_guide/Package-data.md)
-* [Logging, Warnings, and Error Messages](developers_guide/Logging.md)
-* [Installing Data](developers_guide/Installing-PEcAn-Data.md)
-    * Site Information
-    * FIA database
-    * Flux Camp
-    * Harvard for ED tutorial
-* [Development](developers_guide/Development.md)
-* [Inputs](developers_guide/Data-Formats.md)
-* [Standard Names](developers_guide/Adding-an-Input-Converter.md)
-    
-  * [Adding an Ecosystem Model](developers_guide/Adding-an-Ecosystem-Model.md)
     * PEcAn Database
     * Define MODEL_TYPE
     * MACHINE
@@ -58,7 +35,10 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * Output Conversions
     * met2model.MODEL
     * Commit changes
-  * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
+* [Adding an Input Converter](developers_guide/Adding-an-Inut-Converter.md)
+* [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
+#### Advanced Installation
+* [Installing PEcAn](developers_guide/Installing-PEcAn.md)
     * Installing Prerequisites
     * Install models
     * Installing PEcAn
@@ -66,16 +46,22 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * Install Database + Data
     * Installing BETYdb Web Application
     * PEcAn Testrun
-  * [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
+* [PEcAn in the Cloud](PEcAn-in-the-Cloud.md)
+* [VM Creation](developers_guide/VM-Creation.md)
+* [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
     * PEcAn Configuration Files
     * Model-specific configuration files
-  * [Development](developers_guide/Development.md)
-  * [PEcAn Directory Structure](developers_guide/Directory-structure.md)
-  * [Using Github and Git](developers_guide/Using-Git.md)
-  * [Coding Style](developers_guide/Coding_style.md)
-  * [Documentation](developers_guide/Roxygen2.md)
-  * [Testing](developers_guide/Testing.md)
-  * [Package Data](developers_guide/Package-data.md)
-  * [Logging, Warnings, and Error Messages](developers_guide/Logging.md)
-  * [Inputs](developers_guide/Data-Formats.md)
-  * [Standard Names](developers_guide/Adding-an-Input-Converter.md)
+#### R Development
+* [Coding Style](developers_guide/Coding_style.md)
+* [Documentation](developers_guide/Roxygen2.md)
+* [Testing](developers_guide/Testing.md)
+* [Package Data](developers_guide/Package-data.md)
+* [Logging, Warnings, and Error Messages](developers_guide/Logging.md)
+* [Installing Data](developers_guide/Installing-PEcAn-Data.md)
+    * Site Information
+    * FIA database
+    * Flux Camp
+    * Harvard for ED tutorial
+* [Development](developers_guide/Development.md)
+* [Inputs](developers_guide/Data-Formats.md)
+* [Standard Names](developers_guide/Adding-an-Input-Converter.md)
