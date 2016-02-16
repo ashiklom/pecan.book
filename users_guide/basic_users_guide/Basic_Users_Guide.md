@@ -10,7 +10,7 @@ This section gives in-depth information on topics relevant to basic usage of PEc
     * [Additional PEcAn Modules and Tools](Getting-started.md#additional-pecan-modules-and-tools)
     * [Supported Models](Getting-started.md#supported-models)
     * [Reporting Bugs and Requesting Features](Getting-started.md#reporting-bugs-and-requesting-features)
-  * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/Updating-PEcAn.md)
+  * [Updating, Building, and Checking PEcAn](Updating-PEcAn.md)
     * [Updating BETY database](Updating-PEcAn.md#updating-bety-database)
     * [Updating BETY](Updating-PEcAn.md#updating-bety-code)
     * [Update Build and Check PEcAn](Updating-PEcAn.md#update-build-and-check-pecan)
@@ -19,10 +19,9 @@ This section gives in-depth information on topics relevant to basic usage of PEc
     * [Adding a new site](Choose-a-site.md#adding-a-new-site)
     * [Troubleshooting](Choose-a-site.md#troubleshooting)
   * [Choose a model](Choose-a-model.md)
-  * [Choose a meteorological driver](users_guide/basic_users_guide/Choosing-meteorology.md)
-    * Met workflow
-    * Troubleshooting meteorological conversions
- 
+  * [Choose a meteorological driver](Choosing-meteorology.md)
+    * Met workflowChoosing-meteorology.md#met-workflow
+    * Troubleshooting meteorological conversionsChoosing-meteorology.md#troubleshooting-meteorological-conversions
   * [Choose PFTs](users_guide/basic_users_guide/Choosing-PFTs.md)
     * Use existing
     * Creating new PFTs
