@@ -35,6 +35,20 @@ The most basic function of PEcAn is to make it easier to run models at different
 * [[Choosing initial vegetation]]
 * [[Choosing soils]]
 
+```
+library(PEcAn.all)
+settings <- read.settings()
+settings$pfts <- get.trait.data(settings)
+run.meta.analysis(settings)
+run.write.configs(settings)
+start.model.runs(settings)
+convert.outputs(settings)
+run.sensitivity.analysis(settings)
+run.ensemble.analysis(settings)
+```
+
+
+
 ### Additional PEcAn Modules and Tools
 | Package name | documentation | source code | description |
 |:---|:---|:---|:---|
