@@ -7,9 +7,9 @@ This section gives in-depth information on topics relevant to basic usage of PEc
     * [Background and Overview](Getting-started.md)
     * [Quick Start](Getting-started.md#quick-start)
     * [Using PEcAn](Getting-started.md#using-pecan)
-    * [Additional PEcAn Modules and Tools](Getting-started.md#)
-    * [Supported Models](Getting-started.md)
-    * [Reporting Bugs and Requesting Features](Getting-started.md)
+    * [Additional PEcAn Modules and Tools](Getting-started.md#additional-pecan-modules-and-tools)
+    * [Supported Models](Getting-started.md#supported-models)
+    * [Reporting Bugs and Requesting Features](Getting-started.md#reporting-bugs-and-requesting-features)
   * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/Updating-PEcAn.md)
     * Updating BETY database
     * Updating BETY 
