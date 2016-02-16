@@ -5,7 +5,7 @@ This section gives in-depth information on topics relevant to basic usage of PEc
 #### Topics
   * [Getting Started Using PEcAn](Getting-started.md)
     * Background and Overview
-    * [Quick Start](users_guide/basic_users_guide/Getting-started.md#quick-start)
+    * [Quick Start](Getting-started.md#quick-start)
     * Using PEcAn
     * How to make a run
     * Additional PEcAn Modules and Tools
