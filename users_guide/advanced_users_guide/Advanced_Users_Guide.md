@@ -53,18 +53,18 @@ For those wanting to take advantage of PEcAn's more advanced features and custom
 * [DART data assimilation](DART_state_data_assimilation.md)
     * [Running with current folders in PEcAn](DART_state_data_assimilation.md#runningwith-current-folders-in-pecan)
     * [Adjusting the workflow](DART_state_data_assimilation.md#adjusting-the-workflow)
-    * [Initial conditions file](DART_state_data_assimilation.md)
-    * [Observations files]
-    * [State variable vector in DART]
+    * [Initial conditions file](DART_state_data_assimilation.md#)
+    * [Observations files](DART_state_data_assimilation.md#)
+    * [State variable vector in DART](DART_state_data_assimilation.md#)
 * [Updating BETY database](Updating-BETY.md)
 * [Database-Synchronization](Database-Synchronization.md)
-    * [How does it work?]
-    * [Fetch latest data]
-    * [Sharing data]
-    * [Tasks]
+    * [How does it work?](Database-Synchronization.md#how-does-it-work)
+    * [Fetch latest data](Database-Synchronization.md#fetch-latest-data)
+    * [Sharing data](Database-Synchronization.md#sharing-data)
+    * [Tasks](Database-Synchronization.md#tasks)
 * [Troubleshooting PEcAn](Troubleshooting-pecan.md)
-    * [cookies and pecan web pages]
-    * [Warning: mkdir() [function.mkdir]: No such file or directory]
-    * [`Can't insert workflow : Incorrect integer value: '']
-    * [After creating a new PFT the tag for PFT not passed to config.xml in ED]
+    * [cookies and pecan web pages](Troubleshooting-pecan.md#cookies-and-pecan-web-pages)
+    * [Warning:... No such file or directory](Troubleshooting-pecan.md#warning-mkdir-functionmkdir-no-such-file-or-directory)
+    * [`Can't insert workflow : Incorrect integer value: ''](Troubleshooting-pecan.md#cant-insert-workflow--incorrect-integer-value-)
+    * [After creating a new PFT the tag for PFT not passed to config.xml in ED](Troubleshooting-pecan.md#after-creating-a-new-pft-the--tag-for-pft-not-passed-to-configxml-in-ed)
 
