@@ -4,71 +4,71 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
 
 #### Contributing, Bug reports, Etc.
 * [Code of Conduct](Code-of-Conduct.md)
-* [Reporting Bugs and Requesting Features](developers_guide/Github-issues.md)
-    * Overview
-    * Reporting a bug
-    * Requesting a feature
-    * Closing an issue
-    * When to submit an issue?
-    * Label Categories
-* [Using Github and Git](developers_guide/Using-Git.md)
-    * GIT and GitHub Overview
-    * Milestones, Issues, Tasks
-    * Quick and Easy
-    * Recommended Git Workflow
-    * Before any work is done
-    * During development
-    * Basic Workflow
-    * Advanced Workflow: A new branch for each change
-    * After pull request is merged
-    * Link commits to issues
-    * For PEcAn
-    * Committing Changes Using Pull Requests
-    * Other Useful Git Commands
-    * Tags
-    * Git + Rstudio
-    * Creating a Read-only version
-    * For development
-    * References
+* [Reporting Bugs and Requesting Features](Github-issues.md)
+    * [Overview](Github-issues.md)
+    * [Reporting a bug](Github-issues.md)
+    * [Requesting a feature](Github-issues.md)
+    * [Closing an issue](Github-issues.md)
+    * [When to submit an issue?](Github-issues.md)
+    * [Label Categories](Github-issues.md)
+* [Using Github and Git](Using-Git.md)
+    * [GIT and GitHub Overview](Using-Git.md)
+    * [Milestones, Issues, Tasks](Using-Git.md)
+    * [Quick and Easy](Using-Git.md)
+    * [Recommended Git Workflow](Using-Git.md)
+    * [Before any work is done](Using-Git.md)
+    * [During development](Using-Git.md)
+    * [Basic Workflow](Using-Git.md)
+    * [Advanced Workflow: A new branch for each change](Using-Git.md)
+    * [After pull request is merged](Using-Git.md)
+    * [Link commits to issues](Using-Git.md)
+    * [For PEcAn](Using-Git.md)
+    * [Committing Changes Using Pull Requests](Using-Git.md)
+    * [Other Useful Git Commands](Using-Git.md)
+    * [Tags](Using-Git.md)
+    * [Git + Rstudio](Using-Git.md)
+    * [Creating a Read-only version](Using-Git.md)
+    * [For development](Using-Git.md)
+    * [References](Using-Git.md)
 * [PEcAn Directory Structure](developers_guide/Directory-structure.md)
 #### Adding or Extending Modules
 * [Adding Ecosystem Model](developers_guide/Adding-an-Ecosystem-Model.md)
-    * PEcAn Database
-    * Define MODEL_TYPE
-    * MACHINE
-    * MODEL
-    * FORMATS
-    * Formats -> Variables
-    * MODEL_TYPE -> Formats
-    * INPUTS
-    * PFTS (Plant Functional Types)
-    * Species
-    * PRIORS
-    * Interface Modules
-    * Setting up the module directory (required)
-    * DESCRIPTION
-    * NAMESPACE
-    * Building the package
-    * write.config.MODEL (required)
-    * Output Conversions
-    * met2model.MODEL
-    * Commit changes
+    * [PEcAn Database](Adding-an-Ecosystem-Model.md#pecan-database)
+    * [Define MODEL_TYPE](Adding-an-Ecosystem-Model.md#define-modeltype)
+    * [MACHINE](Adding-an-Ecosystem-Model.md#machine)
+    * [MODEL](Adding-an-Ecosystem-Model.md#model)
+    * [FORMATS](Adding-an-Ecosystem-Model.md#formats)
+    * [Formats -> Variables](Adding-an-Ecosystem-Model.md#formats-variables)
+    * [MODEL_TYPE -> Formats](Adding-an-Ecosystem-Model.md#modeltype-formats)
+    * [INPUTS](Adding-an-Ecosystem-Model.md#inputs)
+    * [PFTS (Plant Functional Types)](Adding-an-Ecosystem-Model.md#pfts-plant-functional-types)
+    * [Species](Adding-an-Ecosystem-Model.md#species)
+    * [PRIORS](Adding-an-Ecosystem-Model.md#priors)
+    * [Interface Modules](Adding-an-Ecosystem-Model.md#interface-modules)
+    * [Setting up the module directory (required)](Adding-an-Ecosystem-Model.md#setting-up-the-module-directory-required)
+    * [DESCRIPTION](Adding-an-Ecosystem-Model.md#description)
+    * [NAMESPACE](Adding-an-Ecosystem-Model.md#namespace)
+    * [Building the package](Adding-an-Ecosystem-Model.md#building-the-package)
+    * [write.config.MODEL (required)](Adding-an-Ecosystem-Model.md#write)
+    * [Output Conversions](Adding-an-Ecosystem-Model.md#output-conversions)
+    * [met2model.MODEL](Adding-an-Ecosystem-Model.md#met2model-model)
+    * [Commit changes](Adding-an-Ecosystem-Model.md#commit-changes)
 * [Adding an Input Converter](developers_guide/Adding-an-Input-Converter.md)
 * [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
 #### Advanced Installation
 * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
-    * Installing Prerequisites
-    * Install models
-    * Installing PEcAn
-    * Installing BETY
-    * Install Database + Data
-    * Installing BETYdb Web Application
-    * PEcAn Testrun
+    * [Installing Prerequisites](Installing-PEcAn.md#installing-prerequisites)
+    * [Install models](Installing-PEcAn.md#install-models)
+    * [Installing PEcAn](Installing-PEcAn.md#installing-pecan)
+    * [Installing BETY](Installing-PEcAn.md#installing-bety)
+    * [Install Database + Data](Installing-PEcAn.md#install-database-data)
+    * [Installing BETYdb Web Application](Installing-PEcAn.md#installing-betydb-web-application)
+    * [PEcAn Testrun](Installing-PEcAn.md#pecan-testrun)
 * [PEcAn in the Cloud](PEcAn-in-the-Cloud.md)
 * [VM Creation](developers_guide/VM-Creation.md)
 * [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
-    * PEcAn Configuration Files
-    * Model-specific configuration files
+    * [PEcAn Configuration Files](Configuration-Files.md#pecan-configuration-files)
+    * [Model-specific configuration files](Configuration-Files.md#model-specific-configuration-files)
 #### R Development
 * [Coding Style](developers_guide/Coding_style.md)
 * [Documentation](developers_guide/Roxygen2.md)
@@ -76,10 +76,10 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
 * [Package Data](developers_guide/Package-data.md)
 * [Logging, Warnings, and Error Messages](developers_guide/Logging.md)
 * [Installing Data](developers_guide/Installing-PEcAn-Data.md)
-    * Site Information
-    * FIA database
-    * Flux Camp
-    * Harvard for ED tutorial
+    * [Site Information](Installing-PEcAn-Data.md#site-information)
+    * [FIA database](Installing-PEcAn-Data.md#fia-database)
+    * [Flux Camp](Installing-PEcAn-Data.md#flux-camp)
+    * [Harvard for ED tutorial](Installing-PEcAn-Data.md#harvard-fpr-ed-tutorial)
 #### Inputs
 * [Inputs](developers_guide/Data-Formats.md)
 * [Standard Names](developers_guide/Adding-an-Input-Converter.md)
