@@ -37,4 +37,4 @@ BETY-db is a product of the Energy Biosciences Institute at the University of Il
 
 ###Website
 
-Visit our [webpage](http://pecanproject.github.io/) to keep up with the atest news, version and information about the PEcAn Project.
+Visit our [webpage](http://pecanproject.github.io/) to keep up with the latest news, version and information about the PEcAn Project.
