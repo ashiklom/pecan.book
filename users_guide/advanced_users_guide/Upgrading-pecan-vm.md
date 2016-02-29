@@ -1,4 +1,4 @@
-Release notes for all releases can be found at: https://github.com/PecanProject/pecan/releases
+Release notes for all releases can be found [here](https://github.com/PecanProject/pecan/releases).
 
 This page will only list any steps you have to do to upgrade an existing system. When updating PEcAn it is highly encouraged to update BETY. You can find instructions on how to do this, as well on how to update the database in the [Updating BETYdb](https://github.com/PecanProject/bety/wiki/Updating-BETY) wiki page.
 
