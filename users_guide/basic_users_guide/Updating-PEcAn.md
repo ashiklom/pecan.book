@@ -1,6 +1,28 @@
 Following is information on how to update the software and data to the latest version.
 
+## Update Build and Check PEcAn
+
+The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions. 
+
+Here are the options (see `./scripts/build.sh -h`)
+
+```
+./scripts/build.sh <options>
+ -c, --check         : check the R packages before install
+ -d, --documentation : (re)generates all Rd files
+ -f, --force         : force a build
+ -g, --git           : do a git pull
+ -h, --help          : this help text
+ -i, --install       : install all R packages (default=yes)
+ -n, --noinstall     : do not install all R packages
+ -t, --test          : run tests
+```
+
+The best method to update PEcAn is to use `./scripts/build.sh -t -g`. This will get the latest version from GitHub, compile and run the local test cases.
+
 ## Updating BETY database
+
+For more, in-depth information about BETY check out this [gitbook](https://dlebauer.gitbooks.io/betydb-documentation/content/).
 
 BETYdb can be hosted anywhere, forming a network of instances. Data marked as public that has not failed QA/QC can be synced across different servers. For more details, see the BETYdb wiki page [Distributed BETYdb](https://github.com/PecanProject/bety/wiki/Distributed-BETYdb). 
 
@@ -35,22 +57,4 @@ RAILS_ENV="production" bundle exec rake db:migrate
 touch tmp/restart.txt
 exit
 ```
-## Update Build and Check PEcAn
 
-The [`build.sh`](https://github.com/PecanProject/pecan/blob/master/scripts/build.sh) script has options that make it easy to to update PEcAn, compile your local changes, and use `R CMD check` on all of the packages  the most recent versions. 
-
-Here are the options (see `./scripts/build.sh -h`)
-
-```
-./scripts/build.sh <options>
- -c, --check         : check the R packages before install
- -d, --documentation : (re)generates all Rd files
- -f, --force         : force a build
- -g, --git           : do a git pull
- -h, --help          : this help text
- -i, --install       : install all R packages (default=yes)
- -n, --noinstall     : do not install all R packages
- -t, --test          : run tests
-```
-
-The best method to update PEcAn is to use `./scripts/build.sh -t -g`. This will get the latest version from GitHub, compile and run the local test cases.
