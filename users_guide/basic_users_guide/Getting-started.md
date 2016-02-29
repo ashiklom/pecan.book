@@ -51,25 +51,17 @@ The packages listed below were developed by the PEcAn team. Some are used within
 |PEcAn.SIPNET| [sipnet](https://pecanproject.github.io/pecan//models/sipnet/inst/web/index.html) | |
 |PEcAn.BIOCRO| [biocro](https://pecanproject.github.io/pecan//models/biocro/inst/web/index.html) | |
 
-### Supported Models
+<!--### Supported Models-->
+<!--This needs to be turned into its own section hwere we list and give short descriptions abot each model-->
+<!--The following is a list of supported models. See [Adding an Ecosystem Model]( for info on how to add new models to the system and don't hesitate to contact us if you need help. That said, the PEcAn team is not experts in all the models linked to PEcAn, so if there are issues with models themselves you would be encouraged to contact the original modeling teams.-->
 
-The following is a list of supported models. See [Adding an Ecosystem Model]( for info on how to add new models to the system and don't hesitate to contact us if you need help. That said, the PEcAn team is not experts in all the models linked to PEcAn, so if there are issues with models themselves you would be encouraged to contact the original modeling teams.
-
-* [Ecosystem Demography model](https://github.com/EDmodel/ED2)
-* [SIPNET](http://thesipnetmodel.blogspot.com/)
-* [DALEC](http://www.geos.ed.ac.uk/homes/mwilliam/DALEC.html)
-* [BioCro](https://github.com/ebimodeling/biocro)
-* [LINKAGES](http://daac.ornl.gov/MODELS/guides/LINKAGES.html)
+<!-- [Ecosystem Demography model](https://github.com/EDmodel/ED2)--> <!-- [SIPNET](http://thesipnetmodel.blogspot.com/)-->
+<!-- [DALEC](http://www.geos.ed.ac.uk/homes/mwilliam/DALEC.html)-->
+<!-- [BioCro](https://github.com/ebimodeling/biocro)-->
+<!-- [LINKAGES](http://daac.ornl.gov/MODELS/guides/LINKAGES.html)-->
 
 ### Beyond the Basics
 
-If you are interested in learning more about configuring PEcAn to fit your usage needs, continue on to the Advanced user section to.
+If you are interested in learning more about configuring PEcAn to fit your usage needs, continue on to the [Advanced user section](../advanced_users_guide.md)
 
 
-### Reporting Bugs and Requesting Features
-
-* GitHub
- * [[Reporting Bugs | GitHub Issues]]
- * [[Requesting Features | GitHub Issues ]]
-* Gitter
- * * **[[Gitter Discussion|https://gitter.im]]**
