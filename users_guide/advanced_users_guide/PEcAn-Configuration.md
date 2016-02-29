@@ -1,15 +1,15 @@
 The PEcAn system is configured using a xml file, often called settings.xml. The configuration file can be split in X seperate pieces:
 
 1. [PEcAn Folders](#pecan_folders)
-1. [Database Access](#database_access)
-1. [BETY Configuration](#bety_database)
-1. [Brown Dog](#brown_dog)
-1. [PFT Selection](#pft_selection)
-1. [Meta Analysis](#meta_analysis)
-1. [Ensemble Runs](#ensemble_runs)
-1. [Sensitivity Runs](#sensitivity_runs)
-1. [Model Setup](#model_setup)
-1. [Run Setup](#run_setup)
+2. [Database Access](#database_access)
+3. [BETY Configuration](#bety_database)
+4. [Brown Dog](#brown_dog)
+5. [PFT Selection](#pft_selection)
+6. [Meta Analysis](#meta_analysis)
+7. [Ensemble Runs](#ensemble_runs)
+8. [Sensitivity Runs](#sensitivity_runs)
+9. [Model Setup](#model_setup)
+10. [Run Setup](#run_setup)
 
 <a name="pecan_folders" />
 
