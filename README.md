@@ -10,13 +10,7 @@ The output of the data assimilation system will be a regional-scale high-resolut
 PEcAn is not itself an ecosystem model, and it can be used to with a variety of different ecosystem models; integrating a model involves writing a wrapper to convert inputs and outputs to and from the standards used by PEcAn. Currently, PEcAn supports the Ecosystem Demography model (ED2, Medvigy et al 2009), SIPNET (Sacks et al., 2005), and BioCro (Miguez et al, 2012).
 
 
-### Demonstration
 
-This system allows you to experiment and create simulations using PEcAn, ED, SIPNET, BioCro and BETYdb. The first page will allow for selection of a site where the simulation will run at. The BETY database contains data for both the local system as well as data on the illinois ebi servers (ebi-cluster and ebi-forecast). Only those sites with data on the local system can be run. After selecting a site and entering the date range for the simulation, PEcAn will take over and set up and execute the selected model. Once the model is finished it will allow you to create graphs with the results of the simulation as well as download the results. It is also possible to see all past experiments and simulations.
-
-This machine uses the BETY database (LeBauer et al, 2010) for the trait data and the PEcAn analyzer.
-
-For any questions about the research behind this demonstration or about the system itself, please contact Michael Dietze at dietze(at)bu.edu or David LeBauer at dlebauer@illinois.edu
 
 ### Acknowledgements
 
@@ -31,7 +25,7 @@ BETY-db is a product of the Energy Biosciences Institute at the University of Il
 * Dietze, M.C., D.S LeBauer, R. Kooper (2013) On improving the communication between models and data. Plant, Cell, & Environment [doi:10.1111/pce.12043](http://dx.doi.org/10.1111/pce.12043)
 * Dietze, M. C., S. P. Serbin, C. Davidson, A. R. Desai, X. Feng, R. Kelly, R. Kooper, D. LeBauer, J. Mantooth, K. McHenry, and D. Wang (2014) A quantitative assessment of a terrestrial biosphere model's data needs across North American biomes. Journal of Geophysical Research-Biogeosciences [doi:10.1002/2013jg002392](http://dx.doi.org/10.1002/2013jg002392)
 
-* [Longer / auto-updated list of publications that mention PEcAn's full name in Google Scholar](https://scholar.google.com/scholar?start=0&q="predictive+ecosystem+analyzer+PEcAn")
+ [Longer / auto-updated list of publications that mention PEcAn's full name in Google Scholar](https://scholar.google.com/scholar?start=0&q="predictive+ecosystem+analyzer+PEcAn")
 
 
 ### References
@@ -40,3 +34,7 @@ BETY-db is a product of the Energy Biosciences Institute at the University of Il
 *    LeBauer, D., D. Wang, M. Dietze, 2010. "Biofuel Ecophysiological Traits and Yields Database Version 1.0.", Energy Biosciences Institute, Urbana, IL
 *    Miguez, F. E., Maughan, M., Bollero, G. A., & Long, S. P. (2012). Modeling spatial and dynamic variation in growth, yield, and yield stability of the bioenergy crops Miscanthus x giganteus and Panicum virgatum across the conterminous United States. GCB Bioenergy.
 *    Sacks, W. J., Schimel, D. S., Monson, R. K., & Braswell, B. H. (2005). Modelâ€data synthesis of diurnal and seasonal CO2 fluxes at Niwot Ridge, Colorado. Global Change Biology, 12(2), 240-259.
+
+###Website
+
+Visit our [webpage](http://pecanproject.github.io/) to keep up with the atest news, version and information about the PEcAn Project.
