@@ -55,7 +55,7 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
 * [Adding an Input Converter](developers_guide/Adding-an-Input-Converter.md)
 * [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
 #### Advanced Installation
-* [Installing PEcAn](developers_guide/Installing-PEcAn.md)
+* [Installing PEcAn](Installing-PEcAn.md)
     * [Installing Prerequisites](Installing-PEcAn.md#installing-prerequisites)
     * [Install models](Installing-PEcAn.md#install-models)
     * [Installing PEcAn](Installing-PEcAn.md#installing-pecan)
