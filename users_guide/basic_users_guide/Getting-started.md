@@ -13,7 +13,7 @@ There are two ways of using PEcAn, via the web interface and directly within R. 
 ### Using PEcAn
 
 #### Site-level Runs
-The most basic function of PEcAn is to make it easier to run models at different sites and evaluate their outputs. The [Demo](http://pecanproject.github.io/tutorials.html) describes the basics of running the model at an existing site. The following links walk through not only this, but also how to set up new sites and new model inputs so that you can extend PEcAn to your own research.
+The most basic function of PEcAn is run a model at the site level. The [Demo](http://pecanproject.github.io/tutorials.html) describes the basics of running the model at an existing sit and the following links will advise you on your options, diagnosis of potential issues, and will give you more in depth information about the interface.
 
 * [Choose a model](Choose-a-model.md)
 * [Choose a site](Choose-a-site.md)
@@ -24,6 +24,8 @@ The most basic function of PEcAn is to make it easier to run models at different
 
 
 ### Additional PEcAn Modules and Tools
+The packages listed below were developed by the PEcAn team. Some are used within the workflow itself and others stand alone for now. Please take a look through their documentation to get a better feel for the utilities of f PEcAn.
+
 | Package name | documentation | source code | description |
 |:---|:---|:---|:---|
 |**Utilities**| | |
