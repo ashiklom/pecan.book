@@ -64,8 +64,8 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * [Installing BETYdb Web Application](Installing-PEcAn.md#installing-betydb-web-application)
     * [PEcAn Testrun](Installing-PEcAn.md#pecan-testrun)
 * [PEcAn in the Cloud](PEcAn-in-the-Cloud.md)
-* [VM Creation](developers_guide/VM-Creation.md)
-* [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
+* [VM Creation](VM-Creation.md)
+* [PEcAn Configuration and Settings Files](Configuration-Files.md)
     * [PEcAn Configuration Files](Configuration-Files.md#pecan-configuration-files)
     * [Model-specific configuration files](Configuration-Files.md#model-specific-configuration-files)
 #### R Development
