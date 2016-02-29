@@ -32,7 +32,7 @@ want to connect from. [See issue #428](https://github.com/PecanProject/pecan/iss
 
 ### ssh tunnels
 
-This works espeically well for servers that use two factor authentication.
+This works especially well for servers that use two factor authentication.
 This method leverages of the ability of SSH to send multiple channels
 across the same encrypted connection (tunnel). You will setup the
 first connection, and all subsequent connections will use the same
@@ -47,7 +47,7 @@ Host <hostname goes here>
  ControlPath /tmp/%r@%h:%p
 ```
 
-You can also create the tunnel using the following comamnd:
+You can also create the tunnel using the following command:
 
 ```
 ssh -o ControlMaster=yes -o ControlPath=/tmp/mytunnel -l username host
@@ -62,9 +62,9 @@ connection from the local machine to the remote machine.
 
 ## Configuring PEcAn to execute remotely
 
-To enable PEcAn to run remotely we will need to modify the pecan.xml
+To enable PEcAn to run remotely we will need to modify the `pecan.xml`
 to specify what host to connect to, what user to connect as, and how
-to connect. The web interface will create the pecan.xml with the
+to connect. The web interface will create the `pecan.xml` with the
 appropriate entries.
 
 ### config.php for PEcAn web interface
@@ -138,7 +138,7 @@ run the following on the cluster:
 devtools::install_github("pecanproject/pecan", subdir = 'utils')
 ```
 
-Next we need to install the model specifc pieces, this is done
+Next we need to install the model specific pieces, this is done
 almost the same:
 
 ```
@@ -146,7 +146,7 @@ devtools::install_github("pecanproject/pecan", subdir = 'models/ed')
 ```
 
 This should install dependencies required. Following are some
-notes on how to install the model specifics on differetn HPC
+notes on how to install the model specifics on different HPC
 clusters.
 
 ### geo.bu.edu
