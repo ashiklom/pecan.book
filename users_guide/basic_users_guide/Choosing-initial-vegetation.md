@@ -4,7 +4,7 @@ At the moment, PEcAn has two cases for initial conditions and they only exist as
 
 If files already exist in the database, they can simply be selected from the menu. For ED2, there are 3 different veg files (site, pss, css) and it is important that you select a complete set, not mix and match.
 
-If files don't exist they can be uploaded following the instructions on [[How to insert new Input data]]. Information on the ED2-specific format is located [here](https://github.com/EDmodel/ED2/wiki/Initial-conditions)
+If files don't exist they can be uploaded following the instructions on [[How to insert new Input data]]. Information on the ED2-specific format is located [here](../../ED-configuration.md)
 
 Two additional options are in development:
 
@@ -29,6 +29,6 @@ As with meteorology, PEcAn is working to develop a model-agnostic workflow for c
 
 At the moment, what is functional is a model-specific workflow for the ED2 model that can query the USFS Forest Inventory and Analysis and then construct initial condition files for ED2. This tool works with an internal copy of the FIA that is uploaded to a postGRES database along side BETY, however for space reasons this database does not ship with the PEcAn VM. To turn this feature on:
 
-1. [Download and Install the FIA database](https://github.com/PecanProject/pecan/wiki/Installing-PEcAn-Data#fia-database)
+1. [Download and Install the FIA database](../../developers_guide/Installing-PEcAn-Data.md)
 2. For web-base runs, specify the database settings in the [config.php](https://github.com/PecanProject/pecan/blob/master/web/config.example.php)
 3. For R-based runs, specify the database settings in the [pecan.xml](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration#database-access)
