@@ -14,7 +14,7 @@ The sections listed below give in-depth information on topics relevant to basic 
     * [Updating BETY database](Updating-PEcAn.md#updating-bety-database)
     * [Updating BETY](Updating-PEcAn.md#updating-bety-code)
     * [Update Build and Check PEcAn](Updating-PEcAn.md#update-build-and-check-pecan)
-  * [Choose a site](users_guide/basic_users_guide/Choose-a-site.md)
+  * [Choose a site](Choose-a-site.md)
     * [Does my study site already exist in PEcAn?](Choose-a-site.md#does-my-study-site-already-exist-in-pecan)
     * [Adding a new site](Choose-a-site.md#adding-a-new-site)
     * [Troubleshooting](Choose-a-site.md#troubleshooting)
@@ -28,5 +28,5 @@ The sections listed below give in-depth information on topics relevant to basic 
   * [Choose initial vegetation](Choosing-initial-vegetation.md)
     * [Spin up](Choosing-initial-vegetation.md#spin-up)
     * [Veg workflow](Choosing-initial-vegetation.md#veg-workflow)
-  * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
+  * [Choose soils](Choosing-soils.md)
 
