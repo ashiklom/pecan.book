@@ -2,6 +2,8 @@
 
 ## Overview of PEcAn repository as of PEcAn 1.2
 
+<!--This needsto be updated to the latest version-->
+<!--Should Also include a guideline to structurs so that people know where to put things as they add them-->
 ```
 trunk/             # Overall repository
  +- all            # Dummy Package to load all PEcAn R packages
