@@ -15,7 +15,7 @@ This is the standard method of documentation used in PEcAn development,
 it provides inline documentation similar to doxygen. Even trivial
 functions should be documented.
 
-See [[Roxygen2]] Wiki page
+See [Roxygen2](Roxygen2.md) Wiki page
 
 ## Write your name at the top
 
@@ -25,7 +25,7 @@ have your name listed after the
 
 ## Use testthat testing package
 
-See [[Unit_Testing|Testing]] wiki for instructions, and [Advanced R: Tests](http://r-pkgs.had.co.nz/tests.html).
+See [Unit_Testing](Testing.md) wiki for instructions, and [Advanced R: Tests](http://r-pkgs.had.co.nz/tests.html).
 
 * tests provide support for documentation - they define what a function is (and is not) expected to do 
 * all functions need tests to ensure basic functionality is maintained during development.
