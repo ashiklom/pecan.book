@@ -4,11 +4,11 @@ Summary:
 
 This document describes the steps required to download PEcAn, make changes to code, and submit your changes.
 
-* For asking questions, reporting bugs, and requesting features, see our documentation for [[reporting issues on Redmine and GitHub | Github-issues]]. 
-* If you are new to GitHub or to PEcAn, start with the one-time set-up instructions under **[[Before any work is done|Using-Git#before-any-work-is-done]]**. Also see the excellent tutorials and references in the [[References|Using-Git#references]] section at the the bottom of this page.
-* To make trivial changes, see [[Quick and Easy|Using-Git#quick-and-easy]]
-* To make changes to the code, start with the **[[basic workflow|Using-Git#basic-workflow]]**. 
-* If you want to submit changes that you've made to be part of PEcAn you'll want to follow **[[Committing Changes Using Pull Requests|Using-Git#committing-changes-using-pull-requests]]**
+* For asking questions, reporting bugs, and requesting features, see our documentation for [reporting issues on Redmine and GitHub](Github-issues.md) 
+* If you are new to GitHub or to PEcAn, start with the one-time set-up instructions under [Before any work is done](Using-Git.md#before-any-work-is-done). Also see the excellent tutorials and references in the [References](Using-Git.md#references) section at the the bottom of this page.
+* To make trivial changes, see [Quick and Easy](Using-Git.md#quick-and-easy)
+* To make changes to the code, start with the [basic workflow](Using-Git.md#basic-workflow). 
+* If you want to submit changes that you've made to be part of PEcAn you'll want to follow [Committing Changes Using Pull Requests](Using-Git.md#committing-changes-using-pull-requests)
 * **To update your local branch**
 
  ```
@@ -39,7 +39,7 @@ In addition, there are three fun tutorials for learning git:
 * [LearnGitBranching](http://pcottle.github.com/learnGitBranching/)
 * [TryGit](http://try.github.com).
 
-For additional tutorials and background see [[References | Using-Git#references]]
+For additional tutorials and background see [References](Using-Git.md#references)
 
 **URLs** In the rest of the document will use specific URL’s to clone the code.
 There a few URL’s you can use to clone a project, using https, ssh and
@@ -90,7 +90,7 @@ The first step below only needs to be done once when you first start working on 
 
 Most people will not be able to work in the PEcAn repository directly and will need to create a fork of the PEcAn source code in their own folder. To fork PEcAn into your own github space ([github help: "fork a repo"](https://help.github.com/articles/fork-a-repo)). This forked repository will allow you to create branches and commit changes back to GitHub and create pull requests to the master of PEcAn.
 
-The forked repository is the only way for external people to commit code back to PEcAn and BETY. The pull request will start a review process that will eventually result in the code being merged into the main copy of the codebase. See https://help.github.com/articles/fork-a-repo for more information,  especially on how to keep your fork up to date with respect to the original. (Rstudio users should also see [[Git + Rstudio | Using-Git#git--rstudio ]], below)
+The forked repository is the only way for external people to commit code back to PEcAn and BETY. The pull request will start a review process that will eventually result in the code being merged into the main copy of the codebase. See https://help.github.com/articles/fork-a-repo for more information,  especially on how to keep your fork up to date with respect to the original. (Rstudio users should also see [Git + Rstudio](Using-Git.md#git--rstudio), below)
 
 You can setup SSH keys to make it easier to commit cod back to GitHub. This might especially be true if you are working from a cluster, see [set up ssh keys](https://help.github.com/articles/generating-ssh-keys)
 
@@ -158,7 +158,7 @@ PLEASE DO NOT USE THIS, SEE ADVANCED WORKFLOW!
 
         ./scripts/build.sh
 
-* For BETYdb ([see wiki](https://github.com/PecanProject/bety/wiki/Testing#running-the-tests))
+* For BETYdb ([see BETY wiki](https://github.com/PecanProject/bety/wiki/Testing#running-the-tests))
 
         rspec
 
