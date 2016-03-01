@@ -41,5 +41,5 @@
    * [Installing Data](developers_guide/Installing-PEcAn-Data.md)
    * [Development](developers_guide/Development.md)
    * [Inputs](developers_guide/Data-Formats.md)
-* [Code of Conduct](Code-of-Conduct.md)
+
 
