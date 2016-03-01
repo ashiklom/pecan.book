@@ -31,7 +31,7 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * [References](Using-Git.md#references)
 * [PEcAn Directory Structure](Directory-structure.md)
 #### Adding or Extending Modules
-* [Adding Ecosystem Model](Adding-an-Ecosystem-Model.md)
+* [Adding Ecosystem Model]/Adding-an-Ecosystem-Model.md)
     * [PEcAn Database](Adding-an-Ecosystem-Model.md#pecan-database)
     * [Define MODEL_TYPE](Adding-an-Ecosystem-Model.md#define-modeltype)
     * [MACHINE](Adding-an-Ecosystem-Model.md#machine)
