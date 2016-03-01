@@ -1,6 +1,6 @@
 ## Inputs
 
-see [[Adding-an-Input-Converter]]
+see [Adding-an-Input-Converter](Adding-an-Input-Converter.md)
 
 ### Defining new input formats
 
