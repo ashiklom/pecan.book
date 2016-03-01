@@ -27,7 +27,7 @@
    * [Using Github and Git](developers_guide/Using-Git.md)
    * [PEcAn Directory Structure](developers_guide/Directory-structure.md)
    * [Adding Ecosystem Model](developers_guide/Adding-an-Ecosystem-Model.md)
-   * [Adding Ecosystem Model](developers_guide/Adding-an-Inut-Converter.md)
+   * [Adding An Input Converter](developers_guide/Adding-an-Input-Converter.md)
    * [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
    * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
    * [PEcAn in the Cloud](PEcAn-in-the-Cloud.md)
