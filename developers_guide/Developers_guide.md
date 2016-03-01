@@ -3,7 +3,6 @@
 This section is geared toward those wishing to contribute to the PEcAn project. We welcome anyone wishing to do so. These are the topics covered in this section:
 
 #### Contributing, Bug reports, Etc.
-* [Code of Conduct](../Code-of-Conduct.md)
 * [Reporting Bugs and Requesting Features](Github-issues.md)
     * [Overview](Github-issues.md#overview)
     * [Reporting a bug](Github-issues.md#reporting-a-bug)
