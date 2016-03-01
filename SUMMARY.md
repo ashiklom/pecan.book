@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Code of Conduct](Code-of-Conduct.md)
 * [Basic User's Guide](users_guide/basic_users_guide/Basic_Users_Guide.md)
    * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
    * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/Updating-PEcAn.md)
