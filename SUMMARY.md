@@ -22,7 +22,6 @@
    * [Database-Synchronization](users_guide/advanced_users_guide/Database-Synchronization.md)
    * [Troubleshooting PEcAn](users_guide/advanced_users_guide/Troubleshooting-pecan.md)
 * [Developer's Guide](developers_guide/Developers_guide.md)
-   * [Code of Conduct](Code-of-Conduct.md)
    * [Reporting Bugs and Requesting Features](developers_guide/Github-issues.md)
    * [Using Github and Git](developers_guide/Using-Git.md)
    * [PEcAn Directory Structure](developers_guide/Directory-structure.md)
@@ -43,4 +42,6 @@
    * [Inputs](developers_guide/Data-Formats.md)
    * [Standard Names](developers_guide/Adding-an-Input-Converter.md)
 * [Code of Conduct](Code-of-Conduct.md)
+* BioCro-configuration
+* 
    
