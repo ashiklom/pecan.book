@@ -18,7 +18,7 @@
    * [Upgrading PEcAn/VM](users_guide/advanced_users_guide/Upgrading-pecan-vm.md)
    * [ED2 Configuration](users_guide/advanced_users_guide/ED2-configuration.md)
    * [SIPNET-configuration](users_guide/advanced_users_guide/SIPNET-configuration.md)
-   * [Bio
+   * [BioCro-configuration]
    * [Updating BETY database](users_guide/advanced_users_guide/Updating-BETY.md)
    * [Database-Synchronization](users_guide/advanced_users_guide/Database-Synchronization.md)
    * [Troubleshooting PEcAn](users_guide/advanced_users_guide/Troubleshooting-pecan.md)
