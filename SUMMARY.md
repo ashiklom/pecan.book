@@ -14,7 +14,7 @@
    * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
    * [Connection to a remote server](users_guide/advanced_users_guide/Connecting-pecan-to-a-remote-server.md)
    * [Remote Execution](users_guide/advanced_users_guide/Enabling-Remote-Execution.md)
-   * [PEcAn Configuration ](users_guide/advanced_users_guide/PEcAn-Configuration.md)
+   * [PEcAn Configuration](users_guide/advanced_users_guide/PEcAn-Configuration.md)
    * [Upgrading PEcAn/VM](users_guide/advanced_users_guide/Upgrading-pecan-vm.md)
    * [ED2 Configuration](users_guide/advanced_users_guide/ED2-configuration.md)
    * [SIPNET-configuration](users_guide/advanced_users_guide/SIPNET-configuration.md)
@@ -41,5 +41,5 @@
    * [Installing Data](developers_guide/Installing-PEcAn-Data.md)
    * [Development](developers_guide/Development.md)
    * [Inputs](developers_guide/Data-Formats.md)
-   * [Standard Names](developers_guide/Adding-an-Input-Converter.md)
 * [Code of Conduct](Code-of-Conduct.md)
+
