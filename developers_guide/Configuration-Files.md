@@ -12,6 +12,6 @@ Once any of these are loaded it will try to locate a pecan.xml in the outdir spe
 
 ### Model-specific configuration files
 
-* [ED2](ED2-Configuration)  
-* [SIPNET](SIPNET-Configuration)  
-* [BIOCRO](BIOCRO-Configuration) 
+* [ED2](../users_guide/advanced_users_guideED2-Configuration)  
+* [SIPNET](../users_guide/advanced_users_guide/SIPNET-Configuration)  
+* [BIOCRO](../BIOCRO-Configuration.md) 
