@@ -4,21 +4,21 @@ We recommend that new users download the [PEcAn VM](http://opensource.ncsa.illin
 
 Check specific notes in:
 
-- [VM Creation](VM-Creation)
-- [Installing PEcAn Data](Installing-PEcAn-Data)
-- [Enabling Remote Execution](Enabling-Remote-Execution)
+- [VM Creation](VM-Creation.md)
+- [Installing PEcAn Data](Installing-PEcAn-Data.md)
+- [Enabling Remote Execution](../users_guide/advanced_users_guide/Enabling-Remote-Execution.md)
 
 OS specific installation instructions:
 
- - [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu)
- - [Installing PEcAn OSX](Installing-PEcAn-OSX)
- - [Installing PEcAn CentOS](Installing-PEcAn-CentOS)
- - [Installing PEcAn RedHat](Installing-PEcAn-RedHat) **deprecated**
- - [[Installing PEcAn HPC]]
+ - [Installing PEcAn Ubuntu](Installing-PEcAn-Ubuntu.md)
+ - [Installing PEcAn OSX](Installing-PEcAn-OSX.md)
+ - [Installing PEcAn CentOS](Installing-PEcAn-CentOS.md)
+ - [Installing PEcAn RedHat](Installing-PEcAn-RedHat.md) **deprecated**
+ <!--[[Installing PEcAn HPC]]-->
 
 To update PEcAn see:
 
-- [Updating PEcAn](Updating-PEcAn)
+- [Updating PEcAn](../users_guide/basic_users_guide/Updating-PEcAn)
 - [Updating BETY](https://github.com/PecanProject/bety/wiki/Updating-BETY)
 
 The rest of the instructions assumes you have done the appropriate steps in each of the above guides.
