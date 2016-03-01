@@ -52,7 +52,7 @@ This section is geared toward those wishing to contribute to the PEcAn project. 
     * [Output Conversions](Adding-an-Ecosystem-Model.md#output-conversions)
     * [met2model.MODEL](Adding-an-Ecosystem-Model.md#met2model-model)
     * [Commit changes](Adding-an-Ecosystem-Model.md#commit-changes)
-* [Adding an Input Converter](developers_guide/Adding-an-Input-Converter.md)
+* [Adding an Input Converter](Adding-an-Input-Converter.md)
 * [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
 #### Advanced Installation
 * [Installing PEcAn](Installing-PEcAn.md)
