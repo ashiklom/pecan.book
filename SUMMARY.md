@@ -32,7 +32,6 @@
    * [DART data assimilation](users_guide/advanced_users_guide/DART_state_data_assimilation.md)
    * [Installing PEcAn](developers_guide/Installing-PEcAn.md)
    * [Installing PEcAn CentOS](developers_guide/Installing-PEcAn-CentOS.md)
-   * 
    * [PEcAn in the Cloud](PEcAn-in-the-Cloud.md)
    * [Installing PEcAn RedHat](developers_guide/Installing-PEcAn-RedHat.md)
    * [Installing PEcAn OSX](developers_guide/Installing-PEcAn-OSX.md)
