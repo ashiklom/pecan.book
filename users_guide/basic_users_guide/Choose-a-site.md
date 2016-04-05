@@ -28,6 +28,6 @@ Selecting a model will cause PEcAn to filter the available sites based on whethe
 
 To see more about what Inputs a given model can accept, and which of those are required, take a look at the MODEL_TYPE table entry in the database (e.g. go to localhost:3280/bety; Select Runs > Model Type; and then click on the model you want to run).
 
-For information about loading missing Inputs into the database visit [How to insert new Input data](../../How-to-insert-new-Input-data.md), and also read the rest of the pages under the [Site Level Runs guide](https://github.com/PecanProject/pecan/wiki/Getting-started#site-level-runs), which will provide important information about the specific classes of Inputs (e.g. meteorology, vegetation, etc).
+For information about loading missing Inputs into the database visit [How to insert new Input data](/../../How-to-insert-new-Input-data.md), and also read the rest of the pages under this section, which will provide important information about the specific classes of Inputs (e.g. meteorology, vegetation, etc).
 
 Finally, we are in the process of developing workflows and standards for processing Input data in a model-agnostic way, starting with meteorology. So hopefully much of the work of building model driver files and uploading them into PEcAn will become automatic soon.
