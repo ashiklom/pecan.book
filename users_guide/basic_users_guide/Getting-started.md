@@ -1,4 +1,4 @@
-#### How it works
+#### PEcAn in a nutshell
 
 PEcAn provides an interface to a variety of ecosystem models and attempts to standardize and automate the processes of model parameterization, execution, and analysis. First, you choose an ecosystem model, then the time and location of interest (a site), the plant community (or crop) that you are interested in simulating, and a source of atmospheric data from the BETY database (LeBauer et al, 2010). These are set in a "settings" file, commonly named `pecan.xml` which can be edited manually if desired. From here, PEcAn will take over and set up and execute the selected model using your settings. The key is that PEcAn uses models as-is, and all of the translation steps are done within PEcAn so no modifications are required of the model itself. Once the model is finished it will allow you to create graphs with the results of the simulation as well as download the results. It is also possible to see all past experiments and simulations.
 
@@ -24,7 +24,7 @@ The most basic function of PEcAn is run a model at the site level. The [Demo](ht
 
 
 ### Additional PEcAn Modules and Tools
-The packages listed below were developed by the PEcAn team. Some are used within the workflow itself and others stand alone for now. Please take a look through their documentation to get a better feel for the utilities of f PEcAn.
+The packages listed below were developed by the PEcAn team. Some are used within the workflow itself and others stand alone for now. Please take a look through their documentation to get a better feel for the utilities of PEcAn.
 
 | Package name | documentation | source code | description |
 |:---|:---|:---|:---|
@@ -51,14 +51,7 @@ The packages listed below were developed by the PEcAn team. Some are used within
 |PEcAn.SIPNET| [sipnet](https://pecanproject.github.io/pecan//models/sipnet/inst/web/index.html) | |
 |PEcAn.BIOCRO| [biocro](https://pecanproject.github.io/pecan//models/biocro/inst/web/index.html) | |
 
-<!--### Supported Models-->
-<!--This needs to be turned into its own section hwere we list and give short descriptions abot each model-->
-<!--The following is a list of supported models. See [Adding an Ecosystem Model]( for info on how to add new models to the system and don't hesitate to contact us if you need help. That said, the PEcAn team is not experts in all the models linked to PEcAn, so if there are issues with models themselves you would be encouraged to contact the original modeling teams.-->
 
-<!-- [Ecosystem Demography model](https://github.com/EDmodel/ED2)--> <!-- [SIPNET](http://thesipnetmodel.blogspot.com/)-->
-<!-- [DALEC](http://www.geos.ed.ac.uk/homes/mwilliam/DALEC.html)-->
-<!-- [BioCro](https://github.com/ebimodeling/biocro)-->
-<!-- [LINKAGES](http://daac.ornl.gov/MODELS/guides/LINKAGES.html)-->
 
 ### Beyond the Basics
 
