@@ -31,4 +31,4 @@ At the moment, what is functional is a model-specific workflow for the ED2 model
 
 1. [Download and Install the FIA database](../../developers_guide/Installing-PEcAn-Data.md)
 2. For web-base runs, specify the database settings in the [config.php](https://github.com/PecanProject/pecan/blob/master/web/config.example.php)
-3. For R-based runs, specify the database settings in the [pecan.xml](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration#database-access)
+3. For R-based runs, specify the database settings in the [pecan.xml](../advanced_users_guide/PEcAn-Configuration.md#database-access)
