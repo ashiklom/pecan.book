@@ -228,7 +228,7 @@ To ensure compatability, the code will automatically convert from `<name>` to `<
 
 ### model tags
 
-```{xml}
+```
 <model>
 	<id>7</id>
 	<type>ED2</type>
