@@ -113,7 +113,7 @@ The PEcAn system requires at least 1 PFT (Plant Functional Type) to be specified
 ### PFT tags
 
 
-```{xml}
+```
 <pfts>
 	<pft>
 		<name>sipnet.temperate.coniferous</name>
