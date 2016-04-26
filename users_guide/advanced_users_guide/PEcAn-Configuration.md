@@ -88,7 +88,7 @@ This section describes how to connect to [Brown Dog](http://browndog.ncsa.illino
 
 `met.process()`
 
-```{xml}
+```
 <browndog>
 	<url>...</url>
 	<username>...</username>
