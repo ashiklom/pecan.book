@@ -138,7 +138,7 @@ The PEcAn system requires at least 1 PFT (Plant Functional Type) to be specified
 
 ### meta analysis tags
 
-```{xml}
+```
 <meta.analysis>
 	<iter>1000</iter>
 	<random.effects>FALSE</random.effects>
@@ -164,7 +164,7 @@ Only if this section is defined an ensemble analysis is done.
 
 ### ensemble tags
 
-```{xml}
+```
 <ensemble>
 	<size>5</size>
   <variable>GPP</variable>
