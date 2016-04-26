@@ -188,7 +188,7 @@ Only if this section is defined a sensitivity analysis is done. This section wil
 
 ### sensitivity analysis tags
 
-```{xml}
+```
 <sensitivity.analysis>
 	<quantiles>
 		<quantile></quantile>
