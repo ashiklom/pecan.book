@@ -33,7 +33,7 @@ The connection to the BETY database is configured using this section. In this se
 `db.open()`, and thus by `db.query()` and `db.check()`.
 
 New format (starting with PEcAn 1.3.6)
-```{xml}
+```
 <database>
 	<bety>
 		<dbname>bety</dbname>
