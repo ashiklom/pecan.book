@@ -253,7 +253,7 @@ Following variables are ED specific and are used in the [ED2 Configuration](ED2-
 
 Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includes, veg, soil, psscss, inputs.
 
-```{xml}
+```
 	<edin>/home/carya/runs/PEcAn_4/ED2IN.template</edin>
 	<config.header>
 		<radiation>
@@ -278,7 +278,7 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 
 ### tags
 
-```{xml}
+```
 <run>
 	<jobtemplate>/home/carya/path/to/template</jobtemplate>
 	<start.date>2002-01-01 00:00:00</start.date>
