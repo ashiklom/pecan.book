@@ -71,7 +71,7 @@ This section describes how to connect to the BETY Database. This section is used
 
 `db.check()`, `write.configs()`, `run.models()`
 
-```{xml}
+```
 <bety>
 	<write>TRUE</write>
 </bety>
