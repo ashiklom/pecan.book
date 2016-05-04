@@ -10,17 +10,17 @@ This table contains the status of coupling of Models to PEcAn.
     <th>Restart Function</th>
     
     <tr>
-      <td><a href="chapter1.md">SIPNET</a></td>
-      <td BGCOLOR="#DAF7A6">Yes</td>      
-      <td BGCOLOR="#DAF7A6">Yes</td>
-      <td BGCOLOR="#DAF7A6">Yes</td>      
+      <td>SIPNET</td>
+      <td>Yes</td>      
+      <td>Yes</td>
+      <td>Yes</td>      
       <td>No</td>
     </tr>
     <tr>
       <td>DALEC</td>
-      <td BGCOLOR="#DAF7A6">Yes</td>      
-      <td BGCOLOR="#DAF7A6">Yes</td>
-      <td BGCOLOR="#DAF7A6">Yes</td>		
+      <td>Yes</td>      
+      <td>Yes</td>
+      <td>Yes</td>		
       <td>No</td>
     </tr>
       <tr>
