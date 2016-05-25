@@ -7,6 +7,7 @@ shared code.
 R does not have an official style guide, but Hadley Wickham provides one that is well
 thought out and widely adopted. [Advanced R: Coding Style](http://r-pkgs.had.co.nz/style.html).
 
+Both the Wickham text and this page are derived from [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml).
 
 ## Use Roxygen2 documentation
 
