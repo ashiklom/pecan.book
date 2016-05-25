@@ -19,8 +19,7 @@ See [Roxygen2](Roxygen2.md) Wiki page
 ## Write your name at the top
 
 Any function that you create or make a meaningful contribution to should
-have your name listed after the
-`author tag in the function documentation.
+have your name listed after the author tag in the function documentation.
 
 ## Use testthat testing package
 
