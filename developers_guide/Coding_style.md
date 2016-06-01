@@ -6,8 +6,8 @@ shared code.
 
 R does not have an official style guide, but Hadley Wickham provides one that is well
 thought out and widely adopted. [Advanced R: Coding Style](http://r-pkgs.had.co.nz/style.html).
-Both the Wickham text and this text are derived from [Google`s R Style
-Guide](http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html).
+
+Both the Wickham text and this page are derived from [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml).
 
 ## Use Roxygen2 documentation
 
@@ -20,8 +20,7 @@ See [Roxygen2](Roxygen2.md) Wiki page
 ## Write your name at the top
 
 Any function that you create or make a meaningful contribution to should
-have your name listed after the
-`author tag in the function documentation.
+have your name listed after the author tag in the function documentation.
 
 ## Use testthat testing package
 

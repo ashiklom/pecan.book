@@ -21,27 +21,4 @@ R --vanilla < scripts/install.dependencies.R
 
 ### Updating BETY
 
-BETY now requires RUBY 1.9 following are the instructions to get RUBY on an Ubuntu server
-```bash
-rm /etc/apt/sources.list.d/brightbox-passenger-precise.list 
-apt-get install python-software-properties
-apt-add-repository ppa:brightbox/ruby-ng
-apt-get update
-
-apt-get install ruby1.9.3 rubygems ruby-switch passenger-common1.9.1
-apt-get dist-upgrade
-ruby-switch --set ruby1.9.1
-```
-
-Now we can update BETY
-```bash
-cd bety
-sudo gem install bundler
-sudo git pull
-sudo bundle install
-```
-
-Finally either download the latest version of the database using the updatedb.sh script or run the following command to keep the current installed database and update it to the latest version
-```bash
-sudo rake db:migrate RAILS_ENV="production"
-```
+Instructions on how to update bety can be found at the wiki page of the bety project [here](https://github.com/PecanProject/bety/wiki/Updating-BETY)
