@@ -36,6 +36,7 @@
    * [Installing PEcAn RedHat](developers_guide/Installing-PEcAn-RedHat.md)
    * [Installing PEcAn OSX](developers_guide/Installing-PEcAn-OSX.md)
    * [Installing PEcAn Ubuntu](developers_guide/Installing-PEcAn-Ubuntu.md)
+   * [Installing Pecan Models](developers_guide/Installing-PEcAn-models.md)
    * [VM Creation](developers_guide/VM-Creation.md)
    * [PEcAn Configuration and Settings Files](developers_guide/Configuration-Files.md)
    * [Coding Style](developers_guide/Coding_style.md)
