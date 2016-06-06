@@ -1,7 +1,7 @@
-## Dowloading and Installing Ecoystem
-This page contains instructions on how to download and install ecosystems models.
+## Download and Install Models
+This page contains instructions on how to download and install ecosystem models that have been or are being coupled to PEcAn.
 These instructions have been tested on the PEcAn unbuntu VM. Commands may vary on other operating systems.
-Also, some model downloads require permissions before downloading, so are not available with the default PEcAn VM.
+Also, some model downloads require permissions before downloading, making them unavailable to the general public. Please contact the PEcAn team if you would like access to a model that is not already installed on the default PEcAn VM.
 
 - [BioCro](Installing-PEcAn-models.md#biocro)
 - [CLM 4.5](Installing-PEcAn-models.md#clm4.5)
