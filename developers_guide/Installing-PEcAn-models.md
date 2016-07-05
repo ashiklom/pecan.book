@@ -313,7 +313,29 @@ make
 
 ```maespa.out``` is your executable. Example input files can be found in the ```inpufiles``` directory. Executing measpa.out from within one of the example directories will produce output.
 
+MAESPA developers have also developed a wrapper package called Maeswrap. The usual R package installation method ```install.packages``` may present issues with downloading an unpacking a dependency package called ```rgl```. Here are a couple of solutions:
 
+#### Solution 1
+
+```bash
+### From the Command Line
+sudo apt-get install r-cran-rgl
+```
+then from within R
+```R
+install.packages("Maeswrap")
+```
+
+#### Solution 2
+
+```bash
+### From the Command line 
+sudo apt-get install libglu1-mesa-dev
+```
+then from within R
+```R
+install.packages("Maeswrap")
+```
 ### GDAY
 
 Navigate to a directory you would like to store GDAY and run the following:
@@ -332,7 +354,8 @@ make
 
 ### LPJ-GUESS
 
-Instructions ot download source code
+Instructions to download source code
+
 ```bash
 wget http://stormbringerii.nateko.lu.se/public/guess_download/guess_3.1.tar.gz
 tar -xvzf guess_3.1.tar.gz
