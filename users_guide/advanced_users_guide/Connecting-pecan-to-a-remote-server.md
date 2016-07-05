@@ -94,7 +94,7 @@ that jobs on the local machine should use qsub to run the models.
 
 `$qsuboptions` : is an array that lists options for each machine.
 Currently it support the following options (see also
-[PEcAn-Configuration](https://github.com/PecanProject/pecan/wiki/PEcAn-Configuration#run_setup))
+[PEcAn-Configuration](PEcAn-Configuration.md#run_setup))
 
  ```
 array("geo.bu.edu" =>

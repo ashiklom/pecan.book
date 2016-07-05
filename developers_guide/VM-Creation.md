@@ -84,8 +84,8 @@ For more information about:
 Pecan    - http://pecanproject.org
 BETY     - http://www.betydb.org
 
-For a list of all models currently supported see:
-https://github.com/PecanProject/pecan/wiki/Getting-started#supported-models
+For a list of all models currently navigate [here](../users_guide/basic_users_guide/models_table.md)
+
 
 You can access this system using a webbrowser at
  http://<hosting machine>:${PORT}80/
