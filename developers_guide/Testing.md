@@ -107,7 +107,7 @@ if(db.exists()){
 }
 ```
 *  instructions for installing this are available on the [VM creation
-    wiki](https://github.com/PecanProject/pecan/wiki/VM-Creation))
+    wiki](VM-Creation.md)
 *  examples can be found in the PEcAn.DB package (`db/inst/tests/`).
 
 * Model specific settings can go in the model-specific module, for
