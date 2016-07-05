@@ -47,4 +47,5 @@
    * [Installing Data](developers_guide/Installing-PEcAn-Data.md)
    * [Development](developers_guide/Development.md)
    * [Inputs](developers_guide/Data-Formats.md)
+   * [Shiny-CentOS](developers_guide/centos.shiny.md)
 
