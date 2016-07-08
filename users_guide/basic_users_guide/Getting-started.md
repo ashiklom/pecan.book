@@ -19,6 +19,7 @@ There are two ways of using PEcAn, via the web interface and directly within R. 
 
 ![](../../pic1.jpg)
 
+
 5.    The first time you use the VM you'll want to use File → Import Appliance in VirtualBox in order to import the VM. This will create a virtual machine from the disk image. When asked about the Appliance Import Settings make sure you select "Reinitialize the MAC address of all network cards". This is not selected by default and can result in networking issues since multiple machines might claim to have the same network MAC Address. That said, users who have experienced network connection difficulties within the VM have sometimes had better luck after reinstalling without reinitializing.
 
 6.  Next, click “Import”. You only have to do this Import step once, in the future you can just skip to the next step. 	
