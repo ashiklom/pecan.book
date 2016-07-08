@@ -57,9 +57,8 @@ Select the default drive volume type and click Next
 ![](../../pic3.jpg)
   a.    You will see the status of your PEcAn VM, which will take a minute to boot up. Wait until the Instance State reads “running”. The most important piece of information here is the Public IP, which is the URL you will need in order to access your PEcAn instance from within your web browser (see Demo 1 below). 
   b.  Be aware that it often takes ~1 hr for AWS instances to become fully operational, so if you get an error when you put the Public IP in you web browser, most of the time you just need to wait a bit longer.
-  
-Congratulations! You just started a PEcAn server in the “cloud”!
-    
+  Congratulations! You just started a PEcAn server in the “cloud”!
+
 10.    When you are done using PEcAn, you will want to return to the “Instances” menu to turn off your VM.
   a.  To STOP the instance (which will turn the machine off but keep your work), select your PEcAn instance and click Actions > Instance state > Stop. Be aware that a stopped instance will still accrue a small storage cost on AWS. To restart this instance at any point in the future you do not want to repeat all the steps above, but instead you just need to select your instance and then click Actions > Instance state > Start
   b.	To TERMINATE the instance (which will DELETE your PEcAn machine), select your instance and click Actions > Instance state > Terminate. Terminated instances will not incur costs. In most cases you will also want to go to the Volumes menu and delete the storage associated with your PEcAn VM.Remember, AWS is free for one year, but will automatically charge a fee in second year if account is not cancelled.
