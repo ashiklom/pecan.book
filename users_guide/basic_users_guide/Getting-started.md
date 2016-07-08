@@ -48,7 +48,7 @@ Login to Amazon Web Services (AWS), http://console.aws.amazon.com/ and select th
     ii.	Click “Add Rule”, leave the pull down on “Custom TCP Rule”, and then change the Port Range from 0 to 8787. Set “Source” to Anywhere. This rule allows you to access RStudio Server on PEcAn.
   b.	Click “Review and Launch”  . You will then see this pop-up:
     
-![](../../pic2.jpg)
+  ![](../../pic2.jpg)
 
 Select the default drive volume type and click Next
 7.    Review and Launch
