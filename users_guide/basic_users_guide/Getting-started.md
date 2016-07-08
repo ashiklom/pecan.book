@@ -15,13 +15,10 @@ There are two ways of using PEcAn, via the web interface and directly within R. 
 
 3.	After you have Virtual Box installed you’ll need to download the PEcAn virtual machine: [http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN](http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN). The virtual machine is available under the tag vm. Download the 32 bit version and note that the download is ~4 GB so will take from several minutes to hours depending on the connection speed.
 
-4.	To open up the virtual machine you'll first want to open up VirtualBox 
+4.	To open up the virtual machine you'll first want to open up VirtualBox. 
 
-![](../../pic1.jpg)
-
-
-5.    The first time you use the VM you'll want to use File → Import Appliance in VirtualBox in order to import the VM. This will create a virtual machine from the disk image. When asked about the Appliance Import Settings make sure you select "Reinitialize the MAC address of all network cards". This is not selected by default and can result in networking issues since multiple machines might claim to have the same network MAC Address. That said, users who have experienced network connection difficulties within the VM have sometimes had better luck after reinstalling without reinitializing.
-
+5. The first time you use the VM you'll want to use File → Import Appliance in VirtualBox in order to import the VM. This will create a virtual machine from the disk image. When asked about the Appliance Import Settings make sure you select "Reinitialize the MAC address of all network cards". This is not selected by default and can result in networking issues since multiple machines might claim to have the same network MAC Address. That said, users who have experienced network connection difficulties within the VM have sometimes had better luck after reinstalling without reinitializing.
+  ![](../../pic1.jpg)
 6.  Next, click “Import”. You only have to do this Import step once, in the future you can just skip to the next step. 	
 
 7.	Start Pecan by double clicking on the icon for the VM. A terminal window will pop up showing the machine booting up which may take a minute. It is done booting when you get to the “pecan32 login:” prompt. You do not need to login as the VM behaves like a server that we will be accessing through you web browser. Feel free to minimize the VM window.
