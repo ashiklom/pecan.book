@@ -7,7 +7,7 @@ PEcAn provides an interface to a variety of ecosystem models and attempts to sta
 
 There are two ways of using PEcAn, via the web interface and directly within R. Even for users familiar with R, using the web interface is a good place to start because it provides a high level overview of the PEcAn workflow.The quickest way to get started is to download the virtual machine or use an AWS instance.
 
-#### Working with the PEcAn VM
+### Working with the PEcAn VM
 
 1.    PEcAn consists of a set of scripts and code that is compiled within a Linux operating system and saved in a “virtual machine (VM)”. Virtual machines allow for running consistent set-ups without worrying about differences between operating systems, library dependencies, compiling the code, etc. 
 
