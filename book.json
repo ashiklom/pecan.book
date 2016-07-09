@@ -1,7 +1,5 @@
 {
     "plugins": [
-        "mathjax",
-        "youtubex",
         "heading-anchors"
     ],
     "pluginsConfig": {}
