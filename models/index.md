@@ -10,8 +10,8 @@ This section will contain information about all models that are supported by PEc
 | [ED](ed.md) | Yes | Yes | Yes| No |
 | [G'DAY](gday.md) | No | No | No| No |
 | [linkages](linkages.md) | Yes | Yes | Yes| Yes |
-| [LPJ-GUESS](lpj-guess.md) | No | Yes | No | No |
-| [MAESPA](maespa.md) | No | Yes | No | No |
+| [LPJ-GUESS](lpj-guess.md) | Yes | Yes | No | No |
+| [MAESPA](maespa.md) | Yes | Yes | No | No |
 | [PRELES](preles.md) | Yes | Yes | Partially | No |
 | [Sipnet](sipnet.md) | Yes | Yes | Yes| No |
 
