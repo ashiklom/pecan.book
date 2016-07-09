@@ -22,7 +22,7 @@
    * [Updating BETY database](users_guide/advanced_users_guide/Updating-BETY.md)
    * [Database-Synchronization](users_guide/advanced_users_guide/Database-Synchronization.md)
    * [Troubleshooting PEcAn](users_guide/advanced_users_guide/Troubleshooting-pecan.md)
-* [Models](models/models.md)
+* [Models](models/index.md)
    * [BioCro](models/biocro.md)
    * [CLM](models/clm.md)
    * [Dalec](models/dalec.md)
