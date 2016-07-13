@@ -32,9 +32,9 @@ Notes: Fluxnet 2015 synthesis product. Does not cover all FLUXNET sites
 
 # CRUNCEP
 
-Scale: global 0.5 degree
+Scale: global
 
-Resolution: 6hr
+Resolution: 6hr, 0.5 degree
 
 Availability: 1901-2010
 
@@ -46,7 +46,11 @@ Resolution: 3 hr
 
 Availability: 2000-2100
 
+Currently only GFDL available. Different scenerios and ensemble members can be set via Advanced Edit.
+
 # NLDAS
+
+Scale: Lower 48 + buffer, 
 
 hour
 
@@ -54,7 +58,7 @@ hour
 
 .125 degree
 
-Lower 48 + buffer
+
 
 # GLDAS
 
