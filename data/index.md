@@ -1,3 +1,3 @@
 # Types of Data
 
-* [Meteorology](meteorology.md)
+[Meteorology](meteorology.md)
