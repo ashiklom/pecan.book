@@ -1,3 +1,3 @@
 # Summary
 
-* [Meteorology](../data/meteorology.md)
+* [Meteorology](/data/meteorology.md)
