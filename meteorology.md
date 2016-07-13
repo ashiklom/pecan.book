@@ -38,8 +38,6 @@ Resolution: 6hr
 
 Availability: 1901-2010
 
-
-
 # CMIP5
 
 Scale: varies by model
@@ -47,8 +45,6 @@ Scale: varies by model
 Resolution: 3 hr
 
 Availability: 2000-2100
-
-
 
 # NLDAS
 
@@ -80,5 +76,13 @@ global
 
 North America
 
+# PalEON
 
+850-2010
+
+6hr
+
+0.5 degree
+
+-100 to -60 W Lon, 35 to 50 N Latitude \(US northern hardwoods + buffer\)
 
