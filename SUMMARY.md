@@ -33,7 +33,7 @@
    * [MAESPA](models/maespa.md)
    * [PRELES](models/preles.md)
    * [Sipnet](models/sipnet.md)
-* [Data](data/meteorology.md)
+* [Data](Data/index.md)
 * [Developer's Guide](developers_guide/Developers_guide.md)
    * [Reporting Bugs and Requesting Features](developers_guide/Github-issues.md)
    * [Using Github and Git](developers_guide/Using-Git.md)
