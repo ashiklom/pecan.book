@@ -30,6 +30,14 @@ Availability: varies by site [http:\/\/fluxnet.fluxdata.org\/sites\/site-list-an
 
 Notes: Fluxnet 2015 synthesis product. Does not cover all FLUXNET sites
 
+# NARR
+
+Scale: North America
+
+Resolution: 3 hr, approx. 32km \(Lambert conical projection\)
+
+Availability: 1979-present
+
 # CRUNCEP
 
 Scale: global
@@ -50,43 +58,29 @@ Currently only GFDL available. Different scenerios and ensemble members can be s
 
 # NLDAS
 
-Scale: Lower 48 + buffer, 
+Scale: Lower 48 + buffer,
 
-hour
+Resolution: 1 hour, .125 degree
 
-1980-present
-
-.125 degree
-
-
+Availability: 1980-present
 
 # GLDAS
 
-1 degree
+Scale: Global
 
-3 hr
+Resolution: 3hr, 1 degree
 
-1948-2010
-
-global
-
-# NARR
-
-1979-present
-
-3 hr
-
-~ 32km \(Lambert conical projection\)
-
-North America
+Availability: 1948-2010
 
 # PalEON
 
-850-2010
+Scale: -100 to -60 W Lon, 35 to 50 N Latitude \(US northern hardwoods + buffer\)
 
-6hr
+Resolution: 6hr, 0.5 degree
 
-0.5 degree
+Availability: 850-2010
 
--100 to -60 W Lon, 35 to 50 N Latitude \(US northern hardwoods + buffer\)
+
+
+
 
