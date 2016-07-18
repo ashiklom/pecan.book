@@ -1,6 +1,6 @@
-# Models
+#Models
 
-This section will contain information about all models that are supported by PEcAn.
+This section will contain information about all models and output variables that are supported by PEcAn.
 
 | Model Name | Available in the VM | Prescribed Inputs | Input Functions/Values | Restart Function |
 | -- | -- | -- | -- | -- |
@@ -17,4 +17,9 @@ This section will contain information about all models that are supported by PEc
 
 A [template](template.md) is provided to help you fill in information about your model.
 
+##Output Variables
+
+PEcAn converts all model outputs to a single [standard](variables.md). This standard evolved out of MsTMIP project, which is itself based on NACP, LBA, and other model-intercomparison projects. This standard was expanded for the PalEON MIP and the needs of the PEcAn modeling community to support variables not in these standards.
+
+_Model developers_: do not add variables to your PEcAn output without first adding them to the PEcAn standard table! Also, do not create new variables equivalent to existing variables but just with different names or units. 
 
