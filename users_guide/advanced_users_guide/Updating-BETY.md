@@ -1,3 +1,3 @@
-Moved to: https://github.com/PecanProject/bety/wiki/Updating-BETY
+Moved to: https://pecan.gitbooks.io/betydb-documentation/content/updating_betydb_when_new_versions_are_released.html
 
 Please fix link that referred you here
