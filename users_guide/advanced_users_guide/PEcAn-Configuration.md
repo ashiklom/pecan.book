@@ -10,6 +10,7 @@ The PEcAn system is configured using a xml file, often called settings.xml. The 
 8. [Sensitivity Runs](#sensitivity_runs)
 9. [Model Setup](#model_setup)
 10. [Run Setup](#run_setup)
+11. [State Data Assimilation](#sda_setup)
 
 <a name="pecan_folders" />
 
@@ -356,3 +357,37 @@ Host on which the simulation will run is specified in the `<host>` subsection. I
 * **qsub.jobid** : [optional] the regular expression used to find the jobid returned from qsub. If not specified (and qsub is) it will use the default value is "Your job ([0-9]+) .*"
 * **qstat** : [optional] the command to execute to check if a job is finished, this should return DONE if the job is finished. There is one parameter this command should take @JOBID@ which is the id of the job as returned by qsub.jobid. If not specified (and qsub is) it will use the default value is "qstat -j @JOBID@ || echo DONE"
 * **job.sh** : [optional] additional options to add to the job.sh at the top  
+
+<a name="sda_setup" />
+
+### State Data Assimilation Tags
+
+The following tags can be used for state data assimilation. More detailed information can be found here: [State Data Assimilation Documentation](sda.documentation.md)
+
+```
+<state.data.assimilation>
+	<process.variance>FALSE</process.variance>
+  <sample.parameters>FALSE</sample.parameters>
+  <state.variable>AGB.pft</state.variable>
+  <state.variable>TotSoilCarb</state.variable>
+  <spin.up>
+  	<start.year>2004</start.year>
+	  <end.year>2006</end.year>
+  </spin.up>
+  <forecast.time.step>1</forecast.time.step>
+	<start.year>2004</start.year>
+	<end.year>2006</end.year>
+</state.data.assimilation>
+```
+
+* **process.variance** : [optional] TRUE/FLASE flag for if process variance should be estimated (TRUE) or not (FALSE). If TRUE, a generalized ensemble filter will be used. If FALSE, an ensemble Kalman filter will be used. Default is FALSE.
+* **sample.parameters** : [optional] TRUE/FLASE flag for if parameters should be sampled for each ensemble member or not. This allows for more spread in the intial conditions of the forecast.
+* **_NOTE:_** If TRUE, you must also assign a vector of trait names to pick.trait.params within the sda.enkf function.
+* **state.variable** : [required] State variable that is to be assimilated (in PEcAn standard format). Default is "AGB" - Above Ground Biomass.
+* **spin.up** : [required] start.date and end.date for model spin up.
+* **_NOTE:_** start.date and end.date are distinct from values set in the run tag because spin up can be done over a subset of the run.
+* **forecast.time.step** : [optional] start.date and end.date for model spin up.
+* **start.date** : [required?] start date of the state data assimilation (in YYYY/MM/DD format) 
+* **end.date** : [required?] end date of the state data assimilation (in YYYY/MM/DD format)
+* **_NOTE:_** start.date and end.date are distinct from values set in the run tag because this analysis can be done over a subset of the run.
+
