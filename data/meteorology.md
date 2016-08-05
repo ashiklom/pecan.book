@@ -80,7 +80,15 @@ Resolution: 6hr, 0.5 degree
 
 Availability: 850-2010
 
+# FluxnetLaThuile
 
+Scale: site
+
+Resolution: 30 or 60 min
+
+Availability: varies by site  http:\/\/www.fluxdata.org\/DataInfo\/Dataset%20Doc%20Lib\/SynthDataSummary.aspx
+
+Notes: 2007 synthesis. Fluxnet2015 supercedes this for sites that have been updated
 
 
 
