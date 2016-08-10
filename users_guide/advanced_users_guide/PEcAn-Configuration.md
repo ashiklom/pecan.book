@@ -368,15 +368,17 @@ The following tags can be used for state data assimilation. More detailed inform
 <state.data.assimilation>
 	<process.variance>FALSE</process.variance>
   <sample.parameters>FALSE</sample.parameters>
-  <state.variable>AGB.pft</state.variable>
-  <state.variable>TotSoilCarb</state.variable>
+  <state.variables>
+   <variable>AGB.pft</variable>
+   <variable>TotSoilCarb</variable>
+  </state.variables>
   <spin.up>
-  	<start.year>2004</start.year>
-	  <end.year>2006</end.year>
+  	<start.date>2004/01/01</start.date>
+	  <end.date>2006/12/31</end.date>
   </spin.up>
   <forecast.time.step>1</forecast.time.step>
-	<start.year>2004</start.year>
-	<end.year>2006</end.year>
+	<start.date>2004/01/01</start.date>
+	<end.date>2006/12/31</end.date>
 </state.data.assimilation>
 ```
 
