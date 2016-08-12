@@ -5,7 +5,7 @@
 <br>
 </br>
 <center>**Our Mission:**
-<center><font size="5">Develop and promote accessible tools for reproducible ecosystem modeling and forecasting</font></center>
+<center>**Develop and promote accessible tools for reproducible ecosystem modeling and forecasting**
 <br>
 </br>
 
