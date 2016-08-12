@@ -4,7 +4,7 @@
 <center>**The Predictive Ecosystem Analyzer (PEcAn): Ecosystem science, policy, and management informed by the best available data and models**
 <br>
 </br>
-<center><font size="5">Our Mission:</font></center>
+<center>**Our Mission:**
 <center><font size="5">Develop and promote accessible tools for reproducible ecosystem modeling and forecasting</font></center>
 <br>
 </br>
