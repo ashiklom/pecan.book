@@ -1,7 +1,7 @@
 ![](PecanLogo.png)
 <br>
 </br>
-The Predictive Ecosystem Analyzer (PEcAn): Ecosystem science, policy, and management informed by the best available data and models
+<center>**The Predictive Ecosystem Analyzer (PEcAn): Ecosystem science, policy, and management informed by the best available data and models**</center>
 <br>
 </br>
 <center><font size="5">Our Mission:</font></center>
