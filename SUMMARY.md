@@ -33,6 +33,7 @@
    * [MAESPA](models/maespa.md)
    * [PRELES](models/preles.md)
    * [Sipnet](models/sipnet.md)
+   * [Output Variable Standards](models/variables.md)
 * [Data](data/index.md)
   * [Meteorology](data/meteorology.md)
 * [Developer's Guide](developers_guide/Developers_guide.md)
