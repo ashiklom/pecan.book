@@ -1,16 +1,16 @@
 The PEcAn system is configured using a xml file, often called settings.xml. The configuration file can be split in X seperate pieces:
 
-1. [PEcAn Folders](PEcAn-Configuration.md#pecan_folders)
-2. [Database Access](PEcAn-Configuration.md#database_access)
-3. [BETY Configuration](PEcAn-Configuration.md#bety_database)
-4. [Brown Dog](PEcAn-Configuration.md#brown_dog)
-5. [PFT Selection](PEcAn-Configuration.md#pft_selection)
-6. [Meta Analysis](PEcAn-Configuration.md#meta_analysis)
-7. [Ensemble Runs](PEcAn-Configuration.md#ensemble_runs)
-8. [Sensitivity Runs](PEcAn-Configuration.md#sensitivity_runs)
+1. [PEcAn Folders](PEcAn-Configuration.md#pecan-folders)
+2. [Database Access](PEcAn-Configuration.md#database-access)
+3. [BETY Configuration](PEcAn-Configuration.md#bety-database-configuration)
+4. [Brown Dog](PEcAn-Configuration.md#brown-dog-configuration)
+5. [PFT Selection](PEcAn-Configuration.md#pft-selection)
+6. [Meta Analysis](PEcAn-Configuration.md#meta-analysis)
+7. [Ensemble Runs](PEcAn-Configuration.md#ensemble-runs)
+8. [Sensitivity Runs](PEcAn-Configuration.md#sensitivity-runs)
 9. [Model Setup](PEcAn-Configuration.md#model_setup)
-10. [Run Setup](PEcAn-Configuration.md#run_setup)
-11. [State Data Assimilation](PEcAn-Configuration.md#sda_setup)
+10. [Run Setup](PEcAn-Configuration.md#run-setup)
+11. [State Data Assimilation](PEcAn-Configuration.md#state-data-assimilation-tags)
 
 <a name="pecan_folders" />
 
