@@ -290,15 +290,19 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 		<name>Niwot Ridge Forest/LTER NWT1 (US-NR1)</name>
 		<lat>40.032900</lat>
 		<lon>-105.546000</lon>
+		<met.start>2002/01/01</met.start>
+		<met.end>2005/12/31</met.end>
 	</site>
 	<inputs>
-       <met>
+          <met>
              <id>10000000001</id>
              <path>/fs/data1/pecan.data/input/</path>
              <source>Ameriflux</source>
-        </met>
-	<inputs>
-	<host>
+             <username>carya</username>
+          </met>
+	</inputs>
+</run>
+<host>
 		<name>localhost</name>
 		<rundir>/home/carya/testrun.pecan/run/</rundir>
 		<outdir>/home/carya/testrun.pecan/out/</outdir>
@@ -308,8 +312,7 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 		<qsub.jobid>Your job ([0-9]+) .*</qsub.jobid>
 		<qstat>qstat -j @JOBID@ &> /dev/null || echo DONE</qstat>
 		<job.sh>module load udunits R/R-3.0.0_gnu-4.4.6</job.sh>
-	</host>
-</run>
+</host>
 ```
 
 * **jobtemplate** : [optional] the template used when creating a job.sh file which is used to launch the actual model. Each model has it's own [template](https://github.com/PecanProject/pecan/blob/master/models/ed/inst/template.job) in the inst folder of the module. The following variables can e used: @SITE_LAT@, @SITE_LON@, @SITE_MET@, @START_DATE@, @END_DATE@, @OUTDIR@, @RUNDIR@ which all come variables in the pecan.xml file. The following two command can be used to copy and clean the results from a scratch folder (specified as scratch in the run section below, for example local disk vs network disk) : @SCRATCH_COPY@, @SCRATCH_CLEAR@ .
