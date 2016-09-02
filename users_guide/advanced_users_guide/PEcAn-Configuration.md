@@ -291,7 +291,7 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 		<lat>40.032900</lat>
 		<lon>-105.546000</lon>
                 <met.start>2002/01/01</met.start>
-                <met.end>2006/01/01</met.end>
+                <met.end>2005/12/31</met.end>
 	</site>
 	<inputs>
           <met>
