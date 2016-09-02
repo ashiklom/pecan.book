@@ -1,6 +1,6 @@
 The PEcAn system is configured using a xml file, often called settings.xml. The configuration file can be split in X seperate pieces:
 
-1. [PEcAn Folders](#pecan_folders)
+1. [PEcAn Folders](PEcAn-Configuration.md#pecan_folders)
 2. [Database Access](#database_access)
 3. [BETY Configuration](#bety_database)
 4. [Brown Dog](#brown_dog)
