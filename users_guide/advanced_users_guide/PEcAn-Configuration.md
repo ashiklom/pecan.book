@@ -154,7 +154,8 @@ The section meta.analysis needs to exists for a meta.analysis to be executed, ev
 * **random.effects** : [optional] Whether to include random effects (site, treatment) in meta-analysis model. Can be set to FALSE to work around convergence problems caused by an over parameterized model (e.g. too many sites, not enough data). The default value is TRUE.
 * **update** : [optional] Should previous results of meta.analysis and get.traits be re-used. If set to TRUE the meta-analysis and get.trait.data will always be executed. Setting this to FALSE will try and reuse existing results. Future versions will allow for AUTO as well which will try and reuse if the PFT/traits have not changed. The default value is FALSE.
 * **threshold** threshold for Gelman-Rubin convergence diagnostic (MGPRF); default is 1.2
-<a name="ensemble_runs" />
+
+
 ## Ensemble Runs
 
 Only if this section is defined an ensemble analysis is done.
