@@ -31,3 +31,28 @@ Host *
 EOF
 chmod 600 ~/.ssh/config
 ```
+
+## Running PEcAn remotely
+
+Initial option is for the user to open a SSH tunnel and use this tunnel in the pecan.xml file.
+
+Create the tunnel:
+```
+ssh -nN -o ControlMaster=yes -o ControlPath="/tmp/geo.kooper.tunnel" -l kooper geo.bu.edu
+```
+
+Test the tunnel:
+```
+ssh -o ControlPath=/tmp/geo.kooper.tunnel geo.bu.edu pwd
+```
+
+Add following to pecan.xml:
+```
+  <host>
+    <name>geo.bu.edu</name>
+    <user>kooper</user>
+    <tunnel>/tmp/geo.kooper.tunnel</tunnel>
+  </host>
+```
+
+now as long as the tunnel is active, pecan will use the tunnel to connect.
