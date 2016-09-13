@@ -13,7 +13,7 @@ There are two ways of using PEcAn, via the web interface and directly within R. 
 
 2.  To run the PEcAn VM you will need to install VirtualBox, the program that runs the virtual machine [http://www.virtualbox.org](http://www.virtualbox.org). On Windows you may see a warning about Logo testing, it is okay to ignore the warning. 
 
-3.	After you have Virtual Box installed you’ll need to download the PEcAn virtual machine: [http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN](http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN). The virtual machine is available under the tag vm. Download the 32 bit version and note that the download is ~4 GB so will take from several minutes to hours depending on the connection speed.
+3.	After you have Virtual Box installed you’ll need to download the PEcAn virtual machine: [http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN](http://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN). The virtual machine is available under the "**Files**" header. Click the 32 or 64 bit ".ova" file and note that the download is ~5 GB so will take from several minutes to hours depending on the connection speed.
 
 4.	To open up the virtual machine you'll first want to open up VirtualBox. 
 
