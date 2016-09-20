@@ -3,7 +3,7 @@
 ## This function is housed within: **/pecan/modules/assim.sequential/R**
 
 ### **sda.enkf.R**
-This is the main ensemble Kalman filter and generalized filter code. Originally, this was just ensemble Kalman filter code. Mike Dietze and Ann Raiho added a generalized filter to avoid filter divergence.
+This is the main ensemble Kalman filter and generalized filter code. Originally, this was just ensemble Kalman filter code. Mike Dietze and Ann Raiho added a generalized ensemble filter to avoid filter divergence.
 
 The main parts of the function are:
 
@@ -76,7 +76,7 @@ This model specific function reads the netcdfs of a specific year. Takes out the
 ### **write.restart.MODEL.R**
 This model specific function takes in an analysis matrix from sda.enkf.R and translates the state variables back to the model variables. Then, writes a write.config.MODEL to restart the model.
 
-### The Generalized Kalman Filter
+### The Generalized Ensemble Filter
 An ensemble filter is a sequential data assimilation algorithm with two procedures at every time step: a forecast followed by an analysis. The forecast ensembles arise from a model while the analysis makes an adjustment of the forecasts ensembles from the model towards the data. An ensemble Kalman filter is typically suggested for this type of analysis because of its computationally efficient analytical solution and its ability to update states based on an estimate of covariance structure. But, in some cases, the ensemble Kalman filter fails because of filter divergence. Filter divergence occurs when forecast variability is too small, which causes the analysis to favor the forecast and diverge from the data. Models often produce low forecast variability because there is little internal stochasticity. Our ensemble filter overcomes this problem in a Bayesian framework by including an estimation of model process variance. This methodology also maintains the benefits of the ensemble Kalman filter by updating the state vector based on the estimated covariance structure.
 
 This process begins after the model is spun up to equilibrium.
