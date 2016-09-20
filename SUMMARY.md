@@ -2,7 +2,8 @@
 
 * [Introduction](README.md)
 * [Code of Conduct](Code-of-Conduct.md)
-* [Basic User's Guide](users_guide/basic_users_guide/Basic_Users_Guide.md)
+* [About this Book](how_to_use_book.md)
+* [Using PEcAn through the Web Interface](users_guide/basic_users_guide/Basic_Users_Guide.md)
    * [Getting Started Using PEcAn](users_guide/basic_users_guide/Getting-started.md)
    * [Updating, Building, and Checking PEcAn](users_guide/basic_users_guide/Updating-PEcAn.md)
    * [Choose a model](users_guide/basic_users_guide/Choose-a-model.md)
@@ -11,7 +12,7 @@
    * [Choose a meteorological driver](users_guide/basic_users_guide/Choosing-meteorology.md)
    * [Choose soils](users_guide/basic_users_guide/Choosing-soils.md)
    * [Choose initial vegetation](users_guide/basic_users_guide/Choosing-initial-vegetation.md)
-* [Advanced User's Guide](users_guide/advanced_users_guide/Advanced_Users_Guide.md)
+* [Using PEcAn from the command line](users_guide/advanced_users_guide/Advanced_Users_Guide.md)
    * [PEcAn Workflow Modules](users_guide/advanced_users_guide/Workflow-modules.md)
    * [Connection to a remote server](users_guide/advanced_users_guide/Connecting-pecan-to-a-remote-server.md)
    * [Remote Execution](users_guide/advanced_users_guide/Enabling-Remote-Execution.md)
