@@ -77,11 +77,11 @@ This model specific function reads the netcdfs of a specific year. Takes out the
 This model specific function takes in an analysis matrix from sda.enkf.R and translates the state variables back to the model variables. Then, writes a write.config.MODEL to restart the model.
 
 ### The Generalized Kalman Filter
+An ensemble filter is a sequential data assimilation algorithm with two procedures at every time step: a forecast followed by an analysis. The forecast ensembles arise from a model while the analysis makes an adjustment of the forecasts ensembles from the model towards the data. An ensemble Kalman filter is typically suggested for this type of analysis because of its computationally efficient analytical solution and its ability to update states based on an estimate of covariance structure. But, in some cases, the ensemble Kalman filter fails because of filter divergence. Filter divergence occurs when forecast variability is too small, which causes the analysis to favor the forecast and diverge from the data. Models often produce low forecast variability because there is little internal stochasticity. Our ensemble filter overcomes this problem in a Bayesian framework by including an estimation of model process variance. This methodology also maintains the benefits of the ensemble Kalman filter by updating the state vector based on the estimated covariance structure.
 
-We begin data assimilation where the data begins at t=1
-  with a likelihood of the data vector $\left(\boldsymbol{y_{t}}\right)$
-  conditional on the estimated state vector $\left(\boldsymbol{x_{t}}\right)$
-  such that
+This process begins after the model is spun up to equilibrium.
+
+The likelihood function uses the data vector $\left(\boldsymbol{y_{t}}\right)$ conditional on the estimated state vector $\left(\boldsymbol{x_{t}}\right)$ such that
   
  $\boldsymbol{y}_{t}\sim\mathrm{multivariate\:normal}(\boldsymbol{x}_{t},\boldsymbol{R}_{t})$
  
@@ -97,6 +97,6 @@ $\boldsymbol{V}_{t+1}	=	n_{t}\bar{\boldsymbol{Q}}_{t}$
 
 $n_{t+1}	=	\frac{\sum_{i=1}^{I}\sum_{j=1}^{J}\frac{v_{ijt}^{2}+v_{iit}v_{jjt}}{Var(\boldsymbol{\bar{Q}}_{t})}}{I\times J}$
 
-where we calculate the mean of the process covariance matrix $\left(\bar{\boldsymbol{Q}_{t}}\right)$ from the posterior samples at time t. Degrees of freedom for the Wishart are typically calculated element by element where $v_{ij}$ are the elements of $\boldsymbol{V}_{t}$. $I$ and $J$ index rows and columns of $\boldsymbol{V}$. Here, we calculate a mean number of degrees of freedom for $t+1$ by summing over all the elements of the scale matrix $\left(\boldsymbol{V}\right)$ and dividing by the count of those elements $\left(I\times J\right)$. We fit this model sequentially through time
+where we calculate the mean of the process covariance matrix $\left(\bar{\boldsymbol{Q}_{t}}\right)$ from the posterior samples at time t. Degrees of freedom for the Wishart are typically calculated element by element where $v_{ij}$ are the elements of $\boldsymbol{V}_{t}$. $I$ and $J$ index rows and columns of $\boldsymbol{V}$. Here, we calculate a mean number of degrees of freedom for $t+1$ by summing over all the elements of the scale matrix $\left(\boldsymbol{V}\right)$ and dividing by the count of those elements $\left(I\times J\right)$. We fit this model sequentially through time in the R computing environment using R package 'rjags.'
  
  
