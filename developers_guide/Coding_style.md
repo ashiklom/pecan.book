@@ -63,11 +63,10 @@ The option to omit curly braces is another shortcut that makes code easier to wr
 
 When another package is required by a function or script, it can be called in the following ways:
 
-1. As a package dependency loaded with the package
-   This should be the default approach when writing functions in a package. There can be some exceptions, for example when a rarely-used or non-essential function requires an esoteric package. 
-2. using `library`
-   if dependency is not met, will print an error and stop
-3. using `require`
+(As a package dependency loads with the package, these should be the default approaches when writing functions in a package. There can be some exceptions, such as when a rarely-used or non-essential function requires an esoteric package.)
+1. When using `library`,
+   if dependency is not met, it will print an error and stop
+2 . When using `require`, it 
    will print a warning and continue (but will throw an error when a function from the required package is called) 
 
 Reference: Stack Overflow ["What is the difference between require and library?"](http://stackoverflow.com/questions/5595512/what-is-the-difference-between-require-and-library)
