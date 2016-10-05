@@ -8,7 +8,6 @@ This is the standard method of documentation used in PEcAn development, it provi
  * [**Object Documentation**](http://r-pkgs.had.co.nz/man.html)  
  * [Package Metadata](http://r-pkgs.had.co.nz/description.html) 
 * Roxygen2 Documentation 
- * [Website](https://github.com/yihui/roxygen2)
  * [Roxygen2 Package Documentation](http://cran.r-project.org/web/packages/roxygen2/roxygen2.pdf)
  * [GitHub](https://github.com/klutometis/roxygen)
 
