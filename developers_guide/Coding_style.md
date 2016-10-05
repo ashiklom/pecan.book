@@ -66,7 +66,7 @@ When another package is required by a function or script, it can be called in th
 (As a package dependency loads with the package, these should be the default approaches when writing functions in a package. There can be some exceptions, such as when a rarely-used or non-essential function requires an esoteric package.)
 1. When using `library`,
    if dependency is not met, it will print an error and stop
-2 . When using `require`, it 
+2. When using `require`, it 
    will print a warning and continue (but will throw an error when a function from the required package is called) 
 
 Reference: Stack Overflow ["What is the difference between require and library?"](http://stackoverflow.com/questions/5595512/what-is-the-difference-between-require-and-library)
