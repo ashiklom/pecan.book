@@ -3,7 +3,8 @@
         "heading-anchors",
         "splitter",
         "anchorjs",
-        "back-to-top-button"
+        "back-to-top-button",
+        "expandable-chapters-small"
     ],
     "pluginsConfig": {}
 }
