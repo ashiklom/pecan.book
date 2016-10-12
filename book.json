@@ -2,7 +2,8 @@
     "plugins": [
         "heading-anchors",
         "splitter",
-        "anchorjs"
+        "anchorjs",
+        "back-to-top-button"
     ],
     "pluginsConfig": {}
 }
