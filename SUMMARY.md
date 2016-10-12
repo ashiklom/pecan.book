@@ -18,7 +18,6 @@
       * [State Data Assimilation](users_guide/advanced_users_guide/sda.documentation.md)
       * [Parameter Data Assimilation](users_guide/advanced_users_guide/pda.documentation.md)
    
-   
 * [Advanced usage from the Command Line](users_guide/advanced_users_guide_commandline.md)
    * [Connection to a remote server](users_guide/advanced_users_guide/Connecting-pecan-to-a-remote-server.md)
    * [Remote Execution](users_guide/advanced_users_guide/Enabling-Remote-Execution.md)
@@ -44,11 +43,12 @@
       * [Sipnet](models/sipnet.md)
         * [SIPNET-configuration](users_guide/advanced_users_guide/SIPNET-configuration.md)
       * [Output Variable Standards](models/variables.md)
+   
   * [Data](data/index.md)
       * [Meteorology](data/meteorology.md)
 
 * [How PEcAn Works](how_pecan_works.md)
-  *[Workflow.R](workflow/workflow_r.md)
+  * [Workflow.R](workflow/workflow_r.md)
       * [Reading in Settings](workflow/read_in_settings.md)
       * [Inputs/Converions](workflow/inputs_conversions.md)
       * [Traits](workflow/traits.md)
@@ -57,7 +57,7 @@
       * [Execution](workflow/execution.md)
       * [Analysis](workflow/analysis.md)
       * [Advanced Execution and Analyses](workflow/adv_exec_analysis.md)
-  *[Demystifying BETY](pecan_with_bety.md)
+   * [Demystifying BETY](pecan_with_bety.md)
   
 * [Developer's Guide](developers_guide/Developers_guide.md)
    * [Reporting Bugs and Requesting Features](developers_guide/Github-issues.md)
@@ -87,4 +87,5 @@
    * [PEcAn in the Cloud](installation/PEcAn-in-the-Cloud.md)
    * [Shiny-CentOS](installation/centos.shiny.md)
    * [Upgrading PEcAn/VM](installation/Upgrading-pecan-vm.md)
+ 
 * [FAQ Known Issues](faq.md)
