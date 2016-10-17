@@ -3,14 +3,20 @@
 ![](PecanLogo.png)
 <br>
 </br>
-<center>#The Predictive Ecosystem Analyzer (PEcAn) 
+
+# <center>The Predictive Ecosystem Analyzer (PEcAn) 
+
+
 <br>
 </br>
-<center>##*Ecosystem science, policy, and management informed by the best available data and models*
+
+## <center>*Ecosystem science, policy, and management informed by the best available data and models*
+
+
 <br>
 </br>
-<center>#Our Mission:
-<center>##*Develop and promote accessible tools for reproducible ecosystem modeling and forecasting*
+# <center> Our Mission:
+##<center>*Develop and promote accessible tools for reproducible ecosystem modeling and forecasting*
 <br>
 </br>
 
