@@ -1,6 +1,8 @@
 # Summary
 
-* [About PEcAn](README.md)
+* [Front Cover](README.md)
+
+* [Project Overview](project_overview.md)
 
 * [Code of Conduct](Code-of-Conduct.md)
 
