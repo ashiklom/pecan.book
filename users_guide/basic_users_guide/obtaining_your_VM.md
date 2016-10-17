@@ -67,4 +67,4 @@ Select the default drive volume type and click Next
 ## Using PEcAn
 
 #### Basic PEcAn Demo
-The most basic function of PEcAn is run a model at the site level. The most recent [Demo](http://pecanproject.github.io/tutorials.html) describes the basics of running a model at an existing site.
+The most basic function of PEcAn is to run an ecosystem model at the site level. The most recent [Demo](http://pecanproject.github.io/tutorials.html) describes the basics of running a model at an existing site.
