@@ -10,7 +10,6 @@
 
 * [Basic User Guide - PEcAN out of the Box](users_guide/basic_users_guide/Basic_Users_Guide.md)
   * [Downloading and setting up Your VM](users_guide/basic_users_guide/obtaining_your_VM.md)
-  * [Basic Model Run](users_guide/basic_users_guide/basic_model_run.md)
 
 * [Advanced Usage from the Web Interface](users_guide/advanced_users_guide/Advanced_Users_Guide.md)
   * [When to Use Browndog](users_guide/advanced_users_guide/usig_browndog.md)
