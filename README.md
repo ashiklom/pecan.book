@@ -7,8 +7,6 @@
 # <center>The Predictive Ecosystem Analyzer (PEcAn) 
 
 
-<br>
-</br>
 
 ## <center>*Ecosystem science, policy, and management informed by the best available data and models*
 
