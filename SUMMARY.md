@@ -19,11 +19,11 @@
   * [State Data Assimilation](users_guide/adv_users_guide/sda.documentation.md)
   * [Parameter Data Assimilation](users_guide/adv_users_guide/pda.documentation.md)
 
-* [Advanced usage from the Command Line](users_guide/adv_users_guide_cmd/adv_users_guide_cmd.md)
-  * [Replicating a a basic run without touching the web interface](users_guide/adv_users_guide_cmd/replicate_run.md)
-  * [Working with the VM](users_guide/adv_users_guide_cmd/working_with_vm.md)
-  * [Replicating ensemble and sensitivity analysis](users_guide/adv_users_guide_cmd/replicate_ens_sens_cmd.md)
-  * [Extra Tools within PEcAn](users_guide/adv_users_guide_cmd/extra_tools.md)
+* [Advanced usage from the Command Line](users_guide/adv_user_guide_cmd/adv_users_guide_cmd.md)
+  * [Replicating a a basic run without touching the web interface](users_guide/adv_user_guide_cmd/replicate_run.md)
+  * [Working with the VM](users_guide/adv_user_guide_cmd/working_with_vm.md)
+  * [Replicating ensemble and sensitivity analysis](users_guide/adv_user_guide_cmd/replicate_ens_sens_cmd.md)
+  * [Extra Tools within PEcAn](users_guide/adv_user_guide_cmd/extra_tools.md)
 
 * [Maintaining your PEcAn](users_guide/maintaining_pecan/maintaining_pecan.md)
   * [Updating your code](users_guide/maintaining_pecan/update_pecan_code.md)
