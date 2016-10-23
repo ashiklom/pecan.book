@@ -4,7 +4,7 @@
 * [Project Overview](project_overview.md)
 * [Code of Conduct](Code-of-Conduct.md)
 * [About this Book](how_to_use_book.md)
-* [Basic User Guide - PEcAN out of the Box](users_guide/basic_users_guide/Basic_Users_Guide.md)
+* [Basic User Guide](users_guide/basic_users_guide/Basic_Users_Guide.md)
     * [Downloading and setting up Your VM](users_guide/basic_users_guide/obtaining_your_VM.md)
 * [Advanced: Web Interface](users_guide/adv_users_guide/Advanced_Users_Guide.md)
     * [When to Use Browndog](users_guide/adv_users_guide/using_browndog.md)
