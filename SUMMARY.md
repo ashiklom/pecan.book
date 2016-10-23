@@ -80,6 +80,5 @@
     * [Installing Pecan Models](installation/Installing-PEcAn-models.md)
     * [PEcAn in the Cloud](installation/PEcAn-in-the-Cloud.md)
     * [Shiny-CentOS](installation/centos.shiny.md)
-    * [Upgrading PEcAn\/VM](installation/Upgrading-pecan-vm.md)
 * [FAQ Known Issues](faq.md)
 
