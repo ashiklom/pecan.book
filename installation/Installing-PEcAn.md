@@ -317,10 +317,10 @@ sudo -u postgres ./scripts/load.bety.sh -c YES -u YES -r 0
 sudo -u postgres ./scripts/load.bety.sh -r 1
 sudo -u postgres ./scripts/load.bety.sh -r 2
 
-# configure for web app (change passowrd if needed)
+# configure for PEcAn web app (change password if needed)
 cp web/config.example.php web/config.php 
 
-# add models to database
+# add models to database (VM only)
 ./scripts/add.models.sh
 
 # add data to database
