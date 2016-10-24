@@ -14,9 +14,8 @@ For those wanting to take advantage of PEcAn's more  features and customizations
 **Under construction**
 
 * Ensemble prediction
-* Sensitivity analysis
-* Uncertainty analysis
-* Parameter data assimilation
-* State data assimilation
+* Sensitivity & Uncertainty analysis
+* [Parameter data assimilation](pda.documentation.md)
+* [State data assimilation](sda.documentation.md)
 * Benchmarking
 
