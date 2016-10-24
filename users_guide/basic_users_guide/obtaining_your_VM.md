@@ -23,7 +23,7 @@ There are two ways of using PEcAn, via the web interface and directly within R. 
 
 7.	Start Pecan by double clicking on the icon for the VM. A terminal window will pop up showing the machine booting up which may take a minute. It is done booting when you get to the “pecan32 login:” prompt. You do not need to login as the VM behaves like a server that we will be accessing through you web browser. Feel free to minimize the VM window.
 
-#### Using AmazonWeb Services(AWS)
+#### Using AmazonWeb Services (AWS)
 Login to Amazon Web Services (AWS), http://console.aws.amazon.com/ and select the EC2 Dashboard. If this is your first time using AWS you will need to set up an account before you are able to access the EC2 Dashboard. Important: You will need a credit card number and access to a phone to be able to verify AWS account registration. AWS is free for one year.
 
 1.    Choose AMI
@@ -62,9 +62,3 @@ Select the default drive volume type and click Next
 10.    When you are done using PEcAn, you will want to return to the “Instances” menu to turn off your VM.
   a.  To STOP the instance (which will turn the machine off but keep your work), select your PEcAn instance and click Actions > Instance state > Stop. Be aware that a stopped instance will still accrue a small storage cost on AWS. To restart this instance at any point in the future you do not want to repeat all the steps above, but instead you just need to select your instance and then click Actions > Instance state > Start
   b.	To TERMINATE the instance (which will DELETE your PEcAn machine), select your instance and click Actions > Instance state > Terminate. Terminated instances will not incur costs. In most cases you will also want to go to the Volumes menu and delete the storage associated with your PEcAn VM.Remember, AWS is free for one year, but will automatically charge a fee in second year if account is not cancelled.
-
-
-## Using PEcAn
-
-#### Basic PEcAn Demo
-The most basic function of PEcAn is to run an ecosystem model at the site level. The most recent [Demo](http://pecanproject.github.io/tutorials.html) describes the basics of running a model at an existing site.
