@@ -1,9 +1,15 @@
 ### Project Overview 
-The Predictive Ecosystem Analyzer (PEcAn) is an integrated ecological bioinformatics toolbox (Dietze et al. 2013, LeBauer et al. 2013) which consists of: 
+The Predictive Ecosystem Analyzer (PEcAn) is an integrated informatics toolbox for ecosystem modeling (Dietze et al. 2013, LeBauer et al. 2013). PEcAn consists of: 
 
-1) a scientific workflow system to manage the immense amounts of publicly-available environmental data
+1) An application program interface (API) that encapsulates an ecosystem model, providing a common interface, inputs, and output.
 
-2) a Bayesian data assimilation system to synthesize this information within state-of-the-art ecosystems models.
+2) Core utilities for handling and tracking model runs and the flows of information into and out of models and analyses
+
+3) An accessible web-based user interface and visualization tools
+
+4) An extensible collection of modules to handle specific types of analyses (sensitivity, uncertainty, ensemble), model-data syntheses (benchmarking, parameter data assimilation, state data assimilation), and data 
+
+a Bayesian data assimilation system to synthesize this information within state-of-the-art ecosystems models.
 
 ![](/assets/PEcAn_Components.jpeg)
 
