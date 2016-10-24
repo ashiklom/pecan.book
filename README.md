@@ -19,7 +19,7 @@
 </br>
 
 
-<center> [PEcAn Website](pecanproject.org)
+<center> [PEcAn Website](http://pecanproject.github.io/)
 
 <center> [Public Chat Room](https://gitter.im/PecanProject/pecan)
 
