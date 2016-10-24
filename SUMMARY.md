@@ -21,7 +21,7 @@
 * [Maintaining PEcAn](users_guide/maintaining_pecan/maintaining_pecan.md)
     * [Updating your code](users_guide/maintaining_pecan/update_pecan_code.md)
     * [Updating BETY database](users_guide/maintaining_pecan/Updating-BETY.md)
-    * [Database-Synchronization](users_guide/adv_users_guide/Database-Synchronization.md)
+    * [Database Synchronization](users_guide/adv_users_guide/Database-Synchronization.md)
     * [Troubleshooting PEcAn](users_guide/adv_users_guide/Troubleshooting-pecan.md)
 * [User Appendix](user_appendix.md)
     * [Models](models/index.md)

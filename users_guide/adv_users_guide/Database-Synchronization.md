@@ -8,6 +8,17 @@ Each server that runs the BETY database will have a unique machine_id and a sequ
 
 The synchronization code itself is split into two parts, loading data with the `load.bety.sh` script and exporting data using `dump.bety.sh`. If you do not plan to share data, you only need to use `load.bety.sh` to update your database.
 
+## Set up
+
+Requests for new machine ID's is currently handled manually. To request a machine ID contact Rob Kooper <kooper@illinois.edu>. In the examples below this ID is referred to as MYSITE.
+
+To setup the database to use this ID you need to call load.bety in 'CREATE' mode
+
+```
+sudo -u postgres {$PECAN}/scripts/load.bety.sh -c -u -m X 
+```
+WARNING: At the momment running CREATE deletes all current records in the database. If you are running from the VM this includes both all runs you have done and all information that the database is prepopulated with (e.g. input and model records). Remote records can be fetched (see below), but local records will be lost (we're working on improving this!)
+
 ## Fetch latest data
 
 When logged into the machine you can fetch the latest data using the load.bety.sh script. The script will check what site you want to get the data for and will remove all data in the database associated with that id. It will then reinsert all the data from the remote database.
@@ -64,6 +75,57 @@ To share your data you can now run the dump.bey.sh. The script is configured usi
 - UNCHECKED: specifies whether unchecked traits and yields be dumped.  Set to YES (all caps) to dump unchecked data.  The default is NO.
 - ANONYMOUS: specifies whether all users be anonymized.  Set to YES (all caps) to keep the original users (**INCLUDING PASSWORD**) in the dump file.  The default is NO.
 - OUTPUT: the location of where on disk to write the result file.  The default is `${PWD}/dump`.
+
+NOTE: If you want your dumps to be accessible to other PEcAn servers you need to perform the following additional steps
+
+1. Open pecan/scripts/load.bety.sh
+2. In the DUMPURL section of the code add a new record indicating where you are dumping your data. Below is the example for SITE number 1 (Boston University)
+```
+ elif [ "${REMOTESITE}" == "1" ]; then
+ DUMPURL="http://psql-pecan.bu.edu/sync/dump/bety.tar.gz"
+```
+3. Check your Apache settings to make sure this location is public
+4. Commit this code and submit a Pull Request
+5. From the URL in the Pull Request, PEcAn administrators will update the machines table, the status map, and notify other users to update their cron jobs (see Automation below)
+
+Plans to simplify this process are in the works
+
+## Automation
+
+Below is an example of a script to synchronize PEcAn database instances across the network.
+
+db.sync.sh
+```
+#!/bin/bash 
+## make sure psql is in PATH
+export PATH=/usr/pgsql-9.3/bin/:$PATH 
+## move to export directory
+cd /fs/data3/sync 
+## Dump Data
+MYSITE=1 /home/dietze/pecan/scripts/dump.bety.sh 
+## Load Data from other sites
+MYSITE=1 REMOTESITE=2 /home/dietze/pecan/scripts/load.bety.sh 
+MYSITE=1 REMOTESITE=5 /home/dietze/pecan/scripts/load.bety.sh 
+MYSITE=1 REMOTESITE=0 /home/dietze/pecan/scripts/load.bety.sh 
+## Timestamp sync log
+echo $(date +%c) >> /home/dietze/db.sync.log
+```
+
+Typically such a script is set up to run as a cron job. Make sure to schedule this job (```crontab -e```) as the user that has database privledges (typically postgres). The example below is a cron table that runs the sync every hour at 12 min after the hour.
+
+```
+MAILTO=user@yourUniversity.edu
+12 * * * * /home/dietze/db.sync.sh
+```
+
+## Network Status Map
+
+https://pecan2.bu.edu/pecan/status.php
+
+Nodes: red = down, yellow = out-of-date schema, green = good
+
+Edges: red = fail, yellow = out-of-date sync, green = good
+
 
 ## Tasks
 
