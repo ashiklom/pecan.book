@@ -8,6 +8,7 @@ This section will contain information about all models and output variables that
 | [CLM](clm.md) | No | No | No| No |
 | [Dalec](dalec.md) | Yes | Yes | Yes| No |
 | [ED](ed.md) | Yes | Yes | Yes| No |
+| FATES | No | Yes | | No|
 | [G'DAY](gday.md) | No | No | No| No |
 | [linkages](linkages.md) | Yes | Yes | Yes| Yes |
 | [LPJ-GUESS](lpj-guess.md) | Yes | Yes | No | No |
