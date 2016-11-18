@@ -271,6 +271,11 @@ The lnd_in file in the run directory can be modified to change the output file f
 
 ## CLM-FATES
 
+Prerequisites
+```
+sudo apt-get upgrade libnetcdf-dev
+```
+
 Get code from Github (currently private) and go to cime/scripts directory
 ```
 git clone git@github.com:NGEET/ed-clm.git
