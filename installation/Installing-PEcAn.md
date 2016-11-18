@@ -269,6 +269,24 @@ These are netcdf files containing monthly averages of lots of variables.
 
 The lnd_in file in the run directory can be modified to change the output file frequency and variables.
 
+## CLM-FATES
+
+Get code from Github (currently private) and go to cime/scripts directory
+```
+git clone git@github.com:NGEET/ed-clm.git
+cd ed-clm/cime/scripts/
+```
+Within CLM-FATES, to be able to build an executable we need to create a reference run. We'll also use this reference run to grab defaults from, so we'll be registering the location of both the reference **case** (location of executable, scripts, etc) and the reference **inputs** with the PEcAn database. To begin, copy reference run script from pecan
+```
+cp ~/pecan/models/fates/inst/create_1x1_ref_case.sh .
+```
+Edit reference case script to set NETCDF_HOME, CROOT (reference run case), DIN_LOC_ROOT (reference run inputs). Also, make sure DIN_LOC_ROOT exists as FATES will not create it itself. Then run the script
+```
+./create_1x1_ref_case.sh
+```
+Be aware that this script WILL ask you for your password on the NCAR server to download the reference case input data (the guest password may work, haven't tried this)
+
+
 
 ## PEcAn Installation
 
