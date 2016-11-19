@@ -274,6 +274,19 @@ The lnd_in file in the run directory can be modified to change the output file f
 Prerequisites
 ```
 sudo apt-get upgrade libnetcdf-dev
+sudo apt-get install subversion
+sudo apt-get install csh
+sudo apt-get install cmake
+sudo ln -s /usr/bin/make /usr/bin/gmake
+sudo rm /bin/sh
+sudo ln -s /bin/bash /bin/sh
+
+apt-get source libnetcdf-dev
+cd netcdf-4.*.*
+./configure
+make
+sudo make install
+
 ```
 
 Get code from Github (currently private) and go to cime/scripts directory
