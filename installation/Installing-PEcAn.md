@@ -281,13 +281,13 @@ sudo ln -s /usr/bin/make /usr/bin/gmake
 sudo rm /bin/sh
 sudo ln -s /bin/bash /bin/sh
 
-apt-get source libnetcdf-dev
-cd netcdf-4.*.*
+wget https://github.com/Unidata/netcdf-fortran/archive/v4.4.4.tar.gz
+cd netcdf-4.4.4
 ./configure
 make
 sudo make install
-
 ```
+you might need to mess around with installing netcdf and netcdf-fortran to get a version FATES likes...
 
 Get code from Github (currently private) and go to cime/scripts directory
 ```
@@ -302,9 +302,9 @@ Edit reference case script to set NETCDF_HOME, CROOT (reference run case), DIN_L
 ```
 ./create_1x1_ref_case.sh
 ```
-Be aware that this script WILL ask you for your password on the NCAR server to download the reference case input data (the guest password may work, haven't tried this)
+Be aware that this script WILL ask you for your password on the NCAR server to download the reference case input data (the guest password may work, haven't tried this). If it gives an error at the pio stage check the log, but the most likely error is it being unable to find a version of netcdf it likes.
 
-
+Once FATES is installed, set the whole reference case directory as the Model path (leave filename blank) and set the whole inputs directory as an Input with format clm_defaults.
 
 ## PEcAn Installation
 
