@@ -29,8 +29,8 @@ The rest of the instructions assumes you have done the appropriate steps in each
 
 ```bash
 # point R to personal lib folder
-echo 'export R_LIBS_USER=${HOME}/R/library' >> ~/.bashrc
-source ~/.bashrc
+echo 'export R_LIBS_USER=${HOME}/R/library' >> ~/.profile
+source ~/.profile
 mkdir -p ${R_LIBS_USER}
 ```
 
