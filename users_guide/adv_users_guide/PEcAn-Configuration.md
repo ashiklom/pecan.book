@@ -304,15 +304,19 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
 	</inputs>
 </run>
 <host>
-		<name>localhost</name>
-		<rundir>/home/carya/testrun.pecan/run/</rundir>
-		<outdir>/home/carya/testrun.pecan/out/</outdir>
-		<scratchdir>/tmp/carya</scratchdir>
-		<clearscratch>TRUE</clearscratch>
-		<qsub>qsub -N @NAME@ -o @STDOUT@ -e @STDERR@ -S /bin/bash</qsub>
-		<qsub.jobid>Your job ([0-9]+) .*</qsub.jobid>
-		<qstat>qstat -j @JOBID@ &> /dev/null || echo DONE</qstat>
-		<job.sh>module load udunits R/R-3.0.0_gnu-4.4.6</job.sh>
+    <name>localhost</name>
+    <rundir>/home/carya/testrun.pecan/run/</rundir>
+    <outdir>/home/carya/testrun.pecan/out/</outdir>
+    <scratchdir>/tmp/carya</scratchdir>
+    <clearscratch>TRUE</clearscratch>
+    <qsub>qsub -N @NAME@ -o @STDOUT@ -e @STDERR@ -S /bin/bas</qsub>
+    <qsub.jobid>Your job ([0-9]+) .*</qsub.jobid>
+    <qstat>qstat -j @JOBID@ &> /dev/null || echo DONE</qstat>
+    <job.sh>module load udunits R/R-3.0.0_gnu-4.4.6</job.sh>
+    <data_tunnel></data_tunnel>
+    <data_hostname></data_hostname>
+    <Rbinary></Rbinary>
+    <dbfiles>></dbfiles>
 </host>
 ```
 
