@@ -316,7 +316,6 @@ Starting at 1.3.7 the tags for inputs have moved to `<run><inputs>`. This includ
     <data_tunnel></data_tunnel>
     <data_hostname></data_hostname>
     <Rbinary></Rbinary>
-    <dbfiles>></dbfiles>
 </host>
 ```
 
