@@ -25,7 +25,6 @@
     * [Troubleshooting PEcAn](users_guide/adv_users_guide/Troubleshooting-pecan.md)
 * [User Appendix](user_appendix.md)
     * [Models](models/index.md)
-      	* [Installing Models](installation/Installing-PEcAn-models.md)
         * [BioCro](models/biocro.md)
             * [BioCro-configuration](BioCro-configuration.md)
         * [CLM](models/clm.md)
