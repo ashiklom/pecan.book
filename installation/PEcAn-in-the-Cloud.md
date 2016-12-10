@@ -62,7 +62,7 @@ In the code below, make sure to change the PEcAn version, the name of the bucket
 Also, you may want to choose a considerably larger instance type. The one chosen below is that corresponding to the AWS Free Tier
 
 `
-ec2-import-instance PEcAn32bit_1.2.6-disk1.vmdk --instance-type t2.micro --format VMDK --architecture i386 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
+ec2-import-instance PEcAn_1.4.9-disk1.vmdk --instance-type t2.micro --format VMDK --architecture x86_64 --platform Linux --bucket pecan --region us-east-1 --owner-akid $AWS_ACCESS_KEY --owner-sak $AWS_SECRET_KEY
 `
 
 Make sure to note the ID of the image since you'll need it to check the VM status.  Once the image is uploaded it will take a while (typically about an hour) for Amazon to convert the image to one it can run. You can check on this progress by running
